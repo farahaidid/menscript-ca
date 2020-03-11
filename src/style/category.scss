@@ -1,0 +1,100 @@
+.logo {
+    width: 130px;
+    height: 33px;
+}
+.banner{
+    margin-bottom: 0px;
+}
+.sub-text-1{
+    font-family: Avenir Black;
+    font-size: 16px;
+  }
+  .sub-text-2{
+    font-family: Avenir Medium;
+    font-size: 15px;
+  }
+  .custom-cat-btn {
+    background-color: #000000;
+    display: block;
+    width: 100%;
+}
+.ask-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-top: 30px;
+}
+  /* Small devices */
+@media screen and (max-width: 640px) {
+    img.logo {
+        margin-bottom: 20px;
+        width: 130px;
+        height: 20px;
+    }
+    .image{
+       
+        text-align: center;
+        margin-bottom:7px;
+    }
+    img.cat-one-img {
+        width: 80%;
+    }
+    .cat-two-img{
+        width: 60%;
+    }
+    .sub-text-1,.sub-text-2 {
+        font-size: 12px;
+       
+    }
+    .custom-cat-btn{
+        background-color: #000000;
+        display: inline-block;
+        width: 61%;
+        font-size: 13px;
+        margin: 10px 0px;
+    }
+    .ask-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-top: 15px;
+    }
+
+    
+}
+/* medium phone  */
+@media screen and (min-width: 641px) and (max-width: 768px) {
+    img.logo {
+        margin-bottom: 20px;
+        width: 130px;
+        height: 20px;
+    }
+    .image{
+       
+        text-align: center;
+        margin-bottom:10px;
+    }
+    img.cat-one-img {
+        width: 80%;
+    }
+    .cat-two-img{
+        width: 60%;
+    }
+    .sub-text-1,.sub-text-2 {
+        font-size: 12px;
+        background-color: red;
+       
+    }
+    .custom-cat-btn {
+        background-color: #000000;
+        display: inline-block!important;
+        width: 61%;
+        margin: 12px 0px;
+    }
+
+   
+}
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .custom-cat-btn {
+       font-size: 12px;
+    }
+}
