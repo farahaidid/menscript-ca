@@ -3,7 +3,7 @@
     <!-- one -->
     <div class="image" v-if="data.name === 'rx'">
       <img
-        src="@/assets/img/category-2.jpg"
+        :src="data.image"
         alt="cat_two_img"
         class="cat-two-img"
       />
@@ -58,8 +58,8 @@ export default {
     }
   },
   mounted() {
-    //console.log("rx",this.rx.name)
-    // console.log("otc",this.otc.name)
+    console.log("rx",this.data.image)
+   
   }
 };
 </script>

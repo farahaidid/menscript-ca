@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container">
-      <div class="row text-center">
+      <div class="row text-center logo-div">
         <div class="col-md-4 col-sm-12">
           <img src="@/assets/img/logo1.png" alt="" class="del logo" />
         </div>
@@ -34,7 +34,7 @@
           <CategoryTwo :data="RX" />
         </div>
         <div class="col-md-3">
-          <CategoryTwo :data="OTC"/>
+          <CategoryTwo :data="OTC" />
         </div>
       </div>
       <div class="row mt-4">
@@ -42,15 +42,15 @@
           <CategoryOne />
         </div>
         <div class="col-md-3">
-          <CategoryTwo :data="RX"/>
+          <CategoryTwo :data="RX" />
         </div>
         <div class="col-md-3">
-          <CategoryTwo :data="OTC"/>
+          <CategoryTwo :data="OTC" />
         </div>
       </div>
     </div>
 
-    <BlogThree />
+    <BlogThree :data="catThree" />
     <AskQuestion />
   </div>
 </template>
@@ -59,16 +59,13 @@
 import AskQuestion from "../components/Category/AskQuestion";
 import CategoryOne from "../components/Category/CategoryOne";
 import CategoryTwo from "../components/Category/CategoryTwo";
-//import CategoryThree from "../components/Category/CategoryThree";
-//import CategoryFour from "../components/Category/CategoryFour";
+
 import BlogThree from "../components/blog/BlogThree";
 
 export default {
   components: {
     CategoryOne,
     CategoryTwo,
-    //  CategoryThree,
-    //  CategoryFour,
     AskQuestion,
     BlogThree
   },
@@ -76,26 +73,31 @@ export default {
     return {
       rx: {
         name: "rx",
-        image: "category-2.jpg",
+        image: require("@/assets/img/category-2.jpg"),
         btnText: " Start online consult"
       },
       otc: {
         name: "otc",
-        image: "category-3.jpg",
+        // image: "category-3.jpg",
         btnText: "  Voeg toe aan mandje"
       },
       RX: {
         name: "RX",
-        text1:'Shampoo revitalising'
+        text1: "Shampoo revitalising"
       },
-      OTC:{
+      OTC: {
         name: "OTC",
-        text1:'Conditioner volumniser'
+        // image:'category-3.jpg',
+        text1: "Conditioner volumniser"
+      },
+      catThree: {
+        name: "catThree",
+        title: "We zijn er voor je",
 
+        image: require("@/assets/img/category-5.png"),
+        subtitle: "Lees meer: finasteride en haarverlies"
       }
     };
   }
 };
 </script>
-
-<style></style>

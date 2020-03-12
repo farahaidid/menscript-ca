@@ -34,7 +34,7 @@
 
 .banner {
   /* float: right; */
-  margin-bottom: 174px;
+  margin-bottom: 70px;
 }
 .banner-img {
   width: 95%;
@@ -82,7 +82,7 @@
 @media screen and (max-width: 640px) {
   .banner {
     height: 14em;
-    margin-bottom: 34px;
+    margin-bottom: 45px;
     margin-left: 0px;
   }
   .banner-text {
@@ -173,7 +173,7 @@
 @media screen and (min-width: 992px) and (max-width: 1300px) {
   .banner {
     /* float: right; */
-    margin-bottom: 120px;
+    margin-bottom: 70px;
     height: 30em;
   }
   .banner-text {

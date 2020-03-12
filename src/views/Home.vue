@@ -12,7 +12,9 @@
           />
           <h3 class="brand-beauty-text">Haareverzorging</h3>
         </div>
-        <div class="col-md-6 col-sm-12 p-0 position-relative max-height-beauty-img">
+        <div
+          class="col-md-6 col-sm-12 p-0 position-relative max-height-beauty-img"
+        >
           <img
             src="../assets/img/Beauty-brand.jpg"
             alt="Beauty-brand"
@@ -33,21 +35,16 @@
           />
         </div>
       </div>
-      <div >
-        <BlogTwo/>
+      <div>
+        <BlogTwo />
       </div>
 
-      <div >
-        <BlogThree/>
-
+      <div>
+        <BlogThree  :data="blogThree"/>
       </div>
-      <div >
-        <HowWorks/>
+      <div>
+        <HowWorks />
       </div>
-     
-
-     
-
     </div>
   </div>
 </template>
@@ -62,12 +59,23 @@ export default {
     BlogTwo,
     BlogThree,
     HowWorks
+  },
+  data(){
+    return{
+      blogThree: {
+        name: "blogThree",
+        title:'Waarom?',
+        image: require("@/assets/img/six-section.jpg"),
+        subtitle: "Lees meer: finasteride en haarverlies"
+      },
+    }
   }
 };
 </script>
 
 <style scoped>
-.Beauty-brand,.fourth-section-img {
+.Beauty-brand,
+.fourth-section-img {
   width: 100%;
   max-height: 100%;
 }
@@ -81,13 +89,11 @@ h3.brand-beauty-text {
 
 /* Small devices */
 @media screen and (max-width: 640px) {
-  
   h3.brand-beauty-text {
     top: 1em;
     left: 6em;
     font-size: 22px;
   }
- 
 }
 /* medium phone screen  */
 @media screen and (min-width: 641px) and (max-width: 768px) {
@@ -107,14 +113,15 @@ h3.brand-beauty-text {
 }
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) and (max-width: 1300px) {
+  /* default */
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1300px) {
   .max-height-beauty-img {
-    height: 716px!important;
+    height: 716px !important;
   }
-  .max-height-four{
-    height: 1081px!important;
+  .max-height-four {
+    height: 1081px !important;
   }
 }
 </style>

@@ -7,15 +7,15 @@ import Home from '../views/Home.vue'
 import appHeader from '../components/AppHeader.vue'
 import appFooter from '../components/AppFooter.vue'
 import Category from '../views/Category.vue';
-import appContent from '../components/appContent.vue';
+// import appContent from '../components/appContent.vue';
 
 
 const routes = [
-    { path: '/home', component: Home },
+    { path: '/', component: Home },
     { path: '/menu', component: appHeader },
     { path: '/category', component: Category },
     { path: '/footer', component: appFooter },
-    { path: '/', component: appContent },
+    // { path: '/', component: appContent },
      
   ]
 

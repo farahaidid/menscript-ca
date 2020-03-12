@@ -207,6 +207,8 @@ a.social-link.twitter {
   .footer-menu-title {
     font-size: 14pt;
   }
+  
+   
 }
 @media (min-width: 1200px) {
   button.btn.contact-us {
@@ -280,5 +282,9 @@ a.social-link.twitter {
   .rs-footer {
     margin-top: 25px;
   }
+  .margin-top {
+  margin-top: 45px;
+  
+}
 }
 </style>
