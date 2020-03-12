@@ -1,7 +1,7 @@
 <template>
   <div>
-      <div class="container-fluid">
-           <div class="row">
+    <div class="container-fluid ">
+      <div class="row">
         <div class="col-md-6 align_center bg-white pl-0 mb-26">
           <div class="five-section-text w-75 mx-auto">
             <h2 class="title">Waarom?</h2>
@@ -17,7 +17,7 @@
             <p class="subtitle-2 ">Lees meer: finasteride en haarverlies</p>
           </div>
         </div>
-        <div class="col-md-6 pl pr  max-height-img-six">
+        <div class="col-md-6 pl pr  bg-white max-height-img-six">
           <img
             src="@/assets/img/six-section.jpg"
             alt
@@ -25,15 +25,13 @@
           />
         </div>
       </div>
-      </div>
-     
+    </div>
   </div>
 </template>
 
 <style scoped>
 /* @import '/src/style/blogPost.css'; */
-.mb-26 {
+/* .mb-26 {
   margin-bottom: 26px;
-} 
-
+}  */
 </style>
