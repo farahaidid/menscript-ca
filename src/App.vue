@@ -1,23 +1,19 @@
 <template>
   <div id="app">
-    <AppHeader/>
-    <AppBanner/>
+    <!-- <AppHeader/>
+    <AppBanner/> -->
     <router-view></router-view>  
-    <AppFooter/>
+    <!-- <AppFooter/> -->
     
   </div>
 </template>
 <script>
-import AppHeader  from './components/AppHeader'
-import  AppBanner  from "./components/AppBanner"
-import AppFooter  from './components/AppFooter'
+//import AppHeader  from './components/AppHeader'
+//import  AppBanner  from "./components/AppBanner"
+//import AppFooter  from './components/AppFooter'
 export default {
   name: "App",
-  components:{
-    AppHeader,
-    AppBanner,
-    AppFooter,
-  }
+  
  
 };
 </script>

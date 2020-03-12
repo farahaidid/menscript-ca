@@ -1,5 +1,7 @@
 <template>
   <div>
+<AppHeader/>
+<AppBanner/>
     <div class="container">
       <div class="row text-center logo-div">
         <div class="col-md-4 col-sm-12">
@@ -49,21 +51,25 @@
         </div>
       </div>
     </div>
-
-    <BlogThree :data="catThree" />
+    <BlogThree :data="blogThree" />
     <AskQuestion />
+    <AppFooter/>
+
   </div>
 </template>
-
 <script>
+import AppHeader from "../components/AppHeader";
+import AppBanner from "../components/AppBanner";
+import AppFooter from "../components/AppFooter";
 import AskQuestion from "../components/Category/AskQuestion";
 import CategoryOne from "../components/Category/CategoryOne";
 import CategoryTwo from "../components/Category/CategoryTwo";
-
 import BlogThree from "../components/blog/BlogThree";
-
 export default {
   components: {
+     AppHeader,
+    AppBanner,
+    AppFooter,
     CategoryOne,
     CategoryTwo,
     AskQuestion,
@@ -90,12 +96,12 @@ export default {
         // image:'category-3.jpg',
         text1: "Conditioner volumniser"
       },
-      catThree: {
-        name: "catThree",
+      blogThree: {
+        name: "blogThree",
         title: "We zijn er voor je",
-
+        text:'Last van haaruitval, maar niet zeker wat je nodig hebt? Start een online consult, deel je symptomen en medische historie en laat je adviseren door een van de doktoren binnen ons netwerk.Een dokter evalueert vervolgens je behandelingsverzoek. Geschikt? Dan ontvang je je behandeling binnen 48u thuis geleverd.',
         image: require("@/assets/img/category-5.png"),
-        subtitle: "Lees meer: finasteride en haarverlies"
+        button:true
       }
     };
   }

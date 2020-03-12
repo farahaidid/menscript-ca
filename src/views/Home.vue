@@ -1,5 +1,7 @@
 <template>
   <div>
+    <AppHeader />
+    <AppBanner />
     <div class="container-fluid ">
       <div class="row ">
         <div
@@ -40,35 +42,43 @@
       </div>
 
       <div>
-        <BlogThree  :data="blogThree"/>
+        <BlogThree :data="blogThree" />
       </div>
       <div>
         <HowWorks />
       </div>
     </div>
+    <AppFooter />
   </div>
 </template>
 <script>
+import AppHeader from "../components/AppHeader";
+import AppBanner from "../components/AppBanner";
+import AppFooter from "../components/AppFooter";
 import BlogOne from "../components/blog/BlogOne";
 import BlogTwo from "../components/blog/BlogTwo";
 import BlogThree from "../components/blog/BlogThree";
 import HowWorks from "../components/AppHowWorks";
 export default {
   components: {
+    AppHeader,
+    AppBanner,
+    AppFooter,
     BlogOne,
     BlogTwo,
     BlogThree,
     HowWorks
   },
-  data(){
-    return{
+  data() {
+    return {
       blogThree: {
         name: "blogThree",
-        title:'Waarom?',
+        title: "Waarom?",
+        text:'Het aantal bezoeken aan de huisartsenpraktijk onder vrouwen ligt al jaren ver boven die van de man. Waar de vrouw het probleem graag bespreekbaar maakt, zwijgt de man. Ze schamen zich of worden geconfronteerd met talloze ‘gender-based’ stigmas. Door de drempel te verlagen om in contact te komen met een geregistreerde arts, proberen we hen de medische zorg te bieden die ze nodig hebben voor problemen die anders verborgen zouden houden.',
         image: require("@/assets/img/six-section.jpg"),
         subtitle: "Lees meer: finasteride en haarverlies"
-      },
-    }
+      }
+    };
   }
 };
 </script>

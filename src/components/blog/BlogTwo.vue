@@ -11,22 +11,28 @@
         </div>
         <div class="col-md-6 bg-white align_center">
           <div class="five-section-text w-75">
-            <h2 class="title">De Huid</h2>
-            <p class="subtitle">
-              Het grootste orgaan van de mens. Het ademt, het voedt en vormt de
-              barrière tussen de 'jij' en alles wat daarbuiten zit.
-              Ondergewaardeerd in zijn functie, maar wanneer gelijkmatig in
-              oppervlak geprezen om zijn uiterlijk. Iedereen verdient het om
-              zich comfortabel te voelen in zijn eigen huid, maar degene die
-              last hebben van acne zijn dat meestal niet. Geen zorgen. Wij zijn
-              er om je te helpen! Of je nu last hebt van acne of je huid
-              simpelweg in perfecte staat wilt krijgen, wij helpen je. Weten wat
-              het beste bij je past? Start met een online bezoek
+            <h2 class="title" v-if="data.name == 'blogTwo'">{{ data.title}}</h2>
+            <p class="subtitle"  v-if="data.name == 'blogTwo'">
+              {{ data.text }}
             </p>
-            <p class="subtitle-2  ">Lees meer: finasteride en haarverlies</p>
+            <p class="subtitle-2  "  v-if="data.name == 'blogTwo'">{{ data.subtitle}}</p>
           </div>
         </div>
       </div>
      </div>
   </div>
 </template>
+<script>
+export default {
+    props: {
+    data: {
+      type: Object,
+      default() {
+        return {
+          
+        };
+      }
+    }
+  },
+}
+</script>
