@@ -30,8 +30,8 @@
                <li class="nav-item">
                   <router-link to="/category" class="nav-link" href="#">CARD</router-link>
                </li>
-               <li @click="$emit('login')" class="nav-item">
-                  <router-link to="/" class="nav-link" href="#">ACCOUNT</router-link>
+               <li @click="openLoginModal" class="nav-item">
+                  <router-link to class="nav-link" href="#">ACCOUNT</router-link>
                </li>
             </ul>
          </div>
@@ -40,7 +40,14 @@
 </template>
 
 <script>
-export default {};
+import EventBus from "@/plugins/eventBus"
+export default {
+   methods:{
+      openLoginModal(){
+         EventBus.$emit("open-login-modal")
+      }
+   }
+};
 </script>
 
 <style scoped>

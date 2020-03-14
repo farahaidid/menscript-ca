@@ -1,7 +1,7 @@
 <template>
   <div>
-    <AppHeader />
-    <AppBanner />
+    <!-- <AppHeader />
+    <AppBanner /> -->
     <div class="container-fluid ">
       <div class="row ">
         <div
@@ -48,22 +48,16 @@
         <HowWorks />
       </div>
     </div>
-    <AppFooter />
+    <!-- <AppFooter /> -->
   </div>
 </template>
 <script>
-import AppHeader from "../components/AppHeader";
-import AppBanner from "../components/AppBanner";
-import AppFooter from "../components/AppFooter";
 import BlogOne from "../components/blog/BlogOne";
 import BlogTwo from "../components/blog/BlogTwo";
 import BlogThree from "../components/blog/BlogThree";
 import HowWorks from "../components/AppHowWorks";
 export default {
   components: {
-    AppHeader,
-    AppBanner,
-    AppFooter,
     BlogOne,
     BlogTwo,
     BlogThree,
