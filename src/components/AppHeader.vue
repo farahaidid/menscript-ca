@@ -18,7 +18,7 @@
             <div class="container custom-margin">
                <div class="row">
                   <div class="col-sm-12 text-center">
-                     <h4>MENSCRIPT</h4>
+                     <h4 @click="goHome">MENSCRIPT</h4>
                   </div>
                </div>
             </div>
@@ -45,6 +45,9 @@ export default {
    methods:{
       openLoginModal(){
          EventBus.$emit("open-login-modal")
+      },
+      goHome(){
+         this.$router.push("/")
       }
    }
 };
