@@ -2,6 +2,8 @@
   <div>
     <div class="container-fluid">
       <AppHeader />
+
+      <Product class="product-page"/>
       <BlogOne :data="blogOne" />
       <BlogTwo :data="blogTwo" />
       <div>
@@ -13,7 +15,8 @@
   </div>
 </template>
 <script>
-import AppHeader from "../components/AppHeader";
+import Product from '../components/product/AppProduct'
+  import AppHeader from "../components/AppHeader";
 import AskQuestion from "../components/Category/AskQuestion";
 import AppFooter from "../components/AppFooter";
 
@@ -21,7 +24,8 @@ import BlogTwo from "../components/blog/BlogTwo";
 import BlogOne from "../components/blog/BlogOne";
 export default {
   components: {
-    AppHeader,
+    Product,
+     AppHeader,
     BlogTwo,
     BlogOne,
     AskQuestion,

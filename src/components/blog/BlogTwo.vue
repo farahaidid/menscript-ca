@@ -4,7 +4,7 @@
          <div class="row margin-five ">
         <div class="col-md-6 max-height-716 pl pr align_center">
           <img
-            src="@/assets/img/five-one.jpg"
+            :src="data.image"
             alt
             class="five-one img five-position"
           />

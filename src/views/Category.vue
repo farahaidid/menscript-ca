@@ -84,16 +84,17 @@ export default {
       },
       otc: {
         name: "otc",
-        // image: "category-3.jpg",
+        image: require("@/assets/img/category-3.jpg"),
         btnText: "  Voeg toe aan mandje"
       },
       RX: {
         name: "RX",
+        image:require("@/assets/img/category-2.jpg"),
         text1: "Shampoo revitalising"
       },
       OTC: {
         name: "OTC",
-        // image:'category-3.jpg',
+       image:require( "@/assets/img/category-3.jpg"),
         text1: "Conditioner volumniser"
       },
       blogThree: {

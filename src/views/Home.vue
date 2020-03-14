@@ -26,7 +26,7 @@
         </div>
       </div>
       <div>
-        <BlogOne />
+        <BlogOne :data="blogOne" />
       </div>
       <div class="row">
         <div class="col-sm-12 pr-0 pl-0 max-height-four">
@@ -38,7 +38,7 @@
         </div>
       </div>
       <div>
-        <BlogTwo />
+        <BlogTwo :data="blogTwo" />
       </div>
 
       <div>
@@ -71,10 +71,27 @@ export default {
   },
   data() {
     return {
+      blogOne: {
+        name: "blogOne",
+        title: "Het Haar",
+        text:
+          "Sinds mannen toegang tot spiegels hebben, heerst er de angst dat de hoofdhuid eenzaam wordt. Last van haaruitval? Wij kunnen helpen! Start met een online bezoek, deel je symptomen en medische geschiedenis met een EU-erkende arts en ontvang een persoonlijk behandelplan om je haaruitval te bestrijden. ",
+        image: require("@/assets/img/shave-riversde.jpg"),
+        subtitle: "Lees meer: finasteride en haarverlies"
+      },
+      blogTwo: {
+        name: "blogTwo",
+        title: "De Huid",
+        text:
+          "Het grootste orgaan van de mens. Het ademt, het voedt en vormt de barrière tussen de 'jij' en alles wat daarbuiten zit. Ondergewaardeerd in zijn functie, maar wanneer gelijkmatig in oppervlak geprezen om zijn uiterlijk. Iedereen verdient het om zich comfortabel te voelen in zijn eigen huid, maar degene die last hebben van acne zijn dat meestal niet. Geen zorgen. Wij zijn er om je te helpen! Of je nu last hebt van acne of je huid simpelweg in perfecte staat wilt krijgen, wij helpen je.  Weten wat het beste bij je past? Start met een online bezoek",
+        image: require("@/assets/img/five-one.jpg"),
+        subtitle: "Lees meer: finasteride en haarverlies"
+      },
       blogThree: {
         name: "blogThree",
         title: "Waarom?",
-        text:'Het aantal bezoeken aan de huisartsenpraktijk onder vrouwen ligt al jaren ver boven die van de man. Waar de vrouw het probleem graag bespreekbaar maakt, zwijgt de man. Ze schamen zich of worden geconfronteerd met talloze ‘gender-based’ stigmas. Door de drempel te verlagen om in contact te komen met een geregistreerde arts, proberen we hen de medische zorg te bieden die ze nodig hebben voor problemen die anders verborgen zouden houden.',
+        text:
+          "Het aantal bezoeken aan de huisartsenpraktijk onder vrouwen ligt al jaren ver boven die van de man. Waar de vrouw het probleem graag bespreekbaar maakt, zwijgt de man. Ze schamen zich of worden geconfronteerd met talloze ‘gender-based’ stigmas. Door de drempel te verlagen om in contact te komen met een geregistreerde arts, proberen we hen de medische zorg te bieden die ze nodig hebben voor problemen die anders verborgen zouden houden.",
         image: require("@/assets/img/six-section.jpg"),
         subtitle: "Lees meer: finasteride en haarverlies"
       }

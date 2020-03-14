@@ -13,3 +13,31 @@ img{
 
 
 
+
+/* Small devices */
+@media screen and (max-width: 640px) {
+    .text-sm-center{
+        text-align: center;
+    
+    }
+}
+
+/* medium phone  */
+@media screen and (min-width: 641px) and (max-width: 768px) {
+    .w-75 {
+        width: 100%!important;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media screen and (min-width: 768px) and (max-width: 991px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) and (max-width: 1300px) {
+    /* default style */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1300px) {
+    
+}
