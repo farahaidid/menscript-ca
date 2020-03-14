@@ -3,10 +3,10 @@
     <div class="row">
       <div class="col-md-6">
         <div class="row">
-          <div class="col-md-6 pr-lg-0 pr-md-0 mb-sm-5 text-sm-center">
+          <div class="col-md-6 pr-lg-0 pr-md-0 mb-sm-5 mb-lg-0 mb-md-0 text-sm-center">
         <img src="@/assets/img/product2.png" alt="" class="product-img" />
       </div>
-      <div class="col-md-6 pl-lg-0 pl-md-0 mb-sm-5 text-sm-center">
+      <div class="col-md-6 pl-lg-0 pl-md-0 mb-sm-5 mb-lg-0  mb-md-0 text-sm-center">
         <img src="@/assets/img/product3.png" alt="" class="product-img" />
       </div>
       <div class="col-md-6 pr-lg-0 pr-md-0 mb-sm-5 text-sm-center">
