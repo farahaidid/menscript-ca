@@ -1,7 +1,5 @@
 <template>
   <div>
-<AppHeader/>
-<AppBanner/>
     <div class="container">
       <div class="row text-center logo-div">
         <div class="col-md-4 col-sm-12">
@@ -53,23 +51,16 @@
     </div>
     <BlogThree :data="blogThree" />
     <AskQuestion />
-    <AppFooter/>
 
   </div>
 </template>
 <script>
-import AppHeader from "../components/AppHeader";
-import AppBanner from "../components/AppBanner";
-import AppFooter from "../components/AppFooter";
 import AskQuestion from "../components/Category/AskQuestion";
 import CategoryOne from "../components/Category/CategoryOne";
 import CategoryTwo from "../components/Category/CategoryTwo";
 import BlogThree from "../components/blog/BlogThree";
 export default {
   components: {
-     AppHeader,
-    AppBanner,
-    AppFooter,
     CategoryOne,
     CategoryTwo,
     AskQuestion,

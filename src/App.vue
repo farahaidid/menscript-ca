@@ -1,19 +1,41 @@
 <template>
   <div id="app">
-    <!-- <AppHeader/>
-    <AppBanner/> -->
-    <router-view></router-view>  
-    <!-- <AppFooter/> -->
-    
+    <!-- Modals -->
+    <LoginModal @close="closeLoginModal" v-if="showLoginModal" />
+
+    <!-- Contents -->
+    <div v-else>
+      <AppHeader />
+      <router-view />
+      <AppFooter />
+    </div>
   </div>
 </template>
 <script>
-//import AppHeader  from './components/AppHeader'
-//import  AppBanner  from "./components/AppBanner"
-//import AppFooter  from './components/AppFooter'
+import AppFooter from "@/components/AppFooter";
+import AppHeader from "@/components/AppHeader";
+import LoginModal from "@/components/LoginModal";
+import EventBus from "@/plugins/eventBus";
 export default {
   name: "App",
-  
- 
+  components: {
+   AppHeader,
+   AppFooter,
+   LoginModal,
+  },
+  data: () => ({
+    showLoginModal: false
+  }),
+  created() {
+    EventBus.$on("open-login-modal", () => {
+      this.showLoginModal = true;
+    });
+  },
+  methods:{
+     closeLoginModal(){
+        this.$router.push("/")
+        this.showLoginModal = false
+     }
+  },
 };
 </script>
