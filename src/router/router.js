@@ -8,6 +8,7 @@ import appHeader from '../components/AppHeader.vue'
 import appFooter from '../components/AppFooter.vue'
 import Category from '../views/Category.vue';
 import Product from '../views/Product.vue';
+import blog from '../views/Blog.vue';
 // import appContent from '../components/appContent.vue';
 
 
@@ -17,6 +18,7 @@ const routes = [
     { path: '/category', component: Category },
     { path: '/product', component: Product },
     { path: '/footer', component: appFooter },
+    { path: '/blog', component: blog },
     // { path: '/', component: appContent },
      
   ]
