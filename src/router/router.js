@@ -16,6 +16,7 @@ const routes = [
     children: [
       { path: '', component: loadView("Home") },
       { path: 'category', component: loadView("Category") },
+      { path: 'blog', component: loadView("Blog") },
     ]
   },
   {
@@ -23,6 +24,13 @@ const routes = [
     component: loadLayout("ProductLayout"),
     children: [
       { path: '', component: loadView("Product") },
+    ]
+  }, 
+  {
+    path: '/singleblog',
+    component: loadLayout("BlogLayout"),
+    children: [
+      { path: '', component: loadView("SingleBlog") },
     ]
   }, 
 ]

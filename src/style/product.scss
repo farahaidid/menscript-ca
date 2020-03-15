@@ -92,7 +92,7 @@ button.app-btn {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1300px) {
     .product-img {
-        height: 653px!important;
+        max-height: 653px!important;
     }
 
 }

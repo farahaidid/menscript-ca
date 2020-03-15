@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container-fluid bg-white width margin-top ">
+    <div class=" container-fluid bg-white width margin-top ">
       <div class="row width-75 mx-auto padding_border">
         <div class="col-md-4 rs-bottom">
           <p class="footer-title ">
@@ -10,12 +10,12 @@
             To keep up to date on the latest ccmpany info.
           </p>
           <div class="social-icon">
-            <a href="" class="social-link"><i class="fa fa-facebook-f"></i></a>
-            <a href="" class="social-link"><i class="fa fa-instagram"></i></a>
+            <a href="" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="" class="social-link"><i class="fab fa-instagram"></i></a>
             <a href="" class="social-link twitter"
-              ><i class="fa fa-twitter"></i
+              ><i class="fab fa-twitter"></i
             ></a>
-            <a href="" class="social-link"><i class="fa fa-youtube"></i></a>
+            <a href="" class="social-link"><i class="fab fa-youtube"></i></a>
           </div>
         </div>
         <div class="col-md-4 rs-bottom">

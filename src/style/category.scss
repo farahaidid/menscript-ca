@@ -2,69 +2,87 @@
     width: 130px;
     height: 33px;
 }
+
 .logo-div {
     margin-bottom: 30px;
 }
-.sub-text-1{
+
+.sub-text-1 {
     font-family: Avenir Black;
     font-size: 16px;
-  }
-  .sub-text-2{
+}
+
+.sub-text-2 {
     font-family: Avenir Medium;
     font-size: 15px;
-  }
-  .custom-cat-btn {
+}
+
+.custom-cat-btn {
+    opacity: 0;
     background-color: #000000;
     display: block;
     width: 100%;
+    transition: 1s ease;
 }
+
 .ask-section {
     padding-top: 60px;
     margin-top: 30px;
 }
-  /* Small devices */
+
+/* Small devices */
 @media screen and (max-width: 640px) {
     .logo-div {
         margin-bottom: 10px;
     }
+
     img.logo {
         margin-bottom: 20px;
         width: 130px;
         height: 20px;
     }
-    .image{
-       
+
+    .image {
+
         text-align: center;
-        margin-bottom:7px;
+        margin-bottom: 7px;
     }
+
     img.cat-one-img {
         width: 80%;
     }
-    .cat-two-img{
+
+    .cat-two-img {
         width: 60%;
     }
-    .sub-text-1,.sub-text-2 {
+
+    .sub-text-1,
+    .sub-text-2 {
         font-size: 12px;
-       
+
     }
-    .custom-cat-btn{
+
+    .custom-cat-btn {
         background-color: #000000;
         display: inline-block;
         width: 61%;
         font-size: 13px;
         margin: 10px 0px;
     }
+
     .ask-section {
         padding-top: 30px;
-       padding-bottom: 30px;
+        padding-bottom: 30px;
         margin-top: 15px;
     }
+
     img.cactus.w-75 {
-        width: 60%!important;
+        width: 60% !important;
     }
 
-    
+
 }
+
 /* medium phone  */
 @media screen and (min-width: 641px) and (max-width: 768px) {
     img.logo {
@@ -72,39 +90,48 @@
         width: 130px;
         height: 20px;
     }
-    .image{
-       
+
+    .image {
+
         text-align: center;
-        margin-bottom:10px;
+        margin-bottom: 10px;
     }
+
     img.cat-one-img {
         width: 80%;
     }
-    .cat-two-img{
+
+    .cat-two-img {
         width: 60%;
     }
-    .sub-text-1,.sub-text-2 {
+
+    .sub-text-1,
+    .sub-text-2 {
         font-size: 12px;
         background-color: red;
-       
+
     }
+
     .custom-cat-btn {
         background-color: #000000;
-        display: inline-block!important;
+        display: inline-block !important;
         width: 61%;
         margin: 12px 0px;
     }
+
     img.cactus.w-75 {
-        width: 60%!important;
+        width: 60% !important;
     }
 
-   
+
 }
+
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .custom-cat-btn {
-       font-size: 12px;
+        font-size: 12px;
     }
+
     .ask-section {
         padding-top: 23px;
         padding-bottom: 0px;

@@ -31,7 +31,7 @@
                   <router-link to="/category" class="nav-link" href="#">CARD</router-link>
                </li>
                <li @click="openLoginModal" class="nav-item">
-                  <router-link to class="nav-link" href="#">ACCOUNT</router-link>
+                  <router-link to class="nav-link" href="#" >ACCOUNT</router-link>
                </li>
             </ul>
          </div>
