@@ -120,7 +120,7 @@ a.blog-list-menu-link.router-link-active {
         font-size: 24px;
     }
     img.blog-img {
-        width: 60%;
+        height: 300px;
     }
     /* blog detail */
     h1.blog-title.text-center {
@@ -168,9 +168,6 @@ a.blog-list-menu-link.router-link-active {
         font-size: 20px;
         text-align: center;
     }
-    img.blog-img {
-        width: 50%;
-    }
     h1.blog-title.text-center {
         font-size: 22px;
         padding: 22px 0px;
@@ -190,6 +187,9 @@ a.blog-list-menu-link.router-link-active {
         z-index: 9999;
         top: -14%;
         left: 0%;
+    }
+    img.blog-img {
+        height: 300px;
     }
 }
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
