@@ -90,7 +90,6 @@ a.blog-list-menu-link.router-link-active {
     padding: 10px 10px;
     text-align: center;
     margin-right: 2px;
-   
     font-family: avenir Heavy;
     font-size: 16px;
 }
@@ -150,6 +149,14 @@ a.blog-list-menu-link.router-link-active {
         z-index: 9999;
         top: -14%;
         left: 0%;
+    }
+    a.blog-list-menu-link.router-link-active {
+        color: black;
+        padding: 10px 10px;
+        text-align: center;
+        margin-right: 2px;
+        font-family: avenir Heavy;
+        font-size: 12px;
     }
     
    
