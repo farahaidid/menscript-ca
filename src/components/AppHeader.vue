@@ -33,35 +33,49 @@
                <li class="nav-item">
                   <router-link to class="nav-link" href="#">SEARCH</router-link>
                </li>
-               <li class="nav-item">
-                  <router-link to="/category" class="nav-link" href="#">CARD</router-link>
+               <li class="nav-item" @click="openCardModal">
+                  <router-link to class="nav-link" href="#">CARD</router-link>
                </li>
                <li @click="openLoginModal" class="nav-item">
                   <router-link to class="nav-link" href="#" >ACCOUNT</router-link>
                </li>
             </ul>
          </div>
+
       </nav>
+      <CardModal/>
    </div>
 </template>
 
 <script>
 import EventBus from "@/plugins/eventBus"
+import CardModal from "@/components/CardModal";
+
 export default {
    props:{
       goback:{
          type:String,
       }
    },
+   components:{
+      CardModal,
+
+   },
    created(){
-console.log("goback",this.goback);
+      console.log("goback",this.goback);
    },
    methods:{
       openLoginModal(){
          EventBus.$emit("open-login-modal")
          console.log("click");
       },
+      openCardModal(){
+         //EventBus.$emit("open-card-modal")
+         console.log("card");
+         $("#card-modal").modal("show");
+      },
       goHome(){
+         EventBus.$emit("open-card-modal")
          this.$router.push("/")
       }
    }
