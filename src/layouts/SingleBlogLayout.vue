@@ -1,20 +1,20 @@
 <template>
   <div>
-    <AppHeader/>
-    <AppBanner />
-    <router-view />
-    <AppFooter/>
+   <AppHeader  goback="true" />
+   <router-view></router-view>
+   <AppFooter/>
+
   </div>
 </template>
 <script>
-import AppBanner from "@/components/AppBanner"
 import AppFooter from "@/components/AppFooter";
 import AppHeader from "@/components/AppHeader";
 export default {
-  components: {
+  components:{
     AppHeader,
-    AppBanner,
     AppFooter
+
   }
-};
+  
+}
 </script>
