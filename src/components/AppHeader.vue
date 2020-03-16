@@ -1,7 +1,7 @@
 <template>
    <div>
       <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" id="custom-navbar">
-         <a class="navbar-brand" href="#">
+         <a class="navbar-brand" href="#" @click="openHeaderModal">
             <img src="../assets/img/Hamburger-icon.jpg" alt="hamburger" class="hamburger" id="icon" />
          </a>
          <div v-if="goback=='true'" class="go-section">
@@ -44,12 +44,14 @@
 
       </nav>
       <CardModal/>
+      <HeaderModal/>
    </div>
 </template>
 
 <script>
 import EventBus from "@/plugins/eventBus"
 import CardModal from "@/components/CardModal";
+import HeaderModal from "@/components/HeaderModal";
 
 export default {
    props:{
@@ -59,6 +61,7 @@ export default {
    },
    components:{
       CardModal,
+      HeaderModal
 
    },
    created(){
@@ -77,6 +80,11 @@ export default {
       goHome(){
          EventBus.$emit("open-card-modal")
          this.$router.push("/")
+      },
+      openHeaderModal(){
+         console.log("openHeaderModal");
+         $("#header-modal").modal("show");
+         
       }
    }
 };
