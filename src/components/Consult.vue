@@ -120,4 +120,15 @@ export default {
       }
    }
 }
+@media screen and (max-width: 576px) {
+   .consult {
+      .opt-container {
+         width: 100%;
+         padding: 0 0.5rem;
+      }
+      button.next {
+         width: calc(100% - 1rem);
+      }
+   }
+}
 </style>
