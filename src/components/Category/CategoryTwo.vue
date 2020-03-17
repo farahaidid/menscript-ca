@@ -59,9 +59,6 @@ export default {
         };
       }
     }
-  },
-  mounted() {
-    console.log("rx", this.data.image);
   }
 };
 </script>

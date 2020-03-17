@@ -1,7 +1,7 @@
 <template>
    <div>
       <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" id="custom-navbar">
-         <a class="navbar-brand" href="#">
+         <a class="navbar-brand" href="#" @click="openHeaderModal">
             <img src="../assets/img/Hamburger-icon.jpg" alt="hamburger" class="hamburger" id="icon" />
          </a>
          <div v-if="goback=='true'" class="go-section">
@@ -33,36 +33,58 @@
                <li class="nav-item">
                   <router-link to class="nav-link" href="#">SEARCH</router-link>
                </li>
-               <li class="nav-item">
-                  <router-link to="/category" class="nav-link" href="#">CARD</router-link>
+               <li class="nav-item" @click="openCardModal">
+                  <router-link to class="nav-link" href="#">CARD</router-link>
                </li>
                <li @click="openLoginModal" class="nav-item">
                   <router-link to class="nav-link" href="#" >ACCOUNT</router-link>
                </li>
             </ul>
          </div>
+
       </nav>
+      <CardModal/>
+      <HeaderModal/>
    </div>
 </template>
 
 <script>
 import EventBus from "@/plugins/eventBus"
+import CardModal from "@/components/CardModal";
+import HeaderModal from "@/components/HeaderModal";
+
 export default {
    props:{
       goback:{
          type:String,
       }
    },
+   components:{
+      CardModal,
+      HeaderModal
+
+   },
    created(){
-console.log("goback",this.goback);
+      console.log("goback",this.goback);
    },
    methods:{
       openLoginModal(){
          EventBus.$emit("open-login-modal")
          console.log("click");
       },
+      openCardModal(){
+         //EventBus.$emit("open-card-modal")
+         console.log("card");
+         $("#card-modal").modal("show");
+      },
       goHome(){
+         EventBus.$emit("open-card-modal")
          this.$router.push("/")
+      },
+      openHeaderModal(){
+         console.log("openHeaderModal");
+         $("#header-modal").modal("show");
+         
       }
    }
 };

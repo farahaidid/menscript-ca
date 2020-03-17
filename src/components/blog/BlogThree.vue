@@ -2,6 +2,7 @@
   <div>
     <div class="container-fluid ">
       <div class="row">
+         <router-link to="/singleblog" class="router-link">
         <div class="col-md-6 align_center bg-white pl-0 mb-26">
           <div class="five-section-text w-75 mx-auto">
             <h2 class="title" v-if="data.name == 'blogThree'">
@@ -32,6 +33,7 @@
             v-if="data.name == 'blogThree'"
           />
         </div>
+         </router-link>
       </div>
     </div>
   </div>
