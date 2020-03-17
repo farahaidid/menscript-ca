@@ -4,38 +4,40 @@
          <i @click="$emit('close')" class="c-close fal fa-times"></i>
          <h5 class="app-name">MENSCRIPT</h5>
          <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white pt-3">
-               <ul class="navbar-nav">
-                  <li
-                     @click="activeTab='Login'"
-                     class="nav-item mx-1"
-                     :class="activeTab=='Login'&&'active'"
-                  >
-                     <router-link to="/login" class="nav-link">Login</router-link>
-                  </li>
-                  <li
-                     @click="activeTab='Consult'"
-                     class="nav-item mx-1"
-                     :class="activeTab=='Consult'&&'active'"
-                  >
-                     <router-link to="/consult" class="nav-link">Consult</router-link>
-                  </li>
-                  <li class="nav-item mx-1">
-                     <router-link to="/anbeveling" class="nav-link">Anbeveling</router-link>
-                  </li>
+            <nav class="navbar navbar-expand-lg navbar-light">
+               <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+               >
+                  <span class="navbar-toggler-icon"></span>
+               </button>
 
-                  <li class="nav-item mx-1">
-                     <router-link to="/verificatie" class="nav-link">Verificatie</router-link>
-                  </li>
-                  <li class="nav-item mx-1">
-                     <router-link to="/betaling" class="nav-link">Betaling</router-link>
-                  </li>
-               </ul>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav">
+                     <li
+                        v-for="(item,i) in navItems"
+                        :key="i"
+                        @click="activeTab=item"
+                        :class="activeTab==item&&'active'"
+                        class="nav-item mx-1"
+                     >
+                        <router-link :to="`/${item.toLowerCase()}`" class="nav-link">{{item}}</router-link>
+                     </li>
+                  </ul>
+               </div>
             </nav>
          </div>
       </header>
       <Login v-if="activeTab=='Login'" />
       <Consult v-else-if="activeTab=='Consult'" />
+      <Voorkeur v-else-if="activeTab=='Voorkeur'" />
+      <Verificate v-else-if="activeTab=='Verificate'" />
+      <Betaling v-else-if="activeTab=='Betaling'" />
    </div>
 </template>
 
@@ -43,15 +45,22 @@
 // Components
 import Login from "./Login";
 import Consult from "./Consult";
+import Voorkeur from "./Voorkeur";
+import Verificate from "./Verificate";
+import Betaling from "./Betaling";
 
 export default {
    name: "login-modal",
    components: {
       Login,
-      Consult
+      Consult,
+      Voorkeur,
+      Verificate,
+      Betaling
    },
    data: () => ({
-      activeTab: "Consult"
+      activeTab: "Betaling",
+      navItems: ["Login", "Consult", "Voorkeur", "Verificate", "Betaling"]
    })
 };
 </script>
@@ -63,8 +72,14 @@ export default {
    left: 0;
    width: 100%;
    height: 100vh;
-   background-color: white;
+   background-color: #fbfbfa;
    overflow-y: auto;
+   li a {
+      color: #c1c4c6 !important;
+   }
+   li.active a {
+      color: #2f2f2f !important;
+   }
    .c-close {
       position: absolute;
       font-size: 1.5em;
@@ -84,6 +99,25 @@ export default {
       letter-spacing: 1px;
       transform: translate(-50%, -50%);
       z-index: 10;
+   }
+}
+
+@media screen and (max-width: 991px) {
+   #login-modal {
+      .c-close {
+         left: unset;
+         right: 1.6rem;
+      }
+      .container {
+         margin: 0 !important;
+      }
+   }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+   #login-modal {
+      .app-name {
+         left: calc(50% + 2rem);
+      }
    }
 }
 </style>
