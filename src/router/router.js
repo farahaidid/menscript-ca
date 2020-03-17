@@ -28,7 +28,7 @@ const routes = [
   }, 
   {
     path: '/singleblog',
-    component: loadLayout("BlogLayout"),
+    component: loadLayout("SingleBlogLayout"),
     children: [
       { path: '', component: loadView("SingleBlog") },
     ]

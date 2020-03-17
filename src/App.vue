@@ -5,22 +5,20 @@
 
     <!-- Contents -->
     <div v-else>
-      <AppHeader />
+      <!-- <AppHeader /> -->
       <router-view />
-      <AppFooter />
+      <!-- <AppFooter /> -->
     </div>
   </div>
 </template>
 <script>
-import AppFooter from "@/components/AppFooter";
-import AppHeader from "@/components/AppHeader";
+//import AppFooter from "@/components/AppFooter";
+//import AppHeader from "@/components/AppHeader";
 import LoginModal from "@/components/LoginModal";
 import EventBus from "@/plugins/eventBus";
 export default {
   name: "App",
   components: {
-   AppHeader,
-   AppFooter,
    LoginModal,
   },
   data: () => ({

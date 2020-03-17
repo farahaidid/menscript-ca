@@ -4,6 +4,12 @@
          <a class="navbar-brand" href="#">
             <img src="../assets/img/Hamburger-icon.jpg" alt="hamburger" class="hamburger" id="icon" />
          </a>
+         <div v-if="goback=='true'" class="go-section">
+           <p class="go-back">
+            <i class="fal fa-angle-left"></i><i class="fal fa-angle-left"></i
+            ><i class="fal fa-angle-left"></i> Go back
+          </p>
+         </div>
 
          <button
             class="navbar-toggler"
@@ -42,9 +48,18 @@
 <script>
 import EventBus from "@/plugins/eventBus"
 export default {
+   props:{
+      goback:{
+         type:String,
+      }
+   },
+   created(){
+console.log("goback",this.goback);
+   },
    methods:{
       openLoginModal(){
          EventBus.$emit("open-login-modal")
+         console.log("click");
       },
       goHome(){
          this.$router.push("/")
@@ -69,27 +84,63 @@ nav#custom-navbar {
 li.nav-item {
    margin-left: 89px;
 }
+.go-back {
+    font-size: 12px;
+    position: absolute;
+    z-index: 9999;
+    top: 20px;
+    left: 13%;
+}
 
 /* responsive  */
-
-@media (min-width: 768px) {
+/* Small devices */
+@media screen and (max-width: 640px) {
+    .go-back {
+    
+    left: 10%;
+}
+img#icon {
+    visibility: hidden;
+}
+}
+/* medium phone  */
+@media screen and (min-width: 641px) and (max-width: 768px) {
    li.nav-item {
       margin-left: 2%;
    }
+   .go-back {
+    
+    left: 10%;
 }
-@media (min-width: 1200px) {
-   li.nav-item {
-      margin-left: 89px;
-   }
+img#icon {
+    visibility: hidden;
 }
-@media screen and (max-width: 767px) {
-   #icon {
-      display: none;
-   }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+   
+   li.nav-item[data-v-bb50a5e4] {
+    margin-left: 17px;
+}
    .container.custom-margin {
       /* text-align: center; */
       display: flex;
       justify-content: center;
+   }
+   .go-back {
+    
+    left: 12%;
+}
+}
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) and (max-width: 1300px) {
+    /* default style */
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1300px) {
+   li.nav-item {
+      margin-left: 89px;
    }
 }
 </style>

@@ -90,7 +90,6 @@ a.blog-list-menu-link.router-link-active {
     padding: 10px 10px;
     text-align: center;
     margin-right: 2px;
-   
     font-family: avenir Heavy;
     font-size: 16px;
 }
@@ -121,7 +120,7 @@ a.blog-list-menu-link.router-link-active {
         font-size: 24px;
     }
     img.blog-img {
-        width: 60%;
+        height: 300px;
     }
     /* blog detail */
     h1.blog-title.text-center {
@@ -144,12 +143,14 @@ a.blog-list-menu-link.router-link-active {
         transform: rotate(90deg);
         font-size: 12px;
     }
-    .go-back {
+    
+    a.blog-list-menu-link.router-link-active {
+        color: black;
+        padding: 10px 10px;
+        text-align: center;
+        margin-right: 2px;
+        font-family: avenir Heavy;
         font-size: 12px;
-        position: absolute;
-        z-index: 9999;
-        top: -14%;
-        left: 0%;
     }
     
    
@@ -160,9 +161,6 @@ a.blog-list-menu-link.router-link-active {
     .title {
         font-size: 20px;
         text-align: center;
-    }
-    img.blog-img {
-        width: 50%;
     }
     h1.blog-title.text-center {
         font-size: 22px;
@@ -177,12 +175,9 @@ a.blog-list-menu-link.router-link-active {
         transform: rotate(90deg);
         font-size: 12px;
     }
-    .go-back {
-        font-size: 12px;
-        position: absolute;
-        z-index: 9999;
-        top: -14%;
-        left: 0%;
+    
+    img.blog-img {
+        height: 300px;
     }
 }
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -207,13 +202,7 @@ a.blog-list-menu-link.router-link-active {
         transform: rotate(90deg);
         font-size: 12px;
     }
-    .go-back {
-        font-size: 12px;
-        position: absolute;
-        z-index: 9999;
-        top: -9%;
-        left: 7%;
-    }
+   
 }
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) and (max-width: 1300px) {
