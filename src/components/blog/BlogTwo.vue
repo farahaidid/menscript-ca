@@ -1,6 +1,8 @@
 <template>
   <div>
      <div class="">
+        <router-link to="/singleblog" class="router-link">
+
          <div class="row margin-five ">
         <div class="col-md-6 max-height-716 pl pr align_center">
           <img
@@ -19,6 +21,8 @@
           </div>
         </div>
       </div>
+        </router-link>
+
      </div>
   </div>
 </template>

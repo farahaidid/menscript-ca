@@ -13,6 +13,9 @@ img{
 a:hover{
     text-decoration: none;
 }
+.router-link{
+    display: contents!important;
+}
 
 
 /* Small devices */
@@ -20,6 +23,12 @@ a:hover{
     .text-sm-center{
         text-align: center;
     
+    }
+    .pl {
+        padding-left: 0px!important;
+    }
+    .pr {
+        padding-right: 0px!important;
     }
 }
 
