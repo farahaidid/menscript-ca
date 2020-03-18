@@ -20,10 +20,12 @@ const routes = [
     ]
   },
   {
-    path: '/product',
+    path: '/',
     component: loadLayout("ProductLayout"),
     children: [
-      { path: '', component: loadView("Product") },
+      { path: 'product', component: loadView("Product") },
+      { path: 'privacy', component: loadView("Privacy") },
+      { path: 'account', component: loadView("Account") },
     ]
   }, 
   {
@@ -37,6 +39,7 @@ const routes = [
 
 const router = new VueRouter({
     routes,
+    hasbang:false,
     mode:'history',
 });
 export default router

@@ -31,10 +31,10 @@
           <CategoryOne />
         </div>
         <div class="col-md-3">
-          <CategoryTwo :data="RX" />
+          <CategoryTwo :data="rx" />
         </div>
         <div class="col-md-3">
-          <CategoryTwo :data="OTC" />
+          <CategoryTwo :data="otc" />
         </div>
       </div>
       <div class="row mt-4">
@@ -42,10 +42,10 @@
           <CategoryOne />
         </div>
         <div class="col-md-3">
-          <CategoryTwo :data="RX" />
+          <CategoryTwo :data="rx" />
         </div>
         <div class="col-md-3">
-          <CategoryTwo :data="OTC" />
+          <CategoryTwo :data="otc" />
         </div>
       </div>
     </div>
@@ -71,22 +71,14 @@ export default {
       rx: {
         name: "rx",
         image: require("@/assets/img/category-2.jpg"),
-        btnText: " Start online consult"
+        btnText: "Start online consult",
+        text1: "Shampoo revitalising"
       },
       otc: {
         name: "otc",
         image: require("@/assets/img/category-3.jpg"),
-        btnText: "  Voeg toe aan mandje"
-      },
-      RX: {
-        name: "RX",
-        image:require("@/assets/img/category-2.jpg"),
-        text1: "Shampoo revitalising"
-      },
-      OTC: {
-        name: "OTC",
-       image:require( "@/assets/img/category-3.jpg"),
-        text1: "Conditioner volumniser"
+         text1: "Conditioner volumniser",
+        btnText: "Voeg toe aan mandje"
       },
       blogThree: {
         name: "blogThree",

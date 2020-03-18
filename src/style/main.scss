@@ -1,6 +1,7 @@
 .bg-white{
     background-color: white!important;
 }
+
 .align_center{
     display: flex;
     justify-content: center;
@@ -12,6 +13,10 @@ img{
 }
 a:hover{
     text-decoration: none;
+    color:black;
+}
+a{
+    color:black;
 }
 .router-link{
     display: contents!important;

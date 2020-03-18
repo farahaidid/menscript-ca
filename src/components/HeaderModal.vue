@@ -4,10 +4,6 @@
     <div class="modal" id="header-modal">
       <div class="modal-dialog modal-xl">
         <div class="modal-content">
-          <!-- <button type="button" class="close" data-dismiss="modal">
-            &times;
-          </button> -->
-
           <!-- Modal Header -->
           <div class="modal-header">
             <div class="container-fluid">
@@ -39,32 +35,36 @@
                     <li class="link">
                       HAIR
                       <div class="dropdown-content">
-                        <a href="#" class="dropdown-link">Link 1</a>
-                        <a href="#" class="dropdown-link">Link 2</a>
-                        <a href="#" class="dropdown-link">Link 3</a>
+                        <a href="#" class="dropdown-link"> finasteride</a>
+                        <a href="#" class="dropdown-link">minoxidil</a>
+                        <a href="#" class="dropdown-link">shampoo</a>
+                        <a href="#" class="dropdown-link">conditioner</a>
                       </div>
                     </li>
                     <li class="link">
                       SKIN
                       <div class="dropdown-content">
-                        <a href="#" class="dropdown-link">Link 1</a>
-                        <a href="#" class="dropdown-link">Link 2</a>
-                        <a href="#" class="dropdown-link">Link 3</a>
+                        <a href="#" class="dropdown-link">daycream</a>
+                        <a href="#" class="dropdown-link">nightcream</a>
+                        <a href="#" class="dropdown-link">tretinoin</a>
                       </div>
                     </li>
-                    <li class="link">BLOG</li>
+                    <li class="link" @click="goblog">
+                      Blog
+                    
+                      </li>
                     <li class="link">ABOUT</li>
                     <li class="link">CONTACT US</li>
                   </ul>
                 </div>
-                <div class="col-md-3 pr-lg-0">
+                <div class="col-md-3 pr-lg-0 pr-md-0 text-sm-center">
                   <img
                     src="@/assets/img/category-2.jpg"
                     alt="header-modal-img"
                     class="header-modal-img"
                   />
                 </div>
-                <div class="col-md-3 pl-lg-0">
+                <div class="col-md-3 pl-lg-0 pl-md-0 text-sm-center ">
                   <img
                     src="@/assets/img/face.png"
                     alt=""
@@ -81,7 +81,15 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods:{
+    goblog(){
+      console.log("fgh");
+       $("#header-modal").modal("hide");
+        this.$router.push({path:'blog'});
+    }
+  }
+};
 </script>
 
 <style scoped lang="scss">
@@ -89,6 +97,10 @@ export default {};
   min-width: 100% !important;
 
   top: -29px !important;
+  .a{
+    color:black!important;
+
+  }
   .modal-header {
     border: none !important;
   }
@@ -104,13 +116,13 @@ export default {};
     display: inline-block;
     color: black;
     font-family: Montserrat;
-
   }
   li.link {
     list-style-type: none;
     margin-bottom: 8px;
     font-family: Avenir Medium;
-}
+    cursor: pointer;
+  }
   a.dropdown-link {
     display: block;
     /* background-color: red; */
@@ -119,6 +131,60 @@ export default {};
     margin-left: 37px;
     color: black;
     text-decoration: none;
+  }
 }
+/* Small devices */
+@media screen and (max-width: 640px) {
+  .text-sm-center {
+    text-align: center;
+  }
+  .pl {
+    padding-left: 0px !important;
+  }
+  .pr {
+    padding-right: 0px !important;
+  }
+  .modal-dialog.modal-xl {
+    min-width: 100% !important;
+    top: 203px !important;
+   
+}
+ .modal-dialog.modal-xl li.link {
+    font-size: 13px;
+   
+  }
+img.header-modal-img {
+    height: 262px !important;
+    width: 306px;
+}
+  
+}
+
+/* medium phone  */
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  img.header-modal-img {
+      height: 350px!important;
+      width: 60%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  img.header-modal-img {
+    width: 100%;
+    height: 75%;
+}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) and (max-width: 1300px) {
+  /* default style */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1300px) {
+  img.header-modal-img {
+    max-height: 490px !important;
+  }
 }
 </style>
