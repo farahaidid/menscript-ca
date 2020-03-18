@@ -5,7 +5,7 @@
             <img src="../assets/img/Hamburger-icon.jpg" alt="hamburger" class="hamburger" id="icon" />
          </a>
          <div v-if="goback=='true'" class="go-section">
-           <p class="go-back">
+           <p class="go-back " @click="goblog">
             <i class="fal fa-angle-left"></i><i class="fal fa-angle-left"></i
             ><i class="fal fa-angle-left"></i> Go back
           </p>
@@ -16,6 +16,7 @@
             type="button"
             data-toggle="collapse"
             data-target="#collapsibleNavbar"
+           
          >
             <img src="../assets/img/Hamburger-icon.jpg" alt="hamburger" class="hamburger" />
          </button>
@@ -24,7 +25,9 @@
             <div class="container custom-margin">
                <div class="row">
                   <div class="col-sm-12 text-center">
-                     <h4 @click="goHome">MENSCRIPT</h4>
+                     <h4 > 
+                       <router-link to="/">MENSCRIPT</router-link>
+                         </h4>
                   </div>
                </div>
             </div>
@@ -39,7 +42,55 @@
                <li @click="openLoginModal" class="nav-item">
                   <router-link to class="nav-link" href="#" >ACCOUNT</router-link>
                </li>
+               <div class="header-sm-modal">
+                  <div class="row">
+                <div class="col-md-6 pl-5">
+                  <p>MENU</p>
+                  <ul>
+                    <li class="link">
+                      HAIR
+                      <div class="dropdown-content">
+                        <a href="#" class="dropdown-link"> finasteride</a>
+                        <a href="#" class="dropdown-link">minoxidil</a>
+                        <a href="#" class="dropdown-link">shampoo</a>
+                        <a href="#" class="dropdown-link">conditioner</a>
+                      </div>
+                    </li>
+                    <li class="link">
+                      SKIN
+                      <div class="dropdown-content">
+                        <a href="#" class="dropdown-link">daycream</a>
+                        <a href="#" class="dropdown-link">nightcream</a>
+                        <a href="#" class="dropdown-link">tretinoin</a>
+                      </div>
+                    </li>
+                    <li class="link" @click="goblog">
+                      Blog
+                    
+                      </li>
+                    <li class="link">ABOUT</li>
+                    <li class="link">CONTACT US</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 pr-lg-0 pr-md-0 text-sm-center">
+                  <img
+                    src="@/assets/img/category-2.jpg"
+                    alt="header-modal-img"
+                    class="header-modal-img"
+                  />
+                </div>
+                <div class="col-md-3 pl-lg-0 pl-md-0 text-sm-center ">
+                  <img
+                    src="@/assets/img/face.png"
+                    alt=""
+                    class="header-modal-img"
+                  />
+                </div>
+              </div>
+
+               </div>
             </ul>
+
          </div>
 
       </nav>
@@ -64,17 +115,13 @@ export default {
       HeaderModal
 
    },
-   created(){
-      console.log("goback",this.goback);
-   },
    methods:{
       openLoginModal(){
          EventBus.$emit("open-login-modal")
-         console.log("click");
+        
       },
       openCardModal(){
-         //EventBus.$emit("open-card-modal")
-         console.log("card");
+        
          $("#card-modal").modal("show");
       },
       goHome(){
@@ -82,8 +129,12 @@ export default {
          this.$router.push("/")
       },
       openHeaderModal(){
-         console.log("openHeaderModal");
+       
          $("#header-modal").modal("show");
+         
+      },
+      goblog(){
+         this.$router.push({path:'blog'})
          
       }
    }
@@ -99,6 +150,7 @@ nav#custom-navbar {
    background-color: #fbfbfa !important;
    margin-bottom: 50px !important;
 }
+
 .navbar-dark .navbar-nav .nav-link {
    color: #2f2f2f;
    font-family: Montserrat;
@@ -112,7 +164,31 @@ li.nav-item {
     z-index: 9999;
     top: 20px;
     left: 13%;
+    cursor: pointer;
 }
+.header-sm-modal {
+    display: none;
+}
+.nav-link {
+    display: inline-block;
+    color: black;
+    font-family: Montserrat;
+  }
+  li.link {
+    list-style-type: none;
+    margin-bottom: 8px;
+    font-family: Avenir Medium;
+    cursor: pointer;
+  }
+  a.dropdown-link {
+    display: block;
+    /* background-color: red; */
+    width: 100px;
+    /* left: 32px; */
+    margin-left: 37px;
+    color: black;
+    text-decoration: none;
+  }
 
 /* responsive  */
 /* Small devices */
@@ -124,6 +200,24 @@ li.nav-item {
 img#icon {
     visibility: hidden;
 }
+.header-sm-modal {
+    display: block;
+}
+.navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: scroll;
+    height: 100vh;
+}
+img.header-modal-img {
+    height: 262px !important;
+    width: 306px;
+}
+
 }
 /* medium phone  */
 @media screen and (min-width: 641px) and (max-width: 768px) {
@@ -136,6 +230,23 @@ img#icon {
 }
 img#icon {
     visibility: hidden;
+}
+.header-sm-modal {
+    display: block;
+}
+img.header-modal-img {
+      height: 350px!important;
+      width: 60%;
+    }
+    .navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: scroll;
+    height: 100vh;
 }
 }
 
