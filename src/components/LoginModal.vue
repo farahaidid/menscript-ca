@@ -59,7 +59,7 @@ export default {
       Betaling
    },
    data: () => ({
-      activeTab: "Betaling",
+      activeTab: "Login",
       navItems: ["Login", "Consult", "Voorkeur", "Verificate", "Betaling"]
    })
 };
