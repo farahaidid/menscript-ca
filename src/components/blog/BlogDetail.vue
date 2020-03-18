@@ -5,14 +5,6 @@
         <div
           class="col-md-12 col-sm-12 col-lg-10 mx-lg-auto text-pull-right position-relative"
         >
-        <!-- <div class="go-section">
-
-          <p class="go-back">
-            <i class="fal fa-angle-left"></i><i class="fal fa-angle-left"></i
-            ><i class="fal fa-angle-left"></i> Go back
-          </p>
-        </div> -->
-
           <div class="image-section position-relative">
             <img
               src="@/assets/img/singleblog/singleblog.jpg"
