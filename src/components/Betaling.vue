@@ -3,14 +3,14 @@
       <h1 class="text-center mt-5 mb-4">Betaling</h1>
       <div class="container text-center">
          <div class="bt-container mx-auto text-left row">
-            <div class="col-md-6 w-100 pr-5">
+            <div class="col-md-6 w-100 pr-5 left-col">
                <div class="form mb-4">
                   <h5 class="mb-4">1. Details</h5>
-                  <div class="row m-0">
+                  <div class="row m-0 inputs-row">
                      <div class="col-md-5 pl-0 mb-3">
                         <input type="text" placeholder="Voornaam" />
                      </div>
-                     <div class="col-md-7 px-0">
+                     <div class="col-md-7 px-0 mb-3">
                         <input type="text" placeholder="Achternaam" />
                      </div>
                      <div class="col-md-12 px-0 pb-3">
@@ -19,13 +19,13 @@
                      <div class="col-md-6 pl-0 mb-3">
                         <input type="text" placeholder="Stad" />
                      </div>
-                     <div class="col-md-6 px-0">
+                     <div class="col-md-6 px-0 mb-3">
                         <input type="text" placeholder="Post code" />
                      </div>
                      <div class="col-md-6 pl-0 mb-3">
                         <input type="text" placeholder="LAND" />
                      </div>
-                     <div class="col-md-6 px-0">
+                     <div class="col-md-6 px-0 mb-3">
                         <input type="text" placeholder="Mobiel nummer" />
                      </div>
                      <div class="col-md-12 px-0">
@@ -208,6 +208,19 @@ p {
       .bt-container {
          width: 100%;
          padding: 0 0.5rem;
+         .inputs-row {
+            div {
+               padding: 0;
+            }
+         }
+         .left-col {
+            padding: 0 !important;
+         }
+         .desteloverzicht {
+            padding-left: 0 !important;
+            padding-right: 0;
+            margin-top: 2rem !important;
+         }
       }
       button {
          width: calc(100% - 1rem);

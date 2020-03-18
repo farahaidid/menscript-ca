@@ -1,8 +1,8 @@
 <template>
    <div class="custom-checkbox">
-      <input @change="handleChange" :id="id" type="checkbox" :checked="checked" />
+      <input @change="handleChange" :id="id" type="checkbox" :checked="chckd" />
       <label :for="id">
-         <span @click="()=> false">{{label}}</span>
+         <span>{{label}}</span>
       </label>
    </div>
 </template>
@@ -19,11 +19,21 @@ export default {
    data: () => ({
       id: Math.random()
          .toString(36)
-         .slice(-3)
+         .slice(-3),
+      chckd: false
    }),
+   created() {
+      this.chckd = this.checked;
+   },
    methods: {
-      handleChange({ target: { checked } }) {
-         this.$emit("change", checked);
+      handleChange() {
+         this.chckd = !this.chckd;
+         this.$emit("change", this.chckd);
+      }
+   },
+   watch: {
+      checked(v) {
+         if (this.chckd !== v) this.chckd = v;
       }
    }
 };
@@ -42,8 +52,7 @@ export default {
          span {
             margin-left: 1rem;
             color: #555555;
-            text-decoration: none;
-            pointer-events: none;
+            user-select: none;
          }
       }
       & + label:before {
@@ -70,7 +79,7 @@ export default {
          content: "";
          display: block;
          position: absolute;
-         left: 5.8px;
+         left: 5.4px;
          top: 8px;
          width: 5px;
          height: 8px;

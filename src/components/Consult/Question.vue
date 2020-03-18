@@ -7,7 +7,7 @@
             :class="opt.selected&&'selected'"
             class="option px-4 py-3 mt-2"
          >
-            <Checkbox :checked="opt.selected" :label="opt.title" />
+            <Checkbox @change="v=>opt.selected=v" :checked="opt.selected" :label="opt.title" />
          </div>
          <div v-if="opt.desc">
             <textarea type="text" v-model="opt.description" :placeholder="opt.hint" />
