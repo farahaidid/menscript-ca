@@ -1,6 +1,7 @@
 <template>
+  
   <div>
-     <Account class="product-page" :data="Bestellingen"/>
+       <Account class="product-page" :data="Abonnement"/>
   </div>
 </template>
 
@@ -13,15 +14,16 @@ components:{
     
 },
 data(){
-  return{
-      Bestellingen: {
-        title: "Bestellingen",
+    return{
+        Abonnement: {
+        title: "Abonnement",
         list:["Overicht","Abonnement","Bestellingen","Addressen","Logout"],
-        thead:["Order#","Datum","Bataalststus","Gp status","Verzendststus","Invoice"]
+        thead:["ID","product","Bestellingen","Frequentie","Amount","Status"]
 
        
       },
-  }
+
+    }
 }
 
 }
