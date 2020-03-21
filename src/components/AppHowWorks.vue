@@ -5,7 +5,7 @@
         <div class="col-sm-12">
           <h1 class="title padding-112 text-center">Hoe het werkt?</h1>
         </div>
-        <div class="col-md-4 col-sm-12 text-sm-center max-height-phone-img">
+        <div class="col-md-4 col-sm-12  max-height-phone-img">
           <img
             src="../assets/img/phone-one.jpg"
             alt
@@ -19,7 +19,7 @@
             </p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12 text-sm-center max-height-phone-img">
+        <div class="col-md-4 col-sm-12  max-height-phone-img">
           <img src="../assets/img/phone.jpg" alt class="phone-img margin-img" />
           <div class="works-text">
             <p class="works-text-heading">Voorkeur & Verificatie</p>
@@ -29,14 +29,14 @@
             </p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12 text-sm-center max-height-phone-img">
+        <div class="col-md-4 col-sm-12  max-height-phone-img">
           <img
             src="../assets/img/phone-one.jpg"
             alt
             class="phone-img margin-img"
           />
           <div class="works-text">
-            <p class="works-text-heading ml-3">
+            <p class="works-text-heading">
               Krijg je medicatie thuisgeleverd
             </p>
             <p class="subtitle">
@@ -46,7 +46,7 @@
           </div>
         </div>
         <div class="col-sm-12 text-center">
-          <button class="btn custom-btn mb-4">Start consult</button>
+          <button class="btn custom-btn mb-4">Start Consult</button>
         </div>
       </div>
     </div>
@@ -60,22 +60,26 @@ img {
 .width-75 {
   width: 75%;
 }
+img.phone-img.margin-img {
+    max-height: 233px;
+  }
 .padding-112 {
   padding: 40px 0px;
 }
 p.works-text-heading {
-  font-size: 14px;
+  font-size: 32px;
   font-weight: 600;
   margin-top: 12px;
-  height: 40px;
+  height: 70px;
   /* padding: 10px 0px; */
 }
 .custom-btn {
-  background-color: black;
-  color: #ffffff;
-  width: 315px;
-  height: 62px;
-  padding: 0px;
+    background-color: black;
+    color: #ffffff;
+    width: 315px;
+    height: 59px;
+    padding: 0px;
+    font-size: 24px;
 }
 .how-it-works {
   margin-top: 58px;
@@ -86,20 +90,21 @@ p.works-text-heading {
   .width-75 {
     width: 100%;
   }
-  img.phone-img.margin-img {
-    width: 70%;
+img.phone-img.margin-img {
+    max-height: 233px;
   }
   .text-sm-center {
     text-align: center;
   }
 
   .padding-112 {
-    padding: 40px 0px;
-  }
+    padding: 26px 0px;
+}
   p.works-text-heading {
     text-align: center;
     font-size: 16px;
     margin-top: 10px;
+    height: 30px;
   }
   .custom-btn {
     width: auto;
@@ -122,22 +127,23 @@ p.works-text-heading {
     width: 100%;
   }
   img.phone-img.margin-img {
-    width: 70%;
+    max-height: 233px;
   }
   .text-sm-center {
     text-align: center;
   }
-  p.works-text-heading {
+  p.works-text-heading{
     text-align: center;
     font-size: 18px;
     margin-top: 10px;
-  }
+    height: 30px;
+}
   .padding-112 {
     padding: 20px 0px;
   }
-  .title {
+  /* .title {
     font-size: 20px;
-  }
+  } */
   .how-it-works {
     margin-top: 20px;
     padding-bottom: 0px;
@@ -149,26 +155,26 @@ p.works-text-heading {
 }
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  p.works-text-heading {
-    font-size: 14px;
-    margin-top: 10px;
-    height: 54px;
-  }
+  p.works-text-heading{
+    font-size: 18px;
+}
   .custom-btn {
     width: 267px;
     height: 54px;
   }
 }
 /* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) and (max-width: 1300px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
   /* default style */
+   p.works-text-heading{
+    font-size: 23px;
+}
 }
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1300px) {
-  p.works-text-heading {
-    text-align: center;
-    font-size: 18px;
-    margin-top: 10px;
-  }
+@media screen and (min-width:1200px) and (max-width: 1450px) {
+  p.works-text-heading{
+    font-size: 26px;
+}
+ 
 }
 </style>

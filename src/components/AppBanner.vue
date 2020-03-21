@@ -6,10 +6,11 @@
       <div class="row">
         <div class="col-md-12 padding">
           <div class="banner position-relative">
-            <p class="scroll">Scroll</p>
+            <p class="scroll">scroll</p>
             <img src="../assets/img/banner.jpg" alt class="banner-img" />
 
             <div class="banner-text">
+
               <h1 class="banner-title">Mannen. wij zijn er voor je!</h1>
               <p class="w-50 text-justify text-mb banner-p">
                 We zijn er om zelfzorg voor mannen te destigmatiseren en brengen
@@ -34,32 +35,35 @@
 
 .banner {
   /* float: right; */
-  margin-bottom: 70px;
+  margin-bottom: 174px;
 }
 .banner-img {
   width: 95%;
-  height: 100%;
+  max-height: 890px;
   margin-left: 5%;
 }
 .banner-text {
-  position: absolute;
-  top: 0;
+    position: absolute;
+    top: 18%;
+    left: 11%;
+   
 }
 .scroll {
   position: absolute;
-  left: 0em;
+  left: -18px;
   bottom: 6em;
   font-family: Montserrat;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
+  font-size: 48px;
 }
 .scroll::before {
   content: "";
   border: 1px solid #252525;
   top: 0.7em;
   position: absolute;
-  left: 4em;
-  width: 43px;
+  left: 3em;
+  width: 41px;
 }
 .padding {
   padding-right: 0px;
@@ -67,15 +71,19 @@
   margin-top: 28px;
 }
 .banner-title {
-  font-size: 72px;
+  font-size: 96px;
+}
+.banner-p{
+  font-size: 24px;
+ 
 }
 .custom-btn {
   background-color: black;
   color: #ffffff;
-  /* padding: 6px 30px; */
-  width: 315px;
+  width: 372px;
   height: 62px;
-  padding: 0px;
+  font-size: 16px;
+ 
 }
 
 /* Small devices */
@@ -93,13 +101,15 @@
   p {
     font-size: 12px;
   }
-  .scroll {
-    right: 95%;
-  }
+  .scroll{
+    
+    font-size: 12px;
+    left: -10px;
+    bottom: 66px;
+}
 
   .scroll::before {
     top: 0.7em;
-
     left: 3.7em;
     width: 40px;
   }
@@ -107,6 +117,9 @@
   .banner-title {
     font-size: 20px;
     margin-bottom: 0px;
+  }
+  .banner-p{
+    font-size: 12px;
   }
   .custom-btn {
     width: 250px;
@@ -139,9 +152,12 @@
   .banner-p {
     font-size: 13px !important;
   }
-  .scroll {
-    font-size: 14px;
-  }
+ .scroll{
+    left: 0px;
+    bottom: 120px;
+    font-size: 15px;
+
+}
 }
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -165,12 +181,15 @@
     font-size: 15px !important;
     height: 78px;
   }
-  .scroll {
-    font-size: 14px;
-  }
+  .scroll{
+    left: 0px;
+    bottom: 120px;
+    font-size: 25px;
+    font-size: 20px;
+}
 }
 /* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) and (max-width: 1300px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
   .banner {
     /* float: right; */
     margin-bottom: 70px;
@@ -187,24 +206,41 @@
   .banner-p {
     font-size: 18px !important;
     height: 110px;
+   
   }
+  .scroll{
+    left: 0px;
+    bottom: 120px;
+    font-size: 25px;
+}
   
 }
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1300px) {
+@media screen and (min-width:1200px) and (max-width: 1450px) {
   .banner {
-    height: 80%;
+    /* float: right; */
+    margin-bottom: 100px;
+    height: 30em;
   }
   .banner-text {
-    /* background-color: blue; */
-    position: absolute;
-    left: 10%;
-    top: 33%;
+    top: 24%;
+    left: 11%;
+    /* background-color: green; */
   }
-
   .banner-title {
-    font-size: 67px;
+    font-size: 72px;
   }
+  .banner-p {
+    font-size: 18px !important;
+    height: 110px;
+    
+  }
+  .scroll{
+    left: 0px;
+    bottom: 120px;
+    font-size: 30px;
+}
+  
 }
 
 </style>
