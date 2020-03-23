@@ -1,8 +1,8 @@
 <template>
 <div>
      <div class="container-fluid width padding">
-       
       <!-- banner-section -->
+      
       <div class="row">
         <div class="col-md-12 padding">
           <div class="banner position-relative">
@@ -11,11 +11,9 @@
 
             <div class="banner-text">
 
-              <h1 class="banner-title">Mannen. wij zijn er voor je!</h1>
+              <h1 class="banner-title">{{ data.title }}</h1>
               <p class="w-50 text-justify text-mb banner-p">
-                We zijn er om zelfzorg voor mannen te destigmatiseren en brengen
-                essentiële medicatie binnen handbereik. Van online artsenconsult
-                tot behandeling. Wij regelen het voor je.
+                {{ data.subtitle }}
               </p>
 
               <button class="btn custom-btn btn-sm consult-btn">
@@ -25,22 +23,50 @@
           </div>
         </div>
       </div>
+
+     <div class="row text-center w-75 logo-div mx-auto">
+        <div class="col-md-4 col-sm-12">
+          <img src="@/assets/img/logo1.png" alt="" class="del logo" />
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <img src="@/assets/img/bbc.png" alt="bbc" class="bbc logo" />
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <img src="@/assets/img/nos.png" alt="" class="nos logo" />
+        </div>
+      </div>
      </div>
 </div>
   
 </template>
+<script>
+export default {
+   props: {
+    data: {
+      type: Object,
+      default() {
+        return {
+          
+        };
+      }
+    }
+  },
+  created(){
+    console.log("data home",this.data);
+  }
+  
+}
+</script>
 
 
 <style scoped>
 
-.banner {
-  /* float: right; */
-  margin-bottom: 174px;
-}
+
 .banner-img {
-  width: 95%;
-  max-height: 890px;
-  margin-left: 5%;
+    /* width: 95%; */
+    max-height: 890px;
+    /* margin-left: 5%; */
+    padding-left: 63px;
 }
 .banner-text {
     position: absolute;
@@ -50,8 +76,8 @@
 }
 .scroll {
   position: absolute;
-  left: -18px;
-  bottom: 6em;
+  left: -34px;
+  bottom: 4em;
   font-family: Montserrat;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
@@ -85,14 +111,24 @@
   font-size: 16px;
  
 }
+.logo {
+    width: 130px;
+    height: 33px;
+}
+.logo-div {
+    
+    padding: 35px 3px;
+}
 
 /* Small devices */
 @media screen and (max-width: 640px) {
   .banner {
     height: 14em;
-    margin-bottom: 45px;
     margin-left: 0px;
   }
+  .banner-img{
+    padding-left: 16px;
+}
   .banner-text {
     top: 17px;
     left: 8%;
@@ -135,7 +171,6 @@
 @media screen and (min-width: 641px) and (max-width: 768px) {
   .banner {
     height: 21em;
-    margin-bottom: 75px;
   }
   .banner-text {
     top: 71px;
@@ -162,7 +197,7 @@
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .banner {
-    margin-bottom: 60px;
+   
     height: 24em;
   }
   .banner-text {
@@ -192,7 +227,7 @@
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .banner {
     /* float: right; */
-    margin-bottom: 70px;
+   
     height: 30em;
   }
   .banner-text {
@@ -219,7 +254,7 @@
 @media screen and (min-width:1200px) and (max-width: 1450px) {
   .banner {
     /* float: right; */
-    margin-bottom: 100px;
+   
     height: 30em;
   }
   .banner-text {

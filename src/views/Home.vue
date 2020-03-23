@@ -1,7 +1,7 @@
 <template>
   <div>
-    <!-- <AppHeader />
-    <AppBanner /> -->
+    
+    <AppBanner :data="home"/> 
     <div class="container-fluid ">
       <div class="row ">
         <div
@@ -52,12 +52,14 @@
   </div>
 </template>
 <script>
+import AppBanner from "@/components/AppBanner"
 import BlogOne from "../components/blog/BlogOne";
 import BlogTwo from "../components/blog/BlogTwo";
 import BlogThree from "../components/blog/BlogThree";
 import HowWorks from "../components/AppHowWorks";
 export default {
   components: {
+    AppBanner,
     BlogOne,
     BlogTwo,
     BlogThree,
@@ -65,11 +67,17 @@ export default {
   },
   data() {
     return {
+
+      home: {
+        name: "home",
+        title: "Skin_",
+        subtitle: "We zijn er om zelfzorg voor mannen te destigmatiseren en brengen essentiële medicatie binnen handbereik. Van online artsenconsult tot behandeling. Wij regelen het voor je."
+      },
       blogOne: {
         name: "blogOne",
         title: "Het Haar",
         text:
-          "Sinds mannen toegang tot spiegels hebben, heerst er de angst dat de hoofdhuid eenzaam wordt. Last van haaruitval? Wij kunnen helpen! Start met een online bezoek, deel je symptomen en medische geschiedenis met een EU-erkende arts en ontvang een persoonlijk behandelplan om je haaruitval te bestrijden. ",
+          "Een dierbar maar kwetsbaar bezit. Varanderlijk op talloze manieren, enkel beperkt door de verbeelding. Het is onder zit.Het wordt gebrukt om te onderscheiden, te imoineren maar bovenal om te verledien. zorg er dus goed voor,verlies het niet! Last vaan haaruitval?start een online consult met een van de artsen binnen ons netwerk om te zien hoe wij je junnen helpen. ",
         image: require("@/assets/img/shave-riversde.jpg"),
         subtitle: "Lees meer: finasteride en haarverlies"
       },
