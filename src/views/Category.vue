@@ -2,6 +2,7 @@
   <div>
     <AppBanner :data="category"/> 
     <hr />
+
     <div class="container-fluid custom-padding ">
       <div class="row mr-custom">
         <div class="col-md-6 pr">
@@ -61,7 +62,8 @@ export default {
        category: {
         name: "home",
         title: "Haarverzorgoing",
-        subtitle: "Wat is het meest dierbare bezit van de man? Geweldig haar?  juist! Zorg er goed voor. Verlies het niet."
+        subtitle: "Wat is het meest dierbare bezit van de man? Geweldig haar?  juist! Zorg er goed voor. Verlies het niet.",
+        button:true,
       },
       rx: {
         name: "rx",

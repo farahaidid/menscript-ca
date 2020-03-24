@@ -5,6 +5,15 @@
       <Product class="product-page"/>
       <BlogOne :data="blogOne" />
       <BlogTwo :data="blogTwo" />
+       <div class="row">
+        <div class="col-sm-12 pr-0 pl-0 max-height-four">
+          <img
+            src="@/assets/img/fourth-section-img.jpg"
+            alt
+            class="fourth-section-img"
+          />
+        </div>
+      </div>
       <div>
         <BlogOne :data="blogThree" />
       </div>
@@ -15,7 +24,6 @@
 <script>
 import Product from '../components/product/AppProduct'
 import AskQuestion from "../components/Category/AskQuestion";
-
 import BlogTwo from "../components/blog/BlogTwo";
 import BlogOne from "../components/blog/BlogOne";
 export default {
@@ -37,9 +45,9 @@ export default {
       },
       blogTwo: {
         name: "blogTwo",
-        title: "Verlies het niet",
+        title: "Effectiviteit",
         text:
-          "Finasteride stopt het haaruitval in meer dan 80% van de gebruikers. Daarnaast ervaart de helft van de gebruikers een verbetering van de haargroei te zien na het eerste jaar. Dit aantal groeit tot 2/3e van de gebruikers na het tweede jaar.",
+          "Finasteride stopt het haaruitval in meer dan 83% van de gebruikers. Daarnaast ervaart 48%  van de gebruikers een verbetering van de haargroei binnen  het eerste jaar en 66% binnen het 2e jaar",
         image: require("@/assets/img/five-one.jpg"),
         subtitle: "Lees meer: finasteride en haarverlies"
       },
@@ -55,5 +63,9 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+@import '../style/product.scss';
+</style>
 
 

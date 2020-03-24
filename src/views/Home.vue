@@ -71,7 +71,8 @@ export default {
       home: {
         name: "home",
         title: "Skin_",
-        subtitle: "We zijn er om zelfzorg voor mannen te destigmatiseren en brengen essentiële medicatie binnen handbereik. Van online artsenconsult tot behandeling. Wij regelen het voor je."
+        subtitle: "We zijn er om zelfzorg voor mannen te destigmatiseren en brengen essentiële medicatie binnen handbereik. Van online artsenconsult tot behandeling. Wij regelen het voor je.",
+        button:true,
       },
       blogOne: {
         name: "blogOne",

@@ -1,8 +1,8 @@
 <template>
   <div>
+     <AppBanner :data="category"/> 
     <div class="container-fluid">
       <div class="blog-list-menu text-center">
-
         <router-link to="/" class="blog-list-menu-link"> All Articles </router-link>
         <router-link to="/" class="blog-list-menu-link"> Hair </router-link>
         <router-link to="/" class="blog-list-menu-link"> Skin </router-link>
@@ -10,11 +10,7 @@
         <router-link to="/" class="blog-list-menu-link"> minoxidil </router-link>
         <router-link to="/" class="blog-list-menu-link"> Tretinion </router-link>
         <router-link to="/" class="blog-list-menu-link"> Sunscreen </router-link>
-       
-
       </div>
-
-
       <hr />
       <BlogList :data="singleBlog1"/>
       <BlogList :data="singleBlog2"/>
@@ -28,13 +24,23 @@
 </template>
 
 <script>
+import AppBanner from "@/components/AppBanner"
+
 import BlogList from "../components/blog/BlogList";
 export default {
   components: {
-    BlogList
+    BlogList,
+    AppBanner
   },
   data(){
     return {
+       category: {
+        name: "home",
+        title: "How to apply tretinoin",
+        subtitle: "Not sure how to apply tretinoin? Don't sweat it. We are here to help you out.After reading this article you are ready yo go.",
+        subtitle2:"Read more :tretinoin application guidelines",
+        logo:false,
+      },
       singleBlog1: {
         name: "singleBlog",
         imageleft:'left',

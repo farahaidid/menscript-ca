@@ -9,11 +9,11 @@
       </div>
       <div class="col-md-8">
         <div class="mt-lg-5 mt-md-3 ">
-          <h1 class="blog-list-title" v-if="data.name == 'singleBlog'"> {{ data.title }}</h1>
+          <h1 class="title" v-if="data.name == 'singleBlog'"> {{ data.title }}</h1>
           <p class="subtitle" v-if="data.name == 'singleBlog'">
             {{ data.text}}
           </p>
-          <p class="subtitle" v-if="data.name == 'singleBlog'"> {{ data.subtext }}</p>
+          <p class="blog-list-subtext" v-if="data.name == 'singleBlog'"> {{ data.subtext }}</p>
         </div>
       </div>
         </router-link>
@@ -27,11 +27,11 @@
            <router-link to="/singleblog">
       <div class="col-md-8">
         <div class="mt-lg-5 mt-md-3 ">
-          <h1 class="blog-list-title" v-if="data.name == 'singleBlog'"> {{ data.title }}</h1>
-          <p class="blog-list-text" v-if="data.name == 'singleBlog'">
+          <h1 class="title" v-if="data.name == 'singleBlog'"> {{ data.title }}</h1>
+          <p class="subtitle" v-if="data.name == 'singleBlog'">
             {{ data.text}}
           </p>
-          <p class="blog-list-subtext" v-if="data.name == 'singleBlog'"> {{ data.subtext }}</p>
+          <p class="blog-list-subtext " v-if="data.name == 'singleBlog'"> {{ data.subtext }}</p>
         </div>
       </div>
       <div class="col-md-4 pr-lg-0 pr-md-0 text-sm-center" v-if="data.name == 'singleBlog'">

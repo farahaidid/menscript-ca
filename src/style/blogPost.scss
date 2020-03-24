@@ -3,7 +3,8 @@
    
 }
 p.subtitle,
-.subtitle-2 {
+.subtitle-2,
+p.blog-list-subtext{
     font-size: 24px;
 }
 p.subtitle-2 {
@@ -47,8 +48,10 @@ p.blog-list-text {
     font-size: 12px;
 }
 p.blog-list-subtext {
-    font-size: 12px;
     margin-left: 14%;
+}
+img.blog-img {
+    max-height: 547px!important;
 }
  /* blog details */
  h1.blog-title.text-center {
@@ -92,7 +95,7 @@ p.blog-text {
 }
 a.blog-list-menu-link.router-link-active {
     color: black;
-    padding: 10px 10px;
+    padding: 10px 50px;
     text-align: center;
     margin-right: 2px;
     font-family: avenir Heavy;
@@ -110,8 +113,9 @@ a.blog-list-menu-link.router-link-active {
         font-size: 36px;
         text-align: center;
     }
-    p.subtitle, .subtitle-2 {
+    p.subtitle, .subtitle-2,p.blog-list-subtext {
         font-size: 14px;
+       
     }
     .pl {
         padding-left: 0px!important;
@@ -128,7 +132,8 @@ a.blog-list-menu-link.router-link-active {
         font-size: 24px;
     }
     img.blog-img {
-        height: 300px;
+        height: 250px;
+        object-fit: contain;
     }
     /* blog detail */
     h1.blog-title.text-center {
@@ -170,8 +175,9 @@ a.blog-list-menu-link.router-link-active {
         font-size: 36px;
         text-align: center;
     }
-    p.subtitle, .subtitle-2 {
+    p.subtitle, .subtitle-2,p.blog-list-subtext {
         font-size: 14px;
+        
     }
     h1.blog-title.text-center {
         font-size: 22px;
@@ -189,16 +195,21 @@ a.blog-list-menu-link.router-link-active {
     
     img.blog-img {
         height: 300px;
+        object-fit: contain;
+    }
+    a.blog-list-menu-link.router-link-active {
+        padding:10px 10px;
     }
 }
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
     .title {
         font-size: 28px;
     }
     p.subtitle,
-    .subtitle-2 {
+    .subtitle-2,p.blog-list-subtext {
         font-size: 10px;
+       
     }
     h1.blog-title.text-center {
         font-size: 30px;
@@ -213,6 +224,10 @@ a.blog-list-menu-link.router-link-active {
         transform: rotate(90deg);
         font-size: 12px;
     }
+    a.blog-list-menu-link.router-link-active {
+        padding:10px 6px;
+    }
+    
    
 }
 /* Large devices (desktops, 992px and up) */
@@ -220,26 +235,26 @@ a.blog-list-menu-link.router-link-active {
     .title {
         font-size: 50px;
     }
-    p.subtitle, .subtitle-2 {
+    p.subtitle, .subtitle-2,p.blog-list-subtext {
         font-size: 14px;
+       
+    }
+    a.blog-list-menu-link.router-link-active {
+        padding:10px 20px;
     }
    
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and  (min-width:1200px) and (max-width: 1450px) {
-   
      .title {
         font-size: 60px;
-       
-
     }
-    p.subtitle, .subtitle-2 {
+    p.subtitle, .subtitle-2,p.blog-list-subtext {
         font-size: 16px;
+       
     }
-    .blog-list-section {
-        border: 1px solid #959595;
-        width: 1373px!important;
-        height: 578px!important;
-
+    a.blog-list-menu-link.router-link-active {
+        padding:10px 30px;
     }
+    
 }

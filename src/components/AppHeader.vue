@@ -128,10 +128,10 @@ export default {
     openCardModal() {
       $("#card-modal").modal("show");
     },
-    goHome() {
-      EventBus.$emit("open-card-modal");
+   /*  goHome() {
+      
       this.$router.push("/");
-    },
+    }, */
     openHeaderModal() {
       $("#header-modal").modal("show");
     },

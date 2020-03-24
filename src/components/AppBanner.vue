@@ -15,23 +15,28 @@
               <p class="w-50 text-justify text-mb banner-p">
                 {{ data.subtitle }}
               </p>
+              <p class="w-50 text-justify text-mb banner-p subtitle2" v-if=" data.subtitle2 == data.subtitle2">
+                {{ data.subtitle2 }}
+              </p>
 
-              <button class="btn custom-btn btn-sm consult-btn">
+              <button class="btn custom-btn btn-sm consult-btn" v-if="data.button == true">
                 Start online consult
               </button>
+
+             
             </div>
           </div>
         </div>
       </div>
 
-     <div class="row text-center w-75 logo-div mx-auto">
-        <div class="col-md-4 col-sm-12">
+     <div class="row text-center w-75 logo-div mx-auto" v-if="data.logo !== false">
+        <div class="col-md-4 col-sm-4">
           <img src="@/assets/img/logo1.png" alt="" class="del logo" />
         </div>
-        <div class="col-md-4 col-sm-12">
+        <div class="col-md-4 col-sm-4">
           <img src="@/assets/img/bbc.png" alt="bbc" class="bbc logo" />
         </div>
-        <div class="col-md-4 col-sm-12">
+        <div class="col-md-4 col-sm-4">
           <img src="@/assets/img/nos.png" alt="" class="nos logo" />
         </div>
       </div>
@@ -103,6 +108,9 @@ export default {
   font-size: 24px;
  
 }
+.subtitle2{
+  font-family: Avenir Heavy;
+}
 .custom-btn {
   background-color: black;
   color: #ffffff;
@@ -116,7 +124,6 @@ export default {
     height: 33px;
 }
 .logo-div {
-    
     padding: 35px 3px;
 }
 
@@ -165,7 +172,14 @@ export default {
     height: 33px;
     font-size: 12px;
   }
-
+ .logo {
+    width: 100px;
+    height: 27px;
+    margin-bottom: 10px;
+}
+.logo-div {
+    padding: 20px 3px;
+}
 }
 /* medium screen */
 @media screen and (min-width: 641px) and (max-width: 768px) {
