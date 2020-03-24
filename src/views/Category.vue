@@ -3,36 +3,36 @@
     <AppBanner :data="category"/> 
     <hr />
     <div class="container-fluid custom-padding ">
-      <div class="row">
-        <div class="col-md-6">
+      <div class="row mr-custom">
+        <div class="col-md-6 pr">
           <CategoryOne />
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 pr">
           <CategoryTwo :data="rx" />
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 pr">
           <CategoryTwo :data="otc" />
         </div>
       </div>
-      <div class="row mt-4">
-        <div class="col-md-6 ">
+      <div class="row mr-custom mt-4">
+        <div class="col-md-6 pr">
           <CategoryOne />
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 pr">
           <CategoryTwo :data="rx" />
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 pr">
           <CategoryTwo :data="otc" />
         </div>
       </div>
-      <div class="row mt-4">
-        <div class="col-md-6 ">
+      <div class="row mr-custom mt-4">
+        <div class="col-md-6 pr">
           <CategoryOne />
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 pr">
           <CategoryTwo :data="rx" />
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 pr">
           <CategoryTwo :data="otc" />
         </div>
       </div>
@@ -86,3 +86,7 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+@import '../style/category.scss';
+</style>

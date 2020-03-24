@@ -3,41 +3,33 @@
     padding: 0px 79px;
     margin-bottom: 100px;
 }
-
 .logo {
     width: 130px;
     height: 33px;
 }
-
 img.cat-one-img {
     width: 100%;
     max-height: 443px !important;
 }
-
 img.cat-two-img {
     width: 100%;
     max-height: 443px;
 }
-
 .cat-text {
     opacity: 1;
 }
-
 .sub-text-1 {
     font-family: Avenir Black;
     font-size: 16px;
 }
-
 .hover-replace {
     height: 50px;
 }
-
 .sub-text-2 {
     font-family: Avenir Medium;
     font-size: 15px;
-    background-color: black;
+    
 }
-
 .custom-cat-btn {
     opacity: 0;
     background-color: #000000;
@@ -45,34 +37,67 @@ img.cat-two-img {
     width: 100%;
 
 }
-
 .ask-section {
     padding-top: 60px;
     margin-top: 30px;
 }
-
-
+/* ==================== */
+.cat-image-div:hover {
+    text-decoration: none;
+    transition: 5s;
+    .custom-cat-btn {
+        opacity: 1;
+        display: block;
+    }
+    .cat-text {
+        opacity: 0;
+        display: none;
+    }
+}
 /* Small devices */
 @media screen and (max-width: 640px) {
+    .custom-padding {
+        margin-top: 30px;
+        padding: 0px 0px !important;
+        margin-bottom: 100px;
+    }
+    .row.mr-custom {
+        margin-right: 0px;
+    }
+
+    img.cat-two-img {
+        width: 250px;
+    }
+
     .logo-div {
         margin-bottom: 10px;
     }
+
     img.logo {
         margin-bottom: 20px;
         width: 130px;
         height: 20px;
     }
+    .custom-cat-btn {
+        opacity: 0;
+        background-color: #000000;
+        display: none;
+        width: 100%;
+
+    }
     .hover-replace {
         height: 50px !important;
     }
+
     .image {
         text-align: center;
         margin-bottom: 7px;
     }
+
     .sub-text-1,
     .sub-text-2 {
         font-size: 12px;
-        background-color: red;
+
 
     }
 
@@ -86,11 +111,28 @@ img.cat-two-img {
         width: 60% !important;
     }
 
-
 }
 
 /* medium phone  */
 @media screen and (min-width: 641px) and (max-width: 768px) {
+    .pr {
+        padding-right: 0px;
+    }
+
+    .pl {
+        padding-left: 0px;
+    }
+
+    .custom-padding {
+        margin-top: 46px;
+        padding: 0px 0px;
+        margin-bottom: 100px;
+    }
+
+    .row.mr-custom {
+        margin-right: 0px;
+    }
+
     img.logo {
         margin-bottom: 20px;
         width: 130px;
@@ -103,18 +145,14 @@ img.cat-two-img {
         margin-bottom: 10px;
     }
 
-    img.cat-one-img {
-        width: 80%;
-    }
-
-    .cat-two-img {
-        width: 60%;
+    img.cat-two-img {
+        width: 250px;
     }
 
     .sub-text-1,
     .sub-text-2 {
         font-size: 12px;
-        background-color:palegreen;
+
 
 
     }
@@ -138,25 +176,28 @@ img.cat-two-img {
         padding-bottom: 0px;
         margin-top: 30px;
     }
+
     .sub-text-2 {
         font-size: 12px;
-        background-color: yellow;
+
 
     }
 }
+
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     .sub-text-2 {
         font-size: 12px;
-        background-color: orange;
+
 
     }
 }
+
 /* Extra large devices (large desktops, 1200px and up) */
-@media screen and  (min-width:1201px) and (max-width: 1450px) {
+@media screen and (min-width:1201px) and (max-width: 1450px) {
     .sub-text-2 {
         font-size: 12px;
-        background-color: royalblue;
+
 
     }
 }
