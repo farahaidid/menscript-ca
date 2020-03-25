@@ -7,6 +7,9 @@
             <p class="scroll">scroll</p>
             <img src="../assets/img/banner.jpg" alt class="banner-img" />
             <div class="banner-text">
+<div class="my-auto">
+
+
               <h1 class="banner-title">{{ data.title }}</h1>
               <p class="w-50 text-justify text-mb banner-p">{{ data.subtitle }}</p>
               <p
@@ -18,6 +21,8 @@
                 v-if="data.button == true"
                 @click="openLoginModal"
               >Start online consult</button>
+</div>
+
             </div>
           </div>
         </div>
@@ -63,9 +68,11 @@ export default {
   padding-left: 63px;
 }
 .banner-text {
-  position: absolute;
-  top: 18%;
-  left: 11%;
+    position: absolute;
+    top: 0px;
+    left: 11%;
+    height: 100%;
+    display: flex;
 }
 .scroll {
   position: absolute;
@@ -122,10 +129,10 @@ export default {
   .banner-img {
     padding-left: 16px;
   }
-  .banner-text {
+  /* .banner-text {
     top: 17px;
     left: 8%;
-  }
+  } */
   p {
     font-size: 12px;
   }
@@ -170,11 +177,11 @@ export default {
   .banner {
     height: 21em;
   }
-  .banner-text {
+  /*  .banner-text {
     top: 71px;
     left: 11%;
-    /* background-color: orangered; */
-  }
+    
+  }  */
   .consult-btn {
     width: 185px;
     height: 47px;
@@ -196,11 +203,11 @@ export default {
   .banner {
     height: 24em;
   }
-  .banner-text {
+   /* .banner-text {
     top: 89px;
     left: 100px;
-    /* background-color: fuchsia; */
-  }
+    
+  }  */
   .custom-btn {
     width: 202px !important;
     height: 47px !important;
@@ -226,11 +233,11 @@ export default {
 
     height: 30em;
   }
-  .banner-text {
+  /* .banner-text {
     top: 24%;
     left: 11%;
-    /* background-color: green; */
-  }
+
+  }  */
   .banner-title {
     font-size: 55px;
   }
@@ -254,11 +261,11 @@ export default {
 
     height: 30em;
   }
-  .banner-text {
+ /*  .banner-text {
     top: 24%;
     left: 11%;
-    /* background-color: green; */
-  }
+   
+  } */
   .banner-title {
     font-size: 60px;
   }

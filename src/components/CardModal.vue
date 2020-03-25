@@ -81,7 +81,7 @@
               </div>
               <div class="col-md-6 my-auto text_sm_center">
                 <span class="price">
-                  <b>$41</b>
+                  $41
                 </span>
                 <button class="checkout app-btn ml-4" @click="openLoginModal">Checkout</button>
               </div>
@@ -114,11 +114,7 @@ export default {
     border-bottom: none;
     font-size: 30px;
     font-family: Avenir Roman;
-    /*  .modal-title {
-    margin-bottom: 0;
-     line-height:0;
-    font-size: 30px;
-} */
+    
   }
   .number-spinner {
     background-color: #f5f5f3;
@@ -181,7 +177,7 @@ export default {
     position: relative;
     .modal-header {
       font-size: 22px;
-      background-color: green;
+     
     }
     .card-product {
       .sub-text-1 {
@@ -198,7 +194,7 @@ export default {
 
     .list-group-item {
       font-size: 14px;
-      background-color: red;
+     
     }
   }
 }
@@ -215,7 +211,7 @@ export default {
   }
   .list-group-item {
     font-size: 16px !important;
-    background-color: green;
+   
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -242,12 +238,7 @@ export default {
     margin-left: 0px!important;
   }
 }
-/* @media screen and (min-width: 992px) and (max-width: 1500px) {
-.list-group-item {
-    font-size: 16px !important;
-    background-color: royalblue;
-  }
-} */
+
 </style>
 
 
