@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="container">
-      <div class="">
+    <div class="">
+      <div class="row">
         <div
           class="col-md-12 col-sm-12 col-lg-10 mx-lg-auto text-pull-right position-relative"
         >

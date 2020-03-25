@@ -16,9 +16,9 @@
                 </div>
                 <div class="col-md-6 text-right">
                   <router-link to class="nav-link" href="#">SEARCH</router-link>
-                  <router-link to class="nav-link" href="#">CARD</router-link>
-                  <router-link to class="nav-link" href="#"
-                    >ACCOUNT</router-link
+                  <a   class="nav-link" @click="openCardModal">CARD</a>
+                  <a  class="nav-link" @click="goAccount"
+                    >ACCOUNT</a
                   >
                 </div>
               </div>
@@ -77,20 +77,32 @@
         </div>
       </div>
     </div>
+      <CardModal />
   </div>
 </template>
 
 <script>
+import CardModal from "@/components/CardModal";
 export default {
+  components:{
+    CardModal
+  },
   methods:{
     goblog(){
-      console.log("fgh");
        $("#header-modal").modal("hide");
         this.$router.push({path:'blog'});
     },
     gohome(){
        $("#header-modal").modal("hide");
       this.$router.push({path:'/'});
+    },
+     openCardModal() {
+      $("#header-modal").modal("hide");
+      $("#card-modal").modal("show");
+    },
+    goAccount(){
+       $("#header-modal").modal("hide");
+        this.$router.push({path:'account'});
     }
   }
 };
@@ -126,6 +138,7 @@ export default {
     display: inline-block;
     color: black;
     font-family: Montserrat;
+    cursor: pointer;
   }
   li.link {
     list-style-type: none;

@@ -1,16 +1,18 @@
 .title {
     font-size: 96px;
-   
 }
+
 p.subtitle,
 .subtitle-2,
-p.blog-list-subtext{
+p.blog-list-subtext {
     font-size: 24px;
 }
+
 p.subtitle-2 {
     font-family: Roboto;
     text-align: end;
 }
+
 .margin-third {
     margin-top: 34px;
     margin-bottom: 58px;
@@ -20,48 +22,66 @@ p.subtitle-2 {
     margin-top: 90px;
     margin-bottom: 87px;
 }
+
 .rever-side {
     width: 100%;
     max-height: 716px;
-  } 
-  .five-one.img.five-position {
-    max-height: 674px!important;
+}
+
+.five-one.img.five-position {
+    max-height: 674px !important;
     margin-top: 33px;
     margin-bottom: 53px;
 }
-.img-six-position{
+
+.img-six-position {
     margin-top: 17px;
-    max-height: 716px!important;
+    max-height: 716px !important;
 }
 
-/*  blogList components  */ 
+/*  blogList components  */
 
 .blog-list-section {
     border: 1px solid #959595;
-   
 }
+
 h1.blog-list-title {
     font-size: 80px;
     color: #000000;
 }
+
 p.blog-list-text {
     font-size: 12px;
 }
+
 p.blog-list-subtext {
     margin-left: 14%;
 }
+
 img.blog-img {
-    max-height: 547px!important;
+    max-height: 547px !important;
 }
- /* blog details */
- h1.blog-title.text-center {
-    font-size: 38px;
+
+/* blog details */
+img.single-image {
+    max-height: 695px !important;
+}
+
+h1.blog-title.text-center {
+    font-size: 72px;
     padding: 25px 0px;
 }
+
 p.blog-text {
-    font-size: 12px;
+    font-size: 24px;
     text-align: justify;
+    font-family: Avenir Roman;
 }
+
+p.blog-text-title {
+    font-size: 30px;
+}
+
 .scroll-text {
     position: absolute;
     bottom: 150px;
@@ -69,7 +89,7 @@ p.blog-text {
     font-family: Montserrat;
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
-    font-size: 16px;
+    font-size: 36px;
 }
 
 .scroll-text::before {
@@ -79,20 +99,22 @@ p.blog-text {
     position: absolute;
     left: 4em;
     width: 33px;
-  }
+}
 
-  .blog-text-title {
+.blog-text-title {
     font-size: 16px;
     font-family: Avenir Heavy;
 }
+
 .go-back {
     font-size: 12px;
     position: absolute;
     z-index: 9999;
     top: -7%;
-   
+
     left: 0%;
 }
+
 a.blog-list-menu-link.router-link-active {
     color: black;
     padding: 10px 50px;
@@ -101,62 +123,79 @@ a.blog-list-menu-link.router-link-active {
     font-family: avenir Heavy;
     font-size: 16px;
 }
+
 .blog-list-menu.text-center {
     padding: 15px 0px;
 }
+
 /* Small devices */
 @media screen and (max-width: 640px) {
     .w-75 {
         width: 100% !important;
     }
+
     .title {
         font-size: 36px;
         text-align: center;
     }
-    p.subtitle, .subtitle-2,p.blog-list-subtext {
+
+    p.subtitle,
+    .subtitle-2,
+    p.blog-list-subtext,
+    p.blog-text,
+    p.blog-text-title {
         font-size: 14px;
-       
+      
     }
+
     .pl {
-        padding-left: 0px!important;
+        padding-left: 0px !important;
     }
+
     .pr {
-        padding-right: 0px!important;
+        padding-right: 0px !important;
     }
+
     .margin-five {
         margin-top: 20px !important;
         margin-bottom: 20px !important;
     }
+
     /*  blog list */
     h1.blog-list-title {
         font-size: 24px;
     }
+
     img.blog-img {
         height: 250px;
         object-fit: contain;
     }
+
     /* blog detail */
     h1.blog-title.text-center {
         font-size: 18px;
         padding: 14px 0px;
     }
+
     img.single-image {
         width: 90%;
         /* margin-left: 20%; */
     }
-    .text-pull-right{
+
+    .text-pull-right {
         text-align: right;
     }
+
     .scroll-text {
         position: absolute;
         bottom: 52px;
-         left: 0px; 
+        left: 0px;
         font-family: Montserrat;
         -webkit-transform: rotate(90deg);
         transform: rotate(90deg);
         font-size: 12px;
     }
-    
+
     a.blog-list-menu-link.router-link-active {
         color: black;
         padding: 10px 10px;
@@ -165,96 +204,177 @@ a.blog-list-menu-link.router-link-active {
         font-family: avenir Heavy;
         font-size: 12px;
     }
-    
-   
-    
 }
+
 /* medium phone  */
 @media screen and (min-width: 641px) and (max-width: 768px) {
     .title {
         font-size: 36px;
         text-align: center;
     }
-    p.subtitle, .subtitle-2,p.blog-list-subtext {
+
+    p.subtitle,
+    .subtitle-2,
+    p.blog-list-subtext,
+    p.blog-text,
+    p.blog-text-title {
         font-size: 14px;
+    }
+
+    h1.blog-title {
+        font-size: 32px !important;
+        padding: 22px 0px;
         
     }
-    h1.blog-title.text-center {
-        font-size: 22px;
-        padding: 22px 0px;
+
+    img.single-image {
+        width: 90%;
+        float: right;
     }
+
     .scroll-text {
         position: absolute;
-        bottom: 48px;
-        left: -59px;
+        left: 20px;
         font-family: Montserrat;
         -webkit-transform: rotate(90deg);
         transform: rotate(90deg);
-        font-size: 12px;
+        font-size: 18px;
+        top: 241px;
     }
-    
+
     img.blog-img {
         height: 300px;
         object-fit: contain;
     }
+
     a.blog-list-menu-link.router-link-active {
-        padding:10px 10px;
+        padding: 10px 10px;
     }
 }
+
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media screen and (min-width: 769px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     .title {
         font-size: 28px;
     }
+
     p.subtitle,
-    .subtitle-2,p.blog-list-subtext {
+    .subtitle-2,
+    p.blog-list-subtext {
         font-size: 10px;
+    }
+
+    h1.blog-title {
+        font-size: 36px !important;
+        padding: 22px 0px;
        
     }
-    h1.blog-title.text-center {
-        font-size: 30px;
-        
+
+    p.blog-text,
+    p.blog-text-title {
+        font-size: 18px;
     }
+
+    .image-section.position-relative {
+        text-align: end !important;
+    }
+
+    img.single-image {
+        width: 90%;
+        /* margin-left: 20%; */
+    }
+
     .scroll-text {
         position: absolute;
         bottom: 67px;
-        left: -40px;
+        left: 0px;
         font-family: Montserrat;
         -webkit-transform: rotate(90deg);
         transform: rotate(90deg);
-        font-size: 12px;
+        font-size: 22px;
     }
+
     a.blog-list-menu-link.router-link-active {
-        padding:10px 6px;
+        padding: 10px 6px;
     }
-    
-   
 }
+
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     .title {
         font-size: 50px;
     }
-    p.subtitle, .subtitle-2,p.blog-list-subtext {
-        font-size: 14px;
+
+    h1.blog-title.text-center {
+        font-size: 42px;
+        padding: 25px 0px;
        
     }
-    a.blog-list-menu-link.router-link-active {
-        padding:10px 20px;
+
+    p.blog-text,
+    p.blog-text-title {
+        font-size: 20px;
+       
     }
-   
+
+    p.subtitle,
+    .subtitle-2,
+    p.blog-list-subtext {
+        font-size: 14px;
+    }
+
+    a.blog-list-menu-link.router-link-active {
+        padding: 10px 20px;
+    }
+
+    .scroll-text {
+        bottom: 123px;
+        left: -83px;
+        font-size: 24px;
+    }
 }
+
 /* Extra large devices (large desktops, 1200px and up) */
-@media screen and  (min-width:1200px) and (max-width: 1450px) {
-     .title {
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+    .title {
         font-size: 60px;
     }
-    p.subtitle, .subtitle-2,p.blog-list-subtext {
+
+    p.subtitle,
+    .subtitle-2,
+    p.blog-list-subtext {
         font-size: 16px;
+    }
+
+    a.blog-list-menu-link.router-link-active {
+        padding: 10px 30px;
+    }
+
+    h1.blog-title.text-center {
+        font-size: 50px;
+        padding: 25px 0px;
        
     }
-    a.blog-list-menu-link.router-link-active {
-        padding:10px 30px;
+
+    p.blog-text,
+    p.blog-text-title {
+        font-size: 22px;
+       ;
     }
-    
+
+    .scroll-text {
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 1501px) and (max-width: 1800px) {
+    h1.blog-title.text-center {
+        font-size: 60px !important;
+        padding: 25px 0px;
+      
+    }
+
+    .scroll-text {
+        font-size: 30px;
+    }
 }

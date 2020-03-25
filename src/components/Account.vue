@@ -94,9 +94,6 @@ export default {
       }
     }
   },
-  created(){
-    console.log("fgh",this.data);
-  }
 };
 </script>
 

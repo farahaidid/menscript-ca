@@ -1,9 +1,9 @@
 <template>
   <div>
      <Account class="product-page" :data="Bestellingen"/>
+   
   </div>
 </template>
-
 <script>
 import Account from "../components/Account";
 

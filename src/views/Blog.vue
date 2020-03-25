@@ -1,6 +1,6 @@
 <template>
   <div>
-     <AppBanner :data="category"/> 
+     <AppBanner :data="blog"/> 
     <div class="container-fluid">
       <div class="blog-list-menu text-center">
         <router-link to="/" class="blog-list-menu-link"> All Articles </router-link>
@@ -34,11 +34,11 @@ export default {
   },
   data(){
     return {
-       category: {
+       blog: {
         name: "home",
         title: "How to apply tretinoin",
         subtitle: "Not sure how to apply tretinoin? Don't sweat it. We are here to help you out.After reading this article you are ready yo go.",
-        subtitle2:"Read more :tretinoin application guidelines",
+       /*  subtitle2:"Read more :tretinoin application guidelines", */
         logo:false,
       },
       singleBlog1: {

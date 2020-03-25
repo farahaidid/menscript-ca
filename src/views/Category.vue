@@ -2,7 +2,6 @@
   <div>
     <AppBanner :data="category"/> 
     <hr />
-
     <div class="container-fluid custom-padding ">
       <div class="row mr-custom">
         <div class="col-md-6 pr">
@@ -40,7 +39,6 @@
     </div>
     <BlogThree :data="blogThree" />
     <AskQuestion />
-
   </div>
 </template>
 <script>

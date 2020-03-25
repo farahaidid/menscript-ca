@@ -1,6 +1,6 @@
 <template>
   <div>
-   <AppHeader  goback="true" />
+   <AppHeader/>
    <router-view></router-view>
    <AppFooter/>
 

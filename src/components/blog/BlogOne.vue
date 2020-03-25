@@ -32,9 +32,6 @@ export default {
       }
     }
   },
-  created() {
-    console.log("blogone", this.data);
-  }
 };
 </script>
 
