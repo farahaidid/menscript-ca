@@ -156,7 +156,7 @@ nav#custom-navbar {
 .navbar-dark .navbar-nav .nav-link {
   color: #2f2f2f;
   font-family: Montserrat;
-  font-size: 18px;
+  font-size: 14px;
 }
 .title {
   font-size: 48px;
@@ -208,9 +208,6 @@ a.dropdown-link {
   .title {
     font-size: 25px;
   }
-  .navbar-dark .navbar-nav .nav-link {
-    font-size: 16px;
-  }
   li.nav-item {
     margin-left: 30px !important;
   }
@@ -242,9 +239,6 @@ a.dropdown-link {
 @media screen and (min-width: 641px) and (max-width: 768px) {
   li.nav-item {
     margin-left: 2%;
-  }
-  .navbar-dark .navbar-nav .nav-link {
-    font-size: 16px;
   }
   .title {
     font-size: 25px;
@@ -287,9 +281,6 @@ a.dropdown-link {
   li.nav-item {
     margin-left: 17px;
   }
-  .navbar-dark .navbar-nav .nav-link {
-    font-size: 16px;
-  }
   .title {
     font-size: 25px;
   }
@@ -309,9 +300,6 @@ a.dropdown-link {
     width: auto;
     padding-left: 23% !important;
   }
-  .navbar-dark .navbar-nav .nav-link {
-    font-size: 20px;
-  }
   li.nav-item {
     margin-left: 38px;
   }
@@ -330,9 +318,6 @@ a.dropdown-link {
   }
   .title {
     font-size: 38px;
-  }
-  .navbar-dark .navbar-nav .nav-link {
-    font-size: 20px;
   }
 }
 @media (min-width: 1450px) {
