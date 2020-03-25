@@ -181,7 +181,7 @@ export default {
     position: relative;
     .modal-header {
       font-size: 22px;
-      background-color: green;
+     
     }
     .card-product {
       .sub-text-1 {
@@ -215,7 +215,7 @@ export default {
   }
   .list-group-item {
     font-size: 16px !important;
-    background-color: green;
+   
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -245,7 +245,7 @@ export default {
 /* @media screen and (min-width: 992px) and (max-width: 1500px) {
 .list-group-item {
     font-size: 16px !important;
-    background-color: royalblue;
+   
   }
 } */
 </style>
