@@ -79,7 +79,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-md-6 my-auto text_sm_center">
+              <div class="col-md-6 my-auto text_sm_center custom_center">
                 <span class="price">
                   $41
                 </span>
@@ -164,6 +164,10 @@ export default {
     color: #ffffff;
     border: transparent;
   }
+  .custom_center{
+    display: flex;
+    align-items: center;
+  }
 }
 /* Small devices */
 
@@ -227,18 +231,18 @@ export default {
     font-size: 16px !important;
   
   }
-  .price {
-    font-size: 22px !important;
+ .price {
+    font-size: 32px !important;
     display: block;
     text-align: center;
-  }
+    margin-right: 12px;
+}
   .checkout {
        width: 100%!important;
     height: 36px!important;
     margin-left: 0px!important;
   }
 }
-
 </style>
 
 

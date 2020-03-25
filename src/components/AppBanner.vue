@@ -129,10 +129,9 @@ export default {
   .banner-img {
     padding-left: 16px;
   }
-  /* .banner-text {
-    top: 17px;
+   .banner-text {
     left: 8%;
-  } */
+  } 
   p {
     font-size: 12px;
   }
@@ -177,11 +176,11 @@ export default {
   .banner {
     height: 21em;
   }
-  /*  .banner-text {
-    top: 71px;
-    left: 11%;
+    .banner-text {
+      top:0px;
+      left: 11%;
     
-  }  */
+  }  
   .consult-btn {
     width: 185px;
     height: 47px;
@@ -203,11 +202,11 @@ export default {
   .banner {
     height: 24em;
   }
-   /* .banner-text {
-    top: 89px;
+    .banner-text {
+
     left: 100px;
     
-  }  */
+  }  
   .custom-btn {
     width: 202px !important;
     height: 47px !important;
@@ -233,11 +232,11 @@ export default {
 
     height: 30em;
   }
-  /* .banner-text {
-    top: 24%;
+   .banner-text {
+   
     left: 11%;
 
-  }  */
+  }  
   .banner-title {
     font-size: 55px;
   }
@@ -261,11 +260,10 @@ export default {
 
     height: 30em;
   }
- /*  .banner-text {
-    top: 24%;
+  .banner-text {
     left: 11%;
    
-  } */
+  } 
   .banner-title {
     font-size: 60px;
   }
