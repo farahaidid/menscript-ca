@@ -1,50 +1,39 @@
 <template>
   <div>
-    <div class="container">
-      <div class="row text-center logo-div">
-        <div class="col-md-4 col-sm-12">
-          <img src="@/assets/img/logo1.png" alt="" class="del logo" />
-        </div>
-        <div class="col-md-4 col-sm-12">
-          <img src="@/assets/img/bbc.png" alt="bbc" class="bbc logo" />
-        </div>
-        <div class="col-md-4 col-sm-12">
-          <img src="@/assets/img/nos.png" alt="" class="nos logo" />
-        </div>
-      </div>
-    </div>
+    <AppBanner :data="category"/> 
     <hr />
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-md-6 pl-0">
+
+    <div class="container-fluid custom-padding ">
+      <div class="row mr-custom">
+        <div class="col-md-6 pr">
           <CategoryOne />
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 pr">
           <CategoryTwo :data="rx" />
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 pr">
           <CategoryTwo :data="otc" />
         </div>
       </div>
-      <div class="row mt-4">
-        <div class="col-md-6 pl-0">
+      <div class="row mr-custom mt-4">
+        <div class="col-md-6 pr">
           <CategoryOne />
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 pr">
           <CategoryTwo :data="rx" />
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 pr">
           <CategoryTwo :data="otc" />
         </div>
       </div>
-      <div class="row mt-4">
-        <div class="col-md-6 pl-0">
+      <div class="row mr-custom mt-4">
+        <div class="col-md-6 pr">
           <CategoryOne />
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 pr">
           <CategoryTwo :data="rx" />
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 pr">
           <CategoryTwo :data="otc" />
         </div>
       </div>
@@ -55,12 +44,14 @@
   </div>
 </template>
 <script>
+import AppBanner from "@/components/AppBanner"
 import AskQuestion from "../components/Category/AskQuestion";
 import CategoryOne from "../components/Category/CategoryOne";
 import CategoryTwo from "../components/Category/CategoryTwo";
 import BlogThree from "../components/blog/BlogThree";
 export default {
   components: {
+    AppBanner,
     CategoryOne,
     CategoryTwo,
     AskQuestion,
@@ -68,6 +59,12 @@ export default {
   },
   data() {
     return {
+       category: {
+        name: "home",
+        title: "Haarverzorgoing",
+        subtitle: "Wat is het meest dierbare bezit van de man? Geweldig haar?  juist! Zorg er goed voor. Verlies het niet.",
+        button:true,
+      },
       rx: {
         name: "rx",
         image: require("@/assets/img/category-2.jpg"),
@@ -91,3 +88,7 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+@import '../style/category.scss';
+</style>

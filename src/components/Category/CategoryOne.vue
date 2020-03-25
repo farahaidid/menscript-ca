@@ -7,17 +7,8 @@
             <p class="sub-text-2">28 tabletten - 60ml - 200ml - 200ml	- €56.98</p>
 
           </div>
+         
            
         </div>
   </div>
 </template>
-
-<style scoped>
-/* img{
-    height: 100%;
-    width: 100%;
-} */
-
-
-
-</style>

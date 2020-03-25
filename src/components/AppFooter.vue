@@ -4,10 +4,10 @@
       <div class="row width-75 mx-auto padding_border">
         <div class="col-md-4 rs-bottom">
           <p class="footer-title ">
-            Follow us
+            Vlog ons
           </p>
           <p class="sub-title">
-            To keep up to date on the latest ccmpany info.
+            Blijf op de hoogte van onze laatse ontwikkelingen
           </p>
           <div class="social-icon">
             <a href="" class="social-link"><i class="fab fa-facebook-f"></i></a>
@@ -20,19 +20,19 @@
         </div>
         <div class="col-md-4 rs-bottom">
           <p class="footer-title ">
-            Need help?
+           Hulp nodig?
           </p>
           <p class="sub-title">
-            Get in contact with our customer service.
+            Neem contact op met onze klantenservice
           </p>
-          <button class="btn  contact-us">Contatc Us</button>
+          <button class="btn  contact-us">CONTACT Us</button>
         </div>
         <div class="col-md-4 rs-bottom">
           <p class="footer-title ">
-            Sign up to Date
+           Meld je aan
           </p>
           <p class="sub-title">
-            Sign up for the latest news and exclusive others
+            Ontvang het laatste nieuws en exclusive aanbiedingen 
           </p>
 
           <div class="form-group border position-relative">

@@ -4,6 +4,12 @@
 .product-img{
     width: 100%;
 }
+img.product-img.top-img {
+    max-height: 655px;
+}
+img.product-img.bottom-img {
+    max-height: 490px;
+}
 .parent {
     background-color: green !important;
     
@@ -14,24 +20,21 @@
     top: 54px;
     
   }
-
-
-
 .card-section {
     padding: 20px 20px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 497px;
+    max-width: 550px;
 }
 
 .card-text {
-    font-size: 16px;
+    font-size: 24px;
     font-family: Avenir Heavy;
 }
 
 .card-subtext,
 .card-subtitle {
-    font-size: 12px;
+    font-size: 24px;
 }
 
 button.app-btn {
@@ -50,49 +53,143 @@ button.app-btn {
     padding: 4px 0px;
     background-color: transparent;
     border: transparent !important;
-    font-size: 12px;
+    font-size: 24px;
 }
 
 .product-bottom-section{
     padding: 39px 0px;
     margin-bottom: 60px;
 }
-
-
+.scroll {
+    position: absolute;
+    left: -34px;
+    top: 612px;
+    font-family: Montserrat;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    font-size: 48px;
+    z-index: 9;
+  }
+  .scroll::before {
+    content: "";
+    border: 1px solid #252525;
+    top: 0.7em;
+    position: absolute;
+    left: 3em;
+    width: 41px;
+  }
+  .fourth-section-img {
+    width: 100%;
+    max-height: 100%;
+  }
 
 /* Small devices */
 @media screen and (max-width: 640px) {
+    .scroll {
+        font-size:20px;
+        left:0px!important;
+       
+    }
+    .text_sm_center{
+        text-align:center;
+
+    }
     .product-img {
-        width: 70%;
+        width: 250px;
     }
     .mb-sm-5{
         margin-bottom: 10px;
+    }
+    .card-subtext, .card-subtitle {
+        font-size: 16px;
+       
+    }
+    .list-group-item {
+        font-size: 16px;
     }
 }
 
 /* medium phone  */
 @media screen and (min-width: 641px) and (max-width: 768px) {
+    .scroll {
+        font-size:20px;
+        left:0px!important;
+       
+    }
+    .text_sm_center{
+        text-align:center;
+    }
     .product-img {
-        width: 60%;
+        width: 378px;
     }
     .text-sm-center {
         text-align: center;
         margin-bottom: 10px;
     }
+    .card-subtext, .card-subtitle {
+        font-size: 14px;
+       
+    }
+    .list-group-item {
+        font-size: 14px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media screen and (min-width: 768px) and (max-width: 991px) {}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .scroll {
+        
+        left: 0px;
+        top: 262px;
+        font-size: 20px;
+       
+    }
+    .card-subtext, .card-subtitle {
+        font-size: 16px;
+        
+    }
+    .list-group-item {
+        font-size: 16px;
+    }
+}
 
 /* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) and (max-width: 1300px) {
-    /* default style */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .scroll {
+        
+        left: 0px;
+        top: 314px;
+        font-size: 26px;
+       
+    }
+    .card-subtext, .card-subtitle {
+        font-size: 14px;
+       
+    }
+    .list-group-item {
+        font-size: 14px;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1300px) {
+@media screen and (min-width: 1201px) and (max-width: 1450px) {
     .product-img {
         max-height: 653px!important;
     }
+    .card-subtext, .card-subtitle {
+        font-size: 14px;
+        
+    }
+    .list-group-item {
+        font-size: 14px;
+    }
+    .max-height-four {
+        height: 1081px !important;
+      }
 
+}
+@media (min-width: 1451px) {
+    .max-height-four {
+        height: 1081px !important;
+      }
 }

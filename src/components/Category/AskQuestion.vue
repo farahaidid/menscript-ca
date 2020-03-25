@@ -3,7 +3,7 @@
     <div class="container-fluid  ask-section">
       <div class="row ">
         <div class="col-md-6 col-sm-12 text-center ">
-          <img src="@/assets/img/cactus.png" alt="" class="cactus w-75" />
+          <img src="@/assets/img/cactus.png" alt="" class="cactus max-image-cactus w-75" />
         </div>
        
         <div class="col-md-6 mb-26 align_center bg-white mt-4">
@@ -59,5 +59,8 @@ p.subtitle.faq {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1300px) {
+  .max-image-cactus{
+height: 770px!important;
+  }
 }
 </style>

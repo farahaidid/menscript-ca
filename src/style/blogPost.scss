@@ -1,10 +1,11 @@
 .title {
-    font-size: 45px;
+    font-size: 96px;
    
 }
 p.subtitle,
-.subtitle-2 {
-    font-size: 12px;
+.subtitle-2,
+p.blog-list-subtext{
+    font-size: 24px;
 }
 p.subtitle-2 {
     font-family: Roboto;
@@ -21,30 +22,36 @@ p.subtitle-2 {
 }
 .rever-side {
     width: 100%;
-    height: 100%;
+    max-height: 716px;
   } 
-.five-one.img.five-position {
-    height: 85% !important;
+  .five-one.img.five-position {
+    max-height: 674px!important;
+    margin-top: 33px;
+    margin-bottom: 53px;
 }
 .img-six-position{
     margin-top: 17px;
+    max-height: 716px!important;
 }
 
 /*  blogList components  */ 
 
 .blog-list-section {
     border: 1px solid #959595;
+   
 }
 h1.blog-list-title {
-    font-size: 28px;
+    font-size: 80px;
     color: #000000;
 }
 p.blog-list-text {
     font-size: 12px;
 }
 p.blog-list-subtext {
-    font-size: 12px;
     margin-left: 14%;
+}
+img.blog-img {
+    max-height: 547px!important;
 }
  /* blog details */
  h1.blog-title.text-center {
@@ -88,7 +95,7 @@ p.blog-text {
 }
 a.blog-list-menu-link.router-link-active {
     color: black;
-    padding: 10px 10px;
+    padding: 10px 50px;
     text-align: center;
     margin-right: 2px;
     font-family: avenir Heavy;
@@ -103,8 +110,12 @@ a.blog-list-menu-link.router-link-active {
         width: 100% !important;
     }
     .title {
-        font-size: 25px;
+        font-size: 36px;
         text-align: center;
+    }
+    p.subtitle, .subtitle-2,p.blog-list-subtext {
+        font-size: 14px;
+       
     }
     .pl {
         padding-left: 0px!important;
@@ -121,7 +132,8 @@ a.blog-list-menu-link.router-link-active {
         font-size: 24px;
     }
     img.blog-img {
-        height: 300px;
+        height: 250px;
+        object-fit: contain;
     }
     /* blog detail */
     h1.blog-title.text-center {
@@ -160,8 +172,12 @@ a.blog-list-menu-link.router-link-active {
 /* medium phone  */
 @media screen and (min-width: 641px) and (max-width: 768px) {
     .title {
-        font-size: 20px;
+        font-size: 36px;
         text-align: center;
+    }
+    p.subtitle, .subtitle-2,p.blog-list-subtext {
+        font-size: 14px;
+        
     }
     h1.blog-title.text-center {
         font-size: 22px;
@@ -179,16 +195,21 @@ a.blog-list-menu-link.router-link-active {
     
     img.blog-img {
         height: 300px;
+        object-fit: contain;
+    }
+    a.blog-list-menu-link.router-link-active {
+        padding:10px 10px;
     }
 }
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
     .title {
-        font-size: 18px;
+        font-size: 28px;
     }
     p.subtitle,
-    .subtitle-2 {
+    .subtitle-2,p.blog-list-subtext {
         font-size: 10px;
+       
     }
     h1.blog-title.text-center {
         font-size: 30px;
@@ -203,21 +224,37 @@ a.blog-list-menu-link.router-link-active {
         transform: rotate(90deg);
         font-size: 12px;
     }
+    a.blog-list-menu-link.router-link-active {
+        padding:10px 6px;
+    }
+    
    
 }
 /* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) and (max-width: 1300px) {
-    /* default style */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .title {
+        font-size: 50px;
+    }
+    p.subtitle, .subtitle-2,p.blog-list-subtext {
+        font-size: 14px;
+       
+    }
+    a.blog-list-menu-link.router-link-active {
+        padding:10px 20px;
+    }
+   
 }
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1300px) {
-    .max-height-716 {
-        max-height: 716px;
+@media screen and  (min-width:1200px) and (max-width: 1450px) {
+     .title {
+        font-size: 60px;
     }
-    .max-height-img-six {
-        max-height: 729px;
+    p.subtitle, .subtitle-2,p.blog-list-subtext {
+        font-size: 16px;
+       
     }
-    img.blog-img {
-        max-height: 540px;
+    a.blog-list-menu-link.router-link-active {
+        padding:10px 30px;
     }
+    
 }

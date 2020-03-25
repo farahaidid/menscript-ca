@@ -87,17 +87,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.cat-image-div:hover {
-  text-decoration: none;
-  transition: 5s ;
-  
-  .custom-cat-btn {
-    opacity: 1;
-    display: block;
-  }
-  .cat-text{
-    opacity: 0;
-    display: none;
-}
-}
+
 </style>

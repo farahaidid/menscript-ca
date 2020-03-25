@@ -12,7 +12,7 @@
               </button>
               <div class="row">
                 <div class="col-md-6 text-right">
-                  <h4>MENSCRIPT</h4>
+                  <h4 @click="gohome"  class="modal-title">MENSCRIPT</h4>
                 </div>
                 <div class="col-md-6 text-right">
                   <router-link to class="nav-link" href="#">SEARCH</router-link>
@@ -87,6 +87,10 @@ export default {
       console.log("fgh");
        $("#header-modal").modal("hide");
         this.$router.push({path:'blog'});
+    },
+    gohome(){
+       $("#header-modal").modal("hide");
+      this.$router.push({path:'/'});
     }
   }
 };
@@ -104,6 +108,12 @@ export default {
   .modal-header {
     border: none !important;
   }
+  h4.modal-title {
+    width: auto;
+   
+    display: initial;
+    cursor: pointer;
+}
   .close {
     float: left !important;
     font-size: 25px !important;

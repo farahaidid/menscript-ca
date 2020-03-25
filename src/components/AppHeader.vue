@@ -36,7 +36,7 @@
         <div class="container custom-margin">
           <div class="row">
             <div class="col-sm-12 ">
-              <h4>
+              <h4 class="title">
                 <router-link to="/">MENSCRIPT</router-link>
               </h4>
             </div>
@@ -128,10 +128,10 @@ export default {
     openCardModal() {
       $("#card-modal").modal("show");
     },
-    goHome() {
-      EventBus.$emit("open-card-modal");
+   /*  goHome() {
+      
       this.$router.push("/");
-    },
+    }, */
     openHeaderModal() {
       $("#header-modal").modal("show");
     },
@@ -156,6 +156,10 @@ nav#custom-navbar {
 .navbar-dark .navbar-nav .nav-link {
   color: #2f2f2f;
   font-family: Montserrat;
+  font-size: 32px;
+}
+.title {
+  font-size: 48px;
 }
 li.nav-item {
   margin-left: 89px;
@@ -200,7 +204,13 @@ a.dropdown-link {
     padding-left: 0px;
     display: flex;
     justify-content: center;
-}
+  }
+  .title {
+    font-size: 25px;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 16px;
+  }
   li.nav-item {
     margin-left: 30px !important;
   }
@@ -233,6 +243,12 @@ a.dropdown-link {
   li.nav-item {
     margin-left: 2%;
   }
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 16px;
+  }
+  .title {
+    font-size: 25px;
+  }
   .go-back {
     left: 10%;
   }
@@ -259,17 +275,23 @@ a.dropdown-link {
   .container.custom-margin {
     display: flex;
     justify-content: center;
-}
+  }
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .container.custom-margin {
     display: flex;
-    justify-content: flex-end!important;
-}
+    justify-content: flex-end !important;
+  }
   li.nav-item {
     margin-left: 17px;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 16px;
+  }
+  .title {
+    font-size: 25px;
   }
   .container.custom-margin {
     /* text-align: center; */
@@ -281,21 +303,42 @@ a.dropdown-link {
   }
 }
 /* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) and (max-width: 1300px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
   /* default style */
   .container.custom-margin {
-   width: auto;
-   padding-left: 23% !important;
-}
+    width: auto;
+    padding-left: 23% !important;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 20px;
+  }
+  li.nav-item {
+    margin-left: 38px;
+  }
+  .title {
+    font-size: 35px;
+  }
 }
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1300px) {
+@media (min-width: 1200px) and (max-width: 1450px) {
   li.nav-item {
-    margin-left: 89px;
+    margin-left: 60px;
   }
   .container.custom-margin {
-   width: auto;
-   padding-left: 23% !important;
+    width: auto;
+    padding-left: 23% !important;
+  }
+  .title {
+    font-size: 38px;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 20px;
+  }
 }
+@media (min-width: 1450px) {
+  .container.custom-margin {
+    width: auto;
+    padding-left: 23% !important;
+  }
 }
 </style>
