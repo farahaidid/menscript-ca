@@ -50,8 +50,8 @@
           <li class="nav-item" @click="openCardModal">
             <router-link to class="nav-link" href="#">CARD</router-link>
           </li>
-          <li @click="openLoginModal" class="nav-item">
-            <router-link to class="nav-link" href="#">ACCOUNT</router-link>
+          <li class="nav-item">
+            <router-link to="/account" class="nav-link">ACCOUNT</router-link>
           </li>
           <div class="header-sm-modal">
             <div class="row">

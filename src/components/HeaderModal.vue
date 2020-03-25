@@ -33,7 +33,7 @@
                   <p>MENU</p>
                   <ul>
                     <li class="link">
-                      HAIR
+                      <router-link to="/category">HAIR</router-link>
                       <div class="dropdown-content">
                         <a href="#" class="dropdown-link"> finasteride</a>
                         <a href="#" class="dropdown-link">minoxidil</a>
@@ -42,7 +42,7 @@
                       </div>
                     </li>
                     <li class="link">
-                      SKIN
+                      <router-link to="/category">SKIN</router-link>
                       <div class="dropdown-content">
                         <a href="#" class="dropdown-link">daycream</a>
                         <a href="#" class="dropdown-link">nightcream</a>
