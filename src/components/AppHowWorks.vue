@@ -45,9 +45,9 @@
             </p>
           </div>
         </div>
-        <div class="col-sm-12 text-center">
+       <!--  <div class="col-sm-12 text-center">
           <button class="btn custom-btn mb-4">Start Consult</button>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -67,23 +67,32 @@ img.phone-img.margin-img {
   padding: 40px 0px;
 }
 p.works-text-heading {
-  font-size: 32px;
-  font-weight: 600;
-  margin-top: 12px;
-  height: 70px;
-  /* padding: 10px 0px; */
+  font-size: 24px;
+  margin-top:17px;
+  font-family:Avenir black;
+    
 }
-.custom-btn {
+.subtitle{
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+}
+
+p.works-text-subtitle {
+    font-size: 18px;
+    color: #6c6d6f;
+}
+/* .custom-btn {
     background-color: black;
     color: #ffffff;
     width: 315px;
     height: 59px;
     padding: 0px;
     font-size: 24px;
-}
+} */
 .how-it-works {
-  margin-top: 58px;
-  padding-bottom: 34px;
+    margin-top: 58px;
+    padding-bottom: 85px;
 }
 /* Small devices */
 @media screen and (max-width: 640px) {
@@ -106,12 +115,13 @@ img.phone-img.margin-img {
     margin-top: 10px;
     height: 30px;
   }
-  .custom-btn {
+  
+  /* .custom-btn {
     width: auto;
     height: auto;
     font-size: 13px;
     padding: 8px 28px;
-  }
+  } */
   .padding-sm-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -148,10 +158,10 @@ img.phone-img.margin-img {
     margin-top: 20px;
     padding-bottom: 0px;
   }
-  .custom-btn {
+ /*  .custom-btn {
     width: 217px;
     height: 51px;
-  }
+  } */
 }
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media screen and (min-width: 768px) and (max-width: 991px) {

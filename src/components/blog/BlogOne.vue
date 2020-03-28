@@ -5,8 +5,8 @@
 
       <div class="col-md-6 mb-26 align_center">
         <div class="third-section-text w-75">
-          <h2 class="title" v-if="data.name == 'blogOne'">{{ data.title }}</h2>
-          <p class="subtitle" v-if="data.name == 'blogOne'">
+          <h2 class="title " v-if="data.name == 'blogOne'">{{ data.title }}</h2>
+          <p class="subtitle custon-margin-subtitle" v-if="data.name == 'blogOne'">
             {{ data.text }}
           </p>
           <p class="subtitle-2 " v-if="data.name == 'blogOne'">

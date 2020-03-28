@@ -4,12 +4,13 @@
         <router-link to="/singleblog" class="router-link">
 
          <div class="row margin-five ">
-        <div class="col-md-6 max-height-716 pl pr align_center">
+        <div class="col-md-6  pl pr ">
           <img
             :src="data.image"
             alt
-            class="five-one img five-position"
+            class="blog-two-img"
           />
+
         </div>
         <div class="col-md-6 bg-white align_center">
           <div class="five-section-text w-75">

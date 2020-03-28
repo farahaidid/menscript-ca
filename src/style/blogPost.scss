@@ -1,16 +1,29 @@
 .title {
-    font-size: 96px;
+    font-size: 72px;
+    color: #212121;
+    font-family: avenir Black;
+}
+p.subtitle {
+    width: 552px;
+    font-size: 18px;
+    margin-top: 53px;
+    color: #6c6d6f;
+
+}
+.custon-margin-subtitle{
+    margin-left: 40px!important;
 }
 
-p.subtitle,
-.subtitle-2,
+.subtitle-2{
+    font-size: 18px;
+line-height: 48px;
+color: #000000;
+font-family: "Roboto";
+font-family: Roboto;
+text-align: end;
+}
 p.blog-list-subtext {
     font-size: 24px;
-}
-
-p.subtitle-2 {
-    font-family: Roboto;
-    text-align: end;
 }
 
 .margin-third {
@@ -28,12 +41,13 @@ p.subtitle-2 {
     max-height: 716px;
 }
 
-.five-one.img.five-position {
-    max-height: 674px !important;
-    margin-top: 33px;
-    margin-bottom: 53px;
-}
 
+.blog-two-img {
+    width: 100%;
+    padding-top: 35px;
+    max-height: 680px !important;
+    padding-bottom: 46px;
+}
 .img-six-position {
     margin-top: 17px;
     max-height: 716px !important;
@@ -147,6 +161,13 @@ a.blog-list-menu-link.router-link-active {
         font-size: 14px;
       
     }
+    p.subtitle {
+         width: auto!important;
+         margin-top: 0px;
+    }
+    .custon-margin-subtitle {
+        margin-left: 0px !important; 
+    }
 
     .pl {
         padding-left: 0px !important;
@@ -159,6 +180,10 @@ a.blog-list-menu-link.router-link-active {
     .margin-five {
         margin-top: 20px !important;
         margin-bottom: 20px !important;
+    }
+    .blog-two-img {
+        padding-top: 12px;
+        padding-bottom: 25px;
     }
 
     /*  blog list */
@@ -213,7 +238,9 @@ a.blog-list-menu-link.router-link-active {
         text-align: center;
     }
 
-    p.subtitle,
+    p.subtitle{
+        width:auto;
+    }
     .subtitle-2,
     p.blog-list-subtext,
     p.blog-text,
@@ -250,6 +277,13 @@ a.blog-list-menu-link.router-link-active {
     a.blog-list-menu-link.router-link-active {
         padding: 10px 10px;
     }
+    .margin-five {
+        margin-top: 60px;
+    }
+    .blog-two-img {
+     
+         padding-top: 0px;
+        }
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -258,10 +292,18 @@ a.blog-list-menu-link.router-link-active {
         font-size: 28px;
     }
 
-    p.subtitle,
-    .subtitle-2,
+    p.subtitle {
+         width: auto; 
+        font-size: 12px;
+        margin-top: 10px;
+       
+    }
+    .custon-margin-subtitle {
+        margin-left: 0px !important; 
+    }
+    p.subtitle-2,
     p.blog-list-subtext {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     h1.blog-title {
@@ -297,6 +339,10 @@ a.blog-list-menu-link.router-link-active {
     a.blog-list-menu-link.router-link-active {
         padding: 10px 6px;
     }
+    .blog-two-img {
+        padding-top: 14px;
+        padding-bottom: 20px;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -317,7 +363,15 @@ a.blog-list-menu-link.router-link-active {
        
     }
 
-    p.subtitle,
+    p.subtitle {
+        width: auto; 
+       font-size: 14px;
+       margin-top: 10px;
+      
+   }
+   .custon-margin-subtitle {
+       margin-left: 10px !important; 
+   }
     .subtitle-2,
     p.blog-list-subtext {
         font-size: 14px;
@@ -332,6 +386,10 @@ a.blog-list-menu-link.router-link-active {
         left: -83px;
         font-size: 24px;
     }
+    .blog-two-img {
+        padding-top: 18px!important;
+        padding-bottom: 26px!important;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -340,7 +398,15 @@ a.blog-list-menu-link.router-link-active {
         font-size: 60px;
     }
 
-    p.subtitle,
+    p.subtitle {
+        width: auto; 
+       font-size: 16px;
+       margin-top: 10px;
+      
+   }
+   .custon-margin-subtitle {
+       margin-left: 15px !important; 
+   }
     .subtitle-2,
     p.blog-list-subtext {
         font-size: 16px;

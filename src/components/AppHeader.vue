@@ -155,12 +155,16 @@ nav#custom-navbar {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #2f2f2f;
-  font-family: Montserrat;
-  font-size: 14px;
+ font-size: 24px;
+line-height: 48px;
+color: #2f2f2f;
+font-family: "Montserrat";
 }
 .title {
-  font-size: 48px;
+  font-size: 36px;
+  line-height: 48px;
+color: #363636;
+font-family: "Montserrat";
 }
 li.nav-item {
   margin-left: 89px;
@@ -235,6 +239,12 @@ a.dropdown-link {
     height: 262px !important;
     width: 306px;
   }
+  .navbar-dark .navbar-nav .nav-link{
+    font-size: 16px!important;
+    line-height: 20px;
+    color: #2f2f2f;
+    font-family: "Montserrat";
+}
 }
 /* medium phone  */
 @media screen and (min-width: 641px) and (max-width: 768px) {
@@ -293,6 +303,9 @@ a.dropdown-link {
   .go-back {
     left: 12%;
   }
+  .navbar-dark .navbar-nav .nav-link{
+    font-size: 17px;
+    }
 }
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -305,11 +318,14 @@ a.dropdown-link {
     margin-left: 38px;
   }
   .title {
-    font-size: 35px;
+    font-size: 30px;
   }
+  .navbar-dark .navbar-nav .nav-link{
+    font-size: 19px;
+    }
 }
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) and (max-width: 1450px) {
+@media screen and (min-width: 1200px) and (max-width: 1450px) {
   li.nav-item {
     margin-left: 60px;
   }
@@ -318,8 +334,11 @@ a.dropdown-link {
     padding-left: 23% !important;
   }
   .title {
-    font-size: 38px;
+    font-size: 32px;
   }
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 20px;
+}
 }
 @media (min-width: 1450px) {
   .container.custom-margin {

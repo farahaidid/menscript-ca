@@ -29,8 +29,8 @@ const routes = [
         path: 'account', 
         component: loadView("Account"),
         children:[
-          {path: '', component: loadView("Account"),},
-          {path: 'abonnement', component: loadView("AccountAbonnement"),},
+         /*  {path: '', component: loadView("Account"),}, */
+          {path: '', component: loadView("AccountAbonnement"),},
         ]
       },
     ]

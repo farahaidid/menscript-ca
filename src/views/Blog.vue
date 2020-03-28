@@ -38,7 +38,7 @@ export default {
         name: "home",
         title: "How to apply tretinoin",
         subtitle: "Not sure how to apply tretinoin? Don't sweat it. We are here to help you out.After reading this article you are ready yo go.",
-       /*  subtitle2:"Read more :tretinoin application guidelines", */
+         subtitle2:"Read more :tretinoin application guidelines", 
         logo:false,
       },
       singleBlog1: {

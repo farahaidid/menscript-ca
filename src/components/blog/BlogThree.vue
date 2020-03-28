@@ -25,7 +25,7 @@
             </p>
           </div>
         </div>
-        <div class="col-md-6 pl pr   bg-white max-height-img-six">
+        <div class="col-md-6 pl pr   bg-white ">
           <img
             :src="data.image"
             alt="blogThree"

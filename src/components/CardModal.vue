@@ -218,7 +218,7 @@ export default {
    
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .modal-header {
     font-size: 22px !important;
   }
@@ -229,7 +229,7 @@ export default {
   }
   .list-group-item {
     font-size: 16px !important;
-  
+   
   }
  .price {
     font-size: 32px !important;
@@ -241,6 +241,19 @@ export default {
        width: 100%!important;
     height: 36px!important;
     margin-left: 0px!important;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+.list-group-item {
+    font-size: 16px !important;
+   
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1800px) {
+.list-group-item {
+    font-size: 16px !important;
+   
+  
   }
 }
 </style>

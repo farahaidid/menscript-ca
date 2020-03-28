@@ -104,17 +104,23 @@ export default {
 </script>
 
 <style scoped>
-.Beauty-brand,
+.Beauty-brand{
+  width: 100%;
+  max-height: 720px;
+}
 .fourth-section-img {
   width: 100%;
-  max-height: 100%;
+  max-height: 1104px;
 }
 h3.brand-beauty-text {
-  font-weight: 600;
+  font-size: 60px;
+line-height: 48px;
+color: #212121;
+font-family: "Avenir Medium";
   position: absolute;
-  z-index: 10;
-  top: 55px;
-  left: 50px;
+ 
+  top: 65px;
+  left: 28px;
 }
 
 /* Small devices */
@@ -136,22 +142,42 @@ h3.brand-beauty-text {
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media screen and (min-width: 768px) and (max-width: 991px) {
   h3.brand-beauty-text {
-    top: 1em;
-    left: 6em;
+    top: 20px;
+    left: 20px;
     font-size: 22px;
-  }
+}
 }
 /* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) and (max-width: 1300px) {
-  /* default */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+   h3.brand-beauty-text {
+    top: 28px;
+    left: 20px;
+    font-size: 30px;
+   
+}
 }
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1300px) {
-  .max-height-beauty-img {
+@media (min-width: 1200px) and (max-width: 1450px) {
+ /*  .max-height-beauty-img {
     height: 716px !important;
-  }
-  .max-height-four {
+  } */
+ /*  .max-height-four {
     height: 1081px !important;
-  }
+  } */
+ h3.brand-beauty-text {
+    top: 40px;
+    left: 26px;
+    font-size: 40px;
+    
+}
+}
+@media (min-width: 1451px) and (max-width: 1850px) {
+h3.brand-beauty-text {
+    top: 50pxpx;
+    top: 50px;
+    left: 28px;
+    font-size: 50px;
+    
+}
 }
 </style>

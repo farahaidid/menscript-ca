@@ -7,22 +7,21 @@
             <p class="scroll">scroll</p>
             <img src="../assets/img/banner.jpg" alt class="banner-img" />
             <div class="banner-text">
-<div class="my-auto">
+              <div class="my-auto">
+                <h1 class="banner-title">{{ data.title }}</h1>
 
+                <p class="custom-home banner-subtitle">{{ data.subtitle }}</p>
 
-              <h1 class="banner-title">{{ data.title }}</h1>
-              <p class="w-50 text-justify text-mb banner-p">{{ data.subtitle }}</p>
-              <p
-                class="w-50 text-justify text-mb banner-p subtitle2"
-                v-if=" data.subtitle2  !=null "
-              >{{ data.subtitle2 }}</p>
-              <button
-                class="btn custom-btn btn-sm consult-btn"
-                v-if="data.button == true"
-                @click="openLoginModal"
-              >Start online consult</button>
-</div>
-
+                <p
+                  class="banner-subtitle2"
+                  v-if=" data.subtitle2  !=null "
+                >{{ data.subtitle2 }}</p>
+                <button
+                  class="btn custom-btn btn-sm consult-btn"
+                  v-if="data.button == true"
+                  @click="openLoginModal"
+                >Start online consult</button>
+              </div>
             </div>
           </div>
         </div>
@@ -68,20 +67,20 @@ export default {
   padding-left: 63px;
 }
 .banner-text {
-    position: absolute;
-    top: 0px;
-    left: 11%;
-    height: 100%;
-    display: flex;
+  position: absolute;
+  top: 0px;
+  left: 11%;
+  height: 100%;
+  display: flex;
 }
 .scroll {
-  position: absolute;
-  left: -34px;
-  bottom: 4em;
-  font-family: Montserrat;
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  font-size: 48px;
+    position: absolute;
+    left: -20px;
+    bottom: 134px;
+    font-family: Montserrat;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    font-size: 36px;
 }
 .scroll::before {
   content: "";
@@ -97,20 +96,37 @@ export default {
   margin-top: 28px;
 }
 .banner-title {
-  font-size: 96px;
+  font-size: 72px !important;
+  line-height: 48px;
+  color: #212121;
+ 
+  width: max-content;
 }
-.banner-p {
-  font-size: 24px;
+.banner-subtitle {
+  font-size: 18px;
+  height: 65px;
+  width: 552px;
+  margin-top: 25px;
+  margin-bottom: 51px;
+  
 }
-.subtitle2 {
-  font-family: Avenir Heavy;
+p.banner-subtitle2 {
+    font-size: 18px;
+    font-size: 18px;
+    line-height: 48px;
+    color: #000000;
+    font-family: "Montserrat";
 }
 .custom-btn {
   background-color: black;
-  color: #ffffff;
-  width: 372px;
-  height: 62px;
-  font-size: 16px;
+  width: 375px;
+  height: 60px;
+  font-size: 24px;
+  border: 1px solid #000000;
+  line-height: 48px;
+  font-family: Avenir Black;
+  color: #fbfcff;
+  text-align: center;
 }
 .logo {
   width: 130px;
@@ -129,9 +145,9 @@ export default {
   .banner-img {
     padding-left: 16px;
   }
-   .banner-text {
+  .banner-text {
     left: 8%;
-  } 
+  }
   p {
     font-size: 12px;
   }
@@ -148,20 +164,24 @@ export default {
   }
 
   .banner-title {
-    font-size: 20px;
+    font-size: 20px !important;
     margin-bottom: 0px;
+    
   }
-  .banner-p {
+  .banner-subtitle {
+    margin-top: 0px;
+    margin-bottom: 0px;
     font-size: 12px;
+    height: auto;
+    width: 196px;
   }
-  .custom-btn {
-    width: 250px;
-  }
+  
   .btn-sm {
-    width: 120px !important;
-    height: 33px;
+    width: 138px !important;
+    height: 34px;
     font-size: 12px;
-  }
+    line-height: 0px;
+}
   .logo {
     width: 100px;
     height: 27px;
@@ -176,21 +196,27 @@ export default {
   .banner {
     height: 21em;
   }
-    .banner-text {
-      top:0px;
-      left: 11%;
-    
-  }  
-  .consult-btn {
-    width: 185px;
-    height: 47px;
+  .banner-text {
+    top: 0px;
+    left: 14%;
   }
+ .custom-btn {
+    width: 200px!important;
+    height: 39px!important;
+    font-size: 15px!important;
+    line-height: 33px!important;
+}
   .banner-title {
-    font-size: 36px;
+    font-size: 36px !important;
+    
   }
-  .banner-p {
-    font-size: 13px !important;
-  }
+  .banner-subtitle {
+    font-size: 14px;
+    height: 55px;
+    width: 315px;
+    margin-top: 25px;
+    margin-bottom: 51px;
+}
   .scroll {
     left: 0px;
     bottom: 120px;
@@ -202,22 +228,25 @@ export default {
   .banner {
     height: 24em;
   }
-    .banner-text {
-
+  .banner-text {
     left: 100px;
-    
-  }  
-  .custom-btn {
-    width: 202px !important;
-    height: 47px !important;
   }
+ .custom-btn {
+    width: 218px!important;
+    height: 46px!important;
+    font-size: 16px!important;
+    line-height: 40px!important;
+}
   .banner-title {
-    font-size: 36px;
+    font-size: 36px !important;
+    
   }
-  .banner-p {
+  .banner-subtitle {
     font-size: 15px !important;
-    height: 78px;
-  }
+    height: 120px;
+    width: 375px;
+    margin-bottom: 0px;
+}
   .scroll {
     left: 0px;
     bottom: 120px;
@@ -228,49 +257,55 @@ export default {
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .banner {
-    /* float: right; */
-
     height: 30em;
   }
-   .banner-text {
-   
+  .banner-text {
     left: 11%;
-
-  }  
+  }
   .banner-title {
-    font-size: 55px;
+    font-size: 55px !important;
+    
   }
-  .banner-p {
-    font-size: 18px !important;
-    height: 110px;
-  }
+  .banner-subtitle {
+    font-size: 16px !important;
+    height: 100px;
+    margin-bottom: 0px!important;
+    width:490px;
+}
   .scroll {
     left: 0px;
     bottom: 120px;
     font-size: 25px;
   }
   .custom-btn {
-    width: 310px;
-  }
+    width: 245px!important;
+    height: 51px!important;
+    font-size: 18px!important;
+    line-height: 46px!important;
+}
 }
 /* Extra large devices (large desktops, 1200px and up) */
-@media screen and (min-width: 1200px) and (max-width: 1850px) {
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
   .banner {
-    /* float: right; */
-
     height: 30em;
   }
   .banner-text {
     left: 11%;
-   
-  } 
-  .banner-title {
-    font-size: 60px;
   }
-  .banner-p {
+  .banner-title {
+    font-size: 60px !important;
+    
+  }
+  .banner-subtitle {
     font-size: 18px !important;
     height: 110px;
+    margin-bottom: 10px;
   }
+  .custom-btn{
+    width: 280px;
+    height: 56px;
+    font-size: 20px;
+}
   .scroll {
     left: 0px;
     bottom: 120px;
