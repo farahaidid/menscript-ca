@@ -16,7 +16,6 @@
                 class="btn btn-secondary  blog-button-cat "
                 type="button"
                 v-if="data.button == true "
-                
               >
                 Start online consult
               </button>
