@@ -14,6 +14,7 @@
           />
         </div>
       </div>
+       <BlogTwo :data="blogTwo2"/>
       <div>
         <BlogOne :data="blogThree" />
       </div>
@@ -49,6 +50,14 @@ export default {
         text:
           "Finasteride stopt het haaruitval in meer dan 83% van de gebruikers. Daarnaast ervaart 48%  van de gebruikers een verbetering van de haargroei binnen  het eerste jaar en 66% binnen het 2e jaar",
         image: require("@/assets/img/five-one.jpg"),
+        subtitle: "Lees meer: finasteride en haarverlies"
+      },
+      blogTwo2: {
+        name: "blogTwo",
+        title: "Wees consistent",
+        text:
+          "Gebruik het middel zoals voorgeschreven door de arts en wees consistent in het gebruik. Heb je het druk? Maak dan een notitie in je agenda. Het kan helpen een vast moment van de dag te kiezen waarop je het middel inneemt. ",
+         image: require("@/assets/img/product1.png"),
         subtitle: "Lees meer: finasteride en haarverlies"
       },
       blogThree: {

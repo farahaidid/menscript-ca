@@ -2,7 +2,7 @@
   <div>
      <AppBanner :data="blog"/> 
     <div class="container-fluid">
-      <div class="blog-list-menu text-center">
+      <div class="blog-list-menu ">
         <router-link to="/" class="blog-list-menu-link"> All Articles </router-link>
         <router-link to="/" class="blog-list-menu-link"> Hair </router-link>
         <router-link to="/" class="blog-list-menu-link"> Skin </router-link>
@@ -21,6 +21,7 @@
       <BlogList :data="singleBlog7"/>
     </div>
   </div>
+
 </template>
 
 <script>

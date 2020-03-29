@@ -9,17 +9,17 @@
         <div class="col-md-6 mb-26 align_center bg-white mt-4">
         <div class="third-section-text w-75">
           <h2 class="title">FAQ</h2>
-          <p class="subtitle faq">
+          <p class="subtitle mb-0 mt-2" style="font-family:Avenir Heavy">
             Hoe werkt de behandeling via menscript?
           </p>
-          <p class="subtitle faq">
+          <p class="subtitle mb-0 mt-2" style="font-family:Avenir Heavy">
             Welke behandelingen voeren jullie uit?
           </p>
-          <p class="subtitle faq">
+          <p class="subtitle mb-0 mt-2" style="font-family:Avenir Heavy">
            Hoe kan ik jullie bereiken?
           </p>
 
-          <p class="subtitle"> Last van haaruitval, maar niet zeker wat je nodig hebt? Start een
+          <p class="subtitle mb-0 mt-2 w-auto"> Last van haaruitval, maar niet zeker wat je nodig hebt? Start een
             online consult, deel je symptomen en medische historie en laat je
             adviseren door een van de doktoren binnen ons netwerk. Een dokter
             evalueert vervolgens je behandelingsverzoek. Geschikt? Dan ontvang

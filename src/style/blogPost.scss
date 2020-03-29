@@ -1,3 +1,6 @@
+.product-page {
+    margin-top: 54px;
+}
 .title {
     font-size: 72px;
     color: #212121;
@@ -21,9 +24,6 @@ color: #000000;
 font-family: "Roboto";
 font-family: Roboto;
 text-align: end;
-}
-p.blog-list-subtext {
-    font-size: 24px;
 }
 
 .margin-third {
@@ -59,21 +59,39 @@ p.blog-list-subtext {
     border: 1px solid #959595;
 }
 
-h1.blog-list-title {
-    font-size: 80px;
+.blog-list-title {
+    font-size: 60px;
     color: #000000;
+   
+    font-family: Avenir black;
+}
+.blog-list-subtitle {
+    font-size: 18px;
+}
+.blog-list-subtext {
+    font-size: 18px;
+    color: #000000;
+    font-family: "Roboto";
+    margin-left:4em;
 }
 
-p.blog-list-text {
-    font-size: 12px;
-}
-
-p.blog-list-subtext {
-    margin-left: 14%;
-}
 
 img.blog-img {
     max-height: 547px !important;
+}
+a.blog-list-menu-link.router-link-active {
+    color: #2f2f2f;
+    padding: 10px 50px;
+    text-align: center;
+    margin-right: 2px;
+    font-family: Montserrat;
+    font-size: 24px;
+}
+
+.blog-list-menu{
+    padding: 15px 0px;
+    text-align:center;
+   
 }
 
 /* blog details */
@@ -84,6 +102,7 @@ img.single-image {
 h1.blog-title.text-center {
     font-size: 72px;
     padding: 25px 0px;
+    color:#212121;
 }
 
 p.blog-text {
@@ -96,7 +115,7 @@ p.blog-text-title {
     font-size: 30px;
 }
 
-.scroll-text {
+/* .scroll-text {
     position: absolute;
     bottom: 150px;
     left: -112px;
@@ -113,7 +132,7 @@ p.blog-text-title {
     position: absolute;
     left: 4em;
     width: 33px;
-}
+} */
 
 .blog-text-title {
     font-size: 16px;
@@ -129,18 +148,7 @@ p.blog-text-title {
     left: 0%;
 }
 
-a.blog-list-menu-link.router-link-active {
-    color: black;
-    padding: 10px 50px;
-    text-align: center;
-    margin-right: 2px;
-    font-family: avenir Heavy;
-    font-size: 16px;
-}
 
-.blog-list-menu.text-center {
-    padding: 15px 0px;
-}
 
 /* Small devices */
 @media screen and (max-width: 640px) {
@@ -187,13 +195,22 @@ a.blog-list-menu-link.router-link-active {
     }
 
     /*  blog list */
-    h1.blog-list-title {
-        font-size: 24px;
-    }
 
     img.blog-img {
         height: 250px;
         object-fit: contain;
+    }
+    .blog-list-menu{
+        padding: 15px 0px;
+        text-align: center;
+    }
+    .blog-list-title {
+        font-size: 18px;
+        text-align: center;
+    }
+    .blog-list-subtitle {
+        font-size: 13px;
+        text-align: justify;
     }
 
     /* blog detail */
@@ -210,16 +227,12 @@ a.blog-list-menu-link.router-link-active {
     .text-pull-right {
         text-align: right;
     }
-
-    .scroll-text {
+    p.scroll.single-blog-scroll {
         position: absolute;
-        bottom: 52px;
-        left: 0px;
-        font-family: Montserrat;
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
-        font-size: 12px;
+        left: 10px;
+        bottom: 228px;
     }
+    
 
     a.blog-list-menu-link.router-link-active {
         color: black;
@@ -273,10 +286,6 @@ a.blog-list-menu-link.router-link-active {
         height: 300px;
         object-fit: contain;
     }
-
-    a.blog-list-menu-link.router-link-active {
-        padding: 10px 10px;
-    }
     .margin-five {
         margin-top: 60px;
     }
@@ -284,6 +293,25 @@ a.blog-list-menu-link.router-link-active {
      
          padding-top: 0px;
         }
+
+       /*  blog list  */
+    .blog-list-menu{
+        padding: 15px 0px;
+        text-align: center;
+    }
+    a.blog-list-menu-link.router-link-active {
+        padding: 6px 5px;
+        font-size:14px;
+    }
+    .blog-list-title {
+        font-size: 25px;
+        text-align: center;
+    }
+    .blog-list-subtitle {
+        font-size: 14px;
+        text-align: justify;
+    }
+    
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -335,13 +363,27 @@ a.blog-list-menu-link.router-link-active {
         transform: rotate(90deg);
         font-size: 22px;
     }
-
-    a.blog-list-menu-link.router-link-active {
-        padding: 10px 6px;
-    }
     .blog-two-img {
         padding-top: 14px;
         padding-bottom: 20px;
+    }
+
+   /*  blog list  */
+    .blog-list-menu{
+        padding: 15px 0px;
+       
+    }
+    a.blog-list-menu-link.router-link-active {
+        padding: 6px 5px;
+        font-size:17px;
+    }
+    .blog-list-title {
+        font-size: 28px;
+        text-align: center;
+    }
+    .blog-list-subtitle {
+        font-size: 16px;
+        text-align: justify;
     }
 }
 
@@ -377,9 +419,7 @@ a.blog-list-menu-link.router-link-active {
         font-size: 14px;
     }
 
-    a.blog-list-menu-link.router-link-active {
-        padding: 10px 20px;
-    }
+    
 
     .scroll-text {
         bottom: 123px;
@@ -389,6 +429,18 @@ a.blog-list-menu-link.router-link-active {
     .blog-two-img {
         padding-top: 18px!important;
         padding-bottom: 26px!important;
+    }
+    a.blog-list-menu-link.router-link-active {
+        padding: 10px 10px;
+        font-size: 18px;
+    }
+    .blog-list-title {
+        font-size: 30px;
+      
+    }
+    .blog-list-subtitle {
+        font-size: 16px;
+       
     }
 }
 
@@ -412,10 +464,7 @@ a.blog-list-menu-link.router-link-active {
         font-size: 16px;
     }
 
-    a.blog-list-menu-link.router-link-active {
-        padding: 10px 30px;
-    }
-
+   
     h1.blog-title.text-center {
         font-size: 50px;
         padding: 25px 0px;
@@ -431,6 +480,21 @@ a.blog-list-menu-link.router-link-active {
     .scroll-text {
         font-size: 28px;
     }
+  /*   blog list  */
+  a.blog-list-menu-link.router-link-active {
+    padding: 10px 20px;
+    font-size: 20px;
+}
+  .blog-list-subtitle {
+    font-size: 16px;
+}
+.blog-list-subtext {
+    font-size: 18px;
+}
+.blog-list-title {
+    font-size: 30px;
+  
+}
 }
 
 @media screen and (min-width: 1501px) and (max-width: 1800px) {
@@ -442,5 +506,16 @@ a.blog-list-menu-link.router-link-active {
 
     .scroll-text {
         font-size: 30px;
+    }
+    .blog-list-title {
+        font-size: 48px;
+      
+    }
+    .blog-list-subtext {
+    font-size: 18px;
+}
+    a.blog-list-menu-link.router-link-active {
+       
+        font-size: 22px;
     }
 }

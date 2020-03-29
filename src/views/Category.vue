@@ -7,10 +7,10 @@
         <div class="col-md-6 pr">
           <CategoryOne />
         </div>
-        <div class="col-md-3 pr">
+        <div class="col-md-3 pr text_sm_center">
           <CategoryTwo :data="rx" />
         </div>
-        <div class="col-md-3 pr">
+        <div class="col-md-3 pr text_sm_center">
           <CategoryTwo :data="otc" />
         </div>
       </div>
@@ -18,10 +18,10 @@
         <div class="col-md-6 pr">
           <CategoryOne />
         </div>
-        <div class="col-md-3 pr">
+        <div class="col-md-3 pr text_sm_center">
           <CategoryTwo :data="rx" />
         </div>
-        <div class="col-md-3 pr">
+        <div class="col-md-3 pr text_sm_center">
           <CategoryTwo :data="otc" />
         </div>
       </div>
@@ -29,10 +29,10 @@
         <div class="col-md-6 pr">
           <CategoryOne />
         </div>
-        <div class="col-md-3 pr">
+        <div class="col-md-3 pr text_sm_center">
           <CategoryTwo :data="rx" />
         </div>
-        <div class="col-md-3 pr">
+        <div class="col-md-3 pr text_sm_center">
           <CategoryTwo :data="otc" />
         </div>
       </div>
@@ -65,7 +65,7 @@ export default {
       },
       rx: {
         name: "rx",
-        image: require("@/assets/img/category-2.jpg"),
+        image: require("@/assets/img/category-22.png"),
         btnText: "Start online consult",
         text1: "Shampoo revitalising"
       },

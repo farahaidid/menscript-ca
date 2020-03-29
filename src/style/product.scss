@@ -10,10 +10,7 @@ img.product-img.top-img {
 img.product-img.bottom-img {
     max-height: 490px;
 }
-.parent {
-    background-color: green !important;
-    
-}
+
 .is-sticky {
     position: -webkit-sticky;
     position: sticky;
@@ -28,21 +25,30 @@ img.product-img.bottom-img {
 }
 
 .card-text {
-    font-size: 24px;
+    font-size: 18px;
     font-family: Avenir Heavy;
+    color: #000000;
 }
 
-.card-subtext,
+.card-subtext{
+    font-size: 14px;
+color: #2f2f2f;
+font-family:Avenir Roman;
+}
 .card-subtitle {
-    font-size: 24px;
+    font-size: 14px;
+color: #6c6d6f;
+font-family:Avenir Roman;
 }
 
 button.app-btn {
     border: none;
-    background-color: black;
+    background-color: #111111;
     color: #ffffff;
-    width: 70%;
-    height: 46px;
+    font-size: 14px;
+    font-family: Avenir Heavy;
+    width: 470px;
+    height: 47px;
     margin-top: 20px !important;
     margin-bottom: 20px !important;
 }
@@ -53,34 +59,27 @@ button.app-btn {
     padding: 4px 0px;
     background-color: transparent;
     border: transparent !important;
-    font-size: 24px;
+    font-size: 14px;
+color: #6c6d6f;
+}
+.card-title {
+    margin-bottom: 0px;
+    font-size: 18px;
+    color: #000000;
+    font-family:Avenir Heavy;
+}
+.card-subtitle2 {
+    font-size: 16px;
 }
 
 .product-bottom-section{
     padding: 39px 0px;
     margin-bottom: 60px;
 }
-.scroll {
-    position: absolute;
-    left: -34px;
-    top: 612px;
-    font-family: Montserrat;
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-    font-size: 48px;
-    z-index: 9;
-  }
-  .scroll::before {
-    content: "";
-    border: 1px solid #252525;
-    top: 0.7em;
-    position: absolute;
-    left: 3em;
-    width: 41px;
-  }
+
   .fourth-section-img {
     width: 100%;
-    max-height: 100%;
+    max-height: 1104px;
   }
 
 /* Small devices */
@@ -106,6 +105,17 @@ button.app-btn {
     }
     .list-group-item {
         font-size: 16px;
+    }
+    button.app-btn {
+        border: none;
+        background-color: #111111;
+        color: #ffffff;
+        font-size: 12px;
+        font-family: Avenir Heavy;
+        width: 250px;
+        height: 40px;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
     }
 }
 
@@ -133,41 +143,43 @@ button.app-btn {
     .list-group-item {
         font-size: 14px;
     }
+    button.app-btn {
+        width: 400px;
+        height: 41px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    .scroll {
-        
-        left: 0px;
-        top: 262px;
-        font-size: 20px;
-       
-    }
+   
     .card-subtext, .card-subtitle {
         font-size: 16px;
         
     }
     .list-group-item {
         font-size: 16px;
+    }
+    button.app-btn {
+        font-size: 14px;
+        width: 240px;
+        height: 40px;
     }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-    .scroll {
-        
-        left: 0px;
-        top: 314px;
-        font-size: 26px;
-       
-    }
+   
     .card-subtext, .card-subtitle {
         font-size: 14px;
        
     }
     .list-group-item {
         font-size: 14px;
+    }
+    button.app-btn {
+       
+        width: 340px;
+        height: 40px;
     }
 }
 
@@ -182,14 +194,18 @@ button.app-btn {
     }
     .list-group-item {
         font-size: 14px;
+    } 
+    button.app-btn {
+        width: 340px;
+        height: 40px;
     }
-    .max-height-four {
-        height: 1081px !important;
-      }
+    
 
 }
-@media (min-width: 1451px) {
-    .max-height-four {
-        height: 1081px !important;
-      }
+@media screen and (min-width: 1451px) and (max-width: 1850px) {
+    button.app-btn {
+       
+        width: 380px;
+        height: 40px;
+    }
 }

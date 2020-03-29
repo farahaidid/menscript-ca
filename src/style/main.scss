@@ -22,7 +22,24 @@ a{
     display: contents!important;
 }
 
-
+.scroll {
+    position: absolute;
+    left: 0px;
+    bottom: 134px;
+    font-family: Montserrat;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    font-size: 20px;
+    z-index: 999;
+}
+.scroll::before {
+    content: "";
+    border: 1px solid #252525;
+    top: 0.7em;
+    position: absolute;
+    left: 3em;
+    width: 41px;
+  }
 
 /* Small devices */
 @media screen and (max-width: 640px) {
@@ -36,6 +53,17 @@ a{
     .pr {
         padding-right: 0px!important;
     }
+    .scroll {
+        font-size: 12px;
+        left: -15px;
+        bottom: 66px;
+      }
+    
+      .scroll::before {
+        top: 0.7em;
+        left: 3.7em;
+        width: 40px;
+      }
 }
 
 /* medium phone  */
@@ -43,19 +71,40 @@ a{
     .w-75 {
         width: 100%!important;
     }
+    .text_sm_center{
+        text-align: center;
+    
+    }
+    .scroll {
+        left: 0px;
+        bottom: 80px;
+        font-size: 15px;
+      }
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    .scroll {
+        left: 0px;
+        bottom: 90px;
+       
+      }
     
 }
 
 /* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) and (max-width: 1300px) {
-    /* default style */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .scroll {
+        left: 0px;
+        bottom: 120px;
+       
+      }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1300px) {
+@media screen and (min-width: 1201px) and (max-width: 1450px) {
+    
+}
+@media screen and (min-width: 1451px) and (max-width: 1850px) {
     
 }

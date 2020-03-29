@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="">
+          <p class="scroll single-blog-scroll">Scroll</p>
       <div class="row">
         <div
           class="col-md-12 col-sm-12 col-lg-10 mx-lg-auto text-pull-right position-relative"
@@ -11,9 +12,8 @@
               alt="single-image"
               class="single-image"
             />
-            <div class="scroll-section-blog">
-              <p class="scroll-text">Scroll</p>
-            </div>
+          
+          
           </div>
         </div>
         <div class="col-md-12 col-sm-12 col-lg-10 mx-lg-auto  pb-5">
@@ -22,62 +22,23 @@
           </h1>
 
           <p class="blog-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque odio
-            recusandae nemo laboriosam possimus aut asperiores est itaque, non
-            minima rerum molestias! Ad laboriosam alias unde atque voluptatibus
-            dolorem odit, quae aspernatur. Voluptas maiores amet rerum aperiam
-            dicta tempora consequatur, eaque optio quia soluta dolores maxime
-            dolor nemo fugit placeat obcaecati quo voluptatibus. Quisquam quis
-            iusto maxime, cupiditate, eius fuga dolorem minus, sequi velit hic
-            quia? Illum, nisi architecto maxime aliquid fugit hic numquam rerum
-            voluptates veniam magnam
+           Today, many face-to-face consultations involve the GP asking the patient the same set of routine quesitons during each visit. These questions are asked because of safety reasons, but the repetition is unnecessary. This type of consultation can easily be replaced and on menscript.com we do this by an online asynchronous method - where the patient fills out a structured online questionairre that will be reviewed by a doctor at a later time. This method saves the patient a visit to the doctor office and also significantly reduced the need for a face-to-face consultation. An evident downside of asynchronous consultations is that the doctor cannot examine the patient. It is for this reason that we also offer synchronous consultations - where a face-to-face consultation is held using video technology software using Skype.
+          </p>
+          <p class="blog-text">
+            be replaced and on menscript.com we do this by an online asynchronous method - where the patient fills out a structured online questionairre that will be reviewed by a doctor at a later time. This method saves the patient a visit to the doctor office and also significantly reduced the need for a face-to-face consultation. An evident downside of asynchronous consultations is that the doctor cannot examine the patient. It is for this reason that we also offer synchronous consultations - where a face-to-face consultation is held using video technology software using Skype.
           </p>
           <p class="blog-text-title mb-0">The cause of male pattern baldness</p>
           <p class="blog-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-            autem, dolores corporis quae nemo omnis corrupti aliquid, ullam
-            quidem laudantium, vero id dicta sapiente explicabo nihil. Ut
-            accusantium commodi tenetur tempora eius sequi quia aspernatur
-            deserunt quos. Tempore dolor voluptatibus velit cupiditate
-            dignissimos, illo ipsa nam facere aliquam molestiae autem porro quod
-            ab quibusdam fugit, impedit, repellat rerum vitae illum mollitia
-            labore magnam! Nisi dolorem dicta itaque veniam, eum aut saepe
-            quisquam dignissimos fugit exercitationem?
+           be replaced and on menscript.com we do this by an online asynchronous method - where the patient fills out a structured online questionairre that will be reviewed by a doctor at a later time. This method saves the patient a visit to the doctor office and also significantly reduced the need for a face-to-face consultation. An evident downside of asynchronous consultations is that the doctor cannot examine the patient. It is for this reason that we also offer synchronous consultations - where a face-to-face consultation is held using video technology software using Skype.
           </p>
           <p class="blog-text-title mb-0">Hair loss diagnosis</p>
           <p class="blog-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
-            consectetur consequuntur amet voluptatibus earum impedit molestias
-            beatae magnam quia, ex aut vitae id nulla distinctio, officia eaque,
-            explicabo expedita! Consequatur inventore dignissimos recusandae.
+           The replaced and on menscript.com we do this by an online asynchronous method - where the patient fills out a structured online questionairre that will be reviewed by a doctor at a later time. This method saves the patient a visit to the doctor office and also significantly reduced the need for a face-to-face consultation. An evident downside of asynchronous consultations is that the doctor cannot examine the patient. It is for this reason that we also offer synchronous consultations - where a face-to-face consultation is held using video technology software using Skype.
           </p>
-          <p class="blog-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
-            consectetur consequuntur amet voluptatibus earum impedit molestias
-            beatae magnam quia, ex aut vitae id nulla distinctio, officia
-            eaque,. explicabo expedita! Consequatur inventore dignissimos
-            recusandae.
-          </p>
-          <p class="blog-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
-            consectetur consequuntur amet voluptatibus earum impedit molestias
-            beatae magnam quia, ex aut vitae id nulla distinctio, officia eaque,
-            explicabo expedita! Consequatur inventore dignissimos recusandae.
-          </p>
-          <p class="blog-text-title mb-0">Teratment for hair losse</p>
-          <p class="blog-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
-            consectetur consequuntur amet voluptatibus earum impedit molestias
-            beatae magnam quia, ex aut vitae id nulla distinctio, officia
-            eaque,. explicabo expedita! Consequatur inventore dignissimos
-            recusandae.
-          </p>
-          <p class="blog-text ">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
-            consectetur consequuntur amet voluptatibus earum impedit molestias
-            beatae magnam quia, ex aut vitae id nulla distinctio, officia eaque,
-            explicabo expedita! Consequatur inventore dignissimos recusandae.
-          </p>
+         
+         
+         
+      
         </div>
       </div>
     </div>

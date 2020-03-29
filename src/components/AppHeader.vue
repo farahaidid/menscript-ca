@@ -155,13 +155,13 @@ nav#custom-navbar {
 }
 
 .navbar-dark .navbar-nav .nav-link {
- font-size: 24px;
+ font-size: 14px;
 line-height: 48px;
 color: #2f2f2f;
 font-family: "Montserrat";
 }
 .title {
-  font-size: 36px;
+  font-size: 20px;
   line-height: 48px;
 color: #363636;
 font-family: "Montserrat";
@@ -292,9 +292,7 @@ a.dropdown-link {
   li.nav-item {
     margin-left: 17px;
   }
-  .title {
-    font-size: 25px;
-  }
+ 
   .container.custom-margin {
     /* text-align: center; */
     display: flex;
@@ -303,9 +301,7 @@ a.dropdown-link {
   .go-back {
     left: 12%;
   }
-  .navbar-dark .navbar-nav .nav-link{
-    font-size: 17px;
-    }
+ 
 }
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -317,12 +313,7 @@ a.dropdown-link {
   li.nav-item {
     margin-left: 38px;
   }
-  .title {
-    font-size: 30px;
-  }
-  .navbar-dark .navbar-nav .nav-link{
-    font-size: 19px;
-    }
+  
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) and (max-width: 1450px) {
@@ -333,12 +324,7 @@ a.dropdown-link {
     width: auto;
     padding-left: 23% !important;
   }
-  .title {
-    font-size: 32px;
-  }
-  .navbar-dark .navbar-nav .nav-link {
-    font-size: 20px;
-}
+  
 }
 @media (min-width: 1450px) {
   .container.custom-margin {

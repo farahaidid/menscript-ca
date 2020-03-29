@@ -75,12 +75,12 @@ export default {
 }
 .scroll {
     position: absolute;
-    left: -20px;
+    left: 0px;
     bottom: 134px;
     font-family: Montserrat;
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
-    font-size: 36px;
+    font-size: 20px;
 }
 .scroll::before {
   content: "";
@@ -110,12 +110,11 @@ export default {
   margin-bottom: 51px;
   
 }
-p.banner-subtitle2 {
-    font-size: 18px;
+.banner-subtitle2 {
     font-size: 18px;
     line-height: 48px;
     color: #000000;
-    font-family: "Montserrat";
+    font-family: Roboto;
 }
 .custom-btn {
   background-color: black;
@@ -153,7 +152,7 @@ p.banner-subtitle2 {
   }
   .scroll {
     font-size: 12px;
-    left: -10px;
+    left: -15px;
     bottom: 66px;
   }
 
@@ -174,6 +173,9 @@ p.banner-subtitle2 {
     font-size: 12px;
     height: auto;
     width: 196px;
+  }
+  .banner-subtitle2{
+    font-size:12px;
   }
   
   .btn-sm {
@@ -217,9 +219,12 @@ p.banner-subtitle2 {
     margin-top: 25px;
     margin-bottom: 51px;
 }
+ .banner-subtitle2{
+    font-size:14px;
+  }
   .scroll {
     left: 0px;
-    bottom: 120px;
+    bottom: 80px;
     font-size: 15px;
   }
 }
@@ -247,11 +252,13 @@ p.banner-subtitle2 {
     width: 375px;
     margin-bottom: 0px;
 }
+ .banner-subtitle2{
+    font-size:15px;
+  }
   .scroll {
     left: 0px;
-    bottom: 120px;
-    font-size: 25px;
-    font-size: 20px;
+    bottom: 90px;
+   
   }
 }
 /* Large devices (desktops, 992px and up) */
@@ -272,10 +279,13 @@ p.banner-subtitle2 {
     margin-bottom: 0px!important;
     width:490px;
 }
+ .banner-subtitle2{
+    font-size:16px;
+  }
   .scroll {
     left: 0px;
     bottom: 120px;
-    font-size: 25px;
+   
   }
   .custom-btn {
     width: 245px!important;
@@ -301,6 +311,9 @@ p.banner-subtitle2 {
     height: 110px;
     margin-bottom: 10px;
   }
+   .banner-subtitle2{
+    font-size:18px;
+  }
   .custom-btn{
     width: 280px;
     height: 56px;
@@ -309,7 +322,7 @@ p.banner-subtitle2 {
   .scroll {
     left: 0px;
     bottom: 120px;
-    font-size: 30px;
+    
   }
 }
 </style>

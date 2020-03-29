@@ -40,7 +40,6 @@
       <div>
         <BlogTwo :data="blogTwo" />
       </div>
-
       <div>
         <BlogThree :data="blogThree" />
       </div>
@@ -113,7 +112,7 @@ export default {
   max-height: 1104px;
 }
 h3.brand-beauty-text {
-  font-size: 60px;
+  font-size: 36px;
 line-height: 48px;
 color: #212121;
 font-family: "Avenir Medium";
@@ -136,7 +135,7 @@ font-family: "Avenir Medium";
   h3.brand-beauty-text {
     top: 1em;
     left: 6em;
-    font-size: 25px;
+    font-size: 19px;
   }
 }
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -144,7 +143,7 @@ font-family: "Avenir Medium";
   h3.brand-beauty-text {
     top: 20px;
     left: 20px;
-    font-size: 22px;
+    font-size: 20px;
 }
 }
 /* Large devices (desktops, 992px and up) */
@@ -152,7 +151,8 @@ font-family: "Avenir Medium";
    h3.brand-beauty-text {
     top: 28px;
     left: 20px;
-    font-size: 30px;
+     font-size:25px;
+  
    
 }
 }
@@ -167,7 +167,8 @@ font-family: "Avenir Medium";
  h3.brand-beauty-text {
     top: 40px;
     left: 26px;
-    font-size: 40px;
+     font-size:32px;
+    
     
 }
 }
@@ -176,7 +177,8 @@ h3.brand-beauty-text {
     top: 50pxpx;
     top: 50px;
     left: 28px;
-    font-size: 50px;
+    font-size:34px;
+   
     
 }
 }

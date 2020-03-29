@@ -13,12 +13,13 @@
             </p>
             <div class="d-flex justify-content-end mt-5">
               <button
-                class="btn btn-secondary custom-cat-btn w-50"
+                class="btn btn-secondary  blog-button-cat "
                 type="button"
-                v-if="data.button == true"
+                
               >
                 Start online consult
               </button>
+              
             </div>
             <p class="subtitle-2" v-if="data.name == 'blogThree'">
               {{ data.subtitle }}
@@ -54,4 +55,3 @@ export default {
 };
 </script>
 
-<style scoped></style>
