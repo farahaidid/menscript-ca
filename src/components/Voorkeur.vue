@@ -3,23 +3,8 @@
 		<h1 class="text-center mt-5">Voorkeur</h1>
 		<div class="container text-center">
 			<div class="vk-container mx-auto text-left">
-				<p class="title">Gebaseerd op de opgegeven antwoorden wordt de volgende behandeling aangeboden:</p>
-				<div class="vk-box br-black mb-3">
-					<div class="d-flex px-3 py-3">
-						<div>
-							<img :src="products[0].thumbnail" :alt="products[0].title" />
-						</div>
-						<div>
-							<h5 class="mb-0 mt-2">{{products[0].title}}</h5>
-							<p class="mb-0">{{products[0].quantity}} tabletten</p>
-						</div>
-					</div>
-				</div>
-				<p class="title mt-5">
-					Voorkeur voor een andere behandeling?
-					Kies uit een van onderstaande opties:
-				</p>
 				<div v-for="(pro,i) in products" :key="i">
+					<p v-if="pro.info" class="title mt-5">{{pro.info}}</p>
 					<div @click="handleVkboxClick(i)" class="vk-box mb-3" :class="pro.selected&&'active'">
 						<div class="d-flex px-3 py-3">
 							<div>
@@ -48,12 +33,22 @@ export default {
 	data: () => ({
 		products: [
 			{
+				info: "Gebaseerd op de opgegeven antwoorden wordt de volgende behandeling aangeboden:",
 				title: "Finanteride 1mg",
 				thumbnail:
 					"https://i.pinimg.com/originals/d0/74/fd/d074fd5d97788ad45840582eee5f4cbd.jpg",
 				quantity: 28,
 				description: "Waarom heeft deze behandeling jouw voorkeur?",
 				selected: true
+			},
+			{
+				info: "Voorkeur voor een andere behandeling? Kies uit een van onderstaande opties:",
+				title: "Finanteride 1mg",
+				thumbnail:
+					"https://i.pinimg.com/originals/d0/74/fd/d074fd5d97788ad45840582eee5f4cbd.jpg",
+				quantity: 28,
+				description: "Waarom heeft deze behandeling jouw voorkeur?",
+				selected: false
 			},
 			{
 				title: "Alopecia",
@@ -71,8 +66,8 @@ export default {
 				i === j
 					? { ...p, selected: true }
 					: p.selected
-					? { ...p, selected: false }
-					: p
+						? { ...p, selected: false }
+						: p
 			);
 		}
 	}
