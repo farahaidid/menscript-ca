@@ -58,16 +58,16 @@ height: 60px;
 background-color: #000000;
 border: 1px solid #000000;
 font-family:Avenir Black;
-}#000000
+}
 /* ==================== */
 .cat-image-div:hover {
     text-decoration: none;
     transition: 5s;
-   /*  .custom-cat-btn {
+    .custom-cat-btn {
         opacity: 1!important;
         display: block;
         color:white;
-    } */
+    }
     .cat-text {
         opacity: 0;
         display: none;
@@ -235,7 +235,7 @@ font-family:Avenir Black;
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .custom-cat-btn {
-        font-size: 12px;
+        font-size: 10px;
     }
     img.cat-one-img {
         width: 100%;
@@ -283,6 +283,9 @@ font-family:Avenir Black;
     .sub-text-2 {
         font-size: 16px;
 
+    }
+    .custom-cat-btn {
+        font-size:14px;
     }
     .blog-button-cat {
         width: 245px!important;
