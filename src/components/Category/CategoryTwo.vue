@@ -27,7 +27,6 @@
           <img :src="data.image" alt="cat_two_img" class="cat-two-img" />
 
           <div class="hover-replace">
-           
 <button class="btn btn-secondary custom-cat-btn " type="button">
           {{ data.btnText }}
         </button>
@@ -60,7 +59,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss" scoped>
-
-</style>
