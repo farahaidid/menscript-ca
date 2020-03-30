@@ -12,12 +12,12 @@
           id="icon"
         />
       </a>
-      <div v-if="goback == 'true'" class="go-section">
-        <p class="go-back " @click="goblog">
-          <i class="fal fa-angle-left"></i><i class="fal fa-angle-left"></i
-          ><i class="fal fa-angle-left"></i> Go back
-        </p>
-      </div>
+
+        <h4 class="title">
+                <router-link to="/">MENSCRIPT</router-link>
+              </h4>
+
+     
 
       <button
         class="navbar-toggler"
@@ -33,7 +33,7 @@
       </button>
 
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <div class="container custom-margin">
+        <!-- <div class="container custom-margin">
           <div class="row">
             <div class="col-sm-12 ">
               <h4 class="title">
@@ -41,7 +41,7 @@
               </h4>
             </div>
           </div>
-        </div>
+        </div> -->
         
 
         <ul class="navbar-nav">
@@ -160,23 +160,19 @@ line-height: 48px;
 color: #2f2f2f;
 font-family: "Montserrat";
 }
-.title {
-  font-size: 20px;
-  line-height: 48px;
-color: #363636;
-font-family: "Montserrat";
+.title{
+    font-size: 20px;
+    line-height: 48px;
+    color: #363636;
+    font-family: "Montserrat";
+    width: 50%;
+   
+    text-align: end;
 }
 li.nav-item {
   margin-left: 89px;
 }
-.go-back {
-  font-size: 12px;
-  position: absolute;
-  z-index: 9999;
-  top: 20px;
-  left: 13%;
-  cursor: pointer;
-}
+
 .header-sm-modal {
   display: none;
 }
@@ -200,6 +196,10 @@ a.dropdown-link {
   color: black;
   text-decoration: none;
 }
+.navbar-nav {
+   
+    margin-left: auto!important;
+}
 
 /* responsive  */
 /* Small devices */
@@ -212,6 +212,7 @@ a.dropdown-link {
   }
   .title {
     font-size: 25px;
+    text-align: center!important;
   }
   li.nav-item {
     margin-left: 30px !important;
@@ -253,6 +254,7 @@ a.dropdown-link {
   }
   .title {
     font-size: 25px;
+     text-align: center!important;
   }
   .go-back {
     left: 10%;

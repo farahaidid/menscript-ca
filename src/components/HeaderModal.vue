@@ -11,12 +11,13 @@
                 &times;
               </button>
               <div class="row">
-                <div class="col-md-6 text-right">
+               <!--  <div class="col-md-6 text-right">
                   <h4 @click="gohome"  class="modal-title">MENSCRIPT</h4>
-                </div>
-                <div class="col-md-6 text-right">
+                </div> -->
+                  <h4 @click="gohome"  class="modal-title">MENSCRIPT</h4> 
+                <div class=" menu-nav ">
                   <router-link to class="nav-link" href="#">SEARCH</router-link>
-                  <a   class="nav-link" @click="openCardModal">CARD</a>
+                  <a   class="nav-link" @click="openCardModal">CART</a>
                   <a  class="nav-link" @click="goAccount"
                     >ACCOUNT</a
                   >
@@ -121,24 +122,40 @@ export default {
     border: none !important;
   }
   h4.modal-title {
-    width: auto;
-   
+    font-size: 20px;
+    line-height: 48px;
+    color: #363636;
+    font-family: "Montserrat";
     display: initial;
+   
     cursor: pointer;
+    
+    display: flex;
+    flex: 1.12;
+    justify-content: flex-end;
 }
   .close {
-    float: left !important;
-    font-size: 25px !important;
-    font-weight: 700;
-    color: #000;
-    text-shadow: 0 1px 0 #fff;
-    opacity: 0.5;
+    font-size: 32px !important;
+    top: 22px;
+    position: absolute;
+    left: 3px;
   }
+  .menu-nav {
+   
+   display: flex;
+    
+    flex:1;
+    justify-content: flex-end;
+}
   .nav-link {
     display: inline-block;
-    color: black;
     font-family: Montserrat;
     cursor: pointer;
+    font-size: 14px;
+   
+    color: #2f2f2f;
+    font-family: "Montserrat";
+    margin-left:66px;
   }
   li.link {
     list-style-type: none;
@@ -172,6 +189,7 @@ export default {
     top: 203px !important;
    
 }
+
  .modal-dialog.modal-xl li.link {
     font-size: 13px;
    
@@ -189,6 +207,9 @@ img.header-modal-img {
       height: 350px!important;
       width: 60%;
     }
+    .modal-dialog.modal-xl .nav-link{
+    margin-left: 0px;
+}
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -197,17 +218,34 @@ img.header-modal-img {
     width: 100%;
     height: 75%;
 }
+.modal-dialog.modal-xl .nav-link{
+    margin-left: 0px;
+}
 }
 
 /* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) and (max-width: 1300px) {
-  /* default style */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .modal-dialog.modal-xl h4.modal-title{
+    width: 56%;
+    }
+ .modal-dialog.modal-xl .nav-link{
+    margin-left: 16px;
+}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1300px) {
+@media screen and (min-width: 1201px) and (max-width: 1450px) {
   img.header-modal-img {
     max-height: 490px !important;
   }
+   .modal-dialog.modal-xl .nav-link{
+    margin-left: 38px;
+}
+}
+@media screen and (min-width: 1451px) and (max-width: 1800px) {
+  img.header-modal-img {
+    max-height: 490px !important;
+  }
+  
 }
 </style>

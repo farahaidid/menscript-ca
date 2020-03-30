@@ -1,68 +1,57 @@
 <template>
   <div>
-    <div class=" container-fluid bg-white width margin-top ">
+    <div class="container-fluid bg-white width margin-top">
       <div class="row width-75 mx-auto padding_border">
         <div class="col-md-4 rs-bottom">
-          <p class="footer-title ">
-            Vlog ons
-          </p>
-          <p class="sub-title">
-            Blijf op de hoogte van onze laatse ontwikkelingen
-          </p>
-          <div class="social-icon">
-            <a href="" class="social-link"><i class="fab fa-facebook-f"></i></a>
-            <a href="" class="social-link"><i class="fab fa-instagram"></i></a>
-            <a href="" class="social-link twitter"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a href="" class="social-link"><i class="fab fa-youtube"></i></a>
+          <p class="footer-title ">Vlog ons</p>
+          <p class="sub-title text_sm_center">Blijf op de hoogte van onze laatse ontwikkelingen</p>
+          <div class="social-icon my-auto">
+            <a href class="social-link">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href class="social-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href class="social-link twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href class="social-link">
+              <i class="fab fa-youtube"></i>
+            </a>
           </div>
         </div>
         <div class="col-md-4 rs-bottom">
-          <p class="footer-title ">
-           Hulp nodig?
-          </p>
-          <p class="sub-title">
-            Neem contact op met onze klantenservice
-          </p>
-          <button class="btn  contact-us">CONTACT Us</button>
+          <p class="footer-title ">Hulp nodig?</p>
+          <p class="sub-title ">Neem contact op met onze klantenservice</p>
+          <button class="btn contact-us">CONTACT US</button>
         </div>
         <div class="col-md-4 rs-bottom">
-          <p class="footer-title ">
-           Meld je aan
-          </p>
-          <p class="sub-title">
-            Ontvang het laatste nieuws en exclusive aanbiedingen 
-          </p>
+          <p class="footer-title ">Meld je aan</p>
+          <p class="sub-title ">Ontvang het laatste nieuws en exclusive aanbiedingen</p>
 
           <div class="form-group border position-relative">
             <span class="under_score">@</span>
-            <input
-              type="email"
-              class="form-control "
-              id="custom-input"
-              placeholder="Email"
-            />
+            <input type="email" class="form-control" id="custom-input" placeholder="EMAIL" />
 
             <button class="arrow-btn">
-              <i class="fa fa-arrow-right"></i>
+            <!--   <i class="fa fa-arrow-right"></i> -->
             </button>
           </div>
         </div>
       </div>
 
-      <div class="row mx-auto width-75  height  rs-footer">
+      <div class="row mx-auto width-75 height rs-footer">
         <div class="col-md-3 my-auto">
           <h1 class="footer-menu-title mb-0">MENSCRIPT</h1>
         </div>
-        <div class="col-md-9 text-end my-auto ">
+        <div class="col-md-9 text-end my-auto">
           <div class="footer-menu">
-            <a href="" CLASS="footer-menu-link "> FAQ</a>
-            <a href="" CLASS="footer-menu-link"> SHIPPING</a>
-            <a href="" CLASS="footer-menu-link"> TERMS</a>
-            <a href="" CLASS="footer-menu-link"> PRIVACY</a>
-            <a href="" CLASS="footer-menu-link"> COMPLAINTS</a>
-            <a href="" CLASS="footer-menu-link"> CONTACT US</a>
+            <a href class="footer-menu-link">FAQ</a>
+            <a href class="footer-menu-link">SHIPPING</a>
+            <a href class="footer-menu-link">TERMS</a>
+            <a href class="footer-menu-link">PRIVACY</a>
+            <a href class="footer-menu-link">COMPLAINTS</a>
+            <a href class="footer-menu-link">CONTACT US</a>
           </div>
         </div>
       </div>
@@ -76,7 +65,8 @@ export default {};
 
 <style scoped>
 .social-icon {
-    margin-top: 48px;
+    height: 60px;
+    padding: 15px 0px;
 }
 a.social-link {
   color: #ffffff;
@@ -94,41 +84,48 @@ a.social-link {
   padding-top: 60px;
 }
 p.footer-title {
-  font-size: 22pt;
-  font-family: Roboto;
+  font-size: 20px;
+  line-height: 30px;
+  color: #2f2f2f;
+  font-family: Avenir Black;
 }
+
 p.sub-title {
-  font-size: 14pt;
-  margin: 0px;
-  margin-bottom: 34px;
+  font-size: 20px;
+  color: #2f2f2f;
+  font-family: Avenir Roman;
+  min-height: 60px;
 }
 button.btn.contact-us {
   width: 232px;
   height: 60px;
-  /* background: black; */
-  color: black;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: Avenir Heavy;
+ 
+  color: #6c6d6f;
   background-color: ffffff;
   border: 1px solid #d5d6d6;
 }
 input#custom-input {
   width: 207px;
-  /* height: 62px; */
   top: 11px;
   border: none;
-  /* background-color: red; */
   left: 40px;
   position: absolute;
-  /* z-index: -1; */
+  font-size: 16px;
+  font-family: Avenir Heavy;
 }
+ 
 .border {
   border: 1px solid #d5d6d6 !important;
-  width: 372px;
+  width: 100%;
   height: 60px;
 }
 .arrow-btn {
   width: 70px;
   height: 60px;
-  background-color: #7a8879;
+  background-color: #000000;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -143,32 +140,38 @@ i.fa.fa-arrow-right {
   color: #ffffff;
 }
 
-span.under_score {
-  font-size: 24px;
-  position: absolute;
-  top: 12px;
-  left: 12px;
-}
-.form-control:focus {
-  border-color: #d5d6d6 !important;
+  span.under_score {
+    font-size: 24px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+  }
+  .form-control:focus {
+    border-color: #d5d6d6 !important;
 
-  box-shadow: none !important;
-}
-.padding_border {
-  padding-bottom: 59px;
-  border-bottom: 1px solid #f0f0f0;
-}
-.footer-menu-title {
-  font-size: 24pt;
-}
+    box-shadow: none !important;
+  } 
+  .padding_border {
+    padding-bottom: 59px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .footer-menu-title {
+  font-size: 36px;
+  letter-spacing: 4px;
+  line-height: 48px;
+  color: #363636;
+  font-family: "Montserrat";
+  }
 .text-end {
   display: flex;
   justify-content: flex-end;
 }
 a.footer-menu-link {
-  color: #000000;
   text-decoration: none;
   margin-left: 20px;
+  font-size: 16px;
+  line-height: 48px;
+  color: #2f2f2f;
 }
 .height {
   height: 124px;
@@ -182,109 +185,130 @@ a.social-link.twitter {
 
 /* responsive */
 
-@media (min-width: 768px) {
+
+/* Small devices */
+@media screen and (max-width: 640px) {
+
+  .width-75 {
+      width: 100%; 
+  }
+ .rs-bottom {
+    text-align: center;
+}
   p.footer-title {
-    font-size: 16pt;
+      font-size: 18px;
+      margin-top: 15px;
   }
   p.sub-title {
-    font-size: 10pt;
-    height: 22%;
-}
-
-  button.btn.contact-us {
-    width: 90%;
-    height: 53px !important;
-  }
-  .border {
-    border: 1px solid #d5d6d6 !important;
-    width: 110%;
-    height: 55px;
-  }
-  .arrow-btn {
-    width: 24%;
-    height: 52px;
-  }
-  .footer-menu-title {
-    font-size: 14pt;
-  }
-  
+    font-size: 16px;
    
 }
-@media (min-width: 1200px) {
-  button.btn.contact-us {
-    width: 62%;
-    height: 53px !important;
-  }
-  .border {
-    border: 1px solid #d5d6d6 !important;
+button.btn.contact-us {
     width: 100%;
-    height: 55px;
-  }
-  .arrow-btn {
-    width: 70px;
-    height: 53px;
-  }
-  p.sub-title {
-    font-size: 12pt;
-    height: 22%;
+    height: 51px;
+    font-size: 14px;
+    line-height: 0px; 
 }
-}
-@media screen and (max-width: 767px) {
-  /* .width {
-    width: 124% !important;
-  } */
-  .width-75 {
-    width: 100%;
-  }
-
-  p.footer-title {
-    font-size: 20pt;
-    text-align: center;
-  }
-  p.sub-title {
-    font-size: 15px;
-    margin: 0px;
-    margin-bottom: 34px;
-    text-align: center;
-  }
-  .footer-menu-title {
-    font-size: 20pt;
-    text-align: center;
-  }
-  input#custom-input {
-    width: 48%;
-    height: 68%;
-  }
   .border {
-    border: 1px solid #d5d6d6 !important;
-    width: 100%;
-    height: 60px;
+    width: 100%; 
+    height:60px;
   }
-
-  .arrow-btn {
-    right: 0px !important;
-  }
-  .padding_border {
-    padding-bottom: 0px;
-  }
-  .social-icon {
+  span.under_score {
+    font-size: 20px;
+    }
+  input#custom-input{
+   
+    font-size: 14px;
+   
+}
+.footer-menu-title {
+    font-size: 22px;
     text-align: center;
-  }
-  a.footer-menu-link {
-    color: #000000;
+}
+a.footer-menu-link {
     text-decoration: none;
-    margin-left: 18px;
+    margin-left: 4px;
+    font-size: 12px;
+    line-height: 48px;
+    color: #2f2f2f;
 }
-  .rs-bottom {
-    margin-bottom: 3em;
-    text-align: center;
-  }
-  .rs-footer {
-    margin-top: 25px;
-  }
-  .margin-top {
-  margin-top: 45px;
+
   
 }
+
+/* medium phone  */
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  .width-75 {
+      width: 100%; 
+  }
+  .rs-bottom {
+    text-align: center;
+}
+ p.footer-title {
+     
+      margin-top: 15px;
+  }
+button.btn.contact-us {
+    width: 70%;
+   
+}
+ .border {
+    width: 100%; 
+    height:60px;
+  }
+  .footer-menu-title {
+    font-size: 22px;
+    text-align: center;
+}
+.col-md-9.text-end.my-auto {
+    display: flex;
+    justify-content: center;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .width-75 {
+     width: 100%; 
+}
+}
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+ p.footer-title {
+      font-size: 16px;
+  }
+  p.sub-title {
+    font-size: 16px;
+}
+button.btn.contact-us {
+    width: 84%;
+    height: 60px;
+    font-size: 12px;
+    
+}
+   
+
+input#custom-input {
+   
+    font-size: 13px;
+    
+}
+span.under_score {
+    font-size: 20px;
+   
+}
+.footer-menu-title {
+    font-size: 24px;
+}
+a.footer-menu-link{
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 16px;
+    line-height: 48px;
+    color: #2f2f2f;
+}
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1450px) {
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1451px) and (max-width: 1450px) {
 }
 </style>
