@@ -1,48 +1,20 @@
 <template>
   <div>
-    <nav
-      class="navbar navbar-expand-md bg-dark navbar-dark fixed-top"
-      id="custom-navbar"
-    >
-      <a class="navbar-brand" href="#" @click="openHeaderModal">
-        <img
-          src="../assets/img/Hamburger-icon.jpg"
-          alt="hamburger"
-          class="hamburger"
-          id="icon"
-        />
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top mb-0" id="custom-navbar">
+      <a @click="toggleAppMenu">
+        <img src="../assets/img/Hamburger-icon.jpg" alt="hamburger" class="hamburger" id="icon" v-if="!showAppMenu" />
+        <img src="../assets/img/cancel.png" alt="hamburger" class="close-app-menu-icon" v-if="showAppMenu" />
       </a>
 
-        <h4 class="title">
-                <router-link to="/">MENSCRIPT</router-link>
-              </h4>
+      <h4 class="title">
+        <router-link to="/">MENSCRIPT</router-link>
+      </h4>
 
-     
-
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#collapsibleNavbar"
-      >
-        <img
-          src="../assets/img/Hamburger-icon.jpg"
-          alt="hamburger"
-          class="hamburger"
-        />
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <img src="../assets/img/Hamburger-icon.jpg" alt="hamburger" class="hamburger"/>
       </button>
 
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <!-- <div class="container custom-margin">
-          <div class="row">
-            <div class="col-sm-12 ">
-              <h4 class="title">
-                <router-link to="/">MENSCRIPT</router-link>
-              </h4>
-            </div>
-          </div>
-        </div> -->
-        
 
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -54,63 +26,19 @@
           <li class="nav-item">
             <router-link to="/account" class="nav-link">ACCOUNT</router-link>
           </li>
-          <div class="header-sm-modal">
-            <div class="row">
-              <div class="col-md-6 pl-5">
-                <p>MENU</p>
-                <ul>
-                  <li class="link">
-                    <router-link to="/category">HAIR</router-link>
-                    <div class="dropdown-content">
-                      <a href="#" class="dropdown-link"> finasteride</a>
-                      <a href="#" class="dropdown-link">minoxidil</a>
-                      <a href="#" class="dropdown-link">shampoo</a>
-                      <a href="#" class="dropdown-link">conditioner</a>
-                    </div>
-                  </li>
-                  <li class="link">
-                    <router-link to="/category">SKIN</router-link>
-                    <div class="dropdown-content">
-                      <a href="#" class="dropdown-link">daycream</a>
-                      <a href="#" class="dropdown-link">nightcream</a>
-                      <a href="#" class="dropdown-link">tretinoin</a>
-                    </div>
-                  </li>
-                  <li class="link" @click="goblog">
-                    Blog
-                  </li>
-                  <li class="link">ABOUT</li>
-                  <li class="link">CONTACT US</li>
-                </ul>
-              </div>
-              <div class="col-md-3 pr-lg-0 pr-md-0 text-sm-center">
-                <img
-                  src="@/assets/img/category-2.jpg"
-                  alt="header-modal-img"
-                  class="header-modal-img"
-                />
-              </div>
-              <div class="col-md-3 pl-lg-0 pl-md-0 text-sm-center ">
-                <img
-                  src="@/assets/img/face.png"
-                  alt=""
-                  class="header-modal-img"
-                />
-              </div>
-            </div>
-          </div>
+          <app-menu v-if="mobileScreen" />
         </ul>
       </div>
     </nav>
+    <app-menu v-if="showAppMenu" :absolute="true" />
     <CardModal />
-    <HeaderModal />
   </div>
 </template>
 
 <script>
 import EventBus from "@/plugins/eventBus";
 import CardModal from "@/components/CardModal";
-import HeaderModal from "@/components/HeaderModal";
+import AppMenu from "@/components/AppMenu"
 
 export default {
   props: {
@@ -120,16 +48,29 @@ export default {
   },
   components: {
     CardModal,
-    HeaderModal
+    AppMenu
+  },
+  data(){
+    return {
+      showAppMenu: false
+    }
+  },
+  computed:{
+    mobileScreen(){
+      return window.innerWidth < 768
+    }
   },
   methods: {
+    toggleAppMenu(){
+      if(!this.mobileScreen) this.showAppMenu = !this.showAppMenu
+    },
     openLoginModal() {
       EventBus.$emit("open-login-modal");
     },
     openCardModal() {
       $("#card-modal").modal("show");
     },
-   /*  goHome() {
+    /*  goHome() {
       
       this.$router.push("/");
     }, */
@@ -144,26 +85,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-
 nav#custom-navbar {
-  background-color: #fbfbfa !important;
-  margin-bottom: 50px !important;
+  background-color: #fff !important;
 }
 
 .navbar-dark .navbar-nav .nav-link {
- font-size: 14px;
-line-height: 48px;
-color: #2f2f2f;
-font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 48px;
+  color: #2f2f2f;
+  font-family: "Montserrat";
 }
-.title{
-    font-size: 20px;
-    line-height: 48px;
-    color: #363636;
-    font-family: "Montserrat";
-    width: 50%;
-    text-align: end;
+.title {
+  font-size: 20px;
+  line-height: 48px;
+  color: #363636;
+  font-family: "Montserrat";
+  width: 50%;
+  text-align: end;
 }
 li.nav-item {
   margin-left: 89px;
@@ -193,8 +131,17 @@ a.dropdown-link {
   text-decoration: none;
 }
 .navbar-nav {
-   
-    margin-left: auto!important;
+  margin-left: auto !important;
+}
+
+.close-app-menu-icon{
+  width:25px;
+  height:24px;
+  margin: 0 5px;
+}
+
+.hamburger , .close-app-menu-icon{
+  cursor: pointer;
 }
 
 /* responsive  */
@@ -208,7 +155,7 @@ a.dropdown-link {
   }
   .title {
     font-size: 25px;
-    text-align: center!important;
+    text-align: center !important;
   }
   li.nav-item {
     margin-left: 30px !important;
@@ -236,12 +183,12 @@ a.dropdown-link {
     height: 262px !important;
     width: 306px;
   }
-  .navbar-dark .navbar-nav .nav-link{
-    font-size: 16px!important;
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 16px !important;
     line-height: 20px;
     color: #2f2f2f;
     font-family: "Montserrat";
-}
+  }
 }
 /* medium phone  */
 @media screen and (min-width: 641px) and (max-width: 768px) {
@@ -250,7 +197,7 @@ a.dropdown-link {
   }
   .title {
     font-size: 25px;
-     text-align: center!important;
+    text-align: center !important;
   }
   .go-back {
     left: 10%;
@@ -290,7 +237,7 @@ a.dropdown-link {
   li.nav-item {
     margin-left: 17px;
   }
- 
+
   .container.custom-margin {
     /* text-align: center; */
     display: flex;
@@ -299,7 +246,6 @@ a.dropdown-link {
   .go-back {
     left: 12%;
   }
- 
 }
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -311,7 +257,6 @@ a.dropdown-link {
   li.nav-item {
     margin-left: 38px;
   }
-  
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) and (max-width: 1450px) {
@@ -322,7 +267,6 @@ a.dropdown-link {
     width: auto;
     padding-left: 23% !important;
   }
-  
 }
 @media (min-width: 1450px) {
   .container.custom-margin {

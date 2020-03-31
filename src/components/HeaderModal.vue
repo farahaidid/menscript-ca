@@ -5,7 +5,7 @@
       <div class="modal-dialog modal-xl">
         <div class="modal-content">
           <!-- Modal Header -->
-          <div class="modal-header">
+          <!-- <div class="modal-header">
             <div class="container-fluid">
               <button type="button" class="close" data-dismiss="modal">
                 &times;
@@ -22,56 +22,11 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <!-- Modal body -->
           <div class="modal-body">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6 pl-5">
-                  <p>MENU</p>
-                  <ul>
-                    <li class="link">
-                      <router-link to="/category">HAIR</router-link>
-                      <div class="dropdown-content">
-                        <a href="#" class="dropdown-link"> finasteride</a>
-                        <a href="#" class="dropdown-link">minoxidil</a>
-                        <a href="#" class="dropdown-link">shampoo</a>
-                        <a href="#" class="dropdown-link">conditioner</a>
-                      </div>
-                    </li>
-                    <li class="link">
-                      <router-link to="/category">SKIN</router-link>
-                      <div class="dropdown-content">
-                        <a href="#" class="dropdown-link">daycream</a>
-                        <a href="#" class="dropdown-link">nightcream</a>
-                        <a href="#" class="dropdown-link">tretinoin</a>
-                      </div>
-                    </li>
-                    <li class="link" @click="goblog">
-                      Blog
-                    
-                      </li>
-                    <li class="link">ABOUT</li>
-                    <li class="link">CONTACT US</li>
-                  </ul>
-                </div>
-                <div class="col-md-3 pr-lg-0 pr-md-0 text-sm-center">
-                  <img
-                    src="@/assets/img/category-2.jpg"
-                    alt="header-modal-img"
-                    class="header-modal-img"
-                  />
-                </div>
-                <div class="col-md-3 pl-lg-0 pl-md-0 text-sm-center ">
-                  <img
-                    src="@/assets/img/face.png"
-                    alt=""
-                    class="header-modal-img"
-                  />
-                </div>
-              </div>
-            </div>
+            <app-menu />
           </div>
         </div>
       </div>
@@ -82,9 +37,11 @@
 
 <script>
 import CardModal from "@/components/CardModal";
+import AppMenu from "@/components/AppMenu"
 export default {
   components:{
-    CardModal
+    CardModal,
+    AppMenu
   },
   methods:{
     goblog(){
