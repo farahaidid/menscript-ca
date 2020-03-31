@@ -1,6 +1,6 @@
 .custom-padding {
     margin-top: 66px;
-    padding: 0px 79px;
+    padding: 0px 100px;
     margin-bottom: 100px;
 }
 
@@ -12,8 +12,11 @@ img.cat-two-img {
     width: 100%;
     height: 443px!important;
 }
-.image2 {
+/* .image2,.image3 {
     max-width: 360px;
+} */
+.image2,.image3{
+    margin-left: 50px;
 }
 
 .cat-text {
@@ -154,8 +157,11 @@ font-family:Avenir Black;
         height: 44px;
       
     }
-    .image2 {
+    .image2,.image3 {
         max-width: initial;
+    }
+    .image1 {
+        padding-left: 16px;
     }
 
 }
@@ -178,6 +184,9 @@ font-family:Avenir Black;
     img.cat-two-img {
         width: 250px;
         height: 100%!important;
+    }
+    .image1 {
+        padding-left: 16px;
     }
     .custom-padding {
         margin-top: 46px;

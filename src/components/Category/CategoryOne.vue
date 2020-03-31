@@ -1,6 +1,6 @@
 <template>
   <div>
-        <div class="image">
+        <div class="image1">
           <img src="@/assets/img/category-1.jpg" alt="" class="cat-one-img">
           <div class="text mt-2">
             <p class="sub-text-1 mb-0">Finasteride 1mg - Minoxdil 5% - Shampoo - Conditioner</p>

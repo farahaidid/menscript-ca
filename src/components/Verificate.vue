@@ -12,7 +12,7 @@
          </div>
          <div class="mx-auto w-30 mb-4 pos-rel d-flex">
             <button class="c-out w-100 mr-3">Upload photo</button>
-            <button class="w-100 ml-3">Take photo</button>
+            <button class=" c-out w-100 ml-3">Take photo</button>
          </div>
          <button class="vol">Volgende</button>
       </div>

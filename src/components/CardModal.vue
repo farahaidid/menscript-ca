@@ -109,11 +109,18 @@ export default {
   border: 1px solid #959595;
 }
 .modal.show .modal-dialog {
-  -webkit-transform: none;
+ /*  -webkit-transform: none;
   transform: none;
-  right: 62px;
+  
+  left:484px;
   top: -29px;
-  position: fixed;
+  position: relative!important; */
+      -webkit-transform: none;
+    transform: none;
+    /* left: 0px; */
+    top: -29px;
+    right: 61px;
+    position: absolute;
   .modal-content.custom-card-modal {
     height: 995px;
     width: 785px;
@@ -142,6 +149,9 @@ export default {
       width: 16px;
       font-size: 12px;
     }
+    i.fal.fa-minus,i.fal.fa-plus {
+    color: #b3c2bb;
+}
   }
   .card-product {
     border: 1px solid #e1e1e1;
@@ -245,6 +255,13 @@ export default {
 }
 /* medium phone  */
 @media screen and (min-width: 641px) and (max-width: 768px) {
+ .modal.show .modal-dialog {
+    -webkit-transform: none;
+    transform: none;
+    top: -6px;
+    position: initial;
+}
+
    .custom-card-modal {
     width: 100% !important;
   }
@@ -262,6 +279,18 @@ export default {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
+   .modal.show .modal-dialog {
+    -webkit-transform: none;
+    transform: none;
+    /* left: 0px; */
+    top: -29px;
+    right: 107px;
+    position: absolute;
+}
+  .custom-card-modal {
+    width: 607px !important;
+   
+}
   .modal-header {
     font-size: 22px !important;
   }
@@ -285,7 +314,19 @@ export default {
     margin-left: 0px !important;
   }
 }
-@media screen and (min-width: 991px) and (max-width: 1200px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .modal.show .modal-dialog {
+    -webkit-transform: none;
+    transform: none;
+    /* left: 0px; */
+    top: -29px;
+    right: 0px;
+    position: absolute;
+}
+  .custom-card-modal {
+    width: 707px !important;
+   
+}
   .list-group-item {
     font-size: 16px !important;
   }

@@ -11,9 +11,7 @@
                 &times;
               </button>
               <div class="row">
-               <!--  <div class="col-md-6 text-right">
-                  <h4 @click="gohome"  class="modal-title">MENSCRIPT</h4>
-                </div> -->
+              
                   <h4 @click="gohome"  class="modal-title">MENSCRIPT</h4> 
                 <div class=" menu-nav ">
                   <router-link to class="nav-link" href="#">SEARCH</router-link>
@@ -110,8 +108,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
+/* .modal-content {
+  background-color: transparent;
+} */
 .modal-dialog.modal-xl {
-  min-width: 100% !important;
+  min-width: 101% !important;
 
   top: -29px !important;
   .a{
@@ -120,10 +121,11 @@ export default {
   }
   .modal-header {
     border: none !important;
+   
   }
   h4.modal-title {
     font-size: 20px;
-    line-height: 48px;
+    line-height: 40px;
     color: #363636;
     font-family: "Montserrat";
     display: initial;
@@ -131,7 +133,7 @@ export default {
     cursor: pointer;
     
     display: flex;
-    flex: 1.12;
+    flex: 1.094;
     justify-content: flex-end;
 }
   .close {
@@ -143,20 +145,21 @@ export default {
   .menu-nav {
    
    display: flex;
-    
+    margin-top: auto;
     flex:1;
     justify-content: flex-end;
 }
-  .nav-link {
+  .nav-link{
     display: inline-block;
     font-family: Montserrat;
     cursor: pointer;
     font-size: 14px;
-   
     color: #2f2f2f;
     font-family: "Montserrat";
-    margin-left:66px;
-  }
+    margin-left: 63px;
+    margin-right: 10px;
+    margin-top: 6px;
+}
   li.link {
     list-style-type: none;
     margin-bottom: 8px;

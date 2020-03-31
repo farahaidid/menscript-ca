@@ -47,11 +47,11 @@
         <div class="col-md-9 text-end my-auto">
           <div class="footer-menu">
             <a href class="footer-menu-link">FAQ</a>
-            <a href class="footer-menu-link">SHIPPING</a>
-            <a href class="footer-menu-link">TERMS</a>
+            <a href class="footer-menu-link">VERZENDING</a>
+            <a href class="footer-menu-link">TERMS & CONDITIONS</a>
             <a href class="footer-menu-link">PRIVACY</a>
-            <a href class="footer-menu-link">COMPLAINTS</a>
-            <a href class="footer-menu-link">CONTACT US</a>
+            <a href class="footer-menu-link">KLACHTEN</a>
+            <a href class="footer-menu-link">CONTACT </a>
           </div>
         </div>
       </div>
@@ -64,9 +64,12 @@ export default {};
 </script>
 
 <style scoped>
+a {
+    color: #ffffff !important;
+}
 .social-icon {
     height: 60px;
-    padding: 15px 0px;
+    padding: 15px 12px;
 }
 a.social-link {
   color: #ffffff;
@@ -91,10 +94,10 @@ p.footer-title {
 }
 
 p.sub-title {
-  font-size: 20px;
+  font-size: 16px;
   color: #2f2f2f;
   font-family: Avenir Roman;
-  min-height: 60px;
+  min-height: 47px;
 }
 button.btn.contact-us {
   width: 232px;
@@ -119,7 +122,7 @@ input#custom-input {
  
 .border {
   border: 1px solid #d5d6d6 !important;
-  width: 100%;
+  width: 80%;
   height: 60px;
 }
 .arrow-btn {
@@ -166,12 +169,14 @@ i.fa.fa-arrow-right {
   display: flex;
   justify-content: flex-end;
 }
+
 a.footer-menu-link {
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 30px;
   font-size: 16px;
   line-height: 48px;
-  color: #2f2f2f;
+  color: #2f2f2f!important;
+  font-family: Avenir Medium;
 }
 .height {
   height: 124px;
@@ -180,7 +185,7 @@ a.social-link.twitter {
   background-color: black;
 }
 .width-75 {
-  width: 75%;
+  width: 70%;
 }
 
 /* responsive */
@@ -232,6 +237,9 @@ a.footer-menu-link {
     line-height: 48px;
     color: #2f2f2f;
 }
+.col-md-9.text-end.my-auto {
+    justify-content: center;
+}
 
   
 }
@@ -264,13 +272,45 @@ button.btn.contact-us {
     display: flex;
     justify-content: center;
 }
+a.footer-menu-link {
+    text-decoration: none;
+    margin-left: 12px;
+    font-size: 14px;
+    line-height: 48px;
+    color: #2f2f2f;
+}
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .width-75 {
      width: 100%; 
 }
+.footer-menu-title {
+    font-size: 20px;
+    }
+    a.footer-menu-link {
+    
+    margin-left: 6px;
+    font-size: 14px;
+   
+}
+button.btn.contact-us {
+    width: 170px;
+    
+    font-size: 13px;
+}
+.arrow-btn {
+    width: 37px;
+   
+   
+}
+input#custom-input {
+    width: 79px;
+    }
 }
 @media screen and (min-width: 991px) and (max-width: 1200px) {
+   .width-75 {
+  width: 75%;
+}
  p.footer-title {
       font-size: 16px;
   }
@@ -294,19 +334,43 @@ span.under_score {
     font-size: 20px;
    
 }
+.arrow-btn{
+    width: 40px;
+    }
 .footer-menu-title {
     font-size: 24px;
 }
 a.footer-menu-link{
     text-decoration: none;
-    margin-left: 10px;
-    font-size: 16px;
+    margin-left: 6px;
+    font-size: 14px;
     line-height: 48px;
     color: #2f2f2f;
 }
 }
 
 @media screen and (min-width: 1201px) and (max-width: 1450px) {
+  .width-75 {
+  width: 70%;
+}
+button.btn.contact-us {
+    width: 190px;
+    font-size: 14px;
+}
+.arrow-btn {
+    width: 40px;
+    }
+.footer-menu-title {
+    font-size: 24px;
+   
+}
+a.footer-menu-link {
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 48px;
+    color: #2f2f2f;
+}
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1451px) and (max-width: 1450px) {

@@ -1,7 +1,7 @@
 <template>
   
   <div>
-       <Account class="product-page" :data="Abonnement"/>
+       <Account class="account-page" :data="Bestellingen"/>
   </div>
 </template>
 
@@ -15,12 +15,24 @@ components:{
 },
 data(){
     return{
-        Abonnement: {
-        title: "Abonnement",
-        list:["Overicht","Abonnement","Bestellingen","Addressen","Logout"],
-        thead:["ID","product","Bestellingen","Frequentie","Amount","Status"]
+       Bestellingen: {
+        title: "Bestellingen",
+        list:[
+                    {title: 'Overicht', to : '',},
+                    {title: 'Abonnement', to :'account',},
+                    {title: 'Bestellingen', to :'Bestellingen',},
+                    {title: 'Addressen', to :'',},
+                    {title: 'Logout', to :'',},
+                  
+                ],
+        thead:["Order#","Datum","Bataalststus","Gp status","Verzendststus","Invoice"],
+        items: [
+          { ID: 'HL89', Product: 'HL001', Begindatum: '02 febr 2020',Frequentie:'Iedere maand',Amount:'$39',Status:'Active', _cellVariants: { status: 'text-bold',} },
+          { ID: 'HL89', Product: 'HL001', Begindatum: '02 febr 2020',Frequentie:'Iedere maand',Amount:'$39',Status:'Cancelled' },
+          { ID: 'HL89', Product: 'HL001', Begindatum: '02 febr 2020',Frequentie:'Iedere maand',Amount:'$39',Status:'Active' },
+         
+        ],
 
-       
       },
 
     }
@@ -29,6 +41,11 @@ data(){
 }
 </script>
 
-<style>
+<style scoped lang="scss">
+.account-page {
+    background-color: #fbfbfa;
+    padding-top: 242px;
+    padding-bottom: 170px;
+}
 
 </style>

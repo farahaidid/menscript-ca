@@ -13,11 +13,14 @@
 							<div>
 								<h5 class="mb-0 mt-2">{{pro.title}}</h5>
 								<p class="mb-0">{{pro.quantity}} tabletten</p>
+								
 							</div>
+							
 						</div>
-						<div class="desc d-flex px-3 py-3">
+						<div class="desc d-flex px-3 py-3" v-if="pro.description != null ">
 							<i class="fal fa-exclamation-circle mt-1 mr-3"></i>
-							<p class="mb-0">{{pro.description}}</p>
+						<!-- 	<p class="mb-0">{{pro.description}}</p> -->
+						<input type="text"  class="inputfield" :placeholder="pro.description" />
 						</div>
 					</div>
 				</div>
@@ -29,7 +32,7 @@
 
 <script>
 export default {
-	name: "voorkeur",
+	
 	data: () => ({
 		products: [
 			{
@@ -38,7 +41,7 @@ export default {
 				thumbnail:
 					"https://i.pinimg.com/originals/d0/74/fd/d074fd5d97788ad45840582eee5f4cbd.jpg",
 				quantity: 28,
-				description: "Waarom heeft deze behandeling jouw voorkeur?",
+				price:28.00,
 				selected: true
 			},
 			{
@@ -47,6 +50,7 @@ export default {
 				thumbnail:
 					"https://i.pinimg.com/originals/d0/74/fd/d074fd5d97788ad45840582eee5f4cbd.jpg",
 				quantity: 28,
+				price:28.00,
 				description: "Waarom heeft deze behandeling jouw voorkeur?",
 				selected: false
 			},
@@ -55,6 +59,7 @@ export default {
 				thumbnail:
 					"https://images-na.ssl-images-amazon.com/images/I/51lGMbkajdL._SY355_.jpg",
 				quantity: 36,
+				price:28.00,
 				description: "Waarom heeft deze behandeling jouw voorkeur?",
 				selected: false
 			}
@@ -75,6 +80,7 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+
 	.voorkeur {
 		background-color: #fbfbfa;
 		overflow: auto;
@@ -112,6 +118,12 @@ export default {
 						font-size: 0.9em;
 						line-height: 1.6;
 					}
+					input,input:focus {
+					border: transparent!important;
+					box-shadow:none;
+					outline-style:none;
+					}
+					
 				}
 				&.br-black {
 					border-color: black !important;

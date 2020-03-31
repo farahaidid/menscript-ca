@@ -21,7 +21,7 @@
       </div>
     </div>
     <!-- two -->
-     <div class="image2" v-if="data.name === 'otc'">
+     <div class="image3" v-if="data.name === 'otc'">
       <div class="cat-image-div">
         <router-link to="/product">
           <img :src="data.image" alt="cat_two_img" class="cat-two-img" />

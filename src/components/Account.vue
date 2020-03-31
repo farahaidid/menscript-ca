@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container">
+    <div class="container ">
       <div class="row">
         <div class=" col-md-4 col-sm-12 text_sm_center">
           <img
@@ -8,73 +8,29 @@
             alt="account"
             class="account-img"
           />
-          <ul class="list-group">
-            <li class="list-group-item" v-for="(list,i) in data.list" :key="i">{{ list }}</li>
-          </ul>
+          <div class="list-group">
+          
+            <router-link 
+             class="list-group-item style"  
+            v-for="(list,i) in data.list" 
+            :to="list.to"
+            :key="i"
+            >{{ list.title }}
+            </router-link>
+          </div>
         </div>
         <div class="col-md-8 col-sm-12 custom-margin ">
-          <p class="table-title">{{ data.title }}</p>
-          <div class="table-responsive">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th v-for="(thead,i) in data.thead" :key="i">{{ thead }}</th>
-                </tr>
-              </thead>
-              <tbody v-if="data.title == 'Bestellingen'">
-                <tr>
-                  <td>3456</td>
-                  <td>02 feb 2020</td>
-                  <td style="color:#11ff12">Payed</td>
-                  <td style="color:#11ff12">accepted</td>
-                  <td>shipped</td>
-                  <td>view</td>
-                </tr>
-                <tr>
-                  <td>3456</td>
-                  <td>02 feb 2020</td>
-                  <td style="color:#ff0003">unpayed</td>
-                  <td style="color:#c9cbcd">pending</td>
-                  <td style="color:#c9cbcd">pending</td>
-                  <td>view</td>
-                </tr>
-                <tr>
-                  <td>3456</td>
-                  <td>02 feb 2020</td>
-                  <td style="color:#ff0003">unpayed</td>
-                  <td style="color:#c9cbcd">pending</td>
-                  <td style="color:#c9cbcd">pending</td>
-                  <td>view</td>
-                </tr>
-              </tbody>
-              <tbody v-if="data.title == 'Abonnement'">
-                <tr>
-                  <td>HL89</td>
-                  <td>HL001</td>
-                  <td>02 feb 2020</td>
-                  <td>Iedere maand	</td>
-                  <td >$39</td>
-                  <td style="color:#007800">Active</td>
-                </tr>
-                <tr>
-                  <td>HL90</td>
-                  <td>HL002</td>
-                 <td>02 feb 2020</td>
-                  <td >Iedere 3 maand	</td>
-                  <td >$43 </td>
-                  <td style="color:#eb0002">Cancelled</td>
-                </tr>
-                <tr>
-                  <td>HL90</td>
-                  <td>HL002</td>
-                 <td>02 feb 2020</td>
-                  <td >Iedere 3 maand	</td>
-                  <td >$43</td>
-                  <td style="color:#ff8003">Pending</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <p class="title">{{ data.title }}</p>
+
+           <div>
+    <b-table responsive    
+    :items="data.items"
+     :tbody-tr-class="rowClass"
+      :borderless="borderless"
+      :fields="data.fields"
+      ></b-table>
+  </div>
+         
         </div>
       </div>
     </div>
@@ -94,33 +50,67 @@ export default {
       }
     }
   },
+   data() {
+      return {
+        
+        borderless:true,
+      }
+    },
+     methods: {
+      rowClass(item, type) {
+        console.log("row",item)
+        console.log("row",type)
+       
+        if (item.Status == 'Active') return 'myclass'
+      }
+    }
+    
 };
 </script>
 
 <style scoped lang="scss">
+
+
+.myclass{
+  font-size: 18px;
+line-height: 72px;
+color: #171717;
+font-family:Avenir Medium;
+}
+a:hover{
+ text-decoration: none!important;
+}
 img.account-img {
   width: 200px;
   height: 200px;
 }
-li.list-group-item {
+.list-group-item {
   font-family: avenir Roman;
-  font-size: 15px;
-  border-bottom: 1px solid #b7b7b7 !important;
+ font-size: 24px;
+line-height: 72px;
+color: #3b3c3c;
+  border:transparent!important;
   width: 177px;
-  padding: 12px 5px;
+  background-color:transparent;
+}
+.list-group-item.style {
+    border-bottom: 1px solid #b7b7b7 !important;
 }
 .custom-margin {
   margin-top: 10em;
 }
-p.table-title {
-  font-size: 32px;
+p.title {
+  font-size: 72px;
+line-height: 48px;
+color: #2f2f2f;
+font-family:Avenir Black;
+margin-bottom:35px;
 }
-.table td,
-.table th,
-.table thead th {
-  border: transparent !important;
-  font-family: Avenir Medium;
+.table thead th,.table thead th,.table thead th,.table td, .table th {
+   
+     border-bottom: none!important
 }
+
 
 /* Small devices */
 @media screen and (max-width: 640px) {
@@ -138,14 +128,11 @@ p.table-title {
     justify-content: center;
     align-items: center;
   }
-  p.table-title {
+  p.title {
     font-size: 24px;
     text-align: center;
   }
-  .table thead th,
-  .table td {
-    font-size: 12px;
-  }
+  
 }
 /* medium phone  */
 @media screen and (min-width: 641px) and (max-width: 768px) {
@@ -163,9 +150,21 @@ p.table-title {
   .custom-margin {
     margin-top: 25px;
   }
-  .table thead th,
-  .table td {
-    font-size: 13px;
+   p.title {
+    font-size: 40px;
+    text-align: center;
+  }
+  
+}
+@media screen and (min-width: 641px) and (max-width: 1200px) {
+  .list-group-item {
+   
+    font-size: 18px;
+    
+}
+ p.title {
+    font-size: 50px;
+    text-align: center;
   }
 }
 </style>

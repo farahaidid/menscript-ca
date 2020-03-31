@@ -1,5 +1,5 @@
 <template>
-   <div class="login text-center">
+   <div class="login text-center pt-4">
       <h1 class="font-normal mb-5">Welkom</h1>
       <div class="form pt-3">
          <div class="mb-3">
@@ -48,7 +48,7 @@ export default {
 
 <style lang="scss" scoped>
 .login {
-   margin-top: 7rem;
+   margin-top: 3rem;
    .font-normal {
       font-weight: normal !important;
    }

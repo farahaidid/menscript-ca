@@ -25,14 +25,19 @@ const routes = [
     children: [
       { path: 'product', component: loadView("Product") },
       { path: 'privacy', component: loadView("Privacy") },
-      { 
+      {path: 'Bestellingen', component: loadView("AccountAbonnement"),}, 
+      {path: 'account', component: loadView("Account"),},
+
+
+
+      /* { 
         path: 'account', 
         component: loadView("Account"),
         children:[
-         /*  {path: '', component: loadView("Account"),}, */
-          {path: '', component: loadView("AccountAbonnement"),},
+          {path: '', component: loadView("Account"),}, 
+           {path: 'Bestellingen', component: loadView("AccountAbonnement"),}, 
         ]
-      },
+      }, */
     ]
   }, 
   {

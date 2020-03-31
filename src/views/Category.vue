@@ -3,41 +3,44 @@
     <AppBanner :data="category"/> 
     <hr />
     <div class="container-fluid custom-padding ">
-      <div class="row mr-custom">
-        <div class="col-md-6 pr">
+      <div class="row mr-custom " >
+        <div class="col-md-6 p-0">
           <CategoryOne />
         </div>
-        <div class="col-md-3 pr text_sm_center">
+        <div class="col-md-3 p-0 text_sm_center">
           <CategoryTwo :data="rx" />
         </div>
-        <div class="col-md-3 pr text_sm_center">
+        <div class="col-md-3 p-0 text_sm_center">
           <CategoryTwo :data="otc" />
         </div>
       </div>
-      <div class="row mr-custom mt-4">
-        <div class="col-md-6 pr">
+      <div class="row mr-custom " >
+        <div class="col-md-6 p-0">
           <CategoryOne />
         </div>
-        <div class="col-md-3 pr text_sm_center">
+        <div class="col-md-3 p-0 text_sm_center">
           <CategoryTwo :data="rx" />
         </div>
-        <div class="col-md-3 pr text_sm_center">
+        <div class="col-md-3 p-0 text_sm_center">
           <CategoryTwo :data="otc" />
         </div>
       </div>
-      <div class="row mr-custom mt-4">
-        <div class="col-md-6 pr">
+      <div class="row mr-custom " >
+        <div class="col-md-6 p-0">
           <CategoryOne />
         </div>
-        <div class="col-md-3 pr text_sm_center">
+        <div class="col-md-3 p-0 text_sm_center">
           <CategoryTwo :data="rx" />
         </div>
-        <div class="col-md-3 pr text_sm_center">
+        <div class="col-md-3 p-0 text_sm_center">
           <CategoryTwo :data="otc" />
         </div>
       </div>
+
     </div>
     <BlogThree :data="blogThree" />
+    
+
     <AskQuestion />
   </div>
 </template>
@@ -57,6 +60,7 @@ export default {
   },
   data() {
     return {
+    n:3,
        category: {
         name: "home",
         title: "Haarverzorgoing",

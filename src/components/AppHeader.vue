@@ -144,10 +144,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/* .container.custom-margin {
-    display: flex;
-    justify-content: flex-end;
-} */
+
 
 nav#custom-navbar {
   background-color: #fbfbfa !important;
@@ -166,7 +163,6 @@ font-family: "Montserrat";
     color: #363636;
     font-family: "Montserrat";
     width: 50%;
-   
     text-align: end;
 }
 li.nav-item {

@@ -64,7 +64,7 @@ export default {
   /* width: 95%; */
   max-height: 890px;
   /* margin-left: 5%; */
-  padding-left: 63px;
+  padding-left: 69px;
 }
 .banner-text {
   position: absolute;
