@@ -69,7 +69,10 @@
 								<h5 class="mb-0 mt-2 product-title">{{product.title}}</h5>
 								<p class="product-subtitle">{{product.quantity}} tabletten</p>
 								<div class="text-right">
-									<h5 class="product-price"><span :class=" {'nodiscount':noDiscountPrice }">€{{ discountPrice}} p/mnd </span>  <span :class=" {'discount':discount }"> €{{price}}.00 </span></h5>
+									<h5 class="product-price">
+										<span :class="[noDiscountPrice ? 'nodiscount' : '', 'mr-3' ]">€{{ discountPrice}} p/mnd </span>  
+										<span :class=" {'discount':discount }"> €{{price}}.00 </span>
+									</h5>
 								</div>
 							</div>
 						</div>
@@ -150,8 +153,8 @@ export default {
     font-size: 72px;
     line-height: 48px;
     color: #2f2f2f;
-	font-family: Avenir Black;
-	margin-top:200px;
+		font-family: Avenir Black;
+		margin-top: 190px;
 }
 .from-title {
     font-size: 20px;

@@ -87,8 +87,8 @@ export default {
     font-size: 72px!important;
     line-height: 48px;
     color: #2f2f2f;
-	font-family: Avenir Black;
-	margin-top:200px;
+		font-family: Avenir Black;
+		margin-top: 190px;
 }
 
 	.voorkeur {
