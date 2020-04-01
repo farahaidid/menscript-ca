@@ -73,8 +73,8 @@ export default {
 
 <style scoped>
 .app-menu{
-  margin-top: 48px;
-  position: absolute;
+  margin-top: 70px;
+  position: fixed;
   width: 100%;
   z-index: 10;
   background-color: #fff;

@@ -93,7 +93,6 @@ export default {
 .padding {
   padding-right: 0px;
   overflow: hidden !important;
-  margin-top: 28px;
 }
 .banner-title {
   font-size: 72px !important;

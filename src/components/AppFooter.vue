@@ -70,7 +70,7 @@ export default {};
     height: 114px;
     position: absolute;
     right: 80px;
-    bottom: 54px;
+    bottom: 40px;
 }
 a {
     color: #ffffff !important;
@@ -180,7 +180,7 @@ i.fa.fa-arrow-right {
 
 a.footer-menu-link {
     text-decoration: none;
-    margin-left: 15px;
+    margin-left: 47px;
     font-size: 16px;
     line-height: 48px;
     color: #2f2f2f!important;

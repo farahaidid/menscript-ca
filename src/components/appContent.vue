@@ -225,7 +225,6 @@
 .padding {
   padding-right: 0px;
   overflow: hidden !important;
-  margin-top: 28px;
 }
 .banner-title {
   font-size: 72px;
@@ -336,7 +335,6 @@ p.works-text-heading {
   .padding {
     padding-right: 0px;
     overflow: hidden !important;
-    margin-top: 28px;
   }
 
   .scroll {

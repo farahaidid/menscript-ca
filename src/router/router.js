@@ -17,6 +17,8 @@ const routes = [
       { path: '', component: loadView("Home") },
       { path: 'category', component: loadView("Category") },
       { path: 'blog', component: loadView("Blog") },
+      {path: 'Bestellingen', component: loadView("AccountBestellingen"),}, 
+      {path: 'account', component: loadView("AccountAbonnement"),},
     ]
   },
   {
@@ -25,19 +27,6 @@ const routes = [
     children: [
       { path: 'product', component: loadView("Product") },
       { path: 'privacy', component: loadView("Privacy") },
-      {path: 'Bestellingen', component: loadView("AccountBestellingen"),}, 
-      {path: 'account', component: loadView("AccountAbonnement"),},
-
-
-
-      /* { 
-        path: 'account', 
-        component: loadView("Account"),
-        children:[
-          {path: '', component: loadView("Account"),}, 
-           {path: 'Bestellingen', component: loadView("AccountAbonnement"),}, 
-        ]
-      }, */
     ]
   }, 
   {
