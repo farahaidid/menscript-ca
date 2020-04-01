@@ -256,8 +256,6 @@ a.footer-menu-link {
     right: 27px;
     bottom: -14px;
 }
-
-  
 }
 
 /* medium phone  */
@@ -404,6 +402,6 @@ a.footer-menu-link {
 }
 }
 /* Extra large devices (large desktops, 1200px and up) */
-@media screen and (min-width: 1451px) and (max-width: 1450px) {
+@media screen and (min-width: 1451px) and (max-width: 1850px) {
 }
 </style>
