@@ -1,7 +1,8 @@
 .custom-padding {
     margin-top: 66px;
-    padding: 0px 100px;
     margin-bottom: 100px;
+    padding-left: 117px;
+    
 }
 
 img.cat-one-img {
@@ -15,8 +16,13 @@ img.cat-two-img {
 /* .image2,.image3 {
     max-width: 360px;
 } */
-.image2,.image3{
-    margin-left: 50px;
+.image3 {
+    margin-left: 13px;
+    margin-right: 74px;
+}
+.image2{
+    margin-left: 53px;
+    margin-right: 36px;
 }
 
 .cat-text {
@@ -160,6 +166,9 @@ font-family:Avenir Black;
     .image2,.image3 {
         max-width: initial;
     }
+    .image3 {
+         margin-right: 0px!important; 
+    }
     .image1 {
         padding-left: 16px;
     }
@@ -246,6 +255,9 @@ font-family:Avenir Black;
     .image2 {
         max-width: initial;
     }
+    .image3 {
+        margin-right: 0px!important; 
+   }
 
 }
 
@@ -281,6 +293,14 @@ font-family:Avenir Black;
         font-size: 16px!important;
         line-height: 30px!important;
     }
+    .image2 {
+        margin-left: 13px!important;
+        margin-right: 20px!important;
+    }
+    .image3 {
+        margin-left: 3px!important;
+        margin-right: 31px!important;
+    }
    
 
     
@@ -309,6 +329,14 @@ font-family:Avenir Black;
         height: 51px!important;
         font-size: 18px!important;
         line-height: 36px!important;
+    }
+    .image2 {
+        margin-left: 23px;
+        margin-right: 22px;
+    }
+    .image3 {
+        margin-left: 7px;
+        margin-right: 37px;
     }
   
 }

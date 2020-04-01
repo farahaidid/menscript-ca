@@ -3,7 +3,7 @@
     <AppBanner :data="category"/> 
     <hr />
     <div class="container-fluid custom-padding ">
-      <div class="row mr-custom " >
+      <div class="row mr-custom p-0" >
         <div class="col-md-6 p-0">
           <CategoryOne />
         </div>
@@ -75,7 +75,7 @@ export default {
       },
       otc: {
         name: "otc",
-        image: require("@/assets/img/category-3.jpg"),
+        image: require("@/assets/img/otc.png"),
          text1: "Conditioner volumniser",
         btnText: "Voeg toe aan mandje"
       },
@@ -93,4 +93,9 @@ export default {
 
 <style lang="scss">
 @import '../style/category.scss';
+
+
+
+
+
 </style>
