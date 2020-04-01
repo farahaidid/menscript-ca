@@ -96,7 +96,7 @@ p.footer-title {
 p.sub-title {
   font-size: 16px;
   color: #2f2f2f;
-  font-family: Avenir Roman;
+  font-family: Avenir ;
   min-height: 47px;
 }
 button.btn.contact-us {
@@ -159,11 +159,11 @@ i.fa.fa-arrow-right {
     border-bottom: 1px solid #f0f0f0;
   }
   .footer-menu-title {
-  font-size: 36px;
-  letter-spacing: 4px;
+  font-size: 26px;
+  letter-spacing: 2px;
   line-height: 48px;
   color: #363636;
-  font-family: "Montserrat";
+  font-family: Avenir Black;
   }
 .text-end {
   display: flex;
@@ -171,12 +171,13 @@ i.fa.fa-arrow-right {
 }
 
 a.footer-menu-link {
-  text-decoration: none;
-  margin-left: 30px;
-  font-size: 16px;
-  line-height: 48px;
-  color: #2f2f2f!important;
-  font-family: Avenir Medium;
+      text-decoration: none;
+    margin-left: 10px;
+    font-size: 16px;
+    line-height: 48px;
+    color: #2f2f2f!important;
+    font-family: Avenir Medium;
+    letter-spacing: 1px;
 }
 .height {
   height: 124px;

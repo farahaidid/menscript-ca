@@ -1,6 +1,6 @@
 <template>
    <div class="consult pt-4">
-      <h1 class="text-center mt-5">Consult</h1>
+      <h1 class="text-center consult-title mt-5">Consult</h1>
       <div class="container text-center">
          <div class="opt-container mx-auto text-left">
             <p class="page">{{currentQuestion+1}} of {{questions.length}}</p>
@@ -92,6 +92,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+ .consult-title {
+      font-size: 72px;
+line-height: 48px;
+color: #2f2f2f;
+font-family:Avenir Black;
+   }
 .consult {
    background-color: #fbfbfa;
    overflow: auto;
@@ -120,7 +126,11 @@ export default {
       }
    }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 640px) {
+   .consult-title {
+      font-size: 42px;
+
+   }
    .consult {
       .opt-container {
          width: 100%;

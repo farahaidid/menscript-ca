@@ -111,7 +111,7 @@ font-family:Avenir Black;
 /* Small devices */
 @media screen and (max-width: 640px) {
    .login .font-normal {
-    font-size: 44px;
+    font-size: 42px;
    
 }
 .login .form button {

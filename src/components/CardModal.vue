@@ -142,7 +142,7 @@ export default {
   .modal-header {
     border-bottom: none;
     font-size: 30px;
-    font-family: Avenir Roman;
+    font-family: Avenir;
     margin-left: 8px;
     letter-spacing: 3px;
     padding: 29px 32px;

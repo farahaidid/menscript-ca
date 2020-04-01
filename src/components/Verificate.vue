@@ -1,10 +1,10 @@
 <template>
    <div class="verificate py-4">
-      <h1 class="text-center mt-5">ID Verificate</h1>
+      <h1 class="text-center mt-5 Verificate ">ID Verificate</h1>
       <div class="container text-center">
          <div class="vf-container mx-auto text-left">
             <p
-               class="title my-4"
+               class="text my-4"
             >Wij zijn wettelijk verplicht je identiteit te controleren. Geen zorgen, het is een eenmalig proces en neemt minder dan 60 sec. in beslag.</p>
             <div class="address-box p-5 mb-5">
                <i class="fas fa-address-card"></i>
@@ -27,6 +27,12 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+.Verificate{
+   font-size: 73px!important;
+    line-height: 48px;
+    color: #2f2f2f;
+    font-family: Avenir Black;
+}
 .verificate {
    background-color: #fbfbfa;
    overflow: auto;
@@ -35,11 +41,20 @@ export default {
       width: 30rem;
    }
    button.vol {
-      width: 24rem;
+      width: 436px;
+      height: 62px;
+      background-color: #000000;
+      border: 1px solid #000000;
+      font-size: 24px;
+      line-height: 48px;
+      color: #ffffff;   
+      font-family:Avenir Black;
    }
    .vf-container {
-      p.title {
-         font-size: 1em;
+      p.text {
+         font-size: 18px;
+        
+         font-family: Avenir;
          color: #707171;
       }
       .address-box {
@@ -66,7 +81,15 @@ export default {
       }
    }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 640px) {
+   .Verificate{
+   font-size: 42px!important;
+   
+}
+.verificate button.vol {
+    width: 309px;
+    font-size: 20px;  
+}
    .verificate {
       .vf-container,
       div.w-30 {
@@ -75,9 +98,7 @@ export default {
       .vf-container {
          padding: 0 0.5rem;
       }
-      button {
-         width: calc(100% - 1rem) !important;
-      }
+     
    }
 }
 </style>

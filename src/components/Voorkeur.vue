@@ -1,12 +1,12 @@
 <template>
 	<div class="voorkeur py-4">
-		<h1 class="text-center mt-5">Voorkeur</h1>
+		<h1 class="text-center mt-5 Voorkeur">Voorkeur</h1>
 		<div class="container text-center">
 			<div class="vk-container mx-auto text-left">
 				<div v-for="(pro,i) in products" :key="i">
 					<p v-if="pro.info" class="title mt-5">{{pro.info}}</p>
-					<div @click="handleVkboxClick(i)" class="vk-box mb-3" :class="pro.selected&&'active'">
-						<div class="d-flex px-3 py-3">
+					<div @click="handleVkboxClick(i)" class="vk-box mb-5" :class="pro.selected&&'active'">
+						<div class="d-flex px-3 py-3 position-relative">
 							<div>
 								<img :src="pro.thumbnail" :alt="pro.title" />
 							</div>
@@ -14,6 +14,9 @@
 								<h5 class="mb-0 mt-2">{{pro.title}}</h5>
 								<p class="mb-0">{{pro.quantity}} tabletten</p>
 								
+							</div>
+							<div class="price-div">
+								<p class="price">$28.00 </p>
 							</div>
 							
 						</div>
@@ -25,7 +28,7 @@
 					</div>
 				</div>
 			</div>
-			<button>Next</button>
+			<button class="consult-btn">Continue</button>
 		</div>
 	</div>
 </template>
@@ -80,6 +83,12 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+.Voorkeur {
+    font-size: 72px!important;
+    line-height: 48px;
+    color: #2f2f2f;
+    font-family: Avenir Black;
+}
 
 	.voorkeur {
 		background-color: #fbfbfa;
@@ -90,8 +99,10 @@ export default {
 		}
 		.vk-container {
 			p.title {
-				font-size: 1.1rem;
+				font-size: 18px;
+				line-height: 36px;
 				color: #707171;
+				font-family:Avenir Medium;
 			}
 			.vk-box {
 				border: 1.1px solid #e1e1e1;
@@ -118,6 +129,9 @@ export default {
 						font-size: 0.9em;
 						line-height: 1.6;
 					}
+					input{
+						width:100%;
+					}
 					input,input:focus {
 					border: transparent!important;
 					box-shadow:none;
@@ -128,16 +142,37 @@ export default {
 				&.br-black {
 					border-color: black !important;
 				}
+				p.price {
+					position: absolute;
+					top: 55px;
+					right: 18px;
+					font-size: 18px;
+					line-height: 36px;
+					color: #141414;
+					font-family: Avenir Black;
+}
 			}
 		}
-		button {
-			border: 1.1px solid black;
-			padding: 0.5rem 1rem;
-			background-color: black;
-			color: white;
-		}
+		button.consult-btn {
+    font-size: 24px;
+    line-height: 48px;
+    color: #fbfcff;
+    width: 429px;
+    height: 62px;
+    background-color: #000000;
+    border: 1px solid #000000;
+    font-family: Avenir Black;
+}
 	}
-	@media screen and (max-width: 576px) {
+	@media screen and (max-width: 640px) {
+		.Voorkeur {
+    font-size: 42px!important;
+   
+}
+.voorkeur button.consult-btn {
+    font-size: 20px;
+    width: 318px;
+}
 		.voorkeur {
 			.vk-container {
 				width: 100%;
