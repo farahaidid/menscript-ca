@@ -32,7 +32,7 @@ export default {
     line-height: 48px;
     color: #2f2f2f;
     font-family: Avenir Black;
-    margin-top:200px;
+    margin-top: 190px;
 }
 .verificate {
    background-color: #fbfbfa;
