@@ -234,7 +234,7 @@ color: #262626;
     .checkout {
       width: 221px;
       background-color: black;
-      height: 40px;
+      height: 43px;
       font-family: avenir Black;
       border: transparent;
       font-size: 20px;
