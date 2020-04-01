@@ -65,29 +65,27 @@ export default {
       }
     },
      methods: {
-      rowClass(item, type) {
-        console.log("row",item)
-        console.log("row",type)
-       
-        if (item.Status == 'Active') return 'myclass'
+      rowClass() {
+        /* return 'td2class' */
       }
     }
     
 };
 </script>
 
-<style scoped lang="scss">
-table th.th1class {
+<style scoped >
+>>>.th1class{
     font-size: 18px!important;
     line-height: 72px!important;
     color: #171717!important;
     font-family: Avenir Medium!important;
 }
-table td.td2class {
-    font-size: 18px!important;
-    line-height: 40px!important;
-    color: #171717!important;
+>>>.td2class{
+    font-size: 18px !important;
+    line-height: 40px !important;
+    color: #171717 !important;
     font-family: Avenir heavy!important;
+    
 }
 
 .myclass{

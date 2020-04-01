@@ -26,7 +26,7 @@ data(){
               {title: 'Logout', to :'',},
             ],
        fields: [
-        { key: "Order", label: "Order#",  thClass: 'th1class', tdClass: 'td2class', },
+        { key: "Order", label: "Order#",  thClass: 'th1class', tdClass:'td2class' },
         { key: "Datum", label: "Datum",  thClass: 'th1class', tdClass: 'td2class', },
         { key: "Bataalststus", label: "Bataalststus",  thClass: 'th1class', tdClass: 'td2class', },
         { key: "Gpstatus", label: "Gp status",  thClass: 'th1class', tdClass: 'td2class', },
@@ -72,12 +72,7 @@ data(){
     padding-top: 242px;
     padding-bottom: 170px;
 }
-td.td2class {
-    font-size: 18px;
-    line-height: 72px;
-    color: #171717;
-    font-family: Avenit Medium;
-}
+
 
 
 </style>

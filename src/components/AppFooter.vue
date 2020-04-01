@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container-fluid bg-white width margin-top">
+    <div class="container-fluid bg-white width margin-top position-relative">
       <div class="row width-75 mx-auto padding_border">
         <div class="col-md-4 rs-bottom">
           <p class="footer-title ">Vlog ons</p>
@@ -40,7 +40,7 @@
         </div>
       </div>
 
-      <div class="row mx-auto width-75 height rs-footer">
+      <div class="row mx-auto width-75 height rs-footer ">
         <div class="col-md-3 my-auto">
           <h1 class="footer-menu-title mb-0">MENSCRIPT</h1>
         </div>
@@ -55,6 +55,7 @@
           </div>
         </div>
       </div>
+      <img src="@/assets/img/footer logo.png" alt="" class="footer-logo">
     </div>
   </div>
 </template>
@@ -64,6 +65,13 @@ export default {};
 </script>
 
 <style scoped>
+.footer-logo {
+    width: 115px;
+    height: 115px;
+    position: absolute;
+    right: 80px;
+    bottom: 62px;
+}
 a {
     color: #ffffff !important;
 }
@@ -176,7 +184,7 @@ a.footer-menu-link {
     font-size: 16px;
     line-height: 48px;
     color: #2f2f2f!important;
-    font-family: Avenir ;
+    font-family: Avenir Medium;
     letter-spacing: 1px;
 }
 .height {
@@ -240,6 +248,13 @@ a.footer-menu-link {
 }
 .col-md-9.text-end.my-auto {
     justify-content: center;
+}
+.footer-logo {
+    width: 94px;
+    height: 73px;
+    position: absolute;
+    right: 27px;
+    bottom: -14px;
 }
 
   
@@ -307,6 +322,13 @@ button.btn.contact-us {
 input#custom-input {
     width: 79px;
     }
+    .footer-logo{
+    width: 88px;
+    height: 93px;
+    position: absolute;
+    right: 80px;
+    bottom: 84px;
+}
 }
 @media screen and (min-width: 991px) and (max-width: 1200px) {
    .width-75 {
@@ -347,6 +369,14 @@ a.footer-menu-link{
     font-size: 14px;
     line-height: 48px;
     color: #2f2f2f;
+    letter-spacing: 0px;
+}
+.footer-logo {
+    width: 94px;
+    height: 78px;
+    position: absolute;
+    right: 50px;
+    bottom: 62px;
 }
 }
 

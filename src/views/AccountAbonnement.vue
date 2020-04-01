@@ -32,19 +32,15 @@ data(){
          fields: [
            /* 'ID', 'Product', 'Begindatum', 'Frequentie', 'Amount','Status' */
            
-        { key: "ID", label: "ID",  thClass: 'th1class', tdClass: 'td2class' },
+        { key: "ID", label: "ID",  thClass: 'th1class', tdClass:'td2class' },
         { key: "Product", label: "Product",  thClass: 'th1class', tdClass: 'td2class', },
         { key: "Begindatum", label: "Begindatum",  thClass: 'th1class', tdClass: 'td2class', },
         { key: "Frequentie", label: "Frequentie",  thClass: 'th1class', tdClass: 'td2class', },
-        { key: "Amount", label: "Amount",  thClass: 'th1class', tdClass: 'td2class', },
-        { key: "Status", label: "Status",  thClass: 'th1class', tdClass: 'td2class', },
+        { key: "Amount", label: "Amount",  thClass: 'th1class', tdClass: 'td2class',},
+        { key: "Status", label: "Status",  thClass: 'th1class', tdClass: 'td2class',},
        
            
            ],
-
-
-
-
         items: [
           { ID: 'HL89', 
           Product: 'HL001', 
@@ -83,23 +79,24 @@ data(){
 }
 </script>
 
-<style scoped lang="scss">
+<style scoped >
 .account-page {
     background-color: #fbfbfa;
     padding-top: 242px;
     padding-bottom: 170px;
 }
-th.th1class {
+/* >>>.th1class{
     font-size: 18px!important;
     line-height: 72px!important;
     color: #171717!important;
     font-family: Avenir Medium!important;
 }
-td.td2class {
+>>>.td2class{
     font-size: 18px!important;
     line-height: 40px!important;
     color: #171717!important;
     font-family: Avenir heavy!important;
-}
+    background-color: red;
+} */
 
 </style>

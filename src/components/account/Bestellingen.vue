@@ -78,12 +78,19 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
-td.td2class {
-    font-size: 18px;
-    line-height: 72px;
-    color: #171717;
-    font-family: Avenit Medium;
+<style scoped>
+>>>.th1class{
+    font-size: 18px!important;
+    line-height: 72px!important;
+    color: #171717!important;
+    font-family: Avenir Medium!important;
+}
+>>>.td2class{
+    font-size: 18px !important;
+    line-height: 40px !important;
+    color: #171717 !important;
+    font-family: Avenir heavy!important;
+   
 }
 a:hover{
  text-decoration: none!important;
