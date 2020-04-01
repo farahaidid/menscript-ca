@@ -1,6 +1,6 @@
 <template>
-	<div class="voorkeur py-4">
-		<h1 class="text-center mt-5 Voorkeur">Voorkeur</h1>
+	<div class="voorkeur">
+		<h1 class="text-center Voorkeur">Voorkeur</h1>
 		<div class="container text-center">
 			<div class="vk-container mx-auto text-left">
 				<div v-for="(pro,i) in products" :key="i">
@@ -87,7 +87,8 @@ export default {
     font-size: 72px!important;
     line-height: 48px;
     color: #2f2f2f;
-    font-family: Avenir Black;
+	font-family: Avenir Black;
+	margin-top:200px;
 }
 
 	.voorkeur {

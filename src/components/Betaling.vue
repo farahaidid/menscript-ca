@@ -1,6 +1,6 @@
 <template>
-	<div class="betaling py-4">
-		<h1 class="text-center mt-5 mb-4  Betaling">Betaling</h1>
+	<div class="betaling">
+		<h1 class="text-center  mb-4  Betaling">Betaling</h1>
 		<div class="container text-center">
 			<div class="bt-container mx-auto text-left row">
 				<div class="col-md-6 w-100 pr-5 left-col">
@@ -51,7 +51,7 @@
 									<span class="per">-15%</span>
 									<span>iedere 6 maanden</span>
 								</button>
-								<button @click="freqSelected=3" :class="freqSelected==3&&'active'" class="w-100">
+								<button @click="freqSelected=3; noDiscount()" :class="freqSelected==3&&'active'" class="w-100">
 									<span>eenmalige aankoop</span>
 								</button>
 							</div>
@@ -69,7 +69,7 @@
 								<h5 class="mb-0 mt-2 product-title">{{product.title}}</h5>
 								<p class="product-subtitle">{{product.quantity}} tabletten</p>
 								<div class="text-right">
-									<h5 class="product-price">€{{ discountPrice}} p/mnd  <span :class=" {'discount':discount }"> €{{price}}.00 </span></h5>
+									<h5 class="product-price"><span :class=" {'nodiscount':noDiscountPrice }">€{{ discountPrice}} p/mnd </span>  <span :class=" {'discount':discount }"> €{{price}}.00 </span></h5>
 								</div>
 							</div>
 						</div>
@@ -117,17 +117,24 @@ export default {
 			description: "Waarom heeft deze behandeling jouw voorkeur?"
 		},
 		freqSelected: 0,
-		discount:false,
-		discountPrice:25,
+		discount:true,
+		discountPrice:25.2,
 		price:28,
+		noDiscountPrice:false,
+		
 	}),
 	methods:{
 		diccountMethod(val){
+			this.noDiscountPrice=false;
 			this.discount = true;
 			const givenDiscount=(val*this.price)/100;
 			this.discountPrice = this.price - givenDiscount;
-
-		}
+		},
+		noDiscount(){
+			this.discount=false;
+			this.noDiscountPrice=true;
+		},
+		
 	}
 };
 </script>
@@ -136,11 +143,15 @@ export default {
 .discount{
 	text-decoration: line-through;
 }
+.nodiscount {
+    display: none;
+}
 .Betaling {
     font-size: 72px;
     line-height: 48px;
     color: #2f2f2f;
-    font-family: Avenir Black;
+	font-family: Avenir Black;
+	margin-top:200px;
 }
 .from-title {
     font-size: 20px;

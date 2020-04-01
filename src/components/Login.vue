@@ -1,5 +1,5 @@
 <template>
-   <div class="login text-center pt-4">
+   <div class="login text-center">
       <h1 class="font-normal mb-5">Welkom</h1>
       <div class="form pt-3">
          <div class="mb-3">
@@ -54,6 +54,7 @@ export default {
 line-height: 48px;
 color: #2f2f2f;
 font-family:Avenir Black;
+margin-top:200px;
    }
    .form {
       input[type="email"],

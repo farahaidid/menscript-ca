@@ -1,22 +1,24 @@
 <template>
-  
   <div>
-       <Account class="account-page" :data="Bestellingen"/>
+     <Abonnement class="account-page" :data="Abonnement"/>
+   
   </div>
 </template>
-
 <script>
-import Account from "../components/Account";
+//import Account from "../components/Account";
+import Abonnement from "../components/account/Abonnement"
 
 export default {
 components:{
-    Account
+    //Account,
+    Abonnement
     
 },
 data(){
-    return{
-       Bestellingen: {
-        title: "Bestellingen",
+  return{
+      Abonnement: {
+        title: "Abonnement",
+       /*  list:["Overicht","Abonnement","Bestellingen","Addressen","Logout"], */
         list:[
                     {title: 'Overicht', to : '',},
                     {title: 'Abonnement', to :'account',},
@@ -25,17 +27,57 @@ data(){
                     {title: 'Logout', to :'',},
                   
                 ],
-        thead:["Order#","Datum","Bataalststus","Gp status","Verzendststus","Invoice"],
+
+      
+         fields: [
+           /* 'ID', 'Product', 'Begindatum', 'Frequentie', 'Amount','Status' */
+           
+        { key: "ID", label: "ID",  thClass: 'th1class', tdClass: 'td2class' },
+        { key: "Product", label: "Product",  thClass: 'th1class', tdClass: 'td2class', },
+        { key: "Begindatum", label: "Begindatum",  thClass: 'th1class', tdClass: 'td2class', },
+        { key: "Frequentie", label: "Frequentie",  thClass: 'th1class', tdClass: 'td2class', },
+        { key: "Amount", label: "Amount",  thClass: 'th1class', tdClass: 'td2class', },
+        { key: "Status", label: "Status",  thClass: 'th1class', tdClass: 'td2class', },
+       
+           
+           ],
+
+
+
+
         items: [
-          { ID: 'HL89', Product: 'HL001', Begindatum: '02 febr 2020',Frequentie:'Iedere maand',Amount:'$39',Status:'Active', _cellVariants: { status: 'text-bold',} },
-          { ID: 'HL89', Product: 'HL001', Begindatum: '02 febr 2020',Frequentie:'Iedere maand',Amount:'$39',Status:'Cancelled' },
-          { ID: 'HL89', Product: 'HL001', Begindatum: '02 febr 2020',Frequentie:'Iedere maand',Amount:'$39',Status:'Active' },
+          { ID: 'HL89', 
+          Product: 'HL001', 
+          Begindatum: '02 febr 2020',
+          Frequentie:'Iedere maand',
+          Amount:'$39',
+          Status:'Active', 
+          
+         },
+
+          { ID: 'HL89',
+           Product: 'HL001',
+            Begindatum: '02 febr 2020',
+            Frequentie:'Iedere maand',
+            Amount:'$39',
+            Status:'Cancelled' ,
+             
+            },
+          { ID: 'HL89', 
+          Product: 'HL001',
+           Begindatum: '02 febr 2020',
+           Frequentie:'Iedere maand',
+           Amount:'$39',
+           Status:'Pending'
+          }
+           
          
         ],
+         
+       
 
       },
-
-    }
+  }
 }
 
 }
@@ -46,6 +88,18 @@ data(){
     background-color: #fbfbfa;
     padding-top: 242px;
     padding-bottom: 170px;
+}
+th.th1class {
+    font-size: 18px!important;
+    line-height: 72px!important;
+    color: #171717!important;
+    font-family: Avenir Medium!important;
+}
+td.td2class {
+    font-size: 18px!important;
+    line-height: 40px!important;
+    color: #171717!important;
+    font-family: Avenir heavy!important;
 }
 
 </style>

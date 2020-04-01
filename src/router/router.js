@@ -25,8 +25,8 @@ const routes = [
     children: [
       { path: 'product', component: loadView("Product") },
       { path: 'privacy', component: loadView("Privacy") },
-      {path: 'Bestellingen', component: loadView("AccountAbonnement"),}, 
-      {path: 'account', component: loadView("Account"),},
+      {path: 'Bestellingen', component: loadView("AccountBestellingen"),}, 
+      {path: 'account', component: loadView("AccountAbonnement"),},
 
 
 

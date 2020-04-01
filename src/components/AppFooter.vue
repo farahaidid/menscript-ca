@@ -159,12 +159,12 @@ i.fa.fa-arrow-right {
     border-bottom: 1px solid #f0f0f0;
   }
   .footer-menu-title {
-  font-size: 26px;
-  letter-spacing: 2px;
-  line-height: 48px;
-  color: #363636;
-  font-family: Avenir Black;
-  }
+    font-size: 26px;
+    letter-spacing: 1px;
+    line-height: 48px;
+    color: #363636;
+    font-family: Avenir medium;
+}
 .text-end {
   display: flex;
   justify-content: flex-end;
@@ -176,7 +176,7 @@ a.footer-menu-link {
     font-size: 16px;
     line-height: 48px;
     color: #2f2f2f!important;
-    font-family: Avenir Medium;
+    font-family: Avenir ;
     letter-spacing: 1px;
 }
 .height {

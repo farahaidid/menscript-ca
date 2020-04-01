@@ -1,6 +1,6 @@
 <template>
-   <div class="consult pt-4">
-      <h1 class="text-center consult-title mt-5">Consult</h1>
+   <div class="consult">
+      <h1 class="text-center consult-title ">Consult</h1>
       <div class="container text-center">
          <div class="opt-container mx-auto text-left">
             <p class="page">{{currentQuestion+1}} of {{questions.length}}</p>
@@ -97,6 +97,7 @@ export default {
 line-height: 48px;
 color: #2f2f2f;
 font-family:Avenir Black;
+margin-top:200px;
    }
 .consult {
    background-color: #fbfbfa;
