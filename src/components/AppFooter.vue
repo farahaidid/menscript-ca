@@ -66,11 +66,11 @@ export default {};
 
 <style scoped>
 .footer-logo {
-    width: 115px;
-    height: 115px;
+    width: 137px;
+    height: 114px;
     position: absolute;
     right: 80px;
-    bottom: 62px;
+    bottom: 54px;
 }
 a {
     color: #ffffff !important;
@@ -179,13 +179,13 @@ i.fa.fa-arrow-right {
 }
 
 a.footer-menu-link {
-      text-decoration: none;
-    margin-left: 10px;
+    text-decoration: none;
+    margin-left: 15px;
     font-size: 16px;
     line-height: 48px;
     color: #2f2f2f!important;
     font-family: Avenir Medium;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 .height {
   height: 124px;
@@ -292,6 +292,7 @@ a.footer-menu-link {
     font-size: 14px;
     line-height: 48px;
     color: #2f2f2f;
+    letter-spacing: 0px;
 }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -305,6 +306,8 @@ a.footer-menu-link {
     
     margin-left: 6px;
     font-size: 14px;
+    letter-spacing: 0px;
+    
    
 }
 button.btn.contact-us {
@@ -395,13 +398,30 @@ button.btn.contact-us {
 }
 a.footer-menu-link {
     text-decoration: none;
-    margin-left: 10px;
-    font-size: 14px;
+    margin-left: 7px;
+    font-size: 13px;
     line-height: 48px;
     color: #2f2f2f;
+     letter-spacing: 1px;
+}
+.footer-logo{
+    width: 119px;
+    height: 102px;
+    position: absolute;
+    right: 80px;
+    bottom: 54px;
 }
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1451px) and (max-width: 1850px) {
+  a.footer-menu-link {
+    text-decoration: none;
+    margin-left: 8px;
+    font-size: 15px;
+    line-height: 48px;
+    color: #2f2f2f!important;
+    font-family: Avenir Medium;
+    letter-spacing: 1px;
+}
 }
 </style>
