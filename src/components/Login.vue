@@ -12,13 +12,13 @@
          <div class="extra-space"></div>
          <div>
             <input type="checkbox" id="remember" class="mr-1" v-model="remember" />
-            <label for="remember">Remember me for 30 days</label>
+            <label for="remember" class="dha">Remember me for 30 days</label>
          </div>
       </div>
       <div class="actions mt-3">
          <router-link to="#" class="dha">Don't have an account?</router-link>
          <br />
-         <router-link to="#">Create an account</router-link>
+         <router-link to="#" class="ac">Create an account</router-link>
       </div>
    </div>
 </template>
@@ -50,7 +50,10 @@ export default {
 .login {
    margin-top: 3rem;
    .font-normal {
-      font-weight: normal !important;
+      font-size: 72px;
+line-height: 48px;
+color: #2f2f2f;
+font-family:Avenir Black;
    }
    .form {
       input[type="email"],
@@ -63,10 +66,23 @@ export default {
       input[type="email"],
       input[type="password"] {
          background-color: transparent;
+          width: 429px;
+         height: 62px;
       }
       button {
          background-color: black;
-         color: white;
+         font-size: 24px;
+         line-height: 48px;
+         color: #fbfcff;
+         width: 429px;
+         height: 62px;
+         border: 1px solid #000000;
+      }
+      label.dha {
+         font-size: 16px;
+         line-height: 24px;
+          color: #707171!important;
+         font-family:Avenir Medium;
       }
    }
    .extra-space {
@@ -75,12 +91,39 @@ export default {
    .actions {
       a {
          font-size: 1em;
-         color: black;
          text-decoration: none;
       }
       .dha {
-         color: gray;
+         font-size: 16px;
+         line-height: 24px;
+          color: #707171!important;
+         font-family:Avenir Medium;
+      }
+      .ac{
+          font-size: 16px;
+          line-height: 24px;
+          color: #000000!important;
+         font-family:Avenir Medium;
       }
    }
+}
+
+/* Small devices */
+@media screen and (max-width: 640px) {
+   .login .font-normal {
+    font-size: 44px;
+   
+}
+.login .form button {
+    font-size: 20px;
+    line-height: 36px;
+    width: 285px;
+    height: 55px;
+    
+}
+ input[type="email"],
+      input[type="password"] {
+         width: 285px!important;
+      }
 }
 </style>

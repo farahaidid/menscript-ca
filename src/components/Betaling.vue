@@ -69,7 +69,7 @@
 								<h5 class="mb-0 mt-2">{{product.title}}</h5>
 								<p>{{product.quantity}} tabletten</p>
 								<div class="text-right">
-									<h5>€25.20 p/mnd €28.00</h5>
+									<h5>€25.20 p/mnd  <span class="discount"> €28.00 </span></h5>
 								</div>
 							</div>
 						</div>
@@ -122,6 +122,8 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+
+  
 	h5 {
 		font-size: 1em;
 	}

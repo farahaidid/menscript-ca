@@ -5,7 +5,7 @@
         <div class="modal-header">
           IN CART
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+            <span aria-hidden="true">  <img src="../assets/img/cancel.png" alt="hamburger" class="close-app-menu-icon" /></span>
           </button>
         </div>
         <div class="modal-body">
@@ -25,12 +25,22 @@
               <div class="col-md-10 pl pr">
                 <div class="card-product">
                   <div class="card-product-description">
+                  
+
                     <img src="@/assets/img/category-2.jpg" alt class="cart-img" />
+
+
+                <div class="text-space">
+
+               
                     <p class="sub-text-1 mb-0">Finasteride 1mg</p>
-                    <p class="sub-text-2">28 tabletten</p>
+                    <p class="sub-text-2 mb-0">28 tabletten</p>
                     <p class="sub-text-3 mb-0 text-right">
                       <b>$28.00</b>
                     </p>
+                     </div>
+
+
                   </div>
                 </div>
               </div>
@@ -51,11 +61,15 @@
                 <div class="card-product">
                   <div class="card-product-description">
                     <img src="@/assets/img/category-2.jpg" alt class="cart-img" />
-                    <p class="sub-text-1 mb-0">Finasteride 1mg</p>
-                    <p class="sub-text-2">28 tabletten</p>
+                    <div class="text-space">
+
+      
+                    <p class="sub-text-1 mb-0">Shampoo revitalising </p>
+                    <p class="sub-text-2 mb-0">190ml</p>
                     <p class="sub-text-3 mb-0 text-right">
-                      <b>$28.00</b>
+                      <b>$13.00</b>
                     </p>
+                     </div>
                   </div>
                 </div>
               </div>
@@ -64,8 +78,8 @@
         </div>
         <div class="modal-footer custom-card-footer">
           <div class="container">
-            <div class="row">
-              <div class="col-md-7">
+            <div class="row p-0">
+              <div class="col-md-7 p-0">
                 <ul class="list-group">
                   <li class="list-group-item">
                     <i class="fa fa-check mr-2"></i>Gratis verzending
@@ -79,7 +93,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-md-5 my-auto text_sm_center custom_center">
+              <div class="col-md-5 p-0 my-auto text_sm_center custom_center">
                 <span class="price">$41</span>
                 <button class="checkout app-btn ml-4" @click="openLoginModal">Checkout</button>
               </div>
@@ -103,7 +117,7 @@ export default {
 </script>
 <style scoped lang="scss">
 .custom-card-modal {
-  width: 861px !important;
+  width: 785px !important;
   height: 995px;
   background-color: #ffffff;
   border: 1px solid #959595;
@@ -119,7 +133,7 @@ export default {
     transform: none;
     /* left: 0px; */
     top: -29px;
-    right: 61px;
+    right: 0px;
     position: absolute;
   .modal-content.custom-card-modal {
     height: 995px;
@@ -129,12 +143,20 @@ export default {
     border-bottom: none;
     font-size: 30px;
     font-family: Avenir Roman;
+    margin-left: 8px;
+    letter-spacing: 3px;
+    padding: 29px 32px;
     .close {
       position: absolute;
       right: 26px;
       font-size: 34px;
       font-weight: 300;
       top: 20px;
+    }
+    .close-app-menu-icon{
+    width: 25px;
+    height: 24px;
+    margin: 0 5px;
     }
   }
   .number-spinner {
@@ -144,6 +166,7 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width:100px!important;
     span.i {
       display: inline-block;
       width: 16px;
@@ -155,32 +178,43 @@ export default {
   }
   .card-product {
     border: 1px solid #e1e1e1;
-    padding: 10px 10px 0px 10px;
+    /* padding: 10px 10px 0px 10px; */
     margin-left: 10px;
+    height: 113px;
+    .text-space {
+    padding-top: 20px;
+  
+}
+
     img.cart-img {
       width: 60px;
-      height: 70px;
-      float: left;
-      margin-right: 15px;
+    height: 70px;
+    float: left;
+    margin-right: 15px;
+    margin-top: 16px;
+    margin-left: 15px;
     }
     .sub-text-1 {
       line-height: 36px;
       font-family: Avenir Black;
       font-size: 18px;
       color: #141414;
+     
     }
     p.sub-text-2 {
       font-size: 16px;
       color: #141414;
+     
     }
     p.sub-text-3 {
       font-size: 18px;
       font-family: Avenir Black;
+      padding-right: 10px;
     }
   }
 
   .custom-card-footer {
-    padding: 35px 25px;
+   padding: 86px 34px 67px 34px;
 
     .list-group-item {
       padding: 0px;
@@ -194,6 +228,8 @@ export default {
     .price {
       font-size: 48px;
       font-family: Roboto;
+      line-height: 48px;
+color: #262626;
     }
     .checkout {
       width: 221px;
