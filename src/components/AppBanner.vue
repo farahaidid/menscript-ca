@@ -8,7 +8,7 @@
             <img src="../assets/img/banner.jpg" alt class="banner-img" />
             <div class="banner-text">
               <div class="my-auto">
-                <h1 class="banner-title">{{ data.title }}</h1>
+                <h1 class="banner-title extrasmall">{{ data.title }}</h1>
 
                 <p class="custom-home banner-subtitle">{{ data.subtitle }}</p>
 
@@ -146,17 +146,53 @@ img.nos.logo {
 
 /* extra samll  */
 @media screen and (max-width: 450px) {
-  .banner-title {
-    font-size: 20px !important;
+  .banner-title,.extrasmall{
+    font-size: 18px!important;
+    margin-bottom: 0px; 
+  }
+  .banner-subtitle {
+    margin-top: 0px;
     margin-bottom: 0px;
-    background-color:red;
-    
+    font-size: 10px;
+    height: auto;
+    width: 196px;
+  }
+  .banner-subtitle2 {
+    font-size: 10px;
+  }
+  .scroll {
+    visibility: hidden;
+  }
+  .banner-img {
+  margin-left: 0px;
+    padding-left: 0px; 
+  }
+  .padding {
+      padding-right: 0px; 
+      padding-left:0px;
+  }
+  .btn-sm {
+    width: 115px!important;
+    height: 26px;
+    font-size: 10px;
+    line-height: 0px;
+  }
+  .logo {
+    width: 100px;
+    height: 27px;
+    margin-bottom: 10px;
+  }
+  .logo-div {
+    padding: 20px 3px;
   }
 
+  img.del.logo,img.bbc.logo,img.nos.logo {
+    margin-left: 0px;
+  }
 
 }
 /* Small devices */
-@media screen and (max-width: 640px) {
+@media screen and (min-width: 451px) and (max-width: 640px) {
   .banner {
     height: 14em;
     margin-left: 0px;
@@ -185,6 +221,7 @@ img.nos.logo {
   .banner-title {
     font-size: 20px !important;
     margin-bottom: 0px;
+    
     
   }
   .banner-subtitle {
