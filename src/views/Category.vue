@@ -1,6 +1,6 @@
 <template>
   <div>
-    <AppBanner :data="category"/> 
+     <AppBanner :data="category"/> 
     <hr />
     <div class="container-fluid custom-padding ">
       <div class="row mr-custom p-0" >

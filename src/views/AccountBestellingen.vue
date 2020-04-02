@@ -1,18 +1,13 @@
 <template>
   <div>
      <Bestellingen class="account-page" :data="Bestellingen"/>
-   
   </div>
 </template>
 <script>
-//import Account from "../components/Account";
 import Bestellingen from "../components/account/Bestellingen"
-
 export default {
 components:{
-    //Account,
     Bestellingen
-    
 },
 data(){
   return{
@@ -72,7 +67,5 @@ data(){
     padding-top: 242px;
     padding-bottom: 170px;
 }
-
-
 
 </style>

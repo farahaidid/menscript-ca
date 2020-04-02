@@ -2,7 +2,7 @@
   <div>
     <div class="container ">
       <div class="row">
-        <div class=" col-md-3 col-sm-12 text_sm_center">
+        <div class=" col-md-4 col-sm-12 text_sm_center">
           <img
             src="@/assets/img/privacy.png"
             alt="account"
@@ -19,7 +19,7 @@
             </router-link>
           </div>
         </div>
-        <div class="col-md-6 col-sm-12 custom-margin ">
+        <div class="col-md-8 col-sm-12 custom-margin ">
           <p class="title">{{ data.title }}</p>
 
            <div>
@@ -88,7 +88,7 @@ export default {
     font-size: 18px !important;
     line-height: 40px !important;
     color: #171717 !important;
-    font-family: Avenir heavy!important;
+    font-family: avenir Medium!important;
    
 }
 a:hover{
@@ -99,7 +99,7 @@ img.account-img {
   height: 200px;
 }
 .list-group-item {
-  font-family: avenir Roman;
+  font-family: avenir Medium;
  font-size: 24px;
 line-height: 72px;
 color: #3b3c3c;
@@ -117,7 +117,7 @@ p.title {
   font-size: 72px;
 line-height: 48px;
 color: #2f2f2f;
-font-family:Avenir Black;
+font-family: avenir Medium;
 margin-bottom:35px;
 }
 

@@ -102,7 +102,7 @@ export default {
     font-size: 18px!important;
     line-height: 40px!important;
     color: #171717!important;
-    font-family: Avenir heavy!important;
+    font-family: Avenir Medium!important;
    
 }
 </style>

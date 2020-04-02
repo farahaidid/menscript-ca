@@ -16,7 +16,7 @@
 								
 							</div>
 							<div class="price-div">
-								<p class="price">$28.00 </p>
+								<p class="price mb-0">$28.00 </p>
 							</div>
 							
 						</div>
@@ -145,7 +145,7 @@ export default {
 				}
 				p.price {
 					position: absolute;
-					top: 55px;
+					bottom: 0px;
 					right: 18px;
 					font-size: 18px;
 					line-height: 36px;

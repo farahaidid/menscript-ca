@@ -69,14 +69,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
-
-.myclass{
-  font-size: 18px;
-line-height: 72px;
-color: #171717;
-font-family:Avenir Medium;
-}
 a:hover{
  text-decoration: none!important;
 }
@@ -85,7 +77,7 @@ img.account-img {
   height: 200px;
 }
 .list-group-item {
-  font-family: avenir Roman;
+  font-family: avenir Medium;
  font-size: 24px;
 line-height: 72px;
 color: #3b3c3c;
@@ -103,7 +95,7 @@ p.title {
   font-size: 72px;
 line-height: 48px;
 color: #2f2f2f;
-font-family:Avenir Black;
+font-family:Avenir Medium;
 margin-bottom:35px;
 }
 .table thead th,.table thead th,.table thead th,.table td, .table th {

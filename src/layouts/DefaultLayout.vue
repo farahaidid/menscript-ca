@@ -2,7 +2,7 @@
   <div>
     <AppHeader/>
     <!-- <AppBanner /> -->
-    <router-view />
+    <router-view  style="margin-top:70px"/>
     <AppFooter/>
   </div>
 </template>

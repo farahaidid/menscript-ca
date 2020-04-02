@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container-fluid p-0">
+    <div class="container-fluid ">
       <div class="row">
          <router-link to="/singleblog" class="router-link">
         <div class="col-md-6 align_center bg-white pl-0 mb-26">

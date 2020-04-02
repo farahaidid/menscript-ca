@@ -143,6 +143,18 @@ img.nos.logo {
     margin-left: 118px;
     
 }
+
+/* extra samll  */
+@media screen and (max-width: 450px) {
+  .banner-title {
+    font-size: 20px !important;
+    margin-bottom: 0px;
+    background-color:red;
+    
+  }
+
+
+}
 /* Small devices */
 @media screen and (max-width: 640px) {
   .banner {
