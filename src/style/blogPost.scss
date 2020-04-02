@@ -318,18 +318,17 @@ p.blog-text-title {
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .title {
     font-size: 28px;
   }
-
   .blog-img-container{
     height: 100%;
   }
 
   p.subtitle {
     width: auto;
-    // font-size: 12px;
+    font-size: 12px;
     margin-top: 10px;
   }
   .custon-margin-subtitle {
@@ -337,7 +336,7 @@ p.blog-text-title {
   }
   p.subtitle-2,
   p.blog-list-subtext {
-    // font-size: 12px;
+    font-size: 12px;
   }
 
   h1.blog-title {
@@ -407,7 +406,9 @@ p.blog-text-title {
   .title {
     font-size: 50px;
   }
-
+  .blog-img-container{
+    height: 100%;
+  }
   h1.blog-title.text-center {
     font-size: 42px;
     padding: 25px 0px;
@@ -465,6 +466,9 @@ p.blog-text-title {
   .title {
     font-size: 60px;
   }
+  .blog-img-container{
+    height: 100%;
+  }
 
   p.subtitle {
     width: auto;
@@ -516,6 +520,9 @@ p.blog-text-title {
     font-size: 60px !important;
     padding: 25px 0px;
   }
+  .blog-img-container{
+    height: 100%;
+  }
 
   .scroll-text {
     font-size: 30px;
@@ -528,5 +535,11 @@ p.blog-text-title {
   }
   a.blog-list-menu-link.router-link-active {
     font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1800px) { 
+  .blog-img-container{
+    height: 100%;
   }
 }
