@@ -49,7 +49,7 @@
             <a href class="footer-menu-link">FAQ</a>
             <a href class="footer-menu-link">VERZENDING</a>
             <a href class="footer-menu-link">TERMS & CONDITIONS</a>
-            <a href class="footer-menu-link">PRIVACY</a>
+            <router-link to="/privacy" class="footer-menu-link">PRIVACY</router-link>
             <a href class="footer-menu-link">KLACHTEN</a>
             <a href class="footer-menu-link">CONTACT </a>
           </div>

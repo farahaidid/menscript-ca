@@ -19,6 +19,7 @@ const routes = [
       { path: 'blog', component: loadView("Blog") },
       {path: 'Bestellingen', component: loadView("AccountBestellingen"),}, 
       {path: 'account', component: loadView("AccountAbonnement"),},
+      { path: 'privacy', component: loadView("Privacy") },
     ]
   },
   {
@@ -26,7 +27,6 @@ const routes = [
     component: loadLayout("ProductLayout"),
     children: [
       { path: 'product', component: loadView("Product") },
-      { path: 'privacy', component: loadView("Privacy") },
     ]
   }, 
   {
