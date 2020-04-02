@@ -161,7 +161,8 @@ p.blog-text-title {
 /* Small devices */
 @media screen and (max-width: 640px) {
     .w-75 {
-        width: 100% !important;
+        width: 100%!important;
+        
     }
 
     .title {
@@ -203,6 +204,13 @@ p.blog-text-title {
     }
     .blog-list-subtext {
         margin-left: 15px;
+    }
+    .third-section-text.w-75{
+        width: 100%!important;
+    }
+    .five-section-text.w-75{
+        width: 100%!important;
+       
     }
 
     /*  blog list */
