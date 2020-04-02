@@ -12,21 +12,25 @@
 
                 <p class="custom-home banner-subtitle">{{ data.subtitle }}</p>
 
-                <p
-                  class="banner-subtitle2"
-                  v-if=" data.subtitle2  !=null "
-                >{{ data.subtitle2 }}</p>
+                <p class="banner-subtitle2" v-if="data.subtitle2 != null">
+                  {{ data.subtitle2 }}
+                </p>
                 <button
                   class="btn custom-btn btn-sm consult-btn"
                   v-if="data.button == true"
                   @click="openLoginModal"
-                >Start online consult</button>
+                >
+                  Start online consult
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="row text-center w-75 logo-div mx-auto" v-if="data.logo !== false">
+      <div
+        class="row text-center w-75 logo-div mx-auto"
+        v-if="data.logo !== false"
+      >
         <div class="col-md-4 col-sm-4 p-0 m-0">
           <img src="@/assets/img/logo1.png" alt class="del logo" />
         </div>
@@ -74,13 +78,13 @@ export default {
   display: flex;
 }
 .scroll {
-    position: absolute;
-    left: 0px;
-    bottom: 134px;
-    font-family: Montserrat;
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-    font-size: 20px;
+  position: absolute;
+  left: 0px;
+  bottom: 134px;
+  font-family: Montserrat;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  font-size: 20px;
 }
 .scroll::before {
   content: "";
@@ -98,7 +102,7 @@ export default {
   font-size: 72px !important;
   line-height: 48px;
   color: #212121;
- 
+
   width: max-content;
 }
 .banner-subtitle {
@@ -107,13 +111,12 @@ export default {
   width: 552px;
   margin-top: 25px;
   margin-bottom: 51px;
-  
 }
 .banner-subtitle2 {
-    font-size: 18px;
-    line-height: 48px;
-    color: #000000;
-    font-family: Roboto;
+  font-size: 18px;
+  line-height: 48px;
+  color: #000000;
+  font-family: Roboto;
 }
 .custom-btn {
   background-color: black;
@@ -126,36 +129,39 @@ export default {
   color: #fbfcff;
   text-align: center;
 }
-.logo{
-    width: 151px;
-    height: 44px;
+.logo {
+  width: 151px;
+  height: 44px;
 }
 .logo-div {
   padding: 35px 3px;
 }
 img.del.logo {
-    margin-left: 195px;
+  margin-left: 195px;
 }
 img.bbc.logo {
-    margin-left: 190px;
+  margin-left: 190px;
 }
 img.nos.logo {
-    margin-left: 118px;
-    
+  margin-left: 118px;
 }
 
 /* extra samll  */
 @media screen and (max-width: 450px) {
-  .banner-title,.extrasmall{
-    font-size: 18px!important;
-    margin-bottom: 0px; 
+  .banner-text{
+    left: 7%;
+  }
+  .banner-title,
+  .extrasmall {
+    font-size: 18px !important;
+    margin-bottom: 0px;
   }
   .banner-subtitle {
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 10px;
     height: auto;
-    width: 196px;
+    width: 180px;
   }
   .banner-subtitle2 {
     font-size: 10px;
@@ -164,15 +170,15 @@ img.nos.logo {
     visibility: hidden;
   }
   .banner-img {
-  margin-left: 0px;
-    padding-left: 0px; 
+    margin-left: 0px;
+    padding-left: 0px;
   }
   .padding {
-      padding-right: 0px; 
-      padding-left:0px;
+    padding-right: 0px;
+    padding-left: 0px;
   }
   .btn-sm {
-    width: 115px!important;
+    width: 115px !important;
     height: 26px;
     font-size: 10px;
     line-height: 0px;
@@ -186,10 +192,17 @@ img.nos.logo {
     padding: 20px 3px;
   }
 
-  img.del.logo,img.bbc.logo,img.nos.logo {
+  img.del.logo,
+  img.bbc.logo,
+  img.nos.logo {
     margin-left: 0px;
   }
-
+}
+@media screen and (max-width: 380px) {
+  .banner-subtitle{
+    font-size: 9px;
+    width: 150px;
+  }
 }
 /* Small devices */
 @media screen and (min-width: 451px) and (max-width: 640px) {
@@ -221,8 +234,6 @@ img.nos.logo {
   .banner-title {
     font-size: 20px !important;
     margin-bottom: 0px;
-    
-    
   }
   .banner-subtitle {
     margin-top: 0px;
@@ -231,16 +242,16 @@ img.nos.logo {
     height: auto;
     width: 196px;
   }
-  .banner-subtitle2{
-    font-size:12px;
+  .banner-subtitle2 {
+    font-size: 12px;
   }
-  
+
   .btn-sm {
     width: 138px !important;
     height: 34px;
     font-size: 12px;
     line-height: 0px;
-}
+  }
   .logo {
     width: 100px;
     height: 27px;
@@ -250,10 +261,11 @@ img.nos.logo {
     padding: 20px 3px;
   }
 
-  img.del.logo,img.bbc.logo,img.nos.logo {
+  img.del.logo,
+  img.bbc.logo,
+  img.nos.logo {
     margin-left: 0px;
-}
-
+  }
 }
 /* medium screen */
 @media screen and (min-width: 641px) and (max-width: 768px) {
@@ -264,15 +276,14 @@ img.nos.logo {
     top: 0px;
     left: 14%;
   }
- .custom-btn {
-    width: 200px!important;
-    height: 39px!important;
-    font-size: 15px!important;
-    line-height: 33px!important;
-}
+  .custom-btn {
+    width: 200px !important;
+    height: 39px !important;
+    font-size: 15px !important;
+    line-height: 33px !important;
+  }
   .banner-title {
     font-size: 36px !important;
-    
   }
   .banner-subtitle {
     font-size: 14px;
@@ -280,9 +291,9 @@ img.nos.logo {
     width: 315px;
     margin-top: 25px;
     margin-bottom: 51px;
-}
- .banner-subtitle2{
-    font-size:14px;
+  }
+  .banner-subtitle2 {
+    font-size: 14px;
   }
   .scroll {
     left: 0px;
@@ -292,11 +303,12 @@ img.nos.logo {
   .logo {
     width: 91px;
     height: 28px;
-}
-   img.del.logo,img.bbc.logo,img.nos.logo {
+  }
+  img.del.logo,
+  img.bbc.logo,
+  img.nos.logo {
     margin-left: 0px;
-
-}
+  }
 }
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -306,38 +318,37 @@ img.nos.logo {
   .banner-text {
     left: 100px;
   }
- .custom-btn {
-    width: 218px!important;
-    height: 46px!important;
-    font-size: 16px!important;
-    line-height: 40px!important;
-}
+  .custom-btn {
+    width: 218px !important;
+    height: 46px !important;
+    font-size: 16px !important;
+    line-height: 40px !important;
+  }
   .banner-title {
     font-size: 36px !important;
-    
   }
   .banner-subtitle {
     font-size: 15px !important;
     height: 120px;
     width: 375px;
     margin-bottom: 0px;
-}
- .banner-subtitle2{
-    font-size:15px;
+  }
+  .banner-subtitle2 {
+    font-size: 15px;
   }
   .scroll {
     left: 0px;
     bottom: 90px;
-   
   }
-   .logo {
+  .logo {
     width: 91px;
     height: 28px;
-}
-   img.del.logo,img.bbc.logo,img.nos.logo {
+  }
+  img.del.logo,
+  img.bbc.logo,
+  img.nos.logo {
     margin-left: 0px;
-
-}
+  }
 }
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -349,36 +360,35 @@ img.nos.logo {
   }
   .banner-title {
     font-size: 55px !important;
-    
   }
   .banner-subtitle {
     font-size: 16px !important;
     height: 100px;
-    margin-bottom: 0px!important;
-    width:490px;
-}
- .banner-subtitle2{
-    font-size:16px;
+    margin-bottom: 0px !important;
+    width: 490px;
+  }
+  .banner-subtitle2 {
+    font-size: 16px;
   }
   .scroll {
     left: 0px;
     bottom: 120px;
-   
   }
   .custom-btn {
-    width: 245px!important;
-    height: 51px!important;
-    font-size: 18px!important;
-    line-height: 46px!important;
-}
-/*  .logo {
+    width: 245px !important;
+    height: 51px !important;
+    font-size: 18px !important;
+    line-height: 46px !important;
+  }
+  /*  .logo {
     width: 91px;
     height: 28px;
 } */
-   img.del.logo,img.bbc.logo,img.nos.logo {
+  img.del.logo,
+  img.bbc.logo,
+  img.nos.logo {
     margin-left: 0px;
-
-}
+  }
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) and (max-width: 1500px) {
@@ -390,26 +400,23 @@ img.nos.logo {
   }
   .banner-title {
     font-size: 60px !important;
-    
   }
   .banner-subtitle {
     font-size: 18px !important;
     height: 110px;
     margin-bottom: 10px;
   }
-   .banner-subtitle2{
-    font-size:18px;
+  .banner-subtitle2 {
+    font-size: 18px;
   }
-  .custom-btn{
+  .custom-btn {
     width: 280px;
     height: 56px;
     font-size: 20px;
-}
+  }
   .scroll {
     left: 0px;
     bottom: 120px;
-    
   }
-  
 }
 </style>

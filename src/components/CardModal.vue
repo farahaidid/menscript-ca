@@ -4,8 +4,18 @@
       <div class="modal-content custom-card-modal">
         <div class="modal-header">
           IN CART
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">  <img src="../assets/img/cancel.png" alt="hamburger" class="close-app-menu-icon" /></span>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">
+              <img
+                src="../assets/img/cancel.png"
+                alt="hamburger"
+                class="close-app-menu-icon"
+            /></span>
           </button>
         </div>
         <div class="modal-body">
@@ -25,22 +35,19 @@
               <div class="col-md-10 pl pr">
                 <div class="card-product">
                   <div class="card-product-description">
-                  
+                    <img
+                      src="@/assets/img/category-2.jpg"
+                      alt
+                      class="cart-img"
+                    />
 
-                    <img src="@/assets/img/category-2.jpg" alt class="cart-img" />
-
-
-                <div class="text-space">
-
-               
-                    <p class="sub-text-1 mb-0">Finasteride 1mg</p>
-                    <p class="sub-text-2 mb-0">28 tabletten</p>
-                    <p class="sub-text-3 mb-0 text-right">
-                      <b>$28.00</b>
-                    </p>
-                     </div>
-
-
+                    <div class="text-space">
+                      <p class="sub-text-1 mb-0">Finasteride 1mg</p>
+                      <p class="sub-text-2 mb-0">28 tabletten</p>
+                      <p class="sub-text-3 mb-0 text-right">
+                        <b>$28.00</b>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -60,16 +67,18 @@
               <div class="col-md-10 pr pl">
                 <div class="card-product">
                   <div class="card-product-description">
-                    <img src="@/assets/img/category-2.jpg" alt class="cart-img" />
+                    <img
+                      src="@/assets/img/category-2.jpg"
+                      alt
+                      class="cart-img"
+                    />
                     <div class="text-space">
-
-      
-                    <p class="sub-text-1 mb-0">Shampoo revitalising </p>
-                    <p class="sub-text-2 mb-0">190ml</p>
-                    <p class="sub-text-3 mb-0 text-right">
-                      <b>$13.00</b>
-                    </p>
-                     </div>
+                      <p class="sub-text-1 mb-0">Shampoo revitalising</p>
+                      <p class="sub-text-2 mb-0">190ml</p>
+                      <p class="sub-text-3 mb-0 text-right">
+                        <b>$13.00</b>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -95,7 +104,9 @@
               </div>
               <div class="col-md-5 p-0 my-auto text_sm_center custom_center">
                 <span class="price">$41</span>
-                <button class="checkout app-btn ml-4" @click="openLoginModal">Checkout</button>
+                <button class="checkout app-btn ml-4" @click="openLoginModal">
+                  Checkout
+                </button>
               </div>
             </div>
           </div>
@@ -123,21 +134,21 @@ export default {
   border: 1px solid #959595;
 }
 .modal.show .modal-dialog {
- /*  -webkit-transform: none;
+  /*  -webkit-transform: none;
   transform: none;
   
   left:484px;
   top: -29px;
   position: relative!important; */
-      -webkit-transform: none;
-    transform: none;
-    /* left: 0px; */
-    top: -29px;
-    right: 0px;
-    position: absolute;
+  -webkit-transform: none;
+  transform: none;
+  /* left: 0px; */
+  top: -29px;
+  right: 0px;
+  position: absolute;
   .modal-content.custom-card-modal {
-    height: 995px;
-    width: 785px;
+    height: 85vh;
+    width: 665px !important;
   }
   .modal-header {
     border-bottom: none;
@@ -153,10 +164,10 @@ export default {
       font-weight: 300;
       top: 20px;
     }
-    .close-app-menu-icon{
-    width: 25px;
-    height: 24px;
-    margin: 0 5px;
+    .close-app-menu-icon {
+      width: 25px;
+      height: 24px;
+      margin: 0 5px;
     }
   }
   .number-spinner {
@@ -166,15 +177,16 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width:100px!important;
+    width: 100px !important;
     span.i {
       display: inline-block;
       width: 16px;
       font-size: 12px;
     }
-    i.fal.fa-minus,i.fal.fa-plus {
-    color: #b3c2bb;
-}
+    i.fal.fa-minus,
+    i.fal.fa-plus {
+      color: #b3c2bb;
+    }
   }
   .card-product {
     border: 1px solid #e1e1e1;
@@ -182,29 +194,26 @@ export default {
     margin-left: 10px;
     height: 113px;
     .text-space {
-    padding-top: 20px;
-  
-}
+      padding-top: 20px;
+    }
 
     img.cart-img {
       width: 60px;
-    height: 70px;
-    float: left;
-    margin-right: 15px;
-    margin-top: 16px;
-    margin-left: 15px;
+      height: 70px;
+      float: left;
+      margin-right: 15px;
+      margin-top: 16px;
+      margin-left: 15px;
     }
     .sub-text-1 {
       line-height: 36px;
       font-family: Avenir Black;
       font-size: 18px;
       color: #141414;
-     
     }
     p.sub-text-2 {
       font-size: 16px;
       color: #141414;
-     
     }
     p.sub-text-3 {
       font-size: 18px;
@@ -214,12 +223,10 @@ export default {
   }
 
   .custom-card-footer {
-   padding: 86px 34px 67px 34px;
-
     .list-group-item {
       padding: 0px;
       border: transparent !important;
-      font-size: 20px;
+      font-size: 16px;
       color: #6c6d6f;
       i.fa.fa-check.mr-2 {
         font-size: 14px;
@@ -229,13 +236,13 @@ export default {
       font-size: 48px;
       font-family: Roboto;
       line-height: 48px;
-color: #262626;
+      color: #262626;
     }
     .checkout {
       width: 221px;
       background-color: black;
       height: 43px;
-      font-family: avenir Black;
+      font-family: Avenir Medium;
       border: transparent;
       font-size: 20px;
       letter-spacing: 3px;
@@ -291,14 +298,14 @@ color: #262626;
 }
 /* medium phone  */
 @media screen and (min-width: 641px) and (max-width: 768px) {
- .modal.show .modal-dialog {
+  .modal.show .modal-dialog {
     -webkit-transform: none;
     transform: none;
     top: -6px;
     position: initial;
-}
+  }
 
-   .custom-card-modal {
+  .custom-card-modal {
     width: 100% !important;
   }
   .sub-text-1 {
@@ -315,18 +322,17 @@ color: #262626;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-   .modal.show .modal-dialog {
+  .modal.show .modal-dialog {
     -webkit-transform: none;
     transform: none;
     /* left: 0px; */
     top: -29px;
     right: 107px;
     position: absolute;
-}
+  }
   .custom-card-modal {
     width: 607px !important;
-   
-}
+  }
   .modal-header {
     font-size: 22px !important;
   }
@@ -358,11 +364,10 @@ color: #262626;
     top: -29px;
     right: 0px;
     position: absolute;
-}
+  }
   .custom-card-modal {
     width: 707px !important;
-   
-}
+  }
   .list-group-item {
     font-size: 16px !important;
   }
@@ -373,5 +378,3 @@ color: #262626;
   }
 }
 </style>
-
-

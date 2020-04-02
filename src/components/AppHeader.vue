@@ -93,13 +93,13 @@ nav#custom-navbar {
   font-size: 14px;
   line-height: 48px;
   color: #2f2f2f;
-  font-family: "Montserrat";
+  font-family: "Montserrat Semibold";
 }
 .title {
   font-size: 20px;
   line-height: 48px;
   color: #363636;
-  font-family: "Montserrat";
+  font-family: "Montserrat Semibold";
   width: 50%;
   text-align: end;
 }

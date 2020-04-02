@@ -3,7 +3,7 @@
     <div class="scroll-section-blog">
       <p class="privacy-scroll-text">Scroll</p>
     </div>
-    <div class="container-fluid w-75 privacy-div position-relative">
+    <div class="container-fluid w-75 privacy-div position-relative" style="margin-bottom: 70px">
       <div class="row">
         <div class="col-md-12 text-center privacy-title">
           <p class="privacy-title">PRIVACY STATEMENT</p>
@@ -77,7 +77,7 @@
             informatie verzameld:
           </p>
           <p class="privacy-text">
-            <b style="color:black">1. Niet-persoonlijke informatie:</b> bij toegang tot de website
+            <span style="color:black">1. Niet-persoonlijke informatie:</span> bij toegang tot de website
             wordt bepaalde niet-persoonlijke informatie automatisch verzameld
             zonder uw medeweten of toestemming, zoals uw IP-adres,
             locatiegegevens (die anoniem zijn) en de verwijzende website
@@ -89,7 +89,7 @@
             die bepaalde statistische informatie bevatten.
           </p>
           <p class="privacy-text">
-            <b style="color:black">2. Het identificeren van persoonlijke informatie:</b> Om sommige
+            <span style="color:black">2. Het identificeren van persoonlijke informatie:</span> Om sommige
             delen van de website te kunnen gebruiken, moet u eerst akkoord gaan
             om persoonlijke informatie af te staan, zoals uw naam en e-mailadres
             ( "Persoonlijke gegevens"). Wij benadrukken uitdrukkelen dat wij uw
@@ -130,19 +130,19 @@
             We zullen de informatie die wij verzamelen en opslaan niet verkopen of openbaar maken aan externe partijen, behalve in het geval van de volgende samenwerkende partijen: 
           </p>
           <p class="privacy-text">
-            <b style="color:black">1. Aangesloten serviceproviders: </b>
+            <span style="color:black">1. Aangesloten serviceproviders: </span>
             we hebben overeenkomsten met verschillende geaffilieerde serviceproviders om het functioneren van de website te vergemakkelijken, met wie wijde verzamelde infromatie kunnen delen. We kunnen uw creditcardgegevens bijvoorbeeld delen met de creditcardmaatschappij om uw aankoop te verifieren en te verwerken. 
           </p>
           <p class="privacy-text">
-            <b style="color:black">2. Waar wettelijk verplicht: </b>
+            <span style="color:black">2. Waar wettelijk verplicht: </span>
             We kunnen de verzamelde informatie delen indien dit wettelijk verplicht is, in het bijzonder als reactie op een verzoek van overheidsinstanties wanneer een dergelijk verzoek voldoet aan de wettelijke vereisten. Wij willen hierbij benadrukken dat wij dit enkel doen bij een gerechterlijk bevel. Verzoeken zonder gerechterlijk bevel zullen worden genegeerd.
           </p>
           <p class="privacy-text">
-            <b style="color:black">3. Statistische gegevens : </b>
+            <span style="color:black">3. Statistische gegevens : </span>
             We kunnen niet-persoonlijke informatie en geaggregeerde informatie delen met derden, inclusief maar niet beperkt tot reclame- of marketingdoeleinden. Wij benadrukken dat er geen persoonlijke informatie gedeeld zal worden.
           </p>
           <p class="privacy-text">
-            <b style="color:black">4. Transacties : </b>
+            <span style="color:black">4. Transacties : </span>
             In verband met of tijdens onderhandelingen over een fusie, verkoop van bedrijfsactiva, financiering of acquisitie, of in een andere situatie waarin persoonlijke informatie kan worden bekendgemaakt of overgedragen als onze bedrijfsactiva.
           </p>
         </div>

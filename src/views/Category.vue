@@ -5,35 +5,35 @@
     <div class="container-fluid custom-padding ">
       <div class="row mr-custom p-0" >
         <div class="col-md-6 p-0">
-          <CategoryOne />
+          <CategoryOne class="mb-3" />
         </div>
         <div class="col-md-3 p-0 text_sm_center">
-          <CategoryTwo :data="rx" />
+          <CategoryTwo class="mb-3" :data="rx" />
         </div>
         <div class="col-md-3 p-0 text_sm_center">
-          <CategoryTwo :data="otc" />
+          <CategoryTwo class="mb-3" :data="otc" />
         </div>
       </div>
       <div class="row mr-custom " >
         <div class="col-md-6 p-0">
-          <CategoryOne />
+          <CategoryOne class="mb-3" />
         </div>
         <div class="col-md-3 p-0 text_sm_center">
-          <CategoryTwo :data="rx" />
+          <CategoryTwo class="mb-3" :data="rx" />
         </div>
         <div class="col-md-3 p-0 text_sm_center">
-          <CategoryTwo :data="otc" />
+          <CategoryTwo class="mb-3" :data="otc" />
         </div>
       </div>
       <div class="row mr-custom " >
         <div class="col-md-6 p-0">
-          <CategoryOne />
+          <CategoryOne class="mb-3" />
         </div>
         <div class="col-md-3 p-0 text_sm_center">
-          <CategoryTwo :data="rx" />
+          <CategoryTwo class="mb-3" :data="rx" />
         </div>
         <div class="col-md-3 p-0 text_sm_center">
-          <CategoryTwo :data="otc" />
+          <CategoryTwo class="mb-3" :data="otc" />
         </div>
       </div>
 
