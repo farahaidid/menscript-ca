@@ -182,7 +182,7 @@ span.under_score {
   letter-spacing: 1px;
   line-height: 48px;
   color: #363636;
-  font-family: Avenir medium;
+  font-family: "Montserrat Semibold";
 }
 .text-end {
   display: flex;
