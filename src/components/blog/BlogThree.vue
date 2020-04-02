@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container-fluid ">
+    <div class="container-fluid p-0">
       <div class="row">
          <router-link to="/singleblog" class="router-link">
         <div class="col-md-6 align_center bg-white pl-0 mb-26">
@@ -26,7 +26,7 @@
             </p>
           </div>
         </div>
-        <div class="col-md-6 pl pr   bg-white ">
+        <div class="col-md-6 pl pr pr-0  bg-white ">
           <img
             :src="data.image"
             alt="blogThree"

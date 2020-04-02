@@ -4,19 +4,15 @@
   </div>
 </template>
 <script>
-//import Account from "../components/Account";
 import Abonnement from "../components/account/Abonnement";
-
 export default {
   components: {
-    //Account,
     Abonnement
   },
   data() {
     return {
       Abonnement: {
         title: "Abonnement",
-        /*  list:["Overicht","Abonnement","Bestellingen","Addressen","Logout"], */
         list: [
           { title: "Overicht", to: "" },
           { title: "Abonnement", to: "account" },
@@ -24,10 +20,7 @@ export default {
           { title: "Addressen", to: "" },
           { title: "Logout", to: "" }
         ],
-
         fields: [
-          /* 'ID', 'Product', 'Begindatum', 'Frequentie', 'Amount','Status' */
-
           { key: "ID", label: "ID", thClass: "th1class", tdClass: "td2class" },
           {
             key: "Product",
@@ -99,7 +92,7 @@ export default {
   padding-top: 242px;
   padding-bottom: 170px;
 }
-/* >>>.th1class{
+>>>.th1class{
     font-size: 18px!important;
     line-height: 72px!important;
     color: #171717!important;
@@ -110,6 +103,6 @@ export default {
     line-height: 40px!important;
     color: #171717!important;
     font-family: Avenir heavy!important;
-    background-color: red;
-} */
+   
+}
 </style>

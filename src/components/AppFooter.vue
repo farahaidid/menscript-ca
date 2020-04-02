@@ -180,12 +180,12 @@ i.fa.fa-arrow-right {
 
 a.footer-menu-link {
     text-decoration: none;
-    margin-left: 47px;
+    margin-left: 31px;
     font-size: 16px;
     line-height: 48px;
     color: #2f2f2f!important;
     font-family: Avenir Medium;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 .height {
   height: 124px;

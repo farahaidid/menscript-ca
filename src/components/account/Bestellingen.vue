@@ -2,7 +2,7 @@
   <div>
     <div class="container ">
       <div class="row">
-        <div class=" col-md-4 col-sm-12 text_sm_center">
+        <div class=" col-md-3 col-sm-12 text_sm_center">
           <img
             src="@/assets/img/privacy.png"
             alt="account"
@@ -19,13 +19,12 @@
             </router-link>
           </div>
         </div>
-        <div class="col-md-8 col-sm-12 custom-margin ">
+        <div class="col-md-6 col-sm-12 custom-margin ">
           <p class="title">{{ data.title }}</p>
 
            <div>
     <b-table responsive    
     :items="data.items"
-     :tbody-tr-class="rowClass"
       :borderless="borderless"
       :fields="data.fields"
       >

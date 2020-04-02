@@ -3,7 +3,7 @@
     
     <AppBanner :data="home"/> 
     <div class="container-fluid ">
-      <div class="row ">
+      <div class="row p-0">
         <div
           class="col-md-6 col-sm-12 p-0 position-relative max-height-beauty-img"
         >

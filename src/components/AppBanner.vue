@@ -27,13 +27,13 @@
         </div>
       </div>
       <div class="row text-center w-75 logo-div mx-auto" v-if="data.logo !== false">
-        <div class="col-md-4 col-sm-4">
+        <div class="col-md-4 col-sm-4 p-0 m-0">
           <img src="@/assets/img/logo1.png" alt class="del logo" />
         </div>
-        <div class="col-md-4 col-sm-4">
+        <div class="col-md-4 col-sm-4 p-0 m-0">
           <img src="@/assets/img/bbc.png" alt="bbc" class="bbc logo" />
         </div>
-        <div class="col-md-4 col-sm-4">
+        <div class="col-md-4 col-sm-4 p-0 m-0">
           <img src="@/assets/img/nos.png" alt class="nos logo" />
         </div>
       </div>
@@ -126,14 +126,23 @@ export default {
   color: #fbfcff;
   text-align: center;
 }
-.logo {
-  width: 130px;
-  height: 33px;
+.logo{
+    width: 151px;
+    height: 44px;
 }
 .logo-div {
   padding: 35px 3px;
 }
-
+img.del.logo {
+    margin-left: 195px;
+}
+img.bbc.logo {
+    margin-left: 190px;
+}
+img.nos.logo {
+    margin-left: 118px;
+    
+}
 /* Small devices */
 @media screen and (max-width: 640px) {
   .banner {
@@ -191,6 +200,11 @@ export default {
   .logo-div {
     padding: 20px 3px;
   }
+
+  img.del.logo,img.bbc.logo,img.nos.logo {
+    margin-left: 0px;
+}
+
 }
 /* medium screen */
 @media screen and (min-width: 641px) and (max-width: 768px) {
@@ -226,6 +240,14 @@ export default {
     bottom: 80px;
     font-size: 15px;
   }
+  .logo {
+    width: 91px;
+    height: 28px;
+}
+   img.del.logo,img.bbc.logo,img.nos.logo {
+    margin-left: 0px;
+
+}
 }
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -259,6 +281,14 @@ export default {
     bottom: 90px;
    
   }
+   .logo {
+    width: 91px;
+    height: 28px;
+}
+   img.del.logo,img.bbc.logo,img.nos.logo {
+    margin-left: 0px;
+
+}
 }
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -292,6 +322,14 @@ export default {
     font-size: 18px!important;
     line-height: 46px!important;
 }
+/*  .logo {
+    width: 91px;
+    height: 28px;
+} */
+   img.del.logo,img.bbc.logo,img.nos.logo {
+    margin-left: 0px;
+
+}
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) and (max-width: 1500px) {
@@ -323,5 +361,6 @@ export default {
     bottom: 120px;
     
   }
+  
 }
 </style>
