@@ -22,12 +22,12 @@
             </a>
           </div>
         </div>
-        <div class="col-md-4 rs-bottom">
+        <div class="col-md-4 rs-bottom mt-5 mt-md-0">
           <p class="footer-title ">Hulp nodig?</p>
           <p class="sub-title ">Neem contact op met onze klantenservice</p>
           <button class="btn contact-us">CONTACT US</button>
         </div>
-        <div class="col-md-4 rs-bottom">
+        <div class="col-md-4 rs-bottom mt-5 mt-md-0">
           <p class="footer-title ">Meld je aan</p>
           <p class="sub-title ">
             Ontvang het laatste nieuws en exclusive aanbiedingen
@@ -50,11 +50,18 @@
       </div>
 
       <div class="row mx-auto width-75 height rs-footer h-mobile-auto">
-        <div class="col-md-3 my-auto">
-          <h1 class="footer-menu-title mb-0">MENSCRIPT</h1>
+        <div class="col-md-3 my-auto order-3 order-md-first pb-5 pb-md-0">
+          <div class="row">
+            <div class="col-6 d-flex">
+              <h1 class="footer-menu-title mb-0 text-left text-md-center mt-auto">MENSCRIPT</h1>
+            </div>
+            <div class="col-6 p-0 d-flex justify-content-end">
+              <img src="@/assets/img/footer logo.png" alt="" class="footer-logo d-inline-block d-md-none mb-0" />
+            </div>
+          </div>
         </div>
-        <div class="col-md-9 text-end my-auto">
-          <div class="footer-menu">
+        <div class="col-md-9 text-end my-auto order-1 order-md-last p-0">
+          <div class="footer-menu d-none d-md-flex">
             <a href class="footer-menu-link">FAQ</a>
             <a href class="footer-menu-link">VERZENDING</a>
             <a href class="footer-menu-link">TERMS & CONDITIONS</a>
@@ -64,9 +71,24 @@
             <a href class="footer-menu-link">KLACHTEN</a>
             <a href class="footer-menu-link">CONTACT </a>
           </div>
+          <!-- <div class="footer-menu row justify-content-between d-flex d-md-none"> -->
+          <div class="footer-menu d-flex d-md-none w-100">
+            <div class="d-inline-block">
+              <a href class="footer-menu-link">FAQ</a>
+              <router-link to="/privacy" class="footer-menu-link">PRIVACY</router-link>
+            </div>
+            <div class="d-inline-block mx-auto">
+              <a href class="footer-menu-link">VERZENDING</a>
+              <a href class="footer-menu-link">KLACHTEN</a>
+            </div>
+            <div class="d-inline-block">
+              <a href class="footer-menu-link">AIGEMENE VOORWAARDEN</a>
+              <a href class="footer-menu-link">CONTACT </a>
+            </div>
+          </div>
         </div>
       </div>
-      <img src="@/assets/img/footer logo.png" alt="" class="footer-logo" />
+      <img src="@/assets/img/footer logo.png" alt="" class="footer-logo d-none d-md-inline-block" />
     </div>
   </div>
 </template>
@@ -213,13 +235,23 @@ a.social-link.twitter {
 @media screen and (max-width: 768px) {
   .footer-logo {
     position: unset;
-    margin: 20px auto;
+    margin: 20px 0;
+    margin-left: auto;
     width: 137px;
     height: 114px;
     display: inherit;
   }
   .h-mobile-auto{
     height: auto;
+  }
+  .footer-menu a{
+    margin-left: 0 !important;
+  }
+  .footer-menu-link{
+    display: block !important;
+  }
+  .footer-menu-title{
+    line-height: 20px;
   }
 }
 /* Small devices */
@@ -262,7 +294,7 @@ a.social-link.twitter {
     text-decoration: none;
     display: inline-block;
     margin-left: 0 10px;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 48px;
     color: #2f2f2f;
   }

@@ -13,23 +13,23 @@
           />
           <div class="works-text">
             <p class="works-text-heading">Start online consult</p>
-            <p class="subtitle">
+            <p class="subtitle text-center">
               Start een online consult en deel je symptomen en medische historie
               met een van de artsen binnen ons netwerk.
             </p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12  max-height-phone-img">
+        <div class="col-md-4 col-sm-12 mt-5 mt-md-0 max-height-phone-img">
           <img src="../assets/img/phone.jpg" alt class="phone-img margin-img" />
           <div class="works-text">
             <p class="works-text-heading">Voorkeur & Verificatie</p>
-            <p class="subtitle ">
+            <p class="subtitle text-center">
               Ontvang een advies, geef je voorkeursbehandeling op en verifieer
               je identiteit.
             </p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12  max-height-phone-img">
+        <div class="col-md-4 col-sm-12 mt-5 mt-md-0 max-height-phone-img">
           <img
             src="../assets/img/phone-one.jpg"
             alt
@@ -39,7 +39,7 @@
             <p class="works-text-heading">
               Krijg je medicatie thuisgeleverd
             </p>
-            <p class="subtitle">
+            <p class="subtitle text-center">
               Krijg je behandeling binnen 48u thuisgeleverd. Gekozen voor
               periodieke levering? Dan zorgen wij ervoor dat je nooit.
             </p>

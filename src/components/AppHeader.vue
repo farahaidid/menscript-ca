@@ -10,10 +10,6 @@
         <router-link to="/">MENSCRIPT</router-link>
       </h4>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <img src="../assets/img/Hamburger-icon.jpg" alt="hamburger" class="hamburger"/>
-      </button>
-
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
 
         <ul class="navbar-nav">
@@ -62,7 +58,7 @@ export default {
   },
   methods: {
     toggleAppMenu(){
-      if(!this.mobileScreen) this.showAppMenu = !this.showAppMenu
+      this.showAppMenu = !this.showAppMenu
     },
     openLoginModal() {
       EventBus.$emit("open-login-modal");
@@ -145,6 +141,16 @@ a.dropdown-link {
 }
 
 /* responsive  */
+@media screen and (max-width: 768px){
+  nav#custom-navbar{
+    justify-content: start;
+    align-items: center;
+    .title{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
 /* Small devices */
 @media screen and (max-width: 640px) {
   .container.custom-margin {
@@ -162,9 +168,6 @@ a.dropdown-link {
   }
   .go-back {
     left: 10%;
-  }
-  img#icon {
-    visibility: hidden;
   }
   .header-sm-modal {
     display: block;

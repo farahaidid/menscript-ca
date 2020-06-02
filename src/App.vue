@@ -1,27 +1,18 @@
 <template>
   <div id="app">
-    <!-- Modals -->
-    <LoginModal @close="closeLoginModal" v-if="showLoginModal" />
-   
-    <!-- Contents -->
+    <LoginModal @close="closeLoginModal" v-if="showLoginModal" />   
     <div v-else>
-      <!-- <AppHeader /> -->
       <router-view />
-      <!-- <AppFooter /> -->
     </div>
   </div>
 </template>
 <script>
-//import AppFooter from "@/components/AppFooter";
-//import AppHeader from "@/components/AppHeader";
 import LoginModal from "@/components/LoginModal";
-//import CardModal from "@/components/CardModal";
 import EventBus from "@/plugins/eventBus";
 export default {
   name: "App",
   components: {
    LoginModal,
-   //CardModal
   },
   data: () => ({
     showLoginModal: false,
@@ -31,10 +22,6 @@ export default {
     EventBus.$on("open-login-modal", () => {
       this.showLoginModal = true;
     });
-    // EventBus.$on("open-card-modal", () => {
-    //   console.log("card modal")
-    //   this.ShowCardModal = true
-    // });
   },
   methods:{
      closeLoginModal(){
@@ -44,3 +31,20 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+@import "./style/style.scss";
+/* FONT INPORT */
+
+/** Avenir - Start */
+@font-face {
+  font-family: 'Avenir Heavy';
+  src: url("./assets/font/AEH.ttf");
+}
+/** Avenir - End */
+
+@font-face {
+  font-family: 'Myriad-Pro-Regular';
+  src: url("./assets/font/MYRIADPRO-REGULAR.OTF");
+}
+</style>
