@@ -12,7 +12,7 @@
             class="phone-img margin-img"
           />
           <div class="works-text">
-            <p class="works-text-heading">Start online consult</p>
+            <p class="works-text-heading mt-4">Start online consult</p>
             <p class="subtitle text-center">
               Start een online consult en deel je symptomen en medische historie
               met een van de artsen binnen ons netwerk.
@@ -22,7 +22,7 @@
         <div class="col-md-4 col-sm-12 mt-5 mt-md-0 max-height-phone-img">
           <img src="../assets/img/phone.jpg" alt class="phone-img margin-img" />
           <div class="works-text">
-            <p class="works-text-heading">Voorkeur & Verificatie</p>
+            <p class="works-text-heading mt-4">Voorkeur & Verificatie</p>
             <p class="subtitle text-center">
               Ontvang een advies, geef je voorkeursbehandeling op en verifieer
               je identiteit.
@@ -36,7 +36,7 @@
             class="phone-img margin-img"
           />
           <div class="works-text">
-            <p class="works-text-heading">
+            <p class="works-text-heading mt-4">
               Krijg je medicatie thuisgeleverd
             </p>
             <p class="subtitle text-center">
@@ -69,7 +69,7 @@ img.phone-img.margin-img {
 p.works-text-heading {
   font-size: 24px;
   margin-top:17px;
-  
+    font-family: "Avenir Heavy";
     
 }
 .subtitle{
@@ -94,41 +94,28 @@ p.works-text-subtitle {
     margin-top: 58px;
     padding-bottom: 85px;
 }
-/* Small devices */
-@media screen and (max-width: 640px) {
-  .width-75 {
-    width: 100%;
-  }
-img.phone-img.margin-img {
-    max-height: 233px;
-  }
-  .text-sm-center {
-    text-align: center;
-  }
 
-  .padding-112 {
-    padding: 26px 0px;
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width:1200px) and (max-width: 1450px) {
+  p.works-text-heading{
+    font-size: 26px;
+  }
 }
-  p.works-text-heading {
-    text-align: center;
-    font-size: 16px;
-    margin-top: 10px;
-    height: 30px;
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  /* default style */
+   p.works-text-heading{
+    font-size: 23px;
   }
-  
-  /* .custom-btn {
-    width: auto;
-    height: auto;
-    font-size: 13px;
-    padding: 8px 28px;
-  } */
-  .padding-sm-0 {
-    padding-left: 0px;
-    padding-right: 0px;
+}
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  p.works-text-heading{
+    font-size: 18px;
   }
-  .how-it-works {
-    margin-top: 25px;
-    padding-bottom: 0px;
+  .custom-btn {
+    width: 267px;
+    height: 54px;
   }
 }
 /* medium phone  */
@@ -147,7 +134,7 @@ img.phone-img.margin-img {
     font-size: 18px;
     margin-top: 10px;
     height: 30px;
-}
+  }
   .padding-112 {
     padding: 20px 0px;
   }
@@ -155,7 +142,7 @@ img.phone-img.margin-img {
     font-size: 20px;
   } */
   .how-it-works {
-    margin-top: 20px;
+    margin-top: 85px;
     padding-bottom: 0px;
   }
  /*  .custom-btn {
@@ -163,28 +150,53 @@ img.phone-img.margin-img {
     height: 51px;
   } */
 }
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  p.works-text-heading{
-    font-size: 18px;
-}
-  .custom-btn {
-    width: 267px;
-    height: 54px;
+/* Small devices */
+@media screen and (max-width: 640px) {
+  .width-75 {
+    width: 100%;
+  }
+  img.phone-img.margin-img {
+    max-height: 233px;
+  }
+  .text-sm-center {
+    text-align: center;
+  }
+
+  .padding-112 {
+    padding: 26px 0px;
+  }
+  p.works-text-heading {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    height: 30px;
+  }
+  .padding-sm-0 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .how-it-works {
+    margin-top: 85px;
+    padding-bottom: 0px;
+  }
+  .subtitle{
+  width: auto;
+  height: auto;
+  margin-top: -15px;
+  margin-bottom: 30px;
   }
 }
-/* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-  /* default style */
-   p.works-text-heading{
-    font-size: 23px;
+
+@media screen and (max-width: 360px) {
+  .title{
+    font-size: 30px;
+  }
+  p.works-text-heading {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    height: 30px;
+  }
 }
-}
-/* Extra large devices (large desktops, 1200px and up) */
-@media screen and (min-width:1200px) and (max-width: 1450px) {
-  p.works-text-heading{
-    font-size: 26px;
-}
- 
-}
+
 </style>

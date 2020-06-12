@@ -251,6 +251,7 @@ h3.brand-beauty-text {
   z-index: 10;
   top: 55px;
   left: 50px;
+  font-family: "Avenir Medium";
 }
 .subtitle {
   text-align: justify;
@@ -301,10 +302,12 @@ p.works-text-heading {
   font-size: 28px;
   font-weight: 600;
   padding: 28px 0px;
+  
 }
 .how-it-works {
   margin-top: 58px;
   padding-bottom: 34px;
+
 }
 .mb-26 {
   margin-bottom: 26px;
@@ -317,6 +320,7 @@ p.works-text-heading {
 }
 
 /* responsive */
+
 /* Small devices */
 @media screen and (max-width: 640px) {
   .banner {

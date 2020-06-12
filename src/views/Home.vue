@@ -1,10 +1,10 @@
 <template>
   <div>
     <AppBanner :data="home" />
-    <div class="container-fluid ">
+    <div class="container-fluid main-back-color">
       <div class="row p-0">
         <div
-          class="col-md-6 col-sm-12 p-0 position-relative max-height-beauty-img"
+          class="col-md-6 col-sm-12 p-0 position-relative max-height-beauty-img text-left text-md-center"
         >
           <img
             src="../assets/img/Beauty-brand.jpg"
@@ -42,9 +42,9 @@
       <div>
         <BlogThree :data="blogThree" />
       </div>
-      <div class="text-center">
+      <div class="row">
         <HowWorks />
-        <button class="btn btn-md-sm consult-btn custom-btn mx-auto mt-5" @click="openLoginModal">
+        <button class="btn btn-md-sm consult-btn custom-btn mx-auto mt-4" @click="openLoginModal">
           Start online consult
         </button>
       </div>
@@ -129,41 +129,15 @@ h3.brand-beauty-text {
   top: 65px;
   left: 28px;
 }
-
-/* Small devices */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1850px) {
   h3.brand-beauty-text {
-    top: 1em;
-    left: 6em;
-    font-size: 22px;
+    top: 50px;
+    top: 50px;
+    left: 28px;
+    font-size: 34px;
   }
-}
-/* medium phone screen  */
-@media screen and (min-width: 641px) and (max-width: 768px) {
-  h3.brand-beauty-text {
-    top: 1em;
-    left: 6em;
-    font-size: 19px;
-  }
-}
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  h3.brand-beauty-text {
-    top: 20px;
-    left: 20px;
-    font-size: 20px;
-  }
-}
-/* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-  h3.brand-beauty-text {
-    top: 28px;
-    left: 20px;
-    font-size: 25px;
-  }
-}
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) and (max-width: 1450px) {
+  /* Extra large devices (large desktops, 1200px and up) */
+@media screen and (max-width: 1450px) {
   /*  .max-height-beauty-img {
     height: 716px !important;
   } */
@@ -176,12 +150,66 @@ h3.brand-beauty-text {
     font-size: 32px;
   }
 }
-@media (min-width: 1451px) and (max-width: 1850px) {
+/* Large devices (desktops, 992px and up) */
+@media screen and (max-width: 1200px) {
   h3.brand-beauty-text {
-    top: 50pxpx;
-    top: 50px;
-    left: 28px;
-    font-size: 34px;
+    top: 28px;
+    left: 20px;
+    font-size: 25px;
   }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media screen and (max-width: 991px) {
+  h3.brand-beauty-text {
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+  }
+}
+/* medium phone screen  */
+@media screen and (max-width: 768px) {
+  h3.brand-beauty-text {
+    top: 1em;
+    left: 6em;
+    font-size: 19px;
+  }
+}
+
+/* Small devices */
+@media screen and (max-width: 640px) {
+  h3.brand-beauty-text {
+    top: 1em;
+    left: 1em;
+    font-size: 36px;
+    font-family: 'Avenir Medium';
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h3.brand-beauty-text {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  h3.brand-beauty-text {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 330px) {
+  h3.brand-beauty-text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  h3.brand-beauty-text {
+    font-size: 20px;
+  }
+}
+
+
 }
 </style>

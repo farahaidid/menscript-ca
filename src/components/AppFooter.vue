@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container-fluid bg-white width margin-top position-relative">
+    <div class="container-fluid bg-white width margin-top position-relative footer-padding">
       <div class="row width-75 mx-auto padding_border">
         <div class="col-md-4 rs-bottom">
           <p class="footer-title ">Vlog ons</p>
@@ -61,31 +61,19 @@
           </div>
         </div>
         <div class="col-md-9 text-end my-auto order-1 order-md-last p-0">
-          <div class="footer-menu d-none d-md-flex">
+          <div class="footer-menu d-flex w-100 row justify-content-between mx-0">
             <a href class="footer-menu-link">FAQ</a>
-            <a href class="footer-menu-link">VERZENDING</a>
-            <a href class="footer-menu-link">TERMS & CONDITIONS</a>
-            <router-link to="/privacy" class="footer-menu-link"
-              >PRIVACY</router-link
-            >
-            <a href class="footer-menu-link">KLACHTEN</a>
-            <a href class="footer-menu-link">CONTACT </a>
+            <router-link to="/privacy" class="footer-menu-link">PRIVACY</router-link>
+            <a href class="footer-menu-link">AIGEMENE VOORWAARDEN</a>
           </div>
           <!-- <div class="footer-menu row justify-content-between d-flex d-md-none"> -->
-          <div class="footer-menu d-flex d-md-none w-100">
+          <!-- <div class="footer-menu d-md-none w-100">
             <div class="d-inline-block">
               <a href class="footer-menu-link">FAQ</a>
               <router-link to="/privacy" class="footer-menu-link">PRIVACY</router-link>
-            </div>
-            <div class="d-inline-block mx-auto">
-              <a href class="footer-menu-link">VERZENDING</a>
-              <a href class="footer-menu-link">KLACHTEN</a>
-            </div>
-            <div class="d-inline-block">
               <a href class="footer-menu-link">AIGEMENE VOORWAARDEN</a>
-              <a href class="footer-menu-link">CONTACT </a>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <img src="@/assets/img/footer logo.png" alt="" class="footer-logo d-none d-md-inline-block" />
@@ -131,7 +119,7 @@ p.footer-title {
   font-size: 20px;
   line-height: 30px;
   color: #2f2f2f;
-  font-family: Montserrat Semibold;
+  font-weight: bolder;
 }
 
 p.sub-title {
@@ -204,7 +192,7 @@ span.under_score {
   letter-spacing: 1px;
   line-height: 48px;
   color: #363636;
-  font-family: "Montserrat Semibold";
+  font-family: "Metropolis-SemiBold";
 }
 .text-end {
   display: flex;
@@ -217,7 +205,7 @@ a.footer-menu-link {
   font-size: 16px;
   line-height: 48px;
   color: #2f2f2f !important;
-  font-family: Avenir Medium;
+  font-family: "Avenir-Book";
   letter-spacing: 1px;
 }
 .height {
@@ -235,7 +223,7 @@ a.social-link.twitter {
 @media screen and (max-width: 768px) {
   .footer-logo {
     position: unset;
-    margin: 20px 0;
+    margin: 20px 10px;
     margin-left: auto;
     width: 137px;
     height: 114px;
@@ -262,6 +250,7 @@ a.social-link.twitter {
   }
   .rs-bottom {
     text-align: center;
+    margin-top: 50px;
   }
   p.footer-title {
     font-size: 18px;
@@ -269,6 +258,9 @@ a.social-link.twitter {
   }
   p.sub-title {
     font-size: 16px;
+    color: #2f2f2f;
+    font-family: Avenir;
+    margin-bottom: 0;
   }
   button.btn.contact-us {
     width: 100%;
@@ -287,7 +279,7 @@ a.social-link.twitter {
     font-size: 14px;
   }
   .footer-menu-title {
-    font-size: 22px;
+    font-size: 14px;
     text-align: center;
   }
   a.footer-menu-link {
@@ -300,6 +292,14 @@ a.social-link.twitter {
   }
   .col-md-9.text-end.my-auto {
     justify-content: center;
+  }
+  .social-icon {
+  height: 60px;
+  padding: 0px 12px;
+  }
+  .footer-padding{
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 

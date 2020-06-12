@@ -6,7 +6,7 @@
           <div class="banner position-relative">
             <p class="scroll">scroll</p>
             <img v-if="!isMobile" src="../assets/img/banner.jpg" alt class="banner-img" />
-            <img v-else src="../assets/img/mobile-banner.png" alt class="banner-img" style="width: 750px" />
+            <img v-else src="../assets/img/mobile-banner.png" alt class="banner-img" />
             <div class="banner-text">
               <div class="my-auto">
                 <h1 class="banner-title extrasmall">{{ data.title }}</h1>
@@ -32,13 +32,13 @@
         class="row text-center w-md-75 logo-div mx-auto"
         v-if="data.logo !== false"
       >
-        <div class="col-4 p-0 m-0">
+        <div class="col-4 p-0 m-0 ad-logos">
           <img src="@/assets/img/logo1.png" alt class="del logo" />
         </div>
-        <div class="col-4 p-0 m-0">
+        <div class="col-4 p-0 m-0 ad-logos">
           <img src="@/assets/img/bbc.png" alt="bbc" class="bbc logo" />
         </div>
-        <div class="col-4 p-0 m-0">
+        <div class="col-4 p-0 m-0 ad-logos">
           <img src="@/assets/img/nos.png" alt class="nos logo" />
         </div>
       </div>
@@ -69,4 +69,18 @@ export default {
 <style scoped lang="scss">
 @import "../style/appBanner.scss";
 @import "../style/consultBtn.scss";
+
+@media screen and (max-width: 640px) {
+  .ad-logos:nth-child(1){
+    text-align: left !important;
+    padding-left: 20px !important;
+  }
+  .ad-logos:nth-child(2){
+    text-align: center !important;
+  }
+  .ad-logos:nth-child(3){
+    text-align: right !important;
+    padding-right: 20px !important;
+  }
+}
 </style>

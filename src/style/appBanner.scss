@@ -36,7 +36,7 @@
   font-size: 72px !important;
   line-height: 48px;
   color: #212121;
-
+  font-family: "Avenir-Black";
   width: max-content;
 }
 .banner-subtitle {
@@ -45,7 +45,7 @@
   width: 552px;
   margin-top: 25px;
   margin-bottom: 51px;
-  font-family: Avenir Medium;
+  font-family: "Avenir-Book";
 }
 .banner-subtitle2 {
   font-size: 18px;
@@ -70,32 +70,131 @@ img.bbc.logo {
 img.nos.logo {
   margin-left: 118px;
 }
-
-@media screen and (max-width: 768px) {
-  .banner-title{
-    /* margin-top: 259px; */
-    font-size: 48px !important;
-    font-family: 'Avenir Black' !important;
+@media screen and (max-width: 350px){
+  .banner-text{
+    left: 7%;
   }
-  .banner-img{
-    height: 547px;
+  .banner-title, .extrasmall {
+    margin-bottom: 0px;
+  }
+  .scroll {
+    visibility: hidden;
+  }
+  .banner-img {
+    margin-left: 0px;
+    padding-left: 0px;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+  }
+  .padding {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .btn-sm {
+    width: 115px !important;
+    height: 26px;
+    font-size: 10px;
+    line-height: 0px;
+  }
+  .logo {
+    width: 65px;
+    height: 18px;
+    margin-bottom: 10px;
+  }
+  .logo-div {
+    padding: 20px 0px;
+  }
+
+  img.del.logo,
+  img.bbc.logo,
+  img.nos.logo {
+    margin-left: 0px;
   }
   .banner-subtitle{
-    margin-top: 48px;
-    margin-bottom: 20px;
     font-size: 12px;
-    height: auto;
-    max-width: 286px;
-    line-height: 1.2;
-    font-family: Avenir Medium;
   }
-  .banner-subtitle2 {
+  .banner-subtitle {
+    font-size: 12px;
+    height: 55px;
+    width: 235px;
+    margin-top: 25px;
+    margin-bottom: 51px;
+    font-family: "Avenir-Book";
+    text-align: justify;
+  }
+  .my-auto{
+    margin-left: 10px;
+  }
+  .banner-title {
+    font-size: 42px !important;
+  }
+}
+// extra extra small
+@media screen and (min-width: 351px) and (max-width: 400px){
+  .banner-text{
+    left: 7%;
+  }
+  .banner-title, .extrasmall {
+    margin-bottom: 0px;
+  }
+  .scroll {
+    visibility: hidden;
+  }
+  .banner-img {
+    margin-left: 0px;
+    padding-left: 0px;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+  }
+  .padding {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .btn-sm {
+    width: 115px !important;
+    height: 26px;
     font-size: 10px;
+    line-height: 0px;
   }
+  .logo {
+    width: 65px;
+    height: 18px;
+    margin-bottom: 10px;
+  }
+  .logo-div {
+    padding: 20px 0px;
+  }
+
+  img.del.logo,
+  img.bbc.logo,
+  img.nos.logo {
+    margin-left: 0px;
+  }
+  .banner-subtitle{
+    font-size: 12px;
+  }
+  .banner-subtitle {
+    font-size: 12px;
+    height: 55px;
+    width: 265px;
+    margin-top: 25px;
+    margin-bottom: 51px;
+    font-family: "Avenir-Book";
+    text-align: justify;
+  }
+  .my-auto{
+    margin-left: 15px;
+  }
+  .banner-title {
+    font-size: 42px !important;
+  }
+  
 }
 
 /* extra samll  */
-@media screen and (max-width: 450px) {
+@media screen and (min-width: 401px) and (max-width: 640px) {
   .banner-text{
     left: 7%;
   }
@@ -121,11 +220,11 @@ img.nos.logo {
   }
   .logo {
     width: 100px;
-    height: 27px;
+    height: 18px;
     margin-bottom: 10px;
   }
   .logo-div {
-    padding: 20px 3px;
+    padding: 20px 0px;
   }
 
   img.del.logo,
@@ -133,53 +232,20 @@ img.nos.logo {
   img.nos.logo {
     margin-left: 0px;
   }
-}
-/* Small devices */
-@media screen and (min-width: 451px) and (max-width: 640px) {
-  .banner {
-    height: 14em;
-    margin-left: 0px;
-  }
-  .banner-img {
-    padding-left: 16px;
-  }
-  .banner-text {
-    left: 8%;
-  }
-  p {
+  .banner-subtitle {
     font-size: 12px;
+    height: 55px;
+    width: 285px;
+    margin-top: 25px;
+    margin-bottom: 51px;
+    font-family: "Avenir-Book";
+    text-align: justify;
   }
-  .scroll {
-    font-size: 12px;
-    left: -15px;
-    bottom: 66px;
+  .my-auto{
+    margin-left: 25px;
   }
-
-  .scroll::before {
-    top: 0.7em;
-    left: 3.7em;
-    width: 40px;
-  }
-
-  .btn-sm {
-    width: 138px !important;
-    height: 34px;
-    font-size: 12px;
-    line-height: 0px;
-  }
-  .logo {
-    width: 100px;
-    height: 27px;
-    margin-bottom: 10px;
-  }
-  .logo-div {
-    padding: 20px 3px;
-  }
-
-  img.del.logo,
-  img.bbc.logo,
-  img.nos.logo {
-    margin-left: 0px;
+  .banner-title {
+    font-size: 42px !important;
   }
 }
 /* medium screen */
@@ -204,6 +270,17 @@ img.nos.logo {
   img.bbc.logo,
   img.nos.logo {
     margin-left: 0px;
+  }
+  .banner-subtitle {
+    font-size: 18px;
+    height: 65px;
+    width: 552px;
+    margin-top: 25px;
+    margin-bottom: 51px;
+    font-family: "Avenir-Book";
+  }
+  .banner-title {
+    font-size: 42px !important;
   }
 }
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -238,6 +315,9 @@ img.nos.logo {
   img.bbc.logo,
   img.nos.logo {
     margin-left: 0px;
+  }
+  .banner-title {
+    font-size: 42px !important;
   }
 }
 /* Large devices (desktops, 992px and up) */
