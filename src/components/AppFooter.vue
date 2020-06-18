@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container-fluid bg-white width margin-top position-relative footer-padding">
+    <div class="container-fluid bg-white width margin-top position-relative footer-padding my-0">
       <div class="row width-75 mx-auto padding_border">
         <div class="col-md-4 rs-bottom">
           <p class="footer-title ">Vlog ons</p>
@@ -61,7 +61,7 @@
           </div>
         </div>
         <div class="col-md-9 text-end my-auto order-1 order-md-last p-0">
-          <div class="footer-menu d-flex w-100 row justify-content-between mx-0">
+          <div class="footer-menu d-flex w-90 row justify-content-between">
             <a href class="footer-menu-link">FAQ</a>
             <router-link to="/privacy" class="footer-menu-link">PRIVACY</router-link>
             <a href class="footer-menu-link">AIGEMENE VOORWAARDEN</a>
@@ -219,7 +219,168 @@ a.social-link.twitter {
 }
 
 /* responsive */
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1451px) and (max-width: 1850px) {
+  a.footer-menu-link {
+    text-decoration: none;
+    margin-left: 8px;
+    font-size: 15px;
+    line-height: 48px;
+    color: #2f2f2f !important;
+    font-family: Avenir Medium;
+    letter-spacing: 1px;
+  }
+  .footer-menu{
+    margin-top: 35px;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1450px) {
+  .width-75 {
+    width: 70%;
+  }
+  button.btn.contact-us {
+    width: 190px;
+    font-size: 14px;
+  }
+  .arrow-btn {
+    width: 40px;
+  }
+  .footer-menu-title {
+    font-size: 24px;
+  }
+  a.footer-menu-link {
+    text-decoration: none;
+    margin-left: 7px;
+    font-size: 13px;
+    line-height: 48px;
+    color: #2f2f2f;
+    letter-spacing: 1px;
+  }
+  .footer-logo {
+    width: 119px;
+    height: 102px;
+  }
+  .footer-menu{
+    margin-top: 35px;
+    margin-right: 5%;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  .width-75 {
+    width: 75%;
+  }
+  p.footer-title {
+    font-size: 16px;
+  }
+  p.sub-title {
+    font-size: 16px;
+  }
+  button.btn.contact-us {
+    width: 84%;
+    height: 60px;
+    font-size: 12px;
+  }
 
+  input#custom-input {
+    font-size: 13px;
+  }
+  span.under_score {
+    font-size: 20px;
+  }
+  .arrow-btn {
+    width: 40px;
+  }
+  .footer-menu-title {
+    font-size: 24px;
+  }
+  a.footer-menu-link {
+    text-decoration: none;
+    margin-left: 6px;
+    font-size: 14px;
+    line-height: 48px;
+    color: #2f2f2f;
+    letter-spacing: 0px;
+  }
+  .footer-logo {
+    width: 94px;
+    height: 78px;
+  }
+  .footer-menu{
+    margin-top: 35px;
+    margin-right: 10%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .width-75 {
+    width: 100%;
+  }
+  .footer-menu-title {
+    font-size: 20px;
+  }
+  a.footer-menu-link {
+    margin-left: 6px;
+    font-size: 14px;
+    letter-spacing: 0px;
+  }
+  button.btn.contact-us {
+    width: 170px;
+
+    font-size: 13px;
+  }
+  .arrow-btn {
+    width: 37px;
+  }
+  input#custom-input {
+    width: 79px;
+  }
+  .footer-logo {
+    width: 88px;
+    height: 93px;
+  }
+  .footer-menu{
+    margin-top: 40px;
+    margin-right: 35% !important;
+  }
+  .footer-logo{
+    width: 88px;
+    height: 77px;
+  }
+}
+/* medium phone  */
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  .width-75 {
+    width: 100%;
+  }
+  .rs-bottom {
+    text-align: center;
+  }
+  p.footer-title {
+    margin-top: 15px;
+  }
+  button.btn.contact-us {
+    width: 70%;
+  }
+  .border {
+    width: 100%;
+    height: 60px;
+  }
+  .footer-menu-title {
+    font-size: 22px;
+    text-align: center;
+  }
+  .col-md-9.text-end.my-auto {
+    display: flex;
+    justify-content: center;
+  }
+  a.footer-menu-link {
+    text-decoration: none;
+    margin-left: 12px;
+    font-size: 14px;
+    line-height: 48px;
+    color: #2f2f2f;
+    letter-spacing: 0px;
+  }
+}
 @media screen and (max-width: 768px) {
   .footer-logo {
     position: unset;
@@ -303,148 +464,4 @@ a.social-link.twitter {
   }
 }
 
-/* medium phone  */
-@media screen and (min-width: 641px) and (max-width: 768px) {
-  .width-75 {
-    width: 100%;
-  }
-  .rs-bottom {
-    text-align: center;
-  }
-  p.footer-title {
-    margin-top: 15px;
-  }
-  button.btn.contact-us {
-    width: 70%;
-  }
-  .border {
-    width: 100%;
-    height: 60px;
-  }
-  .footer-menu-title {
-    font-size: 22px;
-    text-align: center;
-  }
-  .col-md-9.text-end.my-auto {
-    display: flex;
-    justify-content: center;
-  }
-  a.footer-menu-link {
-    text-decoration: none;
-    margin-left: 12px;
-    font-size: 14px;
-    line-height: 48px;
-    color: #2f2f2f;
-    letter-spacing: 0px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .width-75 {
-    width: 100%;
-  }
-  .footer-menu-title {
-    font-size: 20px;
-  }
-  a.footer-menu-link {
-    margin-left: 6px;
-    font-size: 14px;
-    letter-spacing: 0px;
-  }
-  button.btn.contact-us {
-    width: 170px;
-
-    font-size: 13px;
-  }
-  .arrow-btn {
-    width: 37px;
-  }
-  input#custom-input {
-    width: 79px;
-  }
-  .footer-logo {
-    width: 88px;
-    height: 93px;
-  }
-}
-@media screen and (min-width: 991px) and (max-width: 1200px) {
-  .width-75 {
-    width: 75%;
-  }
-  p.footer-title {
-    font-size: 16px;
-  }
-  p.sub-title {
-    font-size: 16px;
-  }
-  button.btn.contact-us {
-    width: 84%;
-    height: 60px;
-    font-size: 12px;
-  }
-
-  input#custom-input {
-    font-size: 13px;
-  }
-  span.under_score {
-    font-size: 20px;
-  }
-  .arrow-btn {
-    width: 40px;
-  }
-  .footer-menu-title {
-    font-size: 24px;
-  }
-  a.footer-menu-link {
-    text-decoration: none;
-    margin-left: 6px;
-    font-size: 14px;
-    line-height: 48px;
-    color: #2f2f2f;
-    letter-spacing: 0px;
-  }
-  .footer-logo {
-    width: 94px;
-    height: 78px;
-  }
-}
-
-@media screen and (min-width: 1201px) and (max-width: 1450px) {
-  .width-75 {
-    width: 70%;
-  }
-  button.btn.contact-us {
-    width: 190px;
-    font-size: 14px;
-  }
-  .arrow-btn {
-    width: 40px;
-  }
-  .footer-menu-title {
-    font-size: 24px;
-  }
-  a.footer-menu-link {
-    text-decoration: none;
-    margin-left: 7px;
-    font-size: 13px;
-    line-height: 48px;
-    color: #2f2f2f;
-    letter-spacing: 1px;
-  }
-  .footer-logo {
-    width: 119px;
-    height: 102px;
-  }
-}
-/* Extra large devices (large desktops, 1200px and up) */
-@media screen and (min-width: 1451px) and (max-width: 1850px) {
-  a.footer-menu-link {
-    text-decoration: none;
-    margin-left: 8px;
-    font-size: 15px;
-    line-height: 48px;
-    color: #2f2f2f !important;
-    font-family: Avenir Medium;
-    letter-spacing: 1px;
-  }
-}
 </style>

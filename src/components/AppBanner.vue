@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container-fluid width padding">
-      <div class="row">
+      <div class="row mx-0">
         <div class="col-md-12 padding">
           <div class="banner position-relative">
             <p class="scroll">scroll</p>
@@ -29,7 +29,7 @@
         </div>
       </div>
       <div
-        class="row text-center w-md-75 logo-div mx-auto"
+        class="row mx-0 text-center w-md-75 logo-div mx-auto"
         v-if="data.logo !== false"
       >
         <div class="col-4 p-0 m-0 ad-logos">
@@ -82,5 +82,6 @@ export default {
     text-align: right !important;
     padding-right: 20px !important;
   }
+  
 }
 </style>

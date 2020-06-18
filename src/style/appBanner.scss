@@ -51,7 +51,7 @@
   font-size: 18px;
   line-height: 48px;
   color: #000000;
-  font-family: Roboto;
+  font-family: "Avenir Medium";
 }
 
 .logo {
@@ -70,7 +70,138 @@ img.bbc.logo {
 img.nos.logo {
   margin-left: 118px;
 }
-@media screen and (max-width: 350px){
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .banner {
+    height: 30em;
+  }
+  .banner-text {
+    left: 11%;
+  }
+  .banner-title {
+    font-size: 60px !important;
+  }
+  .banner-subtitle {
+    font-size: 18px !important;
+    height: 110px;
+    margin-bottom: 10px;
+  }
+  .banner-subtitle2 {
+    font-size: 18px;
+  }
+  .scroll {
+    left: 0px;
+    bottom: 120px;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .banner {
+    height: 30em;
+  }
+  .banner-text {
+    left: 11%;
+  }
+  .banner-title {
+    font-size: 55px !important;
+  }
+  .banner-subtitle {
+    font-size: 16px !important;
+    height: 100px;
+    margin-bottom: 0px !important;
+    width: 490px;
+  }
+  .banner-subtitle2 {
+    font-size: 16px;
+  }
+  .scroll {
+    left: 0px;
+    bottom: 120px;
+  }
+  /*  .logo {
+    width: 91px;
+    height: 28px;
+} */
+  img.del.logo,
+  img.bbc.logo,
+  img.nos.logo {
+    margin-left: 0px;
+  }
+}
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .banner {
+    height: 24em;
+  }
+  .banner-text {
+    left: 100px;
+  }
+  .banner-title {
+    font-size: 36px !important;
+  }
+  .banner-subtitle {
+    font-size: 15px !important;
+    height: 120px;
+    width: 375px;
+    margin-bottom: 0px;
+  }
+  .banner-subtitle2 {
+    font-size: 15px;
+  }
+  .scroll {
+    left: 0px;
+    bottom: 90px;
+  }
+  .logo {
+    width: 91px;
+    height: 28px;
+  }
+  img.del.logo,
+  img.bbc.logo,
+  img.nos.logo {
+    margin-left: 0px;
+  }
+  .banner-title {
+    font-size: 42px !important;
+  }
+}
+/* medium screen */
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  .banner {
+    height: 21em;
+  }
+  .banner-text {
+    top: 0px;
+    left: 14%;
+  }
+  .scroll {
+    left: 0px;
+    bottom: 80px;
+    font-size: 15px;
+  }
+  .logo {
+    width: 91px;
+    height: 28px;
+  }
+  img.del.logo,
+  img.bbc.logo,
+  img.nos.logo {
+    margin-left: 0px;
+  }
+  .banner-subtitle {
+    font-size: 18px;
+    height: 65px;
+    width: 552px;
+    margin-top: 25px;
+    margin-bottom: 51px;
+    font-family: "Avenir-Book";
+  }
+  .banner-title {
+    font-size: 42px !important;
+  }
+}
+/* extra samll  */
+@media screen and (min-width: 401px) and (max-width: 640px) {
   .banner-text{
     left: 7%;
   }
@@ -83,9 +214,6 @@ img.nos.logo {
   .banner-img {
     margin-left: 0px;
     padding-left: 0px;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
   }
   .padding {
     padding-right: 0px;
@@ -98,7 +226,7 @@ img.nos.logo {
     line-height: 0px;
   }
   .logo {
-    width: 65px;
+    width: 88px;
     height: 18px;
     margin-bottom: 10px;
   }
@@ -111,23 +239,23 @@ img.nos.logo {
   img.nos.logo {
     margin-left: 0px;
   }
-  .banner-subtitle{
-    font-size: 12px;
-  }
   .banner-subtitle {
     font-size: 12px;
     height: 55px;
-    width: 235px;
+    width: 285px;
     margin-top: 25px;
     margin-bottom: 51px;
     font-family: "Avenir-Book";
     text-align: justify;
   }
   .my-auto{
-    margin-left: 10px;
+    margin-left: 25px;
   }
   .banner-title {
     font-size: 42px !important;
+  }
+  .banner-subtitle2 {
+    font-size: 15px;
   }
 }
 // extra extra small
@@ -188,13 +316,14 @@ img.nos.logo {
     margin-left: 15px;
   }
   .banner-title {
-    font-size: 42px !important;
+    font-size: 34px !important;
+  }
+  .banner-subtitle2 {
+    font-size: 14px;
   }
   
 }
-
-/* extra samll  */
-@media screen and (min-width: 401px) and (max-width: 640px) {
+@media screen and (max-width: 350px){
   .banner-text{
     left: 7%;
   }
@@ -207,6 +336,9 @@ img.nos.logo {
   .banner-img {
     margin-left: 0px;
     padding-left: 0px;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
   }
   .padding {
     padding-right: 0px;
@@ -219,7 +351,7 @@ img.nos.logo {
     line-height: 0px;
   }
   .logo {
-    width: 100px;
+    width: 65px;
     height: 18px;
     margin-bottom: 10px;
   }
@@ -232,149 +364,31 @@ img.nos.logo {
   img.nos.logo {
     margin-left: 0px;
   }
+  .banner-subtitle{
+    font-size: 12px;
+  }
   .banner-subtitle {
     font-size: 12px;
     height: 55px;
-    width: 285px;
+    width: 235px;
     margin-top: 25px;
     margin-bottom: 51px;
     font-family: "Avenir-Book";
     text-align: justify;
   }
   .my-auto{
-    margin-left: 25px;
+    margin-left: 10px;
   }
   .banner-title {
-    font-size: 42px !important;
-  }
-}
-/* medium screen */
-@media screen and (min-width: 641px) and (max-width: 768px) {
-  .banner {
-    height: 21em;
-  }
-  .banner-text {
-    top: 0px;
-    left: 14%;
-  }
-  .scroll {
-    left: 0px;
-    bottom: 80px;
-    font-size: 15px;
-  }
-  .logo {
-    width: 91px;
-    height: 28px;
-  }
-  img.del.logo,
-  img.bbc.logo,
-  img.nos.logo {
-    margin-left: 0px;
-  }
-  .banner-subtitle {
-    font-size: 18px;
-    height: 65px;
-    width: 552px;
-    margin-top: 25px;
-    margin-bottom: 51px;
-    font-family: "Avenir-Book";
-  }
-  .banner-title {
-    font-size: 42px !important;
-  }
-}
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .banner {
-    height: 24em;
-  }
-  .banner-text {
-    left: 100px;
-  }
-  .banner-title {
-    font-size: 36px !important;
-  }
-  .banner-subtitle {
-    font-size: 15px !important;
-    height: 120px;
-    width: 375px;
-    margin-bottom: 0px;
+    font-size: 34px !important;
   }
   .banner-subtitle2 {
-    font-size: 15px;
-  }
-  .scroll {
-    left: 0px;
-    bottom: 90px;
-  }
-  .logo {
-    width: 91px;
-    height: 28px;
-  }
-  img.del.logo,
-  img.bbc.logo,
-  img.nos.logo {
-    margin-left: 0px;
-  }
-  .banner-title {
-    font-size: 42px !important;
+    font-size: 13px;
   }
 }
-/* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-  .banner {
-    height: 30em;
-  }
-  .banner-text {
-    left: 11%;
-  }
-  .banner-title {
-    font-size: 55px !important;
-  }
-  .banner-subtitle {
-    font-size: 16px !important;
-    height: 100px;
-    margin-bottom: 0px !important;
-    width: 490px;
-  }
-  .banner-subtitle2 {
-    font-size: 16px;
-  }
-  .scroll {
-    left: 0px;
-    bottom: 120px;
-  }
-  /*  .logo {
-    width: 91px;
-    height: 28px;
-} */
-  img.del.logo,
-  img.bbc.logo,
-  img.nos.logo {
-    margin-left: 0px;
-  }
-}
-/* Extra large devices (large desktops, 1200px and up) */
-@media screen and (min-width: 1200px) and (max-width: 1500px) {
-  .banner {
-    height: 30em;
-  }
-  .banner-text {
-    left: 11%;
-  }
-  .banner-title {
-    font-size: 60px !important;
-  }
-  .banner-subtitle {
-    font-size: 18px !important;
-    height: 110px;
-    margin-bottom: 10px;
-  }
-  .banner-subtitle2 {
-    font-size: 18px;
-  }
-  .scroll {
-    left: 0px;
-    bottom: 120px;
-  }
-}
+
+
+
+
+
+

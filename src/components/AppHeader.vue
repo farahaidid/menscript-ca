@@ -141,56 +141,50 @@ a.dropdown-link {
 }
 
 /* responsive  */
-@media screen and (max-width: 768px){
-  nav#custom-navbar{
-    justify-content: start;
-    align-items: center;
-    .title{
-      margin-left: auto;
-      margin-right: auto;
-    }
+@media (min-width: 1450px) {
+  .container.custom-margin {
+    width: auto;
+    padding-left: 23% !important;
   }
 }
-/* Small devices */
-@media screen and (max-width: 640px) {
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) and (max-width: 1450px) {
+  li.nav-item {
+    margin-left: 60px;
+  }
   .container.custom-margin {
-    width: 100%;
-    padding-left: 0px;
+    width: auto;
+    padding-left: 23% !important;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  /* default style */
+  .container.custom-margin {
+    width: auto;
+    padding-left: 23% !important;
+  }
+  li.nav-item {
+    margin-left: 38px;
+  }
+}
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .container.custom-margin {
+    display: flex;
+    justify-content: flex-end !important;
+  }
+  li.nav-item {
+    margin-left: 17px;
+  }
+
+  .container.custom-margin {
+    /* text-align: center; */
     display: flex;
     justify-content: center;
   }
-  .title {
-    font-size: 25px;
-    text-align: center !important;
-  }
-  li.nav-item {
-    margin-left: 30px !important;
-  }
   .go-back {
-    left: 10%;
-  }
-  .header-sm-modal {
-    display: block;
-  }
-  .navbar-collapse {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    -ms-flex-align: center;
-    align-items: center;
-    overflow: scroll;
-    height: 100vh;
-  }
-  img.header-modal-img {
-    height: 262px !important;
-    width: 306px;
-  }
-  .navbar-dark .navbar-nav .nav-link {
-    font-size: 16px !important;
-    line-height: 20px;
-    color: #2f2f2f;
-    font-family: "Montserrat";
+    left: 12%;
   }
 }
 /* medium phone  */
@@ -231,50 +225,61 @@ a.dropdown-link {
   }
 }
 
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .container.custom-margin {
-    display: flex;
-    justify-content: flex-end !important;
+@media screen and (max-width: 768px){
+  nav#custom-navbar{
+    justify-content: start;
+    align-items: center;
+    .title{
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
-  li.nav-item {
-    margin-left: 17px;
-  }
-
+}
+/* Small devices */
+@media screen and (max-width: 640px) {
   .container.custom-margin {
-    /* text-align: center; */
+    width: 100%;
+    padding-left: 0px;
     display: flex;
     justify-content: center;
   }
+  .title {
+    font-size: 16px;
+    text-align: center !important;
+  }
+  li.nav-item {
+    margin-left: 30px !important;
+  }
   .go-back {
-    left: 12%;
+    left: 10%;
+  }
+  .header-sm-modal {
+    display: block;
+  }
+  .navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: scroll;
+    height: 100vh;
+  }
+  img.header-modal-img {
+    height: 262px !important;
+    width: 306px;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 16px !important;
+    line-height: 20px;
+    color: #2f2f2f;
+    font-family: "Montserrat";
   }
 }
-/* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-  /* default style */
-  .container.custom-margin {
-    width: auto;
-    padding-left: 23% !important;
-  }
-  li.nav-item {
-    margin-left: 38px;
-  }
-}
-/* Extra large devices (large desktops, 1200px and up) */
-@media screen and (min-width: 1200px) and (max-width: 1450px) {
-  li.nav-item {
-    margin-left: 60px;
-  }
-  .container.custom-margin {
-    width: auto;
-    padding-left: 23% !important;
-  }
-}
-@media (min-width: 1450px) {
-  .container.custom-margin {
-    width: auto;
-    padding-left: 23% !important;
-  }
-}
+
+
+
+
+
 </style>

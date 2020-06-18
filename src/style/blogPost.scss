@@ -72,6 +72,7 @@ p.subtitle, p.blog-subtitle {
 .blog-list-subtitle {
   font-size: 18px;
   margin-bottom: 65px;
+  font-family: "Avenir-Book";
 }
 .blog-list-subtext {
   font-size: 18px;
@@ -94,7 +95,7 @@ a.blog-list-menu-link.router-link-active {
   color: #2f2f2f !important;
   text-align: center;
   padding: 0px 46px;
-  font-family: Montserrat;
+  font-family: "Avenir Medium";
   font-size: 24px;
 }
 
@@ -141,9 +142,21 @@ p.blog-text-title {
   top: -7%;
   left: 0%;
 }
-@media screen and (min-width: 1800px) { 
+
+@media screen and (min-width: 1801px) { 
   .blog-img-container{
     height: 100%;
+  }
+  .third-section-text{
+    padding-left: 150px;
+    padding-top: 100px;
+  }
+  .five-section-text{
+    padding-left: 120px;
+    padding-top: 40px;
+  }
+  .footer-menu{
+    margin-top: 40px;
   }
 }
 
@@ -168,6 +181,15 @@ p.blog-text-title {
   a.blog-list-menu-link.router-link-active {
     font-size: 22px;
   }
+  .third-section-text{
+    padding-left: 150px;
+    padding-top: 100px;
+  }
+  .five-section-text{
+    padding-left: 120px;
+    padding-top: 40px;
+  }
+  
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -222,6 +244,15 @@ p.blog-text-title {
   .blog-list-title {
     font-size: 30px;
   }
+  .third-section-text{
+    padding-left: 60px;
+    padding-top: 70px;
+  }
+  .five-section-text{
+    padding-left: 90px;
+    padding-top: 30px;
+  }
+  
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -282,6 +313,15 @@ p.blog-text-title {
   .blog-list-section {
     height: 350px;
   }
+  .third-section-text{
+    padding-left: 40px;
+    padding-top: 30px;
+  }
+  .five-section-text{
+    padding-left: 40px;
+    padding-top: 30px;
+  }
+  
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -365,6 +405,20 @@ p.blog-text-title {
   }
   .blog-list-subtitle {
     margin-bottom: 30px;
+  }
+  .third-section-text{
+    padding-left: 20px;
+    padding-top: 0px;
+  }
+  .five-section-text{
+    padding-left: 20px;
+    padding-top: 0px;
+  }
+  .blog-title{
+    font-size: 42px;
+  }
+  .blog-subtitle{
+    font-size: 16px !important;
   }
 }
 
@@ -475,15 +529,26 @@ p.blog-text-title {
     padding-bottom: 20px;
   }
   .blog-margin{
-    height: 400px;
+    height: 520px;
     margin-right: 3rem;
   }
   .blog-margin-left{
     margin-left: 3rem;
   }
   .blog-negative-margin{
-    margin-top: -160px;
+    margin-top: -200px;
     background-color: transparent !important;
+  }
+  .subtitle-2{
+    margin-top: -25px;
+  }
+  .blog-two-margin{
+    margin-top: -140px;
+    position: relative;
+    z-index: 5;
+  }
+  .margin-five{
+    margin-bottom: 0;
   }
 }
 
@@ -560,13 +625,8 @@ p.blog-text-title {
     padding: 5px;
   }
   a.blog-list-menu-link.router-link-active {
-    color: black;
-    padding: 0px 0px;
-    text-align: center;
-    margin-right: 0px;
-    font-family: Montserrat;
+    padding: 6px 5px;
     font-size: 12px;
-    display: contents;
   }
 
   /* blog detail */
@@ -598,7 +658,11 @@ p.blog-text-title {
 
 @media screen and (max-width: 550px){
   .blog-margin{
-    height: 430px !important;
+    height: 510px !important;
+  }
+  a.blog-list-menu-link.router-link-active {
+    padding: 5px 4px;
+    font-size: 11px;
   }
 }
 
@@ -619,6 +683,15 @@ p.blog-text-title {
   }
   .blog-title{
     font-size: 38px;
+  }
+  a.blog-list-menu-link.router-link-active {
+    padding: 5px 4px;
+    font-size: 10px;
+  }
+  .blog-list-title{
+    text-align: left !important;
+    margin-top: 25px;
+    font-size: 18px;
   }
 }
 
@@ -648,13 +721,25 @@ p.blog-text-title {
   .subtitle-2{
     font-size: 9px;
   }
+  a.blog-list-menu-link.router-link-active {
+    padding: 5px 3px;
+    font-size: 9px;
+  }
+  .blog-list-title{
+    text-align: left !important;
+    margin-top: 25px;
+    font-size: 16px;
+  }
+  .blog-list-subtitle{
+    font-size: 10px;
+  }
 }
 
 @media screen and (min-width: 250px) and (max-width: 640px){
   .blog-two-margin{
-    margin-top: -50px;
+    margin-top: -47px;
   }
   .blog-negative-margin{
-    margin-top: -70px;
+    margin-top: -100px;
   }
 }

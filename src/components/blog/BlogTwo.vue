@@ -6,7 +6,7 @@
       </div>
       <div class="col-md-6 order-first order-md-last bg-white px-md-0 blog-margin blog-margin-left ml-md-0 mr-0">
         <div class="five-section-text w-90">
-          <h2 class="blog-title text-left text-md-center mt-5" v-if="data.name == 'blogTwo'">
+          <h2 class="blog-title text-left mt-5" v-if="data.name == 'blogTwo'">
             {{ data.title }}
           </h2>
           <p class="blog-subtitle" v-if="data.name == 'blogTwo'">

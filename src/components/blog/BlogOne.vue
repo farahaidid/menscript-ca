@@ -2,8 +2,8 @@
   <div class="row margin-third">
     <div class="col-md-6 mb-26 px-md-0 blog-margin bg-white mr-md-0" @click="gotoCategoryPage">
       <div class="third-section-text ml-4 w-90">
-        <h2 class="blog-title text-left text-md-center mt-5" v-if="data.name == 'blogOne'">{{ data.title }}</h2>
-        <p class="blog-subtitle custon-margin-subtitle" v-if="data.name == 'blogOne'">
+        <h2 class="blog-title text-left mt-5" v-if="data.name == 'blogOne'">{{ data.title }}</h2>
+        <p class="blog-subtitle" v-if="data.name == 'blogOne'">
           {{ data.text }}
         </p>
         <div class="row justify-content-end mx-0">

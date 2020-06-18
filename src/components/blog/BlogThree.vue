@@ -1,9 +1,9 @@
 <template>
-  <div class="row">
+  <div class="row main-back-color pb-5">
     <div class="col-md-6 bg-white mb-26 px-md-0 blog-margin mr-md-0" @click="gotoCategoryPage">
-      <div class="five-section-text w-90 ml-4">
+      <div class="third-section-text w-90 ml-4">
         <h2
-          class="blog-title  text-left text-md-center mt-5"
+          class="blog-title  text-left mt-5"
           v-if="data.name == 'blogThree'"
         >
           {{ data.title }}
@@ -20,7 +20,7 @@
             Start online consult
           </button>
         </div>
-        <p class="subtitle-2" v-if="data.name == 'blogThree'">
+        <p class="subtitle-2 d-md-none" v-if="data.name == 'blogThree'">
           {{ data.subtitle }}
         </p>
       </div>

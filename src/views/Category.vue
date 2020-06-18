@@ -1,38 +1,38 @@
 <template>
   <div>
-     <AppBanner :data="category"/> 
-    <hr />
-    <div class="container-fluid custom-padding ">
-      <div class="row mr-custom p-0" >
+    <AppBanner :data="category"/> 
+    <hr class="my-0 mx-5" />
+    <div class="container-fluid custom-padding my-0">
+      <div class="row mx-0 mr-custom p-0" >
         <div class="col-md-6 p-0">
           <CategoryOne class="mb-3" />
         </div>
-        <div class="col-md-3 p-0 text_sm_center">
+        <div class="col-6 col-md-3 p-0 text_sm_center">
           <CategoryTwo class="mb-3" :data="rx" />
         </div>
-        <div class="col-md-3 p-0 text_sm_center">
+        <div class="col-6 col-md-3 p-0 text_sm_center">
           <CategoryTwo class="mb-3" :data="otc" />
         </div>
       </div>
-      <div class="row mr-custom " >
+      <div class="row mx-0 mr-custom " >
         <div class="col-md-6 p-0">
           <CategoryOne class="mb-3" />
         </div>
-        <div class="col-md-3 p-0 text_sm_center">
+        <div class="col-6 col-md-3 p-0 text_sm_center">
           <CategoryTwo class="mb-3" :data="rx" />
         </div>
-        <div class="col-md-3 p-0 text_sm_center">
+        <div class="col-6 col-md-3 p-0 text_sm_center">
           <CategoryTwo class="mb-3" :data="otc" />
         </div>
       </div>
-      <div class="row mr-custom " >
+      <div class="row mx-0 mr-custom " >
         <div class="col-md-6 p-0">
           <CategoryOne class="mb-3" />
         </div>
-        <div class="col-md-3 p-0 text_sm_center">
+        <div class="col-6 col-md-3 p-0 text_sm_center">
           <CategoryTwo class="mb-3" :data="rx" />
         </div>
-        <div class="col-md-3 p-0 text_sm_center">
+        <div class="col-6 col-md-3 p-0 text_sm_center">
           <CategoryTwo class="mb-3" :data="otc" />
         </div>
       </div>
