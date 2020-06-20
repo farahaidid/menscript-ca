@@ -32,13 +32,13 @@ img.product-img.bottom-img {
 
 .card-subtext{
     font-size: 14px;
-color: #2f2f2f;
-font-family:Avenir Roman;
+    color: #2f2f2f;
+    font-family: Avenir-Medium;
 }
 .card-subtitle {
-    font-size: 14px;
-color: #6c6d6f;
-font-family:Avenir Roman;
+    font-size: 12px;
+    color: #6c6d6f;
+    font-family: Avenir-Book;
 }
 
 button.app-btn {
@@ -59,8 +59,9 @@ button.app-btn {
     padding: 4px 0px;
     background-color: transparent;
     border: transparent !important;
-    font-size: 14px;
-color: #6c6d6f;
+    font-size: 10px;
+    color: #6c6d6f;
+    font-family: Avenir-Book;
 }
 .card-title {
     margin-bottom: 0px;
@@ -94,7 +95,7 @@ color: #6c6d6f;
 
     }
     .product-img {
-        width: 250px;
+        // width: 250px;
     }
     .mb-sm-5{
         margin-bottom: 10px;
@@ -130,7 +131,7 @@ color: #6c6d6f;
         text-align:center;
     }
     .product-img {
-        width: 378px;
+        // width: 378px;
     }
     .text-sm-center {
         text-align: center;

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container-fluid">
+    <div class="container-fluid main-back-color px-0">
       <Product class="product-page" />
       <BlogOne :data="blogOne" />
       <BlogTwo :data="blogTwo" />
@@ -9,9 +9,10 @@
           <img src="@/assets/img/fourth-section-img.jpg" alt class="fourth-section-img" />
         </div>
       </div>
-      <BlogOne :data="blogThree" />
       <BlogTwo :data="blogTwo2" />
+      <BlogOne :data="blogThree" />
       <AskQuestion />
+      <div style="height: 50px" class="main-back-color"></div>
     </div>
   </div>
 </template>

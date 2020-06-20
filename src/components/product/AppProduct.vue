@@ -2,31 +2,38 @@
   <div class="row">
     <div class="col-md-7">
       <div class="row position-relative">
-        <p class="scroll">scroll</p>
-        <div class="col-6 p-lg-0 p-md-0 mb-sm-5 mb-lg-0 mb-md-0 text_sm_center">
+        <p class="scroll d-none d-md-inline-block">scroll</p>
+        <div class="col-6 p-0 m-0 mb-md-0 text_sm_center">
           <img src="@/assets/img/product2.png" alt="" class="product-img top-img" />
         </div>
-        <div class="col-6 pl-lg-0 p-md-0 mb-sm-5 mb-lg-0  mb-md-0 text_sm_center">
+        <div class="col-6 p-0 m-0  mb-md-0 text_sm_center">
           <img src="@/assets/img/product3.png" alt="" class="product-img top-img" />
         </div>
-        <div class="col-7 p-lg-0 p-md-0 mb-sm-5 text_sm_center">
+        <div class="col-7 p-0 m-0 text_sm_center">
           <img src="@/assets/img/product4.png" alt="" class="product-img bottom-img"/>
         </div>
-        <div class="col-5 pl-lg-0 p-md-0 mb-sm-5 text_sm_center">
+        <div class="col-5 p-0 m-0 text_sm_center">
           <img src="@/assets/img/product5.png" alt="" class="product-img bottom-img"/>
         </div>
       </div>
     </div>
     <div class="col-md-5 mt-lg-5 mt-md-3">
-      <div class="card-section bg-white sticky-header is-sticky ">
-        <p class="card-text mb-0 ">Finasteride 1 mg</p>
-        <p class="card-subtext ">€25.94</p>
-        <p class="card-subtitle">
+      <div class="card-section sticky-header is-sticky ">
+        <p class="card-text mb-0 d-inline-block d-md-block">Minoxidil 5%</p>
+        <span class="d-inline-block d-md-none mx-1"> - </span>
+        <p class="card-subtext d-inline-block d-md-block">60 ml - €25.94</p>
+        <div class="text-center d-block d-md-none">
+          <button type="button" class="app-btn w-100">
+            Start online consult
+          </button>
+        </div>
+        <hr class="d-block d-md-none mt-0 mb-5">
+        <p class="card-subtitle mb-3">
           Receptmedicijin voor de behandeling van haarutival bij mannen. Het
           stopt haaruitval in merr dan 80% van de gebruikers.
         </p>
-      <a class="card-subtitle" style="text-decoration:underline">  Bijsluiter</a>
-        <div class="text-center">
+        <a class="card-subtitle d-none d-md-block" style="text-decoration:underline">  Bijsluiter</a>
+        <div class="text-center d-none d-md-block">
           <button type="button" class="app-btn ">
             Start online consult
           </button>

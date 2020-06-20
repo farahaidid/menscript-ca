@@ -536,19 +536,23 @@ p.blog-text-title {
     margin-left: 3rem;
   }
   .blog-negative-margin{
-    margin-top: -200px;
+    margin-top: -15%;
     background-color: transparent !important;
   }
   .subtitle-2{
     margin-top: -25px;
   }
   .blog-two-margin{
-    margin-top: -140px;
+    margin-top: -15%;
     position: relative;
     z-index: 5;
   }
   .margin-five{
     margin-bottom: 0;
+  }
+
+  .third-section-text{
+    width: 90% !important;
   }
 }
 
@@ -579,7 +583,6 @@ p.blog-text-title {
     font-size: 12px;
   }
   .blog-two-margin{
-    margin-top: -100px;
     position: relative;
     z-index: 5;
   }
@@ -649,7 +652,7 @@ p.blog-text-title {
     bottom: 228px;
   }
   .blog-title {
-    font-size: 42px;
+    font-size: 32px;
     color: #212121;
     font-family: "Avenir-Black";
   }
@@ -682,7 +685,7 @@ p.blog-text-title {
     width: unset !important;
   }
   .blog-title{
-    font-size: 38px;
+    font-size: 28px;
   }
   a.blog-list-menu-link.router-link-active {
     padding: 5px 4px;
@@ -712,11 +715,8 @@ p.blog-text-title {
   p.blog-subtitle{
     width: 100% !important;
   }
-  .blog-negative-margin{
-    margin-top: -120px;
-  }
   .blog-title{
-    font-size: 36px;
+    font-size: 24px;
   }
   .subtitle-2{
     font-size: 9px;
@@ -735,11 +735,11 @@ p.blog-text-title {
   }
 }
 
-@media screen and (min-width: 250px) and (max-width: 640px){
-  .blog-two-margin{
-    margin-top: -47px;
-  }
-  .blog-negative-margin{
-    margin-top: -100px;
-  }
-}
+// @media screen and (min-width: 250px) and (max-width: 640px){
+//   .blog-two-margin{
+//     margin-top: -47px;
+//   }
+//   .blog-negative-margin{
+//     margin-top: -100px;
+//   }
+// }

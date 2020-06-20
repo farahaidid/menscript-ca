@@ -1,11 +1,20 @@
 <template>
   <div :class="[absolute ? 'app-menu':'', 'pb-3 pt-2']">
-    <div class="row container mx-auto">
-      <div class="col-md-6 pl-5">
+    <div class="row container-fluid mx-auto" style="max-width: 1500px">
+      <div class="col-md-4 col-xl-6 pl-5">
         <p>MENU</p>
         <ul>
+          <li class="link link-cat"  v-if="isMobile">
+            <router-link to class="nav-link" href="#">SEARCH</router-link>
+          </li>
+          <li class="link link-cat"  v-if="isMobile" @click="openCardModal">
+            <router-link to class="nav-link" href="#">CART</router-link>
+          </li>
+          <li class="link link-cat"  v-if="isMobile">
+            <router-link to="/account" class="nav-link">ACCOUNT</router-link>
+          </li>
           <li class="link">
-            <router-link to="/category">HAIR</router-link>
+            <router-link class="link-cat" to="/category">HAIR</router-link>
             <div class="dropdown-content">
               <a href="#" class="dropdown-link"> finasteride</a>
               <a href="#" class="dropdown-link">minoxidil</a>
@@ -14,36 +23,38 @@
             </div>
           </li>
           <li class="link">
-            <router-link to="/category">SKIN</router-link>
+            <router-link class="link-cat" to="/category">SKIN</router-link>
             <div class="dropdown-content">
               <a href="#" class="dropdown-link">daycream</a>
               <a href="#" class="dropdown-link">nightcream</a>
               <a href="#" class="dropdown-link">tretinoin</a>
             </div>
           </li>
-          <li class="link" @click="goblog">
-            Blog
-          </li>
-          <li class="link">ABOUT</li>
-          <li class="link">CONTACT US</li>
+          <li class="link link-cat grey-text" @click="goblog"> BLOG </li>
+          <li class="link link-cat grey-text">OVER ONS</li>
+          <li class="link link-cat grey-text">CONTACT</li>
         </ul>
       </div>
-      <div class="col-md-3 pr-lg-0 pr-md-0 text-sm-center">
+      <!-- <div class="col-md-4 col-lg-3 pr-lg-0 pr-md-0 text-sm-center">
+        
+      </div> -->
+      <div class="col-md-8 col-xl-6 pl-lg-0 pl-md-0 text-sm-center ">
         <img
           src="@/assets/img/category-2.jpg"
           alt="header-modal-img"
           class="header-modal-img"
+          style="width: 350px;height: 480px;"
         />
-      </div>
-      <div class="col-md-3 pl-lg-0 pl-md-0 text-sm-center ">
-        <img src="@/assets/img/face.png" alt="" class="header-modal-img" />
+        <img src="@/assets/img/face.png" alt="" class="header-modal-img" style="width: 350px;height: 480px;" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import GLOBAL from "@/mixins/GLOBAL"
 export default {
+  mixins: [GLOBAL],
   props:{
     absolute:{
       type: Boolean,
@@ -78,6 +89,7 @@ export default {
   width: 100%;
   z-index: 10;
   background-color: #fff;
+  overflow: scroll;
 }
   li.link {
     list-style-type: none;
@@ -87,11 +99,27 @@ export default {
   }
   a.dropdown-link {
     display: block;
-    /* background-color: red; */
     width: 100px;
-    /* left: 32px; */
-    margin-left: 37px;
-    color: black;
+    margin-left: 87px;
+    color: grey !important;
     text-decoration: none;
+    font-family: Avenir-Medium;
+    font-size: 24px;
+  }
+
+  .link-cat{
+    font-family: Avenir-Medium !important;
+    font-size: 24px !important;
+    color: black;
+  }
+  .grey-text{
+    color: grey;
+  }
+
+  @media screen and (max-width: 768px) {
+    .app-menu{
+      height: 100vh;
+      overflow: scroll;
+    }
   }
 </style>

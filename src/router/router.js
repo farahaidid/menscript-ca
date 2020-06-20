@@ -20,6 +20,7 @@ const routes = [
       {path: 'Bestellingen', component: loadView("AccountBestellingen"),}, 
       {path: 'account', component: loadView("AccountAbonnement"),},
       { path: 'privacy', component: loadView("Privacy") },
+      { path: 'agreement', component: loadView("Agreement") },
     ]
   },
   {

@@ -1,7 +1,7 @@
 <template>
   <div>
     <AppBanner :data="category"/> 
-    <hr class="my-0 mx-5" />
+    <hr class="mx-5 mt-0" style="margin-bottom:35px" />
     <div class="container-fluid custom-padding my-0">
       <div class="row mx-0 mr-custom p-0" >
         <div class="col-md-6 p-0">
@@ -36,12 +36,14 @@
           <CategoryTwo class="mb-3" :data="otc" />
         </div>
       </div>
-
     </div>
-    <BlogThree :data="blogThree" />
-    
-
+    <div style="height: 50px" class="main-back-color"></div>
+    <div class="main-back-color">
+      <BlogThree :data="blogThree" class="pt-3" />
+    </div>
+    <div style="height: 50px" class="main-back-color"></div>
     <AskQuestion />
+    <div style="height: 50px" class="main-back-color"></div>
   </div>
 </template>
 <script>

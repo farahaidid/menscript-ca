@@ -1,6 +1,6 @@
 <template>
    <div class="custom-checkbox">
-      <input @change="handleChange" :id="id" type="checkbox" :checked="chckd" />
+      <input :class="[black?'black':'']" @change="handleChange" :id="id" type="checkbox" :checked="chckd" />
       <label :for="id">
          <span>{{label}}</span>
       </label>
@@ -14,7 +14,8 @@ export default {
          type: Boolean,
          default: false
       },
-      label: String
+      label: String,
+      black: Boolean
    },
    data: () => ({
       id: Math.random()
@@ -53,6 +54,7 @@ export default {
             margin-left: 1rem;
             color: #555555;
             user-select: none;
+            font-family: Avenir-Medium;
          }
       }
       & + label:before {
@@ -86,6 +88,18 @@ export default {
          border: solid rgb(255, 255, 255);
          border-width: 0 1.99px 1.99px 0;
          transform: rotate(45deg);
+      }
+   }
+   input[type="checkbox"].black {
+      &:checked + label:before {
+         background: black;
+         border-color: black;
+      }
+      &:checked + label span {
+         color: black;
+      }
+      & + label:before {
+         border: 1.5px solid grey;
       }
    }
 }

@@ -1,7 +1,7 @@
 <template>
-  <div class="row main-back-color pb-5">
-    <div class="col-md-6 bg-white mb-26 px-md-0 blog-margin mr-md-0" @click="gotoCategoryPage">
-      <div class="third-section-text w-90 ml-4">
+  <div class="row main-back-color pb-5 blog-3 mx-0">
+    <div class="blog-sec bg-white mb-26 px-md-0 blog-margin mr-md-0" @click="gotoCategoryPage">
+      <div class="w-75 third-section-text ml-4">
         <h2
           class="blog-title  text-left mt-5"
           v-if="data.name == 'blogThree'"
@@ -25,7 +25,7 @@
         </p>
       </div>
     </div>
-    <div class="col-md-6 pr-0 blog-negative-margin ">
+    <div class="img-sec pr-0 blog-negative-margin ">
       <img
         :src="data.image"
         alt="blogThree"
@@ -55,3 +55,19 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+@media screen and (min-width: 769px) {
+  .blog-3{
+    .blog-sec{
+      width: 63%;
+      display: inline-block;
+    }
+    .img-sec{
+      width: 47%;
+      display: inline-block;
+      margin-left: -10%;
+    }
+  }
+}
+</style>

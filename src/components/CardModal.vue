@@ -21,18 +21,10 @@
         <div class="modal-body">
           <div class="container">
             <div class="row mb-4">
-              <div class="col-md-2 my-auto p-0">
-                <div class="number-spinner">
-                  <span class="i">
-                    <i class="fal fa-minus"></i>
-                  </span>
-                  <span class="i">1</span>
-                  <span class="i">
-                    <i class="fal fa-plus"></i>
-                  </span>
-                </div>
+              <div class="col-md-2 my-auto p-0" v-if="!isMobile">
+                <product-quantity />
               </div>
-              <div class="col-md-10 pl pr">
+              <div class="col-12 col-md-10 pl pr">
                 <div class="card-product">
                   <div class="card-product-description">
                     <img
@@ -44,6 +36,7 @@
                     <div class="text-space">
                       <p class="sub-text-1 mb-0">Finasteride 1mg</p>
                       <p class="sub-text-2 mb-0">28 tabletten</p>
+                      <product-quantity />
                       <p class="sub-text-3 mb-0 text-right">
                         <b>$28.00</b>
                       </p>
@@ -53,18 +46,10 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-2 my-auto p-0">
-                <div class="number-spinner">
-                  <span class="i">
-                    <i class="fal fa-minus"></i>
-                  </span>
-                  <span class="i">1</span>
-                  <span class="i">
-                    <i class="fal fa-plus"></i>
-                  </span>
-                </div>
+              <div class="col-md-2 my-auto p-0" v-if="!isMobile">
+                <product-quantity />
               </div>
-              <div class="col-md-10 pr pl">
+              <div class="col-12 col-md-10 pr pl">
                 <div class="card-product">
                   <div class="card-product-description">
                     <img
@@ -75,6 +60,7 @@
                     <div class="text-space">
                       <p class="sub-text-1 mb-0">Shampoo revitalising</p>
                       <p class="sub-text-2 mb-0">190ml</p>
+                      <product-quantity />
                       <p class="sub-text-3 mb-0 text-right">
                         <b>$13.00</b>
                       </p>
@@ -102,7 +88,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-md-5 p-0 my-auto text_sm_center custom_center">
+              <div class="col-md-5 p-0 my-md-auto mt-3 text_sm_center custom_center">
                 <span class="price">$41</span>
                 <button class="checkout app-btn ml-4" @click="openLoginModal">
                   Checkout
@@ -117,18 +103,24 @@
 </template>
 <script>
 import EventBus from "@/plugins/eventBus";
+import ProductQuantity from "@/components/CartProductQuantity"
+import GLOBAL from "@/mixins/GLOBAL"
 export default {
+  mixins: [GLOBAL],
+  components:{
+    ProductQuantity
+  },
   methods: {
     openLoginModal() {
       $("#card-modal").modal("toggle");
       EventBus.$emit("open-login-modal");
-    }
-  }
+    },
+  },
 };
 </script>
 <style scoped lang="scss">
 .custom-card-modal {
-  width: 785px !important;
+  width: 785px ;
   height: 995px;
   background-color: #ffffff;
   border: 1px solid #959595;
@@ -148,12 +140,12 @@ export default {
   position: absolute;
   .modal-content.custom-card-modal {
     height: 85vh;
-    width: 665px !important;
+    width: 665px ;
   }
   .modal-header {
     border-bottom: none;
-    font-size: 30px;
-    font-family: Avenir;
+    font-size: 18px;
+    font-family: Avenir-Medium;
     margin-left: 8px;
     letter-spacing: 3px;
     padding: 29px 32px;
@@ -170,24 +162,7 @@ export default {
       margin: 0 5px;
     }
   }
-  .number-spinner {
-    background-color: #f6f6f4;
-    height: 30px;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100px !important;
-    span.i {
-      display: inline-block;
-      width: 16px;
-      font-size: 12px;
-    }
-    i.fal.fa-minus,
-    i.fal.fa-plus {
-      color: #b3c2bb;
-    }
-  }
+  
   .card-product {
     border: 1px solid #e1e1e1;
     /* padding: 10px 10px 0px 10px; */
@@ -198,8 +173,8 @@ export default {
     }
 
     img.cart-img {
-      width: 60px;
-      height: 70px;
+      width: 79px;
+      height: 78px;
       float: left;
       margin-right: 15px;
       margin-top: 16px;
@@ -207,17 +182,17 @@ export default {
     }
     .sub-text-1 {
       line-height: 36px;
-      font-family: Avenir Black;
+      font-family: Avenir-Black;
       font-size: 18px;
       color: #141414;
     }
     p.sub-text-2 {
       font-size: 16px;
-      color: #141414;
+      color: grey;
     }
     p.sub-text-3 {
       font-size: 18px;
-      font-family: Avenir Black;
+      font-family: Avenir-Black;
       padding-right: 10px;
     }
   }
@@ -233,8 +208,8 @@ export default {
       }
     }
     .price {
-      font-size: 48px;
-      font-family: Roboto;
+      font-size: 24px;
+      font-family: Avenir-Book;
       line-height: 48px;
       color: #262626;
     }
@@ -242,9 +217,9 @@ export default {
       width: 221px;
       background-color: black;
       height: 43px;
-      font-family: Avenir Medium;
+      font-family: Avenir-Medium;
       border: transparent;
-      font-size: 20px;
+      font-size: 16px;
       letter-spacing: 3px;
       line-height: 44px;
       color: #faf7f6;
@@ -257,6 +232,98 @@ export default {
 }
 /* Small devices */
 
+
+@media screen and (max-width: 1800px) {
+  .list-group-item {
+    font-size: 16px !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .modal.show .modal-dialog {
+    -webkit-transform: none;
+    transform: none;
+    /* left: 0px; */
+    top: -29px;
+    right: 0px;
+    position: absolute;
+  }
+  .custom-card-modal {
+    width: 707px !important;
+  }
+  .list-group-item {
+    font-size: 16px !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .modal.show .modal-dialog {
+    -webkit-transform: none;
+    transform: none;
+    /* left: 0px; */
+    top: -29px;
+    right: 107px;
+    position: absolute;
+  }
+  .custom-card-modal {
+    width: 607px !important;
+  }
+  .modal-header {
+    font-size: 22px !important;
+  }
+  .sub-text-1,
+  p.sub-text-3 {
+    font-family: Avenir Black;
+    font-size: 16px !important;
+  }
+  .list-group-item {
+    font-size: 16px !important;
+  }
+  .price {
+    font-size: 32px !important;
+    display: block;
+    text-align: center;
+    margin-right: 12px;
+  }
+  .checkout {
+    width: 100% !important;
+    height: 36px !important;
+    margin-left: 0px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal.show .modal-dialog {
+    -webkit-transform: none;
+    transform: none;
+    top: -6px;
+    position: initial;
+  }
+
+  .card-product{
+    height: 145px !important;
+  }
+  .text-space .number-spinner{
+    margin-top: 5px;
+  }
+
+  .checkout{
+    line-height: unset !important;
+  }
+
+  .custom-card-modal {
+    width: 96% !important;
+  }
+  .sub-text-1 {
+    font-size: 16px !important;
+  }
+  p.sub-text-3 {
+    font-size: 16px !important;
+  }
+  .price {
+    font-size: 35px !important;
+  }
+  .list-group-item {
+    font-size: 16px !important;
+  }
+}
 /* Small devices */
 @media screen and (max-width: 640px) {
   .custom-card-modal {
@@ -297,84 +364,8 @@ export default {
   }
 }
 /* medium phone  */
-@media screen and (min-width: 641px) and (max-width: 768px) {
-  .modal.show .modal-dialog {
-    -webkit-transform: none;
-    transform: none;
-    top: -6px;
-    position: initial;
-  }
 
-  .custom-card-modal {
-    width: 100% !important;
-  }
-  .sub-text-1 {
-    font-size: 16px !important;
-  }
-  p.sub-text-3 {
-    font-size: 16px !important;
-  }
-  .price {
-    font-size: 35px !important;
-  }
-  .list-group-item {
-    font-size: 16px !important;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .modal.show .modal-dialog {
-    -webkit-transform: none;
-    transform: none;
-    /* left: 0px; */
-    top: -29px;
-    right: 107px;
-    position: absolute;
-  }
-  .custom-card-modal {
-    width: 607px !important;
-  }
-  .modal-header {
-    font-size: 22px !important;
-  }
-  .sub-text-1,
-  p.sub-text-3 {
-    font-family: Avenir Black;
-    font-size: 16px !important;
-  }
-  .list-group-item {
-    font-size: 16px !important;
-  }
-  .price {
-    font-size: 32px !important;
-    display: block;
-    text-align: center;
-    margin-right: 12px;
-  }
-  .checkout {
-    width: 100% !important;
-    height: 36px !important;
-    margin-left: 0px !important;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-  .modal.show .modal-dialog {
-    -webkit-transform: none;
-    transform: none;
-    /* left: 0px; */
-    top: -29px;
-    right: 0px;
-    position: absolute;
-  }
-  .custom-card-modal {
-    width: 707px !important;
-  }
-  .list-group-item {
-    font-size: 16px !important;
-  }
-}
-@media screen and (min-width: 1200px) and (max-width: 1800px) {
-  .list-group-item {
-    font-size: 16px !important;
-  }
-}
+
+
+
 </style>

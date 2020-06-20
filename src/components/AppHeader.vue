@@ -2,11 +2,11 @@
   <div>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top mb-0" id="custom-navbar">
       <a @click="toggleAppMenu">
-        <img src="../assets/img/Hamburger-icon.jpg" alt="hamburger" class="hamburger" id="icon" v-if="!showAppMenu" />
+        <img src="../assets/img/Hamburger-icon.jpg" alt="hamburger" class="hamburger" v-if="!showAppMenu" />
         <img src="../assets/img/cancel.png" alt="hamburger" class="close-app-menu-icon" v-if="showAppMenu" />
       </a>
 
-      <h4 class="title">
+      <h4 class="title brand-title">
         <router-link to="/">MENSCRIPT</router-link>
       </h4>
 
@@ -86,16 +86,17 @@ nav#custom-navbar {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 48px;
-  color: #2f2f2f;
-  font-family: "Montserrat Semibold";
+  color: #212121 !important;
+}
+.brand-title{
+  font-family: Metropolis-SemiBold;
 }
 .title {
   font-size: 20px;
   line-height: 48px;
   color: #363636;
-  font-family: "Montserrat Semibold";
   width: 50%;
   text-align: end;
 }
@@ -109,7 +110,7 @@ li.nav-item {
 .nav-link {
   display: inline-block;
   color: black;
-  font-family: Montserrat;
+  font-family: Avenir-Medium;
 }
 li.link {
   list-style-type: none;
@@ -274,7 +275,6 @@ a.dropdown-link {
     font-size: 16px !important;
     line-height: 20px;
     color: #2f2f2f;
-    font-family: "Montserrat";
   }
 }
 

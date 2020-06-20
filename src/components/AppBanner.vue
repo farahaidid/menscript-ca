@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container-fluid width padding">
+    <div class="container-fluid width padding cover-banner">
       <div class="row mx-0">
         <div class="col-md-12 padding">
           <div class="banner position-relative">
@@ -28,6 +28,7 @@
           </div>
         </div>
       </div>
+      <p class="vermeld">Vermeld in</p>
       <div
         class="row mx-0 text-center w-md-75 logo-div mx-auto"
         v-if="data.logo !== false"
@@ -69,6 +70,25 @@ export default {
 <style scoped lang="scss">
 @import "../style/appBanner.scss";
 @import "../style/consultBtn.scss";
+
+.cover-banner{
+  position: relative;
+  .vermeld{
+    display: inline-block;
+    margin-left: 10%;
+    position: absolute;
+    margin-top: 20px;
+    color: grey;
+    font-family: Avenir-Medium;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .vermeld{
+    display: none !important;
+  }
+}
 
 @media screen and (max-width: 640px) {
   .ad-logos:nth-child(1){

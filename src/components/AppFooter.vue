@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container-fluid bg-white width margin-top position-relative footer-padding my-0">
-      <div class="row width-75 mx-auto padding_border">
+      <div class="row width-75 mx-auto padding_border mx-0">
         <div class="col-md-4 rs-bottom">
           <p class="footer-title ">Vlog ons</p>
           <p class="sub-title text_sm_center">
@@ -64,7 +64,7 @@
           <div class="footer-menu d-flex w-90 row justify-content-between">
             <a href class="footer-menu-link">FAQ</a>
             <router-link to="/privacy" class="footer-menu-link">PRIVACY</router-link>
-            <a href class="footer-menu-link">AIGEMENE VOORWAARDEN</a>
+            <router-link to="/agreement" class="footer-menu-link">AIGEMENE VOORWAARDEN</router-link>
           </div>
           <!-- <div class="footer-menu row justify-content-between d-flex d-md-none"> -->
           <!-- <div class="footer-menu d-md-none w-100">
@@ -216,6 +216,10 @@ a.social-link.twitter {
 }
 .width-75 {
   width: 70%;
+}
+
+.footer-menu{
+  max-width: 500px;
 }
 
 /* responsive */

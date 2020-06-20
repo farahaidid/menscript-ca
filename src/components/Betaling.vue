@@ -1,6 +1,16 @@
 <template>
 	<div class="betaling">
 		<h1 class="text-center  mb-4  Betaling">Betaling</h1>
+		<div class="container text-center mx-auto my-5" style="padding-left: 45px; padding-right: 45px">
+			<div class="notice row p-3">
+				<div class="col-1 d-flex flex-column justify-content-center align-items-center">
+					<b-icon icon="info-circle" font-scale="2"></b-icon>
+				</div>
+				<div class="col-11 text-left info-text">
+					Om je goed op weg te helpen zal de apotheker contact met je opnemen via het opgegeven telefoonnummer voor een korte introductie. Dit duurt 5 min. Zorg dat je bereikbaar bent! Na 2 weken nemen we nogmaals contact met je op om te vragen hoe je het gebruik ervaren hebt. Constateren we geen problemen? Dan ontvang je een herhaalrecept. 
+				</div>
+			</div>
+		</div>
 		<div class="container text-center">
 			<div class="bt-container mx-auto text-left row">
 				<div class="col-md-6 w-100 pr-5 left-col">
@@ -36,30 +46,24 @@
 					<div class="frequentie">
 						<h5 class="mb-2 from-title">2. Frequentie</h5>
 						<div class="d-flex">
-							<div class="pr-2">
-								<button @click="freqSelected=0; diccountMethod(10)"  :class="freqSelected==0&&'active'" class="w-100 mb-2">
-									<span class="per">-10%</span>
+							<div class="pr-2 w-50">
+								<button @click="freqSelected=0; diccountMethod(5)"  :class="freqSelected==0&&'active'" class="w-100 mb-2">
+									<span class="per">-5%</span>
 									<span>iedere maand</span>
 								</button>
-								<button @click="freqSelected=1;diccountMethod(12)" :class="freqSelected==1&&'active'" class="w-100">
-									<span class="per">-12%</span>
+							</div>
+							<div class="pl-2 w-50">
+								<button @click="freqSelected=1;diccountMethod(10)" :class="freqSelected==1&&'active'" class="w-100">
+									<span class="per">-10%</span>
 									<span>iedere 3 maanden</span>
 								</button>
 							</div>
-							<div class="pl-2">
-								<button @click="freqSelected=2; diccountMethod(15)" :class="freqSelected==2&&'active'" class="w-100 mb-2">
-									<span class="per">-15%</span>
-									<span>iedere 6 maanden</span>
-								</button>
-								<button @click="freqSelected=3; noDiscount()" :class="freqSelected==3&&'active'" class="w-100">
-									<span>eenmalige aankoop</span>
-								</button>
-							</div>
 						</div>
+						<p class="terms">* het behandelplan is maandelijks opzegbaar binnen je account.</p>
 					</div>
 				</div>
 				<div class="desteloverzicht col-md-6 w-100 pl-5">
-					<h5 class="mb-4 from-title">Besteloverzicht</h5>
+					<h5 class="mb-4 from-title">3. Besteloverzicht</h5>
 					<div class="vk-box br-black mb-3">
 						<div class="d-flex px-3 py-3">
 							<div>
@@ -78,27 +82,33 @@
 						</div>
 
 						<div class="bt p-2">
-							<p style="color:#c1c4c6">Kortingscode? Vul die hier in ></p>
+							<p style="color:#c1c4c6" class="avenirbook">Kortingscode? Vul die hier in ></p>
 						</div>
 						<div class="bt p-3 d-flex">
 							<div class="subt w-100">
-								<p>Subtotal</p>
-								<p>Verzending met PostNL</p>
-								<p>Verwerkingskosten</p>
+								<p class="avenirbook">Subtotal</p>
+								<p class="avenirbook">Verzending met PostNL</p>
+								<p class="avenirbook">Verwerkingskosten</p>
 							</div>
 							<div class="amm text-right w-100">
-								<p>€25.20</p>
-								<p>GTATIS</p>
-								<p>€5.00</p>
+								<p class="avenirmedium">€25.20</p>
+								<p class="avenirmedium">GTATIS</p>
+								<p class="avenirmedium">€5.00</p>
 							</div>
 						</div>
 						<div class="bt pt-2 pl-3 d-flex">
 							<div class="w-100">
-								<h5>Totaal te betalen</h5>
+								<h5 class="avenirbook">Totaal te betalen</h5>
 							</div>
-							<div class="text-right w-100 pr-3">
+							<div class="text-right w-100 pr-3 avenirblack">
 								<h5>€30.20</h5>
 							</div>
+						</div>
+					</div>
+					<div class="frequentie">
+						<h5 class="mb-2 from-title">4. Payment method</h5>
+						<div v-for="(method,index) in paymentMethods" :key="index">
+							<custom-checkbox :black="true" @change="v=>selectedPaymentMethod=method" :checked="method == selectedPaymentMethod" :label="method" />
 						</div>
 					</div>
 				</div>
@@ -109,7 +119,11 @@
 </template>
 
 <script>
+import CustomCheckbox from "@/components/Custom/CustomCheckbox"
 export default {
+	components:{
+		CustomCheckbox
+	},
 	name: "betaling",
 	data: () => ({
 		product: {
@@ -124,6 +138,9 @@ export default {
 		discountPrice:25.2,
 		price:28,
 		noDiscountPrice:false,
+
+		paymentMethods: ['iDeal', 'CreditCard'],
+		selectedPaymentMethod: 'iDeal'
 		
 	}),
 	methods:{
@@ -153,14 +170,14 @@ export default {
     font-size: 72px;
     line-height: 48px;
     color: #2f2f2f;
-		font-family: Avenir Black;
+		font-family: Avenir-Black;
 		margin-top: 190px;
 }
 .from-title {
     font-size: 20px;
     line-height: 48px;
     color: #000000;
-    font-family: Avenir Heavy;
+    font-family: Avenir-Heavy;
 }
 
 	.betaling {
@@ -282,5 +299,26 @@ export default {
 				width: calc(100% - 1rem);
 			}
 		}
+	}
+
+	.notice{
+		border: 1px solid #acacac;
+	}
+	.info-text{
+		font-family: Avenir-Medium;
+		font-size: 14px;
+	}
+	.terms{
+		font-family: Avenir-Medium;
+		font-size: 14px;
+	}
+	.avenirbook{
+		font-family: Avenir-Book;
+	}
+	.avenirmedium{
+		font-family: Avenir-Medium;
+	}
+	.avenirblack{
+		font-family: Avenir-Black;
 	}
 </style>

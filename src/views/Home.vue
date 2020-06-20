@@ -1,52 +1,34 @@
 <template>
   <div>
     <AppBanner :data="home" />
-    <div class="container-fluid main-back-color">
-      <div class="row p-0">
-        <div
-          class="col-md-6 col-sm-12 p-0 position-relative max-height-beauty-img text-left text-md-center"
-        >
-          <img
-            src="../assets/img/Beauty-brand.jpg"
-            alt="Beauty-brand"
-            class="Beauty-brand"
-          />
+    <div class="container-fluid main-back-color px-0">
+      <div class="row mx-0 p-0 ">
+        <div class="col-md-6 col-sm-12 p-0 position-relative max-height-beauty-img text-left text-md-center" >
+          <img src="../assets/img/Beauty-brand.jpg" alt="Beauty-brand" class="Beauty-brand"/>
           <h3 class="brand-beauty-text">Haareverzorging</h3>
         </div>
-        <div
-          class="col-md-6 col-sm-12 p-0 position-relative max-height-beauty-img"
-        >
-          <img
-            src="../assets/img/Beauty-brand.jpg"
-            alt="Beauty-brand"
-            class="Beauty-brand"
-          />
+        <div class="col-md-6 col-sm-12 p-0 position-relative max-height-beauty-img">
+          <img src="../assets/img/Beauty-brand.jpg" alt="Beauty-brand" class="Beauty-brand"/>
           <h3 class="brand-beauty-text">Haareverzorging</h3>
         </div>
       </div>
       <div>
         <BlogOne :data="blogOne" />
       </div>
-      <div class="row">
+      <div class="row mx-0 ">
         <div class="col-sm-12 pr-0 pl-0 max-height-four">
-          <img
-            src="@/assets/img/fourth-section-img.jpg"
-            alt
-            class="fourth-section-img"
-          />
+          <img src="@/assets/img/fourth-section-img.jpg" alt class="fourth-section-img"/>
         </div>
       </div>
-      <div>
+      <div class="pl-md-2">
         <BlogTwo :data="blogTwo" />
       </div>
       <div>
         <BlogThree :data="blogThree" />
       </div>
-      <div class="row">
+      <div class="row mx-0  pb-4">
         <HowWorks />
-        <button class="btn btn-md-sm consult-btn custom-btn mx-auto mt-4" @click="openLoginModal">
-          Start online consult
-        </button>
+        <button class="btn btn-md-sm consult-btn custom-btn mx-auto mt-4" @click="openLoginModal"> Start online consult</button>
       </div>
     </div>
     <!-- <AppFooter /> -->
@@ -171,8 +153,8 @@ h3.brand-beauty-text {
 @media screen and (max-width: 768px) {
   h3.brand-beauty-text {
     top: 1em;
-    left: 6em;
-    font-size: 19px;
+    left: 1em;
+    font-size: 36px;
   }
 }
 

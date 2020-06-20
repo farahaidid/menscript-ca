@@ -1,6 +1,6 @@
 <template>
   <router-link to="/singleblog" class="router-link">
-    <div class="row margin-five ">
+    <div class="row margin-five mx-0">
       <div class="col-md-6 order-last order-md-first pl-0 bg-transparent blog-two-margin">
         <img :src="data.image" alt class="blog-two-img blog-image-left" />
       </div>
