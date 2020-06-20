@@ -312,13 +312,4 @@ export default {
 		font-family: Avenir-Medium;
 		font-size: 14px;
 	}
-	.avenirbook{
-		font-family: Avenir-Book;
-	}
-	.avenirmedium{
-		font-family: Avenir-Medium;
-	}
-	.avenirblack{
-		font-family: Avenir-Black;
-	}
 </style>

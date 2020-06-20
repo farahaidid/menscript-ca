@@ -86,4 +86,16 @@ p {
 .main-back-color{
   background-color: #fbfbfa;
 }
+.avenirbook{
+		font-family: Avenir-Book;
+}
+.avenirmedium{
+  font-family: Avenir-Medium;
+}
+.avenirblack{
+  font-family: Avenir-Black;
+}
+.avenirheavy{
+  font-family: Avenir-Heavy;
+}
 </style>
