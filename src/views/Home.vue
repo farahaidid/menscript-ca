@@ -52,9 +52,8 @@ export default {
     return {
       home: {
         name: "home",
-        title: "Skin_",
-        subtitle:
-          "We zijn er om zelfzorg voor mannen te destigmatiseren en brengen essentiële medicatie binnen handbereik. Van online artsenconsult tot behandeling. Wij regelen het voor je.",
+        title: "Huid_",
+        subtitle: "Last van haaruitval of huidproblemen? Dan ben je op de juiste plek. Start vandaag nog een online consult met een van de artsen binnen ons netwerk en krijg je medicatie thuis geleverd.",
         button: true,
       },
       blogOne: {
@@ -76,8 +75,7 @@ export default {
       blogThree: {
         name: "blogThree",
         title: "Waarom?",
-        text:
-          "Het aantal bezoeken aan de huisartsenpraktijk onder vrouwen ligt al jaren ver boven die van de man. Waar de vrouw het probleem graag bespreekbaar maakt, zwijgt de man. Ze schamen zich of worden geconfronteerd met talloze ‘gender-based’ stigmas. Door de drempel te verlagen om in contact te komen met een geregistreerde arts, proberen we hen de medische zorg te bieden die ze nodig hebben voor problemen die anders verborgen zouden houden.",
+        text: "Wij bestaan omdat uit onderzoek blijkt dat het aantal huisartsenbezoeken onder de mannen al jarenlang onder die van de vrouw ligt. Waar de vrouw het probleem bespreekbaar maakt, zwijgt de man. Ze schamen zich of worden geconfronteerd met talloze ‘gender-based’ stigma's. Door de drempel te verlagen om in contact te komen met een geregistreerde arts, proberen we hen de medische zorg te bieden die zij nodig hebben voor problemen die zij anders verborgen zouden houden.",
         image: require("@/assets/img/six-section.jpg"),
         subtitle: "Lees meer: finasteride en haarverlies",
       },

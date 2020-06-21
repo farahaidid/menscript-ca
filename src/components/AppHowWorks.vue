@@ -13,7 +13,7 @@
           />
           <div class="works-text">
             <p class="works-text-heading mt-4">Start online consult</p>
-            <p class="subtitle text-center">
+            <p class="subtitle text-center text-md-left">
               Start een online consult en deel je symptomen en medische historie
               met een van de artsen binnen ons netwerk.
             </p>
@@ -23,7 +23,7 @@
           <img src="../assets/img/phone.jpg" alt class="phone-img margin-img" />
           <div class="works-text">
             <p class="works-text-heading mt-4">Voorkeur & Verificatie</p>
-            <p class="subtitle text-center">
+            <p class="subtitle text-center text-md-left">
               Ontvang een advies, geef je voorkeursbehandeling op en verifieer
               je identiteit.
             </p>
@@ -39,7 +39,7 @@
             <p class="works-text-heading mt-4">
               Krijg je medicatie thuisgeleverd
             </p>
-            <p class="subtitle text-center">
+            <p class="subtitle text-center text-md-left">
               Krijg je behandeling binnen 48u thuisgeleverd. Gekozen voor
               periodieke levering? Dan zorgen wij ervoor dat je nooit.
             </p>
