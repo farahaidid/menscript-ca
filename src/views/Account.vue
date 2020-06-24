@@ -26,4 +26,16 @@ export default {
     margin-left: 400px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  #account-div{
+    .account-sidebar-comp{
+      position: unset;
+    }
+    .content{
+      margin-left: 0;
+      padding: 0 10px;
+    }
+  }
+}
 </style>

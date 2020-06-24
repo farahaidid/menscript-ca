@@ -9,6 +9,9 @@
   color: #fbfcff;
   text-align: center;
   border-radius: 0 !important;
+  &:hover{
+    color: #fbfcff;
+  }
 }
 @media screen and (max-width: 400px){
   .custom-btn {
