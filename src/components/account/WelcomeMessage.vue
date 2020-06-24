@@ -14,6 +14,17 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+.head-title{
+  font-size: 16px;
+  line-height: 48px;
+}
+.subhead{
+  font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  .subhead{
+    font-size: 14px !important;
+  }
+}
 </style>

@@ -1,11 +1,10 @@
 <template>
-  <div class="account-sidebar ml-0 d-inline-block px-5">
+  <div class="account-sidebar ml-0 d-inline-block px-2 px-md-5">
     <h4 class="mb-3 mb-md-5 avenirheavy my-acc-title">My Account</h4>
-
     <div class="row mb-3 mb-md-5 d-block d-md-none" v-if="$route.path == '/account'">
       <welcome-message />
     </div>
-
+    <hr class="d-block d-md-none">
     <div class="sidebar-options" v-if="!showGoBack">
       <router-link class="d-inline-block d-md-block mb-3 avenirmedium link" to="/account">Overview</router-link>
       <router-link class="d-inline-block d-md-block mb-3 avenirmedium link" to="/account/treatment-plan">Treatmentplan</router-link>
@@ -16,6 +15,7 @@
     <div class="go-back" v-else>
       <p class="avenirmedium link" @click="goBack">{{gobackText}}</p>
     </div>
+    <hr class="d-block d-md-none mt-0">
   </div>
 </template>
 
@@ -70,11 +70,18 @@ export default {
       display: flex;
       flex-flow: row;
       justify-content: space-between;
+      .link{
+        text-decoration: underline;
+        font-size: 16px;
+      }
     }
   }
   .go-back{
     position: unset !important;
     top: 0 !important;
+    p{
+      margin-top: 10px !important;
+    }
   }
 }
 </style>

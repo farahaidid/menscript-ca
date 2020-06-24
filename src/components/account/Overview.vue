@@ -67,7 +67,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #account-overview{
   max-width: 1200px;
   padding-bottom: 100px;
