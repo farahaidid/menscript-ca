@@ -1,12 +1,23 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top mb-0" id="custom-navbar">
+    <nav :class="['navbar navbar-expand-md fixed-top mb-0', transparentBG && !showAppMenu ? 'bg-transparent' : 'main-back-color']" id="custom-navbar">
       <a @click="toggleAppMenu">
-        <img src="../assets/img/Hamburger-icon.jpg" alt="hamburger" class="hamburger" v-if="!showAppMenu" />
+        <!-- <img src="../assets/img/Hamburger-icon.jpg" alt="hamburger" class="hamburger" v-if="!showAppMenu" /> -->
+        <span class="hamburger" v-if="!showAppMenu">
+          <svg height="7" width="35" style="display:block">
+            <line x1="0" y1="0" x2="35" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
+          </svg>
+          <svg height="7" width="35" style="display:block">
+            <line x1="0" y1="0" x2="35" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
+          </svg>
+          <svg height="7" width="35" style="display:block">
+            <line x1="10" y1="0" x2="35" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
+          </svg>
+        </span>
         <img src="../assets/img/cancel.png" alt="hamburger" class="close-app-menu-icon" v-if="showAppMenu" />
       </a>
 
-      <h4 class="title brand-title">
+      <h4 class="title brand-title mb-0">
         <router-link to="/">MENSCRIPT</router-link>
       </h4>
 
@@ -40,7 +51,8 @@ export default {
   props: {
     goback: {
       type: String
-    }
+    },
+    transparentBG: Boolean
   },
   components: {
     CardModal,
@@ -49,6 +61,12 @@ export default {
   data(){
     return {
       showAppMenu: false
+    }
+  },
+  watch:{
+    $router(v){
+      console.log(v);
+      this.showAppMenu = false
     }
   },
   computed:{
@@ -81,10 +99,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-nav#custom-navbar {
-  background-color: #fff !important;
+nav#custom-navbar{
+  height: 70px;
 }
-
 .navbar-dark .navbar-nav .nav-link {
   font-size: 16px;
   line-height: 48px;
@@ -115,7 +132,7 @@ li.nav-item {
 li.link {
   list-style-type: none;
   margin-bottom: 8px;
-  font-family: Avenir Medium;
+  font-family: Avenir-Medium;
   cursor: pointer;
 }
 a.dropdown-link {
@@ -149,7 +166,7 @@ a.dropdown-link {
   }
 }
 /* Extra large devices (large desktops, 1200px and up) */
-@media screen and (min-width: 1200px) and (max-width: 1450px) {
+@media screen and (max-width: 1450px) {
   li.nav-item {
     margin-left: 60px;
   }
@@ -159,7 +176,7 @@ a.dropdown-link {
   }
 }
 /* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   /* default style */
   .container.custom-margin {
     width: auto;
@@ -170,7 +187,7 @@ a.dropdown-link {
   }
 }
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .container.custom-margin {
     display: flex;
     justify-content: flex-end !important;
@@ -189,7 +206,10 @@ a.dropdown-link {
   }
 }
 /* medium phone  */
-@media screen and (min-width: 641px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  nav#custom-navbar{
+    height: 50px;
+  }
   li.nav-item {
     margin-left: 2%;
   }
@@ -238,6 +258,10 @@ a.dropdown-link {
 }
 /* Small devices */
 @media screen and (max-width: 640px) {
+  .brand-title{
+    font-size: 14px;
+    line-height: unset;
+  }
   .container.custom-margin {
     width: 100%;
     padding-left: 0px;

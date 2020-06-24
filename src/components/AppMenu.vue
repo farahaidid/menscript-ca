@@ -1,5 +1,5 @@
 <template>
-  <div :class="[absolute ? 'app-menu':'', 'pb-3 pt-2']">
+  <div :class="['main-back-color',absolute ? 'app-menu':'', 'pb-3 pt-2']" :style="{top: isMobile ? '50px' : '70px'}">
     <div class="row container-fluid mx-auto" style="max-width: 1500px">
       <div class="col-md-4 col-xl-6 pl-5">
         <p>MENU</p>
@@ -38,7 +38,7 @@
       <!-- <div class="col-md-4 col-lg-3 pr-lg-0 pr-md-0 text-sm-center">
         
       </div> -->
-      <div class="col-md-8 col-xl-6 pl-lg-0 pl-md-0 text-sm-center ">
+      <div class="col-md-8 col-xl-6 pl-lg-0 pl-md-0 text-sm-center d-none d-md-flex">
         <img
           src="@/assets/img/category-2.jpg"
           alt="header-modal-img"
@@ -84,17 +84,15 @@ export default {
 
 <style scoped>
 .app-menu{
-  top: 70px;
   position: fixed;
   width: 100%;
-  z-index: 10;
-  background-color: #fff;
+  z-index: 999;
   overflow: scroll;
 }
   li.link {
     list-style-type: none;
     margin-bottom: 8px;
-    font-family: Avenir Medium;
+    font-family: Avenir-Medium;
     cursor: pointer;
   }
   a.dropdown-link {
@@ -118,8 +116,15 @@ export default {
 
   @media screen and (max-width: 768px) {
     .app-menu{
+      top: 50px;
       height: 100vh;
       overflow: scroll;
+    }
+    .link-cat, .nav-link{
+      font-size: 16px;
+    }
+    a.dropdown-link {
+      font-size: 14px;
     }
   }
 </style>

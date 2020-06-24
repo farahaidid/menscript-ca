@@ -29,13 +29,13 @@ img.cat-two-img {
     opacity: 1;
 }
 .sub-text-1 {
-    font-family: Avenir Black;
+    font-family: Avenir-Black;
     font-size: 18px;
     line-height: 24px;
     color: #212121;
 }
 .sub-text-2 {
-    font-family: Avenir Medium;
+    font-family: Avenir-Medium;
     font-size: 18px;
     line-height: 24px;
     color: #212121;
@@ -53,8 +53,8 @@ img.cat-two-img {
     font-size: 18px;
     line-height: 24px;
     color: #212121;
-    font-family:Avenir Black;
-
+    font-family:Avenir-Medium;
+    border-radius: 0;
 }
 
 .blog-button-cat{
@@ -65,7 +65,7 @@ img.cat-two-img {
 height: 60px;
 background-color: #000000;
 border: 1px solid #000000;
-font-family:Avenir Black;
+font-family:Avenir-Black;
 }
 /* ==================== */
 .cat-image-div:hover {
@@ -75,6 +75,7 @@ font-family:Avenir Black;
         opacity: 1!important;
         display: block;
         color:white;
+        margin-top: 10px;
     }
     .cat-text {
         opacity: 0;
@@ -210,7 +211,12 @@ font-family:Avenir Black;
     
 }
 /* medium phone  */
-@media screen and (min-width: 641px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    .cat-image-div {
+        .text{
+            padding-right: 15px;
+        }
+    }
     .pr {
         padding-right: 0px;
     }
@@ -274,7 +280,6 @@ font-family:Avenir Black;
     }
     .custom-cat-btn {
         font-size:14px!important;
-        width: 50%!important;
         height:35px;
     }
     .custom-cat-btn.cat-one-btn {
@@ -368,7 +373,6 @@ font-family:Avenir Black;
     }
     .custom-cat-btn {
         font-size:14px!important;
-        width: 53%!important;
         height:35px;
     }
     .custom-cat-btn.cat-one-btn {

@@ -1,7 +1,7 @@
 <template>
   <div class="modal" id="card-modal">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content custom-card-modal">
+    <div class="modal-dialog modal-lg h-100 ml-0" role="document">
+      <div class="modal-content custom-card-modal h-100">
         <div class="modal-header">
           IN CART
           <button
@@ -36,9 +36,9 @@
                     <div class="text-space">
                       <p class="sub-text-1 mb-0">Finasteride 1mg</p>
                       <p class="sub-text-2 mb-0">28 tabletten</p>
-                      <product-quantity />
+                      <product-quantity v-if="isMobile" />
                       <p class="sub-text-3 mb-0 text-right">
-                        <b>$28.00</b>
+                        <b>${{p1}}</b>
                       </p>
                     </div>
                   </div>
@@ -60,9 +60,9 @@
                     <div class="text-space">
                       <p class="sub-text-1 mb-0">Shampoo revitalising</p>
                       <p class="sub-text-2 mb-0">190ml</p>
-                      <product-quantity />
+                      <product-quantity v-if="isMobile" />
                       <p class="sub-text-3 mb-0 text-right">
-                        <b>$13.00</b>
+                        <b>${{p2}}</b>
                       </p>
                     </div>
                   </div>
@@ -80,11 +80,10 @@
                     <i class="fa fa-check mr-2"></i>Gratis verzending
                   </li>
                   <li class="list-group-item">
-                    <i class="fa fa-check mr-2"></i>Herhaalrecepten automatisch
+                    <i class="fa fa-check mr-2"></i>Herhaalrecepten automatisch verzonden
                   </li>
                   <li class="list-group-item">
-                    <i class="fa fa-check mr-2"></i>No-bs subscription
-                    model.Cancel anytine
+                    <i class="fa fa-check mr-2"></i>No-bs subscription model. Cancel anytine
                   </li>
                 </ul>
               </div>
@@ -110,6 +109,12 @@ export default {
   components:{
     ProductQuantity
   },
+  data(){
+    return {
+      p1: 28.00,
+      p2: 13.00
+    }
+  },
   methods: {
     openLoginModal() {
       $("#card-modal").modal("toggle");
@@ -121,7 +126,7 @@ export default {
 <style scoped lang="scss">
 .custom-card-modal {
   width: 785px ;
-  height: 995px;
+  height: 100vh;
   background-color: #ffffff;
   border: 1px solid #959595;
 }
@@ -141,6 +146,8 @@ export default {
   .modal-content.custom-card-modal {
     height: 85vh;
     width: 665px ;
+    overflow: scroll;
+    border-radius: 0;
   }
   .modal-header {
     border-bottom: none;
@@ -192,7 +199,7 @@ export default {
     }
     p.sub-text-3 {
       font-size: 18px;
-      font-family: Avenir-Black;
+      font-family: Avenir-Medium;
       padding-right: 10px;
     }
   }
@@ -271,7 +278,7 @@ export default {
   }
   .sub-text-1,
   p.sub-text-3 {
-    font-family: Avenir Black;
+    font-family: Avenir-Black;
     font-size: 16px !important;
   }
   .list-group-item {
@@ -295,6 +302,7 @@ export default {
     transform: none;
     top: -6px;
     position: initial;
+    width: 100% !important;
   }
 
   .card-product{

@@ -95,7 +95,7 @@ p.title {
   font-size: 72px;
 line-height: 48px;
 color: #2f2f2f;
-font-family:Avenir Medium;
+font-family:Avenir-Medium;
 margin-bottom:35px;
 }
 .table thead th,.table thead th,.table thead th,.table td, .table th {

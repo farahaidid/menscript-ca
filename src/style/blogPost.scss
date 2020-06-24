@@ -9,6 +9,7 @@ f.product-page {
 .blog-title {
   font-size: 72px;
   color: #212121;
+  line-height: 48px;
   font-family: "Avenir-Black";
 }
 p.subtitle, p.blog-subtitle {
@@ -95,7 +96,7 @@ a.blog-list-menu-link.router-link-active {
   color: #2f2f2f !important;
   text-align: center;
   padding: 0px 46px;
-  font-family: "Avenir Medium";
+  font-family: "Avenir-Medium";
   font-size: 24px;
 }
 
@@ -123,7 +124,7 @@ p.blog-text {
   font-size: 20px;
   color: darkslategrey;
   text-align: justify;
-  font-family: Avenir Medium;
+  font-family: Avenir-Medium;
 }
 
 p.blog-text-title {
@@ -132,7 +133,7 @@ p.blog-text-title {
 
 .blog-text-title {
   font-size: 16px;
-  font-family: Avenir Heavy;
+  font-family: Avenir-Heavy;
 }
 
 .go-back {
@@ -425,7 +426,11 @@ p.blog-text-title {
 /* medium phone  */
 @media screen and (max-width: 768px) {
   .blog-list-section {
-    height: unset;
+    height: 190px;
+    .blog-img-container{
+      margin-bottom: 0;
+      height: 100% !important;
+    }
   }
   .blog-list-title{
     text-align: left !important;
@@ -492,7 +497,7 @@ p.blog-text-title {
   }
   a.blog-list-menu-link.router-link-active {
     padding: 6px 5px;
-    font-size: 14px;
+    font-size: 12px;
   }
   .right-text-part {
     margin-top: 15px;
@@ -529,21 +534,22 @@ p.blog-text-title {
     padding-bottom: 20px;
   }
   .blog-margin{
-    height: 520px;
+    height: auto;
+    padding-bottom: 150px;
     margin-right: 3rem;
   }
   .blog-margin-left{
     margin-left: 3rem;
   }
   .blog-negative-margin{
-    margin-top: -15%;
+    margin-top: -20%;
     background-color: transparent !important;
   }
   .subtitle-2{
     margin-top: -25px;
   }
   .blog-two-margin{
-    margin-top: -15%;
+    margin-top: -20%;
     position: relative;
     z-index: 5;
   }
@@ -553,6 +559,10 @@ p.blog-text-title {
 
   .third-section-text{
     width: 90% !important;
+  }
+
+  .blog-text-instead-of-btn{
+    font-size: 11px;
   }
 }
 
@@ -565,11 +575,6 @@ p.blog-text-title {
   }
   .blog-image-left{
     max-width: 67% ;
-  }
-  p.subtitle, p.blog-subtitle {
-    width: auto;
-    font-size: 12px;
-    margin-top: 10px;
   }
   .five-section-text{
     width: 350px;
@@ -594,7 +599,7 @@ p.blog-text-title {
     text-align: center;
   }
 
-  p.subtitle, p.blog-subtitle,
+  p.subtitle,
   .subtitle-2,
   p.blog-list-subtext,
   p.blog-text,
@@ -647,12 +652,12 @@ p.blog-text-title {
     text-align: right;
   }
   p.scroll.single-blog-scroll {
-    position: absolute;
-    left: 10px;
-    bottom: 228px;
+    bottom: unset !important;
+    top: 250px;
+    left: 0px;
   }
   .blog-title {
-    font-size: 32px;
+    font-size: 42px;
     color: #212121;
     font-family: "Avenir-Black";
   }
@@ -661,7 +666,7 @@ p.blog-text-title {
 
 @media screen and (max-width: 550px){
   .blog-margin{
-    height: 510px !important;
+    // height: 510px !important;
   }
   a.blog-list-menu-link.router-link-active {
     padding: 5px 4px;
@@ -671,11 +676,11 @@ p.blog-text-title {
 
 @media screen and (max-width: 465px){
   .blog-margin{
-    height: 390px !important;
+    // height: 390px !important;
   }
   p.subtitle, p.blog-subtitle {
     width: 320px !important;
-    font-size: 11px !important;
+    font-size: 12px !important;
     margin-top: 10px;
   }
   p.blog-subtitle{
@@ -683,9 +688,6 @@ p.blog-text-title {
   }
   p.subtitle{
     width: unset !important;
-  }
-  .blog-title{
-    font-size: 28px;
   }
   a.blog-list-menu-link.router-link-active {
     padding: 5px 4px;
@@ -701,7 +703,7 @@ p.blog-text-title {
 
 @media screen and (max-width: 375px) {
   .blog-margin{
-    height: 365px !important;
+    // height: 365px !important;
     margin-right: 1rem;
   }
   .blog-margin-left{
@@ -716,7 +718,7 @@ p.blog-text-title {
     width: 100% !important;
   }
   .blog-title{
-    font-size: 24px;
+    // font-size: 24px;
   }
   .subtitle-2{
     font-size: 9px;

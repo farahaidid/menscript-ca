@@ -31,7 +31,7 @@ export default {
    font-size: 73px!important;
     line-height: 48px;
     color: #2f2f2f;
-    font-family: Avenir Black;
+    font-family: Avenir-Black;
     margin-top: 190px;
 }
 .verificate {
@@ -49,7 +49,7 @@ export default {
       font-size: 24px;
       line-height: 48px;
       color: #ffffff;   
-      font-family:Avenir Black;
+      font-family:Avenir-Black;
    }
    .vf-container {
       p.text {

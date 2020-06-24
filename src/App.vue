@@ -22,23 +22,31 @@ export default {
     EventBus.$on("open-login-modal", () => {
       this.showLoginModal = true;
     });
+    this.handleLoginModalRoute()
   },
   methods: {
     closeLoginModal() {
       this.$router.push("/");
       this.showLoginModal = false;
-    }
+    },
+    handleLoginModalRoute(){
+      let path = this.$route.path
+      if(["/login","/consult","/voorkeur","/verificate","/betaling"].includes(path)){
+        EventBus.$emit("open-login-modal")
+      }
+    },
   }
 };
 </script>
 
 <style lang="scss">
 @import "./style/style.scss";
+@import "./style/consultBtn.scss";
 /* FONT INPORT */
 
 /** Avenir - Start */
 @font-face {
-  font-family: "Avenir Heavy";
+  font-family: "Avenir-Heavy";
   src: url("./assets/font/AEH.ttf");
 }
 @font-face {
@@ -71,15 +79,15 @@ export default {
 }
 body {
   background-color: #fbfbfa;
-  font-family: "Avenir Black";
+  font-family: "Avenir-Black";
 }
 h1,
 h2 {
-  font-family: "Avenir Black";
+  font-family: "Avenir-Black";
   color: black;
 }
 p {
-  font-family: "Avenir Medium";
+  font-family: "Avenir-Medium";
   font-size: 18pt;
   color: black;
 }

@@ -69,7 +69,7 @@ img.phone-img.margin-img {
 p.works-text-heading {
   font-size: 24px;
   margin-top:17px;
-    font-family: "Avenir Heavy";
+  font-family: "Avenir-Heavy";
     
 }
 .subtitle{

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main-back-color">
     <AppBanner :data="blog"/> 
     <div class="blog-list-menu ">
       <router-link to="/" class="blog-list-menu-link"> Alles </router-link>
@@ -18,6 +18,9 @@
     <BlogList :data="singleBlog5"/>
     <BlogList :data="singleBlog6"/>
     <BlogList :data="singleBlog7"/>
+    <BlogList :data="singleBlog8"/>
+
+    <div style="height: 50px" class="main-back-color"></div>
   </div>
 
 </template>
@@ -43,57 +46,65 @@ export default {
       singleBlog1: {
         name: "singleBlog",
         imageleft:'left',
-        title: "What is Finasteride?",
-        text: "Self-care is one of the rare spaces where women dominate the culture,  while men face countless gender-based stigmas and barriers to entry.  Not anymore. We are here for you. Talk to us!",
+        title: "De oorzaak van haaruitval",
+        text: "self-care is one of the rare spaces where women dominate the culture, while men face countless gender-based stigmas and barriers to entry. Not anymore. We are here for you. Talk to us! ",
         image: require("@/assets/img/singleblog/blog1.png"),
         subtext: "Read more: finasteride and hairloss"
       },
       singleBlog2: {
         name: "singleBlog",
         imageleft:'left',
-        title: "How to use finasteride?",
-        text: "Self-care is one of the rare spaces where women dominate the culture,  while men face countless gender-based stigmas and barriers to entry.  Not anymore. We are here for you. Talk to us!",
+        title: "Het Y-chromosoom",
+        text: "self-care is one of the rare spaces where women dominate the culture, while men face countless gender-based stigmas and barriers to entry. Not anymore. We are here for you. Talk to us! ",
         image: require("@/assets/img/singleblog/blog2.png"),
         subtext: "Read more: finasteride and hairloss"
       },
       singleBlog3: {
         name: "singleBlog",
         imageleft:'left',
-        title: "Does finasteride work?",
-        text: "Self-care is one of the rare spaces where women dominate the culture,  while men face countless gender-based stigmas and barriers to entry.  Not anymore. We are here for you. Talk to us!",
+        title: "Werkt finasteride wel echt?",
+        text: "self-care is one of the rare spaces where women dominate the culture, while men face countless gender-based stigmas and barriers to entry. Not anymore. We are here for you. Talk to us! ",
         image: require("@/assets/img/singleblog/blog3.png"),
         subtext: "Read more: finasteride and hairloss"
       },
       singleBlog4: {
         name: "singleBlog",
         imageleft:'right',
-        title: "Is minoxidil dangerous?",
+        title: "Wat is minoxidil?",
         imagePosition:'right',
-        text: "Self-care is one of the rare spaces where women dominate the culture,  while men face countless gender-based stigmas and barriers to entry.  Not anymore. We are here for you. Talk to us!",
+        text: "self-care is one of the rare spaces where women dominate the culture, while men face countless gender-based stigmas and barriers to entry. Not anymore. We are here for you. Talk to us! ",
         image: require("@/assets/img/singleblog/blog4.png"),
         subtext: "Read more: finasteride and hairloss"
       },
       singleBlog5: {
         name: "singleBlog",
-        title: "What is tretinoine?",
+        title: "Is minoxidil gevaarlijk?",
         imageleft:'right',
-        text: "Self-care is one of the rare spaces where women dominate the culture,  while men face countless gender-based stigmas and barriers to entry.  Not anymore. We are here for you. Talk to us!",
+        text: "self-care is one of the rare spaces where women dominate the culture, while men face countless gender-based stigmas and barriers to entry. Not anymore. We are here for you. Talk to us! ",
         image: require("@/assets/img/singleblog/blog3.png"),
         subtext: "Read more: finasteride and hairloss"
       },
       singleBlog6: {
         name: "singleBlog",
         imageleft:'left',
-        title: "How to apply tretinoine?",
-        text: "Self-care is one of the rare spaces where women dominate the culture,  while men face countless gender-based stigmas and barriers to entry.  Not anymore. We are here for you. Talk to us!",
+        title: "Huidveroudering",
+        text: "self-care is one of the rare spaces where women dominate the culture, while men face countless gender-based stigmas and barriers to entry. Not anymore. We are here for you. Talk to us! ",
         image: require("@/assets/img/singleblog/blog1.png"),
         subtext: "Read more: finasteride and hairloss"
       },
       singleBlog7: {
         name: "singleBlog",
         imageleft:'left',
-        title: "How to apply tretinoine?",
-        text: "Self-care is one of the rare spaces where women dominate the culture,  while men face countless gender-based stigmas and barriers to entry.  Not anymore. We are here for you. Talk to us!",
+        title: "Hoe gebruik je finasteride?",
+        text: "self-care is one of the rare spaces where women dominate the culture, while men face countless gender-based stigmas and barriers to entry. Not anymore. We are here for you. Talk to us! ",
+        image: require("@/assets/img/singleblog/blog3.png"),
+        subtext: "Read more: finasteride and hairloss"
+      },
+      singleBlog8: {
+        name: "singleBlog",
+        imageleft:'left',
+        title: "Werkt finasteride wel echt?",
+        text: "self-care is one of the rare spaces where women dominate the culture, while men face countless gender-based stigmas and barriers to entry. Not anymore. We are here for you. Talk to us! ",
         image: require("@/assets/img/singleblog/blog3.png"),
         subtext: "Read more: finasteride and hairloss"
       },

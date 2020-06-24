@@ -7,7 +7,8 @@
           {{ data.text }}
         </p>
         <div class="row justify-content-end ">
-          <button data-v-220a3ba6="" class="btn btn-md-sm custom-btn"> Start online consult </button>
+          <button v-if="!hideBtn" data-v-220a3ba6="" class="btn btn-md-sm custom-btn"> Start online consult </button>
+          <span v-else class="blog-text-instead-of-btn">Less meer: finasteride en haarverlies</span>
         </div>
       </div>
     </div>
@@ -24,7 +25,8 @@ export default {
       default() {
         return {};
       }
-    }
+    },
+    hideBtn: Boolean
   },
   methods:{
     gotoCategoryPage(){

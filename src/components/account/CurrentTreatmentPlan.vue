@@ -15,11 +15,11 @@ export default {
   data(){
     return {
       fields: [
-        { key: "id", label: "ID", },
-        { key: "date", label: "Date", },
-        { key: "frequency", label: "Frequency", },
-        { key: "issue", label: "Issue", },
-        { key: "status", label: "Status", },
+        { key: "id", label: "ID", tdClass: "avenirmedium font-16", thClass: "avenirheavy font-16"},
+        { key: "date", label: "Date", tdClass: "avenirmedium font-16", thClass: "avenirheavy font-16"},
+        { key: "frequency", label: "Frequency", tdClass: "avenirmedium font-16", thClass: "avenirheavy font-16"},
+        { key: "issue", label: "Issue", tdClass: "avenirmedium font-16", thClass: "avenirheavy font-16"},
+        { key: "status", label: "Status", tdClass: "avenirmedium font-16", thClass: "avenirheavy font-16"},
       ],
       plans: [
         { id: 'HL001', date: '01-02-2020', frequency: 'per 3 maanden', issue: 1, status: 'Inactive' },
@@ -48,6 +48,6 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>

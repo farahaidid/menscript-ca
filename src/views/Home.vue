@@ -9,7 +9,7 @@
         </div>
         <div class="col-md-6 col-sm-12 p-0 position-relative max-height-beauty-img">
           <img src="../assets/img/Beauty-brand.jpg" alt="Beauty-brand" class="Beauty-brand"/>
-          <h3 class="brand-beauty-text">Haareverzorging</h3>
+          <h3 class="brand-beauty-text">Huidverzorging</h3>
         </div>
       </div>
       <div>
@@ -26,10 +26,13 @@
       <div>
         <BlogThree :data="blogThree" />
       </div>
-      <div class="row mx-0  pb-4">
+      <div class="pb-0">
         <HowWorks />
-        <button class="btn btn-md-sm consult-btn custom-btn mx-auto mt-4" @click="openLoginModal"> Start online consult</button>
+        <div class="row mx-0 last-consule-btn bg-white pb-5">
+          <button class="btn btn-md-sm consult-btn custom-btn mx-auto mx-auto" @click="openLoginModal"> Start online consult</button>
+        </div>
       </div>
+      <div style="height: 50px" class="main-back-color"></div>
     </div>
     <!-- <AppFooter /> -->
   </div>
@@ -59,23 +62,21 @@ export default {
       blogOne: {
         name: "blogOne",
         title: "Het Haar",
-        text:
-          "Een dierbar maar kwetsbaar bezit. Varanderlijk op talloze manieren, enkel beperkt door de verbeelding. Het is onder zit.Het wordt gebrukt om te onderscheiden, te imoineren maar bovenal om te verledien. zorg er dus goed voor,verlies het niet! Last vaan haaruitval?start een online consult met een van de artsen binnen ons netwerk om te zien hoe wij je junnen helpen. ",
+        text: "Een dierbaar maar kwetsbaar bezit. Het is onderdeel van de identiteit en vormt een weerspiegel van het karakter dat er onder zit. Het wordt gebruikt om te onderscheiden, te imponeren maar bovenal om te verleiden. Zorg er dus goed voor, verlies het niet! Last van haaruitval? Start een online consult met een van de artsen binnen ons netwerk om te zien hoe wij je kunnen helpen.",
         image: require("@/assets/img/shave-riversde.jpg"),
         subtitle: "Lees meer: finasteride en haarverlies",
       },
       blogTwo: {
         name: "blogTwo",
         title: "De Huid",
-        text:
-          "Het grootste orgaan van de mens. Het ademt, het voedt en vormt de barrière tussen de 'jij' en alles wat daarbuiten zit. Ondergewaardeerd in zijn functie, maar wanneer gelijkmatig in oppervlak geprezen om zijn uiterlijk. Iedereen verdient het om zich comfortabel te voelen in zijn eigen huid, maar degene die last hebben van acne zijn dat meestal niet. Geen zorgen. Wij zijn er om je te helpen! Of je nu last hebt van acne of je huid simpelweg in perfecte staat wilt krijgen, wij helpen je.  Weten wat het beste bij je past? Start met een online bezoek",
+        text: "Het ademt, het voedt en vormt de barrière tussen de 'jij' en alles wat daarbuiten zit. Iedereen verdient het om zich comfortabel te voelen in zijn eigen huid, maar degene die last hebben van acne zijn dat meestal niet. Geen zorgen. Of je nu last hebt van acne of je huid simpelweg in perfecte conditie wilt krijgen, wij helpen je.  Weten wat het beste bij je past? Start met een online consult en ontvang een advies op maat.",
         image: require("@/assets/img/five-one.jpg"),
         subtitle: "Lees meer: finasteride en haarverlies",
       },
       blogThree: {
         name: "blogThree",
         title: "Waarom?",
-        text: "Wij bestaan omdat uit onderzoek blijkt dat het aantal huisartsenbezoeken onder de mannen al jarenlang onder die van de vrouw ligt. Waar de vrouw het probleem bespreekbaar maakt, zwijgt de man. Ze schamen zich of worden geconfronteerd met talloze ‘gender-based’ stigma's. Door de drempel te verlagen om in contact te komen met een geregistreerde arts, proberen we hen de medische zorg te bieden die zij nodig hebben voor problemen die zij anders verborgen zouden houden.",
+        text: "n vergelijking met vrouwen, brengen mannen minder vaak een bezoek aan de huisartsenpraktijk. Ze schamen zich of worden geconfronteerd met talloze ‘gender-based’ stigmas. Wij verlagen de drempel om in contact te komen met een geregistreerde arts, proberen we hen de medische zorg te bieden die ze nodig hebben voor problemen die ze anders verborgen zouden houden",
         image: require("@/assets/img/six-section.jpg"),
         subtitle: "Lees meer: finasteride en haarverlies",
       },
@@ -90,7 +91,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../style/consultBtn.scss";
 .Beauty-brand {
   width: 100%;
   max-height: 720px;
@@ -100,10 +100,10 @@ export default {
   max-height: 1104px;
 }
 h3.brand-beauty-text {
-  font-size: 36px;
+  font-size: 60px;
   line-height: 48px;
   color: #212121;
-  font-family: "Avenir Medium";
+  font-family: "Avenir-Medium";
   position: absolute;
 
   top: 65px;
@@ -154,6 +154,9 @@ h3.brand-beauty-text {
     left: 1em;
     font-size: 36px;
   }
+  .last-consule-btn{
+    background-color: white;
+  }
 }
 
 /* Small devices */
@@ -162,8 +165,7 @@ h3.brand-beauty-text {
     top: 1em;
     left: 1em;
     font-size: 36px;
-    font-family: 'Avenir Medium';
-    font-weight: bold;
+    font-family: 'Avenir-Medium';
   }
 }
 

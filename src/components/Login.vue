@@ -53,7 +53,7 @@ export default {
       font-size: 72px;
       line-height: 48px;
       color: #2f2f2f;
-      font-family:Avenir Black;
+      font-family:Avenir-Black;
       margin-top: 190px;
    }
    .form {
@@ -83,7 +83,7 @@ export default {
          font-size: 16px;
          line-height: 24px;
           color: #707171!important;
-         font-family:Avenir Medium;
+         font-family:Avenir-Medium;
       }
    }
    .extra-space {
@@ -98,13 +98,13 @@ export default {
          font-size: 16px;
          line-height: 24px;
           color: #707171!important;
-         font-family:Avenir Medium;
+         font-family:Avenir-Medium;
       }
       .ac{
           font-size: 16px;
           line-height: 24px;
           color: #000000!important;
-         font-family:Avenir Medium;
+         font-family:Avenir-Medium;
       }
    }
 }

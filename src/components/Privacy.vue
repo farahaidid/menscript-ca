@@ -213,14 +213,14 @@ export default {};
 
 <style scoped lang="scss">
 .privacy-title{
-  font-family: Avenir Medium;
+  font-family: Avenir-Medium;
   margin: 70px 0;
   font-size: 30px;
   letter-spacing: 2px;
 }
 .privacy-subtitle {
   font-size: 18px;
-  font-family: Avenir Medium;
+  font-family: Avenir-Medium;
   font-weight: bold;
 }
 p.privacy-text {

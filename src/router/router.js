@@ -17,8 +17,6 @@ const routes = [
       { path: '', component: loadView("Home") },
       { path: 'category', component: loadView("Category") },
       { path: 'blog', component: loadView("Blog") },
-      { path: 'Bestellingen', component: loadView("AccountBestellingen"),}, 
-      // { path: 'account', component: loadView("AccountAbonnement"),},
       { path: 'privacy', component: loadView("Privacy") },
       { path: 'agreement', component: loadView("Agreement") },
       { 
@@ -49,8 +47,11 @@ const routes = [
 ]
 
 const router = new VueRouter({
-    routes,
-    hasbang:false,
-    mode:'history',
+  scrollBehavior (to, from, savedPosition) {
+    return { x: 0, y: 0 }
+  },
+  routes,
+  hasbang:false,
+  mode:'history',
 });
 export default router

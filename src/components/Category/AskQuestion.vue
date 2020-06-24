@@ -8,15 +8,11 @@
       <div class="col-md-6 mb-26 bg-white mt-4 order-1 order-md-2 blog-margin-left question_height">
         <div class="third-section-text w-75">
           <h2 class="blog-title text-left mt-5">FAQ</h2>
-          <p class="subtitle mb-0 mt-2" style="font-family:Avenir Heavy">Hoe werkt de behandeling via menscript?</p>
-          <p class="subtitle mb-0 mt-2" style="font-family:Avenir Heavy">Welke behandelingen voeren jullie uit?</p>
-          <p class="subtitle mb-0 mt-2" style="font-family:Avenir Heavy">Hoe kan ik jullie bereiken?</p>
+          <p class="subtitle mb-0 mt-2" style="font-family:Avenir-Heavy">Hoe werkt de behandeling via menscript?</p>
+          <p class="subtitle mb-0 mt-2" style="font-family:Avenir-Heavy">Welke behandelingen voeren jullie uit?</p>
+          <p class="subtitle mb-0 mt-2" style="font-family:Avenir-Heavy">Hoe kan ik jullie bereiken?</p>
           <p class="subtitle mb-0 mt-2 w-auto mb-5 mb-md-0"> 
-            Last van haaruitval, maar niet zeker wat je nodig hebt? Start een
-            online consult, deel je symptomen en medische historie en laat je
-            adviseren door een van de doktoren binnen ons netwerk. Een dokter
-            evalueert vervolgens je behandelingsverzoek. Geschikt? Dan ontvang
-            je je behandeling binnen 48u thuis geleverd.
+            Je kunt ons bereiken via de helpdesk. Je vindt de helpdesk icon rechtsonder. Zijn wij niet bereikbaar? Laat ons dan een berichtje achter. We zullen dan contact met je opnemen via de mail ;-)
           </p>
         </div>
       </div>

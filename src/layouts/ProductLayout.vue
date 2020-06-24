@@ -1,6 +1,6 @@
 <template>
   <div>
-    <AppHeader/>
+    <AppHeader :transparentBG="true" />
     <router-view />
     <AppFooter/>
   </div>

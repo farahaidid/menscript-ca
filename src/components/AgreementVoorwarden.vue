@@ -93,7 +93,7 @@ export default {};
   font-weight: bold;
 }
 p.privacy-text {
-  font-size: 16px;
+  font-size: 12px;
   font-family: Avenir-Book;
   text-align: justify;
   color: grey;

@@ -87,7 +87,7 @@ export default {
     font-size: 72px!important;
     line-height: 48px;
     color: #2f2f2f;
-		font-family: Avenir Black;
+		font-family: Avenir-Black;
 		margin-top: 190px;
 }
 
@@ -103,7 +103,7 @@ export default {
 				font-size: 18px;
 				line-height: 36px;
 				color: #707171;
-				font-family:Avenir Medium;
+				font-family:Avenir-Medium;
 			}
 			.vk-box {
 				border: 1.1px solid #e1e1e1;
@@ -150,7 +150,7 @@ export default {
 					font-size: 18px;
 					line-height: 36px;
 					color: #141414;
-					font-family: Avenir Black;
+					font-family: Avenir-Black;
 }
 			}
 		}
@@ -162,7 +162,7 @@ export default {
     height: 62px;
     background-color: #000000;
     border: 1px solid #000000;
-    font-family: Avenir Black;
+    font-family: Avenir-Black;
 }
 	}
 	@media screen and (max-width: 640px) {

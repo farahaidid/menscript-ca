@@ -12,11 +12,11 @@ export default {
   data(){
     return {
       fields: [
-        { key: "orderId", label: "Order ID", },
-        { key: "datum", label: "Datum", },
-        { key: "payment", label: "Payment", },
-        { key: "gpStatus", label: "GP status", },
-        { key: "shipment", label: "Shipment", },
+        { key: "orderId", label: "Order ID", tdClass: "avenirmedium font-16", thClass: "avenirheavy font-16"},
+        { key: "datum", label: "Datum", tdClass: "avenirmedium font-16", thClass: "avenirheavy font-16"},
+        { key: "payment", label: "Payment", tdClass: "avenirmedium font-16", thClass: "avenirheavy font-16"},
+        { key: "gpStatus", label: "GP status", tdClass: "avenirmedium font-16", thClass: "avenirheavy font-16"},
+        { key: "shipment", label: "Shipment", tdClass: "avenirmedium font-16", thClass: "avenirheavy font-16"},
       ],
       transactions: [
         { orderId: 'HL001-29389', datum: '01-02-2020', payment: 'Pending payment', gpStatus: 'Accepted', shipment: 'Shipped' },

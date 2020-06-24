@@ -3,19 +3,11 @@
     <div class="">
       <p class="scroll single-blog-scroll">Scroll</p>
       <div class="row mx-auto" style="max-width: 1500px" >
-        <div
-          class="col-md-12 col-sm-12 col-lg-10 mx-lg-auto text-pull-right position-relative"
-        >
-          <div class="image-section position-relative">
-            <img
-              src="@/assets/img/singleblog/singleblog.jpg"
-              alt="single-image"
-              class="single-image"
-            />
-          </div>
+        <div class="col-md-12 col-sm-12 col-lg-10 mx-lg-auto text-pull-right">
+          <img src="@/assets/img/singleblog/singleblog.jpg" alt="single-image" class=""/>
         </div>
         <div class="col-md-12 col-sm-12 col-lg-10 mx-lg-auto  pb-5">
-          <h1 class="blog-title text-center">
+          <h1 class="single-blog-title avenirblack text-center my-5">
             Are online consultations any good?
           </h1>
 
@@ -74,3 +66,15 @@
     </div>
   </div>
 </template>
+
+
+<style lang="scss" scoped>
+.single-blog-title{
+  font-size: 72px;
+}
+@media screen and (max-width: 768px) {
+  .single-blog-title{
+    font-size: 32px ;
+  }
+}
+</style>

@@ -61,10 +61,10 @@
           </div>
         </div>
         <div class="col-md-9 text-end my-auto order-1 order-md-last p-0">
-          <div class="footer-menu d-flex w-90 row justify-content-between">
-            <a href class="footer-menu-link">FAQ</a>
-            <router-link to="/privacy" class="footer-menu-link">PRIVACY</router-link>
-            <router-link to="/agreement" class="footer-menu-link">AIGEMENE VOORWAARDEN</router-link>
+          <div class="footer-menu d-flex row justify-content-between mx-0">
+            <a href class="footer-menu-link d-inline-block">FAQ</a>
+            <router-link to="/privacy" class="footer-menu-link d-inline-block">PRIVACY</router-link>
+            <router-link to="/agreement" class="footer-menu-link d-inline-block">AIGEMENE VOORWAARDEN</router-link>
           </div>
           <!-- <div class="footer-menu row justify-content-between d-flex d-md-none"> -->
           <!-- <div class="footer-menu d-md-none w-100">
@@ -133,8 +133,8 @@ button.btn.contact-us {
   height: 60px;
   font-size: 16px;
   letter-spacing: 1px;
-  font-family: Avenir Heavy;
-
+  font-family: Avenir-Heavy;
+  border-radius: 0;
   color: #6c6d6f;
   background-color: ffffff;
   border: 1px solid #d5d6d6;
@@ -146,7 +146,7 @@ input#custom-input {
   left: 40px;
   position: absolute;
   font-size: 16px;
-  font-family: Avenir Heavy;
+  font-family: Avenir-Heavy;
 }
 
 .border {
@@ -224,21 +224,21 @@ a.social-link.twitter {
 
 /* responsive */
 /* Extra large devices (large desktops, 1200px and up) */
-@media screen and (min-width: 1451px) and (max-width: 1850px) {
+@media screen and (max-width: 1850px) {
   a.footer-menu-link {
     text-decoration: none;
     margin-left: 8px;
     font-size: 15px;
     line-height: 48px;
     color: #2f2f2f !important;
-    font-family: Avenir Medium;
+    font-family: Avenir-Medium;
     letter-spacing: 1px;
   }
   .footer-menu{
     margin-top: 35px;
   }
 }
-@media screen and (min-width: 1201px) and (max-width: 1450px) {
+@media screen and (max-width: 1450px) {
   .width-75 {
     width: 70%;
   }
@@ -269,7 +269,7 @@ a.social-link.twitter {
     margin-right: 5%;
   }
 }
-@media screen and (min-width: 991px) and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .width-75 {
     width: 75%;
   }
@@ -314,7 +314,7 @@ a.social-link.twitter {
     margin-right: 10%;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .width-75 {
     width: 100%;
   }
@@ -351,7 +351,15 @@ a.social-link.twitter {
   }
 }
 /* medium phone  */
-@media screen and (min-width: 641px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .footer-menu{
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0 !important;
+  }
+  .footer-padding{
+    padding-top: 0;
+  }
   .width-75 {
     width: 100%;
   }

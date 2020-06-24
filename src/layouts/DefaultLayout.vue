@@ -2,7 +2,7 @@
   <div>
     <AppHeader/>
     <!-- <AppBanner /> -->
-    <router-view  style="margin-top:70px"/>
+    <router-view  class="main-content"/>
     <AppFooter/>
   </div>
 </template>
@@ -18,3 +18,14 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.main-content{
+  margin-top: 70px;
+}
+@media screen and (max-width: 768px) {
+  .main-content{
+    margin-top: 50px;
+  }
+}
+</style>

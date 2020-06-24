@@ -13,7 +13,7 @@
         </p>
         <div class="d-flex justify-content-end mt-1">
           <button
-            class="btn btn-secondary  blog-button-cat "
+            class="btn btn-secondary   custom-btn"
             type="button"
             v-if="data.button == true"
           >

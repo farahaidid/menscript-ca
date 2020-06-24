@@ -26,7 +26,7 @@ img.product-img.bottom-img {
 
 .card-text {
     font-size: 18px;
-    font-family: Avenir Heavy;
+    font-family: Avenir-Heavy;
     color: #000000;
 }
 
@@ -46,7 +46,7 @@ button.app-btn {
     background-color: #111111;
     color: #ffffff;
     font-size: 14px;
-    font-family: Avenir Heavy;
+    font-family: Avenir-Heavy;
     width: 470px;
     height: 47px;
     margin-top: 20px !important;
@@ -67,7 +67,7 @@ button.app-btn {
     margin-bottom: 0px;
     font-size: 18px;
     color: #000000;
-    font-family:Avenir Heavy;
+    font-family:Avenir-Heavy;
 }
 .card-subtitle2 {
     font-size: 16px;
@@ -82,46 +82,75 @@ button.app-btn {
     width: 100%;
     max-height: 1104px;
   }
-
-/* Small devices */
-@media screen and (max-width: 640px) {
-    .scroll {
-        font-size:20px;
-        left:0px!important;
+@media screen and (min-width: 1451px) and (max-width: 1850px) {
+    button.app-btn {
        
+        width: 380px;
+        height: 40px;
     }
-    .text_sm_center{
-        text-align:center;
-
-    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (max-width: 1450px) {
     .product-img {
-        // width: 250px;
-    }
-    .mb-sm-5{
-        margin-bottom: 10px;
+        max-height: 653px!important;
     }
     .card-subtext, .card-subtitle {
-        font-size: 16px;
+        font-size: 14px;
+        
+    }
+    .list-group-item {
+        font-size: 14px;
+    } 
+    button.app-btn {
+        width: 340px;
+        height: 40px;
+    }
+    
+
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (max-width: 1200px) {
+   
+    .card-subtext, .card-subtitle {
+        font-size: 14px;
        
+    }
+    .list-group-item {
+        font-size: 14px;
+    }
+    button.app-btn {
+       
+        width: 340px;
+        height: 40px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media screen and (max-width: 991px) {
+   
+    .card-subtext, .card-subtitle {
+        font-size: 16px;
+        
     }
     .list-group-item {
         font-size: 16px;
     }
     button.app-btn {
-        border: none;
-        background-color: #111111;
-        color: #ffffff;
-        font-size: 12px;
-        font-family: Avenir Heavy;
-        width: 250px;
+        font-size: 14px;
+        width: 240px;
         height: 40px;
-        margin-top: 20px !important;
-        margin-bottom: 20px !important;
     }
 }
 
+
+
 /* medium phone  */
-@media screen and (min-width: 641px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    .product-page{
+        margin-top: 0;
+    }
     .scroll {
         font-size:20px;
         left:0px!important;
@@ -150,63 +179,38 @@ button.app-btn {
     }
 }
 
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-   
-    .card-subtext, .card-subtitle {
-        font-size: 16px;
-        
-    }
-    .list-group-item {
-        font-size: 16px;
-    }
-    button.app-btn {
-        font-size: 14px;
-        width: 240px;
-        height: 40px;
-    }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-   
-    .card-subtext, .card-subtitle {
-        font-size: 14px;
+@media screen and (max-width: 640px) {
+    .scroll {
+        font-size:20px;
+        left:0px!important;
        
     }
-    .list-group-item {
-        font-size: 14px;
-    }
-    button.app-btn {
-       
-        width: 340px;
-        height: 40px;
-    }
-}
+    .text_sm_center{
+        text-align:center;
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media screen and (min-width: 1201px) and (max-width: 1450px) {
+    }
     .product-img {
-        max-height: 653px!important;
+        // width: 250px;
+    }
+    .mb-sm-5{
+        margin-bottom: 10px;
     }
     .card-subtext, .card-subtitle {
-        font-size: 14px;
-        
+        font-size: 16px;
+       
     }
     .list-group-item {
-        font-size: 14px;
-    } 
-    button.app-btn {
-        width: 340px;
-        height: 40px;
+        font-size: 16px;
     }
-    
-
-}
-@media screen and (min-width: 1451px) and (max-width: 1850px) {
     button.app-btn {
-       
-        width: 380px;
+        border: none;
+        background-color: #111111;
+        color: #ffffff;
+        font-size: 12px;
+        font-family: Avenir-Heavy;
+        width: 250px;
         height: 40px;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
     }
 }

@@ -96,7 +96,7 @@ export default {
       font-size: 72px;
       line-height: 48px;
       color: #2f2f2f;
-      font-family:Avenir Black;
+      font-family:Avenir-Black;
       margin-top: 190px;
    }
 .consult {

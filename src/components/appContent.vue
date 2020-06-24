@@ -251,7 +251,7 @@ h3.brand-beauty-text {
   z-index: 10;
   top: 55px;
   left: 50px;
-  font-family: "Avenir Medium";
+  font-family: "Avenir-Medium";
 }
 .subtitle {
   text-align: justify;

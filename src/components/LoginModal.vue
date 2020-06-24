@@ -1,7 +1,7 @@
 <template>
    <div id="login-modal">
       <header>
-         <i @click="$emit('close')" class="c-close fal fa-times"></i>
+         <i class="c-close fal fa-times" @click="close"></i>
          <h5 class="app-name">MENSCRIPT</h5>
          <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -61,7 +61,22 @@ export default {
    data: () => ({
       activeTab: "Login",
       navItems: ["Login", "Consult", "Voorkeur", "Verificate", "Betaling"]
-   })
+   }),
+   created(){
+      this.handleLoginModalRoute()
+   },
+   methods:{
+      handleLoginModalRoute(){
+         let path = this.$route.path
+         if(path != "/"){
+            let str = path.replace("/","")
+            this.activeTab = str.charAt(0).toUpperCase() + str.slice(1)
+         }
+      },
+      close(){
+         this.$emit('close')
+      },
+   },
 };
 </script>
 
@@ -99,6 +114,7 @@ export default {
       letter-spacing: 1px;
       transform: translate(-50%, -50%);
       z-index: 10;
+      font-family: Metropolis-SemiBold;
    }
 }
 
@@ -118,6 +134,21 @@ export default {
       .app-name {
          left: calc(50% + 2rem);
       }
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .navbar{
+      .navbar-toggler{
+         border: none;
+         padding: 0;
+      }
+   }
+   .c-close{
+      position: unset !important;
+      float: right;
+      padding-top: 10px;
+      padding-right: 20px;
    }
 }
 </style>

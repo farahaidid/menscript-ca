@@ -2,15 +2,15 @@
   <div>
     <div class="container-fluid main-back-color px-0">
       <Product class="product-page" />
-      <BlogOne :data="blogOne" />
-      <BlogTwo :data="blogTwo" />
-      <div class="row">
+      <BlogOne :data="blogOne" :hideBtn="true" />
+      <BlogTwo :data="blogTwo" :hideBtn="true" />
+      <div class="row mx-0">
         <div class="col-sm-12 pr-0 pl-0 max-height-four">
           <img src="@/assets/img/fourth-section-img.jpg" alt class="fourth-section-img" />
         </div>
       </div>
-      <BlogTwo :data="blogTwo2" />
-      <BlogOne :data="blogThree" />
+      <BlogTwo :data="blogTwo2" :hideBtn="true" />
+      <BlogOne :data="blogThree" :hideBtn="true" />
       <AskQuestion />
       <div style="height: 50px" class="main-back-color"></div>
     </div>
@@ -33,32 +33,28 @@ export default {
       blogOne: {
         name: "blogOne",
         title: "Wat is finasteride?",
-        text:
-          "De wetenschappelijke studies zijn duidelijk: haarverlies bij mannen wordt veroorzaakt door het hormoon DHT (dihydrotestosteron) en het enige beschikbare medicijn dat dit hormoon met succes blokkeert, is finasteride. ",
+        text: "Minoxidil is een lotion die tweemaal daags op de kalende hoofdhuid wordt aangebracht. Het werkt door de bloedvaten plaatselijk te verwijden. Hierdoor nemen de haarzakjes meer zuurstof en voedingstoffen op. Het resultaat is een verbetering van de haarkwaliteit en dikker en voller haar.",
         image: require("@/assets/img/product1.png"),
         subtitle: "Lees meer: finasteride en haarverlies",
       },
       blogTwo: {
         name: "blogTwo",
-        title: "Effectiviteit",
-        text:
-          "Finasteride stopt het haaruitval in meer dan 83% van de gebruikers. Daarnaast ervaart 48%  van de gebruikers een verbetering van de haargroei binnen  het eerste jaar en 66% binnen het 2e jaar",
+        title: "Dikker Haar",
+        text: "Minoxidil reactiveert de haarzakjes, verlengt de groeifase en simuleert het herstel met als resultaat dikker en voller haar.",
         image: require("@/assets/img/five-one.jpg"),
         subtitle: "Lees meer: finasteride en haarverlies",
       },
       blogTwo2: {
         name: "blogTwo",
-        title: "Wees consistent",
-        text:
-          "Gebruik het middel zoals voorgeschreven door de arts en wees consistent in het gebruik. Heb je het druk? Maak dan een notitie in je agenda. Het kan helpen een vast moment van de dag te kiezen waarop je het middel inneemt. ",
+        title: "Tweemaal per dag",
+        text: "De dagelijkse dosering is tweemaal per dag 1 ml oplossing (10 verstuivingen). Breng de oplossing gelijkmatig aan op de kalende hoofdhuid. Laat de oplossing volledig drogen voordat je andere stylingproducten gebruikt (bijv. gels, mousse) of voordat je naar bed gaat.",
         image: require("@/assets/img/product1.png"),
         subtitle: "Lees meer: finasteride en haarverlies",
       },
       blogThree: {
         name: "blogOne",
-        title: "Bijwerkingen",
-        text:
-          "Het is zeldzaam, maar net als ieder ander geneesmiddel kan ook dit geneesmiddel bijwerkingen veroorzaken. Vermoed je dat je tijdenshet gebruik een bijwerking ervaart? Neem dan contact op met jearts.",
+        title: "Veilig Gerbruik",
+        text: "In enkele gevallen kan dit middel een bijwerking veroorzaken waaronder roodheid, jeuk, schilfering of een andere irritatie van de hoofdhuid. Heb je het vermoeden dat dit bij jou het geval is? Neem dan contact op met je huisarts. Is je bijwerking officieel vastgesteld? Dan raden we je aan de bijwerking ook te melden aan Lareb; het Nederlandse bijwerkingen centrum. Dit kan binnen je account.",
         image: require("@/assets/img/brand.png"),
         subtitle: "Lees meer: finasteride en haarverlies",
       },
