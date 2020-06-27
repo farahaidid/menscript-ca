@@ -26,7 +26,7 @@
                         :class="activeTab==item&&'active'"
                         class="nav-item mx-1"
                      >
-                        <router-link :to="`/${item.toLowerCase()}`" class="nav-link">{{item}}</router-link>
+                        <router-link :to="`/${item.toLowerCase()}`" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link avenirmedium">{{item}}</router-link>
                      </li>
                   </ul>
                </div>
@@ -36,7 +36,7 @@
       <Login v-if="activeTab=='Login'" />
       <Consult v-else-if="activeTab=='Consult'" />
       <Voorkeur v-else-if="activeTab=='Voorkeur'" />
-      <Verificate v-else-if="activeTab=='Verificate'" />
+      <Verificate v-else-if="activeTab=='Verificatie'" />
       <Betaling v-else-if="activeTab=='Betaling'" />
    </div>
 </template>
@@ -60,7 +60,7 @@ export default {
    },
    data: () => ({
       activeTab: "Login",
-      navItems: ["Login", "Consult", "Voorkeur", "Verificate", "Betaling"]
+      navItems: ["Login", "Consult", "Voorkeur", "Verificatie", "Betaling"]
    }),
    created(){
       this.handleLoginModalRoute()
@@ -107,14 +107,16 @@ export default {
    }
    .app-name {
       position: absolute;
-      top: 1.5rem;
-      font-size: 1.2em;
+      top: 2.5rem;
+      font-size: 20px;
       color: #424242;
-      left: 50%;
+      left: 48.8%;
       letter-spacing: 1px;
       transform: translate(-50%, -50%);
       z-index: 10;
       font-family: Metropolis-SemiBold;
+      line-height: 48px;
+      letter-spacing: 0;
    }
 }
 
@@ -138,6 +140,12 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
+   .app-name {
+      top: 2.5rem;
+      left: 48.8%;
+      font-size: 14px !important;
+      line-height: unset;
+   }
    .navbar{
       .navbar-toggler{
          border: none;

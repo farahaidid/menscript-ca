@@ -1,7 +1,7 @@
 <template>
    <div class="verificate">
-      <h1 class="text-center  Verificate ">ID Verificate</h1>
-      <div class="container text-center">
+      <h1 class="text-center  Verificate header-margin">ID Verificatie</h1>
+      <div class="container text-center bg-transparent">
          <div class="vf-container mx-auto text-left">
             <p
                class="text my-4"
@@ -32,7 +32,6 @@ export default {
     line-height: 48px;
     color: #2f2f2f;
     font-family: Avenir-Black;
-    margin-top: 190px;
 }
 .verificate {
    background-color: #fbfbfa;
@@ -71,7 +70,7 @@ export default {
       padding: 0.5rem 1rem;
       background-color: black;
       color: white;
-      font-weight: bolder;
+      // font-weight: bolder;
    }
    .c-out {
       color: black;

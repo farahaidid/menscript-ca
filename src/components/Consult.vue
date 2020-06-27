@@ -1,7 +1,7 @@
 <template>
    <div class="consult">
-      <h1 class="text-center consult-title ">Consult</h1>
-      <div class="container text-center">
+      <h1 class="text-center consult-title header-margin">Consult</h1>
+      <div class="container text-center bg-transparent">
          <div class="opt-container mx-auto text-left">
             <p class="page">{{currentQuestion+1}} of {{questions.length}}</p>
             <div v-for="(qs,index) in questions" :key="qs.id">
@@ -97,7 +97,6 @@ export default {
       line-height: 48px;
       color: #2f2f2f;
       font-family:Avenir-Black;
-      margin-top: 190px;
    }
 .consult {
    background-color: #fbfbfa;
@@ -110,13 +109,13 @@ export default {
       }
    }
    button.next {
-      border: 1.1px solid #f57c00;
+      border: 1.1px solid black;
       padding: 0.7rem 1rem;
       width: 30rem;
-      background-color: #f57c00;
+      background-color: black;
       color: white;
       &:hover {
-         background-color: #e65100;
+         background-color: black;
       }
       &.disabled {
          border-color: grey;

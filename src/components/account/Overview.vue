@@ -31,7 +31,7 @@
       <most-recent-transaction />
     </section>
 
-    <section id="adres" class="mt-5 mb-5">
+    <section id="address" class="mt-5 mb-5">
       <div class="row justify-content-between mx-0 prev-plan-con mb-4">
         <h4 class="avenirheavy head-title">Adres</h4>
       </div>

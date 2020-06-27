@@ -17,7 +17,7 @@ export default {
 
 <style lang="scss" scoped>
 #account-div{
-  padding-top: 100px !important;
+  padding-top: 100px;
   .account-sidebar-comp{
     position: absolute;
     left: 0;
@@ -29,6 +29,7 @@ export default {
 
 @media screen and (max-width: 768px) {
   #account-div{
+    padding-top: 50px;
     .account-sidebar-comp{
       position: unset;
     }

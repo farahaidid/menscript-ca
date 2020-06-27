@@ -1,7 +1,7 @@
 <template>
   <div id="treatment-plan-div">
-    <div class="row">
-      <div class="col-5">
+    <div class="row mb-5 mb-md-0">
+      <div class="col-8 col-md-5 order-1">
         <div class="row">
           <div class="col-6">
             <p class="avenirheavy head-title mb-5">ID</p>
@@ -19,20 +19,20 @@
           </div>
         </div>
       </div>
-      <div class="col-5">
-        <div class="row mt-5">
+      <div class="col-8 col-md-5 order-3 order-md-2">
+        <div class="row mt-0 mt-md-5">
           <div class="col-6">
-            <p class="avenirheavy head-title line-height-unset mt-5 mb-0">Delivery</p>
+            <p class="avenirheavy head-title line-height-unset mt-0 mt-md-5 mb-0">Delivery</p>
           </div>
           <div class="col-6">
-            <p class="avenirheavy subhead line-height-unset text-secondary mt-5 mb-0">Remi Llewellyn-Huntley</p>
+            <p class="avenirheavy subhead line-height-unset text-secondary mt-0 mt-md-5 mb-0">Remi Llewellyn-Huntley</p>
             <p class="avenirheavy subhead line-height-unset text-secondary mb-0">Warmoestraat 43</p>
             <p class="avenirheavy subhead line-height-unset text-secondary mb-0">1106KG, AMSTERDAM</p>
             <p class="avenirheavy subhead line-height-unset text-secondary mb-0">NEDERLAND</p>
           </div>
         </div>
       </div>
-      <div class="col-2">
+      <div class="col-3 col-md-2 order-2 order-md-3">
         <div class="row mt-5 justify-content-end">
           <p class="text-muted mt-5 avenirheavy head-title line-height-unset">
             <u>Change plan</u>
@@ -71,7 +71,7 @@
     </div>
 
     <div class="row calculation mx-0 mt-3 justify-content-end">
-      <div class="col-5">
+      <div class="col-8 col-md-5">
         <div class="subpart">
           <div class="row justify-content-between">
             <p class="avenirmedium head-title text-muted line-height-unset">Handling costs</p>
@@ -147,8 +147,17 @@ export default {
     height: 100px;
     width: 100px;
   }
-  .product-tabular-info, .calculation .col-5 .subpart, #transactions .table-title{
+  .product-tabular-info, .calculation .subpart, #transactions .table-title{
     border-bottom: 1px solid #ebebeb;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #treatment-plan-div{
+    .img-sec{
+      height: 70px;
+      width: 70px;
+    }
   }
 }
 </style>

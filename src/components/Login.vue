@@ -1,6 +1,6 @@
 <template>
    <div class="login text-center">
-      <h1 class="font-normal mb-5">Welkom</h1>
+      <h1 class="font-normal mb-5 header-margin">Welkom</h1>
       <div class="form pt-3">
          <div class="mb-3">
             <input v-model="email" type="email" placeholder="Email address" />
@@ -11,8 +11,7 @@
          <button>Continue</button>
          <div class="extra-space"></div>
          <div>
-            <input type="checkbox" id="remember" class="mr-1" v-model="remember" />
-            <label for="remember" class="dha">Remember me for 30 days</label>
+            <custom-checkbox :black="true" @change="v=>remember=v" :checked="remember" :label="'Remember me for 30 days'" />
          </div>
       </div>
       <div class="actions mt-3">
@@ -24,7 +23,11 @@
 </template>
 
 <script>
+import CustomCheckbox from "@/components/Custom/CustomCheckbox"
 export default {
+   components:{
+      CustomCheckbox
+   },
    name: "login",
    data: () => ({
       email: "",
@@ -54,7 +57,6 @@ export default {
       line-height: 48px;
       color: #2f2f2f;
       font-family:Avenir-Black;
-      margin-top: 190px;
    }
    .form {
       input[type="email"],
@@ -76,7 +78,7 @@ export default {
          line-height: 48px;
          color: #fbfcff;
          width: 429px;
-         height: 62px;
+         height: 32px;
          border: 1px solid #000000;
       }
       label.dha {

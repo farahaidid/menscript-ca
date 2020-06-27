@@ -1,18 +1,12 @@
 <template>
   <div :class="['main-back-color',absolute ? 'app-menu':'', 'pb-3 pt-2']" :style="{top: isMobile ? '50px' : '70px'}">
-    <div class="row container-fluid mx-auto" style="max-width: 1500px">
-      <div class="col-md-4 col-xl-6 pl-5">
-        <p>MENU</p>
-        <ul>
-          <li class="link link-cat"  v-if="isMobile">
-            <router-link to class="nav-link" href="#">SEARCH</router-link>
-          </li>
-          <li class="link link-cat"  v-if="isMobile" @click="openCardModal">
-            <router-link to class="nav-link" href="#">CART</router-link>
-          </li>
-          <li class="link link-cat"  v-if="isMobile">
-            <router-link to="/account" class="nav-link">ACCOUNT</router-link>
-          </li>
+    <div class="row container-fluid mx-0 mx-md-auto px-0 px-md-2" style="max-width: 1500px">
+      <div class="col-md-4 col-xl-6 pl-0 pl-md-5 pr-0 pr-md-2">
+        <p class="ml-3 ml-md-0">MENU</p>
+        <hr class="d-block d-md-none">
+        <search-comp class="d-block d-md-none" />
+        <hr class="d-block d-md-none">
+        <ul class="ml-5 ml-md-0">
           <li class="link">
             <router-link class="link-cat" to="/category">HAIR</router-link>
             <div class="dropdown-content">
@@ -31,8 +25,22 @@
             </div>
           </li>
           <li class="link link-cat grey-text" @click="goblog"> BLOG </li>
-          <li class="link link-cat grey-text">OVER ONS</li>
+          <!-- <li class="link link-cat grey-text">OVER ONS</li> -->
           <li class="link link-cat grey-text">CONTACT</li>
+        </ul>
+      </div>
+
+      <div class="mt-5 d-block d-md-none text-center w-100">
+        <ul class="ml-0">
+          <li class="link link-cat">
+            <router-link to class="nav-link" href="#">SEARCH</router-link>
+          </li>
+          <li class="link link-cat" @click="openCardModal">
+            <router-link to class="nav-link" href="#">CART</router-link>
+          </li>
+          <li class="link link-cat">
+            <router-link to="/account" class="nav-link">ACCOUNT</router-link>
+          </li>
         </ul>
       </div>
       <!-- <div class="col-md-4 col-lg-3 pr-lg-0 pr-md-0 text-sm-center">
@@ -53,8 +61,12 @@
 
 <script>
 import GLOBAL from "@/mixins/GLOBAL"
+import SearchComp from "@/components/SearchComp"
 export default {
   mixins: [GLOBAL],
+  components:{
+    SearchComp
+  },
   props:{
     absolute:{
       type: Boolean,

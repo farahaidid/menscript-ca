@@ -1,7 +1,7 @@
 <template>
 	<div class="betaling">
-		<h1 class="text-center  mb-4  Betaling">Betaling</h1>
-		<div class="container text-center mx-auto my-5" style="padding-left: 45px; padding-right: 45px">
+		<h1 class="text-center  mb-4  Betaling header-margin">Betaling</h1>
+		<div class="container text-center mx-auto my-5 bg-transparent" style="padding-left: 45px; padding-right: 45px">
 			<div class="notice row p-3">
 				<div class="col-1 d-flex flex-column justify-content-center align-items-center">
 					<b-icon icon="info-circle" font-scale="2"></b-icon>
@@ -18,28 +18,28 @@
 						<h5 class="mb-4 from-title">1. Details</h5>
 						<div class="row m-0 inputs-row">
 							<div class="col-md-5 pl-0 mb-3">
-								<input type="text" placeholder="Voornaam" />
+								<input type="text" class="avenirmedium" placeholder="Voornaam" />
 							</div>
 							<div class="col-md-7 px-0 mb-3">
-								<input type="text" placeholder="Achternaam" />
+								<input type="text" class="avenirmedium" placeholder="Achternaam" />
 							</div>
 							<div class="col-md-12 px-0 pb-3">
-								<input type="text" placeholder="Straat + nummer" />
+								<input type="text" class="avenirmedium" placeholder="Straat + nummer" />
 							</div>
 							<div class="col-md-6 pl-0 mb-3">
-								<input type="text" placeholder="Stad" />
+								<input type="text" class="avenirmedium" placeholder="Stad" />
 							</div>
 							<div class="col-md-6 px-0 mb-3">
-								<input type="text" placeholder="Post code" />
+								<input type="text" class="avenirmedium" placeholder="Post code" />
 							</div>
 							<div class="col-md-6 pl-0 mb-3">
-								<input type="text" placeholder="LAND" />
+								<input type="text" class="avenirmedium" placeholder="LAND" />
 							</div>
 							<div class="col-md-6 px-0 mb-3">
-								<input type="text" placeholder="Mobiel nummer" />
+								<input type="text" class="avenirmedium" placeholder="Mobiel nummer" />
 							</div>
 							<div class="col-md-12 px-0">
-								<textarea placeholder="Notities voor bezorger"></textarea>
+								<textarea class="avenirmedium" placeholder="Notities voor bezorger"></textarea>
 							</div>
 						</div>
 					</div>
@@ -171,7 +171,6 @@ export default {
     line-height: 48px;
     color: #2f2f2f;
 		font-family: Avenir-Black;
-		margin-top: 190px;
 }
 .from-title {
     font-size: 20px;

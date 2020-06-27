@@ -5,7 +5,7 @@
       <div class="row mx-0 p-0 ">
         <div class="col-md-6 col-sm-12 p-0 position-relative max-height-beauty-img text-left text-md-center" >
           <img src="../assets/img/Beauty-brand.jpg" alt="Beauty-brand" class="Beauty-brand"/>
-          <h3 class="brand-beauty-text">Haareverzorging</h3>
+          <h3 class="brand-beauty-text">Haarverzorging</h3>
         </div>
         <div class="col-md-6 col-sm-12 p-0 position-relative max-height-beauty-img">
           <img src="../assets/img/Beauty-brand.jpg" alt="Beauty-brand" class="Beauty-brand"/>
@@ -24,7 +24,7 @@
         <BlogTwo :data="blogTwo" />
       </div>
       <div>
-        <BlogThree :data="blogThree" />
+        <BlogThree :data="blogThree" :hideBtn="true" />
       </div>
       <div class="pb-0">
         <HowWorks />
@@ -43,7 +43,9 @@ import BlogOne from "../components/blog/BlogOne";
 import BlogTwo from "../components/blog/BlogTwo";
 import BlogThree from "../components/blog/BlogThree";
 import HowWorks from "../components/AppHowWorks";
+import GLOBAL from "@/mixins/GLOBAL"
 export default {
+  mixins: [GLOBAL],
   components: {
     AppBanner,
     BlogOne,
@@ -78,7 +80,7 @@ export default {
         title: "Waarom?",
         text: "n vergelijking met vrouwen, brengen mannen minder vaak een bezoek aan de huisartsenpraktijk. Ze schamen zich of worden geconfronteerd met talloze ‘gender-based’ stigmas. Wij verlagen de drempel om in contact te komen met een geregistreerde arts, proberen we hen de medische zorg te bieden die ze nodig hebben voor problemen die ze anders verborgen zouden houden",
         image: require("@/assets/img/six-section.jpg"),
-        subtitle: "Lees meer: finasteride en haarverlies",
+        subtitle: "",
       },
     };
   },
@@ -100,7 +102,7 @@ export default {
   max-height: 1104px;
 }
 h3.brand-beauty-text {
-  font-size: 60px;
+  font-size: 36px;
   line-height: 48px;
   color: #212121;
   font-family: "Avenir-Medium";

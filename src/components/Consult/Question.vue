@@ -1,6 +1,6 @@
 <template>
    <div class="question">
-      <p class="title my-4">{{qs.question}}</p>
+      <p class="title font-normal avenirmedium my-4">{{qs.question}}</p>
       <div v-for="(opt,index) in qs.options" :key="opt.id">
          <div
             @click="onClickOption(index)"
@@ -56,7 +56,7 @@ export default {
       border: 1px solid #d7d7d7;
       cursor: pointer;
       &.selected {
-         border-color: #f57c00;
+         border-color: black;
       }
    }
    textarea {

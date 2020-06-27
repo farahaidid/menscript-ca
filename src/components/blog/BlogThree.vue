@@ -12,13 +12,8 @@
           {{ data.text }}
         </p>
         <div class="d-flex justify-content-end mt-1">
-          <button
-            class="btn btn-secondary   custom-btn"
-            type="button"
-            v-if="data.button == true"
-          >
-            Start online consult
-          </button>
+          <button v-if="!hideBtn" data-v-220a3ba6="" class="btn btn-md-sm custom-btn"> Start online consult </button>
+          <span v-else class="blog-text-instead-of-btn">Less meer: finasteride en haarverlies</span>
         </div>
         <p class="subtitle-2 d-md-none" v-if="data.name == 'blogThree'">
           {{ data.subtitle }}
@@ -47,6 +42,7 @@ export default {
         };
       },
     },
+    hideBtn: Boolean
   },
   methods:{
     gotoCategoryPage(){

@@ -8,7 +8,7 @@
     <div class="sidebar-options" v-if="!showGoBack">
       <router-link class="d-inline-block d-md-block mb-3 avenirmedium link" to="/account">Overview</router-link>
       <router-link class="d-inline-block d-md-block mb-3 avenirmedium link" to="/account/treatment-plan">Treatmentplan</router-link>
-      <router-link class="d-inline-block d-md-block mb-3 avenirmedium link" to>Addres</router-link>
+      <div class="d-inline-block d-md-block mb-3 avenirmedium link cursor-pointer" to @click="scrollToSection('address', 50)">Addres</div>
 
       <p class="mt-0 mt-md-4 avenirmedium link">Loguit</p>
     </div>
@@ -21,7 +21,9 @@
 
 <script>
 import WelcomeMessage from "@/components/account/WelcomeMessage"
+import GLOBAL from "@/mixins/GLOBAL"
 export default {
+  mixins: [GLOBAL],
   components:{
     WelcomeMessage
   },

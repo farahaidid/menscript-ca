@@ -15,11 +15,11 @@ export default {
   data(){
     return {
       fields: [
-        { key: "id", label: "ID", tdClass: "avenirmedium font-16", thClass: "avenirheavy font-16"},
-        { key: "date", label: "Date", tdClass: "avenirmedium font-16", thClass: "avenirheavy font-16"},
-        { key: "frequency", label: "Frequency", tdClass: "avenirmedium font-16", thClass: "avenirheavy font-16"},
-        { key: "issue", label: "Issue", tdClass: "avenirmedium font-16", thClass: "avenirheavy font-16"},
-        { key: "status", label: "Status", tdClass: "avenirmedium font-16", thClass: "avenirheavy font-16"},
+        { key: "id", label: "ID", tdClass: "avenirmedium font-16 white-space-no-wrap", thClass: "avenirheavy font-16 font-normal white-space-no-wrap"},
+        { key: "date", label: "Date", tdClass: "avenirmedium font-16 white-space-no-wrap", thClass: "avenirheavy font-16 font-normal white-space-no-wrap"},
+        { key: "frequency", label: "Frequency", tdClass: "avenirmedium font-16 white-space-no-wrap", thClass: "avenirheavy font-16 font-normal white-space-no-wrap"},
+        { key: "issue", label: "Issue", tdClass: "avenirmedium font-16 white-space-no-wrap", thClass: "avenirheavy font-16 font-normal white-space-no-wrap"},
+        { key: "status", label: "Status", tdClass: "avenirmedium font-16 white-space-no-wrap", thClass: "avenirheavy font-16 font-normal white-space-no-wrap"},
       ],
       plans: [
         { id: 'HL001', date: '01-02-2020', frequency: 'per 3 maanden', issue: 1, status: 'Inactive' },
@@ -47,7 +47,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-
-</style>

@@ -12,11 +12,11 @@ export default {
   data(){
     return {
       fields: [
-        { key: "orderId", label: "Order ID", tdClass: "avenirmedium font-16", thClass: "avenirheavy font-16"},
-        { key: "datum", label: "Datum", tdClass: "avenirmedium font-16", thClass: "avenirheavy font-16"},
-        { key: "payment", label: "Payment", tdClass: "avenirmedium font-16", thClass: "avenirheavy font-16"},
-        { key: "gpStatus", label: "GP status", tdClass: "avenirmedium font-16", thClass: "avenirheavy font-16"},
-        { key: "shipment", label: "Shipment", tdClass: "avenirmedium font-16", thClass: "avenirheavy font-16"},
+        { key: "orderId", label: "Order ID", tdClass: "avenirmedium font-16 white-space-no-wrap", thClass: "avenirheavy font-16 font-normal white-space-no-wrap"},
+        { key: "datum", label: "Datum", tdClass: "avenirmedium font-16 white-space-no-wrap", thClass: "avenirheavy font-16 font-normal white-space-no-wrap"},
+        { key: "payment", label: "Payment", tdClass: "avenirmedium font-16 white-space-no-wrap", thClass: "avenirheavy font-16 font-normal white-space-no-wrap"},
+        { key: "gpStatus", label: "GP status", tdClass: "avenirmedium font-16 white-space-no-wrap", thClass: "avenirheavy font-16 font-normal white-space-no-wrap"},
+        { key: "shipment", label: "Shipment", tdClass: "avenirmedium font-16 white-space-no-wrap", thClass: "avenirheavy font-16 font-normal white-space-no-wrap"},
       ],
       transactions: [
         { orderId: 'HL001-29389', datum: '01-02-2020', payment: 'Pending payment', gpStatus: 'Accepted', shipment: 'Shipped' },

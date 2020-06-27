@@ -8,7 +8,14 @@ export default {
     isMobile(){
       return window.innerWidth < 768
     }
-  }
+  },
+  methods:{
+    scrollToSection(id, marginTopProxy = 0) {
+      var element = document.getElementById(id);
+      var top = element.offsetTop;
+      window.scrollTo(0, top - marginTopProxy);
+    }
+  },
 }
 </script>
 

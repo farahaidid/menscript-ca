@@ -17,9 +17,9 @@
         <img src="../assets/img/cancel.png" alt="hamburger" class="close-app-menu-icon" v-if="showAppMenu" />
       </a>
 
-      <h4 class="title brand-title mb-0">
-        <router-link to="/">MENSCRIPT</router-link>
-      </h4>
+      <!-- <h4 class=""> -->
+        <router-link class="title brand-title mb-0" to="/">MENSCRIPT</router-link>
+      <!-- </h4> -->
 
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
 
@@ -64,8 +64,7 @@ export default {
     }
   },
   watch:{
-    $router(v){
-      console.log(v);
+    $route(v){
       this.showAppMenu = false
     }
   },
@@ -109,6 +108,8 @@ nav#custom-navbar{
 }
 .brand-title{
   font-family: Metropolis-SemiBold;
+  font-weight: normal;
+  color: #424242 !important;
 }
 .title {
   font-size: 20px;
@@ -128,6 +129,7 @@ li.nav-item {
   display: inline-block;
   color: black;
   font-family: Avenir-Medium;
+  font-size: 14px;
 }
 li.link {
   list-style-type: none;

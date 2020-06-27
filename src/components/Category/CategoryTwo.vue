@@ -6,7 +6,7 @@
         <router-link to="/product">
           <img :src="data.image" alt="cat_two_img" class="cat-two-img" />
 
-          <div class="hover-replace">
+          <div class="hover-replace mt-2">
             <button class="btn btn-secondary custom-cat-btn mx-2 mx-md-0" type="button">
               {{ data.btnText }}
             </button>
@@ -24,7 +24,7 @@
         <router-link to="/product">
           <img :src="data.image" alt="cat_two_img" class="cat-two-img" />
 
-          <div class="hover-replace">
+          <div class="hover-replace mt-2">
             <button class="btn btn-secondary custom-cat-btn mx-2 mx-md-0 " type="button">
               {{ data.btnText }}
             </button>

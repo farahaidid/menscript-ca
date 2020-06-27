@@ -188,10 +188,10 @@ span.under_score {
   border-bottom: 1px solid #f0f0f0;
 }
 .footer-menu-title {
-  font-size: 26px;
+  font-size: 20px;
   letter-spacing: 1px;
   line-height: 48px;
-  color: #363636;
+  color: #424242 ;
   font-family: "Metropolis-SemiBold";
 }
 .text-end {

@@ -1,7 +1,7 @@
 <template>
 	<div class="voorkeur">
-		<h1 class="text-center Voorkeur">Voorkeur</h1>
-		<div class="container text-center">
+		<h1 class="text-center Voorkeur header-margin">Voorkeur</h1>
+		<div class="container text-center bg-transparent">
 			<div class="vk-container mx-auto text-left">
 				<div v-for="(pro,i) in products" :key="i">
 					<p v-if="pro.info" class="title mt-5">{{pro.info}}</p>
@@ -11,7 +11,7 @@
 								<img :src="pro.thumbnail" :alt="pro.title" />
 							</div>
 							<div>
-								<h5 class="mb-0 mt-2">{{pro.title}}</h5>
+								<h5 class="mb-0 mt-2 avenirmedium">{{pro.title}}</h5>
 								<p class="mb-0">{{pro.quantity}} tabletten</p>
 								
 							</div>
@@ -88,7 +88,6 @@ export default {
     line-height: 48px;
     color: #2f2f2f;
 		font-family: Avenir-Black;
-		margin-top: 190px;
 }
 
 	.voorkeur {
@@ -151,6 +150,7 @@ export default {
 					line-height: 36px;
 					color: #141414;
 					font-family: Avenir-Black;
+					font-weight: normal;
 }
 			}
 		}
